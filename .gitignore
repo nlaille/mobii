@@ -1,0 +1,5 @@
+/test/gmock/msvc/2010/Release
+/test/gmock/msvc/2010/Debug
+gtest-md
+build
+msvc
