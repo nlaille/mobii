@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MobiiSmsStreamItem</class>
+ <widget class="QWidget" name="MobiiSmsStreamItem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>80</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>80</height>
+   </size>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel {background-color: rgb(255, 255, 255, 0)}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="senderText">
+     <property name="styleSheet">
+      <string notr="true">QLabel {font-size: 14pt}</string>
+     </property>
+     <property name="text">
+      <string>Anthony DiNozzo, Jr.</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="footer" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255, 0)</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lastMessageText">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {font: italic; font-size: 11pt}</string>
+        </property>
+        <property name="text">
+         <string>&quot;dude, remember 2 buy groceries when u come back!!!&quot;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="dateText">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{font-size:8pt;color: rgb(100, 100, 100);}</string>
+        </property>
+        <property name="text">
+         <string>31/08/2013 à 10:53</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

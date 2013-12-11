@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MobiiEventInfDialog</class>
+ <widget class="QWidget" name="MobiiEventInfDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>432</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MobiiEventInfDialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="formWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true"> border: 1px solid #008287;</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <property name="fieldGrowthPolicy">
+       <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelName">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: none;</string>
+        </property>
+        <property name="text">
+         <string>Nom :</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="nameEdit">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelWhere">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: none;</string>
+        </property>
+        <property name="text">
+         <string>Lieu :</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="whereEdit">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="labelStart">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: none;</string>
+        </property>
+        <property name="text">
+         <string>Date de début :</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="labelEnd">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: none;</string>
+        </property>
+        <property name="text">
+         <string>Date de fin :</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="labelNote">
+        <property name="styleSheet">
+         <string notr="true">border: none;</string>
+        </property>
+        <property name="text">
+         <string>Notes :</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QTextEdit" name="noteEdit"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="labelIcon">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: none;
+</string>
+        </property>
+        <property name="text">
+         <string>Icône :</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="iconBox">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>48</height>
+         </size>
+        </property>
+        <item>
+         <property name="text">
+          <string>Fête - Célébration</string>
+         </property>
+         <property name="icon">
+          <iconset theme="cake" resource="mobii.qrc">
+           <normaloff>:/icons/Resources/cake.png</normaloff>:/icons/Resources/cake.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Divertissement</string>
+         </property>
+         <property name="icon">
+          <iconset theme="ball" resource="mobii.qrc">
+           <normaloff>:/icons/Resources/ball.png</normaloff>:/icons/Resources/ball.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Soirée</string>
+         </property>
+         <property name="icon">
+          <iconset resource="mobii.qrc">
+           <normaloff>:/icons/Resources/bar.png</normaloff>:/icons/Resources/bar.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Evènement professionnel</string>
+         </property>
+         <property name="icon">
+          <iconset resource="mobii.qrc">
+           <normaloff>:/icons/Resources/briefcase.png</normaloff>:/icons/Resources/briefcase.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Anniversaire</string>
+         </property>
+         <property name="icon">
+          <iconset resource="mobii.qrc">
+           <normaloff>:/icons/Resources/gift.png</normaloff>:/icons/Resources/gift.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Hôpital</string>
+         </property>
+         <property name="icon">
+          <iconset resource="mobii.qrc">
+           <normaloff>:/icons/Resources/hospital.png</normaloff>:/icons/Resources/hospital.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Voyage</string>
+         </property>
+         <property name="icon">
+          <iconset resource="mobii.qrc">
+           <normaloff>:/icons/Resources/plane.png</normaloff>:/icons/Resources/plane.png</iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QDateTimeEdit" name="dateStart">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QDateTimeEdit" name="dateEnd">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteEventButton">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Supprimer cet évènement</string>
+       </property>
+       <property name="icon">
+        <iconset resource="mobii.qrc">
+         <normaloff>:/buttons/Resources/trash.png</normaloff>:/buttons/Resources/trash.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="updateEventButton">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>48</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Valider les changements</string>
+       </property>
+       <property name="icon">
+        <iconset resource="mobii.qrc">
+         <normaloff>:/buttons/Resources/okay.png</normaloff>:/buttons/Resources/okay.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mobii.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,45 @@
+<RCC>
+  <qresource prefix="/common">
+    <file>Resources/logo_small.png</file>
+    <file>Resources/logo_verbose_flat.png</file>
+    <file>Resources/logo_verbose_flat_small.png</file>
+  </qresource>
+  <qresource prefix="/panels">
+    <file>Resources/file.png</file>
+    <file>Resources/chat.png</file>
+    <file>Resources/contacts.png</file>
+    <file>Resources/home.png</file>
+    <file>Resources/tools.png</file>
+    <file>Resources/phone.png</file>
+    <file>Resources/calendar.png</file>
+    <file>Resources/glyphicons_008_film.png</file>
+  </qresource>
+  <qresource prefix="/misc">
+    <file>Resources/profile_default.png</file>
+  </qresource>
+  <qresource prefix="/buttons">
+    <file>Resources/paint.png</file>
+    <file>Resources/okay.png</file>
+    <file>Resources/filesave.png</file>    <file>Resources/duplicate.png</file>
+    <file>Resources/below.png</file>
+    <file>Resources/share.png</file>
+    <file>Resources/more.png</file>
+    <file>Resources/power.png</file>
+    <file>Resources/sync.png</file>
+    <file>Resources/write.png</file>
+    <file>Resources/trash.png</file>
+    <file>Resources/add.png</file>
+    <file>Resources/remove.png</file>
+    <file>Resources/glyphicons_210_left_arrow.png</file>
+    <file>Resources/glyphicons_211_right_arrow.png</file>
+  </qresource>
+  <qresource prefix="/icons">
+    <file>Resources/ball.png</file>
+    <file>Resources/bar.png</file>
+    <file>Resources/briefcase.png</file>
+    <file>Resources/cake.png</file>
+    <file>Resources/gift.png</file>
+    <file>Resources/hospital.png</file>
+    <file>Resources/plane.png</file>
+  </qresource>
+</RCC>

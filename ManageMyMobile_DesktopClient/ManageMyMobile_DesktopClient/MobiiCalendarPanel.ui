@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MobiiCalendarPanel</class>
+ <widget class="QWidget" name="MobiiCalendarPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>663</width>
+    <height>707</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MobiiCalendarPanel</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="getEventButton">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Synchroniser mon
+agenda</string>
+         </property>
+         <property name="icon">
+          <iconset resource="mobii.qrc">
+           <normaloff>:/buttons/Resources/sync.png</normaloff>:/buttons/Resources/sync.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="updateEventButton">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Mettre à jour sur
+mon mobile</string>
+         </property>
+         <property name="icon">
+          <iconset resource="mobii.qrc">
+           <normaloff>:/buttons/Resources/share.png</normaloff>:/buttons/Resources/share.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="newEventButton">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Ajouter un évènement</string>
+         </property>
+         <property name="icon">
+          <iconset resource="mobii.qrc">
+           <normaloff>:/buttons/Resources/write.png</normaloff>:/buttons/Resources/write.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QCalendarWidget" name="calendar">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="gridVisible">
+        <bool>false</bool>
+       </property>
+       <property name="selectionMode">
+        <enum>QCalendarWidget::SingleSelection</enum>
+       </property>
+       <property name="horizontalHeaderFormat">
+        <enum>QCalendarWidget::ShortDayNames</enum>
+       </property>
+       <property name="verticalHeaderFormat">
+        <enum>QCalendarWidget::ISOWeekNumbers</enum>
+       </property>
+       <property name="navigationBarVisible">
+        <bool>true</bool>
+       </property>
+       <property name="dateEditEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="dayEventList">
+       <property name="styleSheet">
+        <string notr="true"> border: 2px solid #008287;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mobii.qrc"/>
+ </resources>
+ <connections/>
+</ui>

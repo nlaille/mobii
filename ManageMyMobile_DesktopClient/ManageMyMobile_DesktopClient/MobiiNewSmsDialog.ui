@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewSmsDialog</class>
+ <widget class="QWidget" name="NewSmsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Nouveau SMS</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLineEdit" name="destinationField">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Numéro de téléphone du destinataire</string>
+     </property>
+     <property name="maxLength">
+      <number>1024</number>
+     </property>
+     <property name="placeholderText">
+      <string>Numéro de téléphone du destinataire</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPlainTextEdit" name="smsContentField">
+     <property name="toolTip">
+      <string>Rédigez votre message dans cette case</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 12pt</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="sizeLimitLbl">
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="nbOfSentSmsLbl">
+     <property name="styleSheet">
+      <string notr="true">color: #5f5f5f; font-style: italic</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="sendSmsBtn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Envoyer le SMS</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mobii.qrc">
+          <normaloff>:/buttons/Resources/share.png</normaloff>:/buttons/Resources/share.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cancelSmsButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Annuler</string>
+        </property>
+        <property name="icon">
+         <iconset resource="mobii.qrc">
+          <normaloff>:/buttons/Resources/trash.png</normaloff>:/buttons/Resources/trash.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="mobii.qrc"/>
+ </resources>
+ <connections/>
+</ui>

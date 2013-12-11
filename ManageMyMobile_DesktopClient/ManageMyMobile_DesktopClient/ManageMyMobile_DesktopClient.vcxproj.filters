@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{3193e0bb-1de9-4e23-8861-658349dbfb1e}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{02f88859-6a8f-4b57-9821-bad06139ea78}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Source Files\Network">
+      <UniqueIdentifier>{fdd0f00b-719b-4873-a97b-ad0b32739e7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core / Protocol">
+      <UniqueIdentifier>{f4556eb0-b482-4628-bb2f-2343dc745bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Panels / Dialogs">
+      <UniqueIdentifier>{d96c0370-faa7-4a2c-be23-5fcc267e74d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Network">
+      <UniqueIdentifier>{bd6fc9b7-ee5b-4496-a600-e7159106b1ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core / Protocol">
+      <UniqueIdentifier>{7aa75eb1-f5c7-491b-8885-454017593cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Panels / Dialogs">
+      <UniqueIdentifier>{1b5c71e9-5027-4dc9-adf2-cec3286e5ce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Device Management">
+      <UniqueIdentifier>{e9ca9bac-8355-4d58-afb0-df61c05d1aa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Device Management">
+      <UniqueIdentifier>{bdfa1ab7-66a6-483a-9f65-c6433e029b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Panels / Dialogs\GUI items">
+      <UniqueIdentifier>{31852393-23c6-4d2a-85dd-f1889569f24a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Panels / Dialogs\GUI items">
+      <UniqueIdentifier>{a7d2d4bf-0752-4bcb-a65d-c754514088ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\Items">
+      <UniqueIdentifier>{ea5fbe75-9ca7-4be5-adea-2dc741c3c4c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Business Entities">
+      <UniqueIdentifier>{2c9c62ce-d56f-4267-8945-815617937e21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Business Entities">
+      <UniqueIdentifier>{5aa3626f-5641-4894-99fe-f8c414d22176}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\Debug\moc_managemymobile_desktopclient.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_managemymobile_desktopclient.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CommandsProcessor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CommandsProcessor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CommunicationServices.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CommunicationServices.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EventBus.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EventBus.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiConnectToMobileForm.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiConnectToMobileForm.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiHomeForm.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiHomeForm.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiLoginForm.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiLoginForm.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiNewSmsDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiNewSmsDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiPhoneConnectionControlForm.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiPhoneConnectionControlForm.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_netimpl.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_netimpl.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="json.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="netimpl.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandsProcessor.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="CommunicationServices.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="InterclientProtocolHelper.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiConfigurationDialog.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiConnectToMobileForm.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiHomeForm.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiLoginForm.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiNewSmsDialog.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiPhoneConnectionControlForm.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiSmsPanelForm.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="EventBus.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketBuilder.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="managemymobile_desktopclient.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkPool.cpp">
+      <Filter>Source Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigurationFileIo.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiOperationCodes.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiContactPanelForm.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiContactPanelForm.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiContactPanelForm.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiStandardPacket.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiEventBusCodes.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiLegalNoticeDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiLegalNoticeDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiLegalNoticeDialog.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_mobii.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceEntity.cpp">
+      <Filter>Source Files\Device Management</Filter>
+    </ClCompile>
+    <ClCompile Include="UserEntity.cpp">
+      <Filter>Source Files\Device Management</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiCore.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiCore.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiCore.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="AExtendedUiWidget.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionController.cpp">
+      <Filter>Source Files\Device Management</Filter>
+    </ClCompile>
+    <ClCompile Include="AModuleDependencyUser.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiCalendarPanel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiCalendarPanel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiContactInformations.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiContactInformations.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiEventInfDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiEventInfDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiCalendarPanel.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiEventInfDialog.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiContactInformations.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugLogToFile.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiImagePanel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiImagePanel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiImagePanel.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiSmsBulletItem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiSmsBulletItem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiSmsBulletItem.cpp">
+      <Filter>Source Files\Panels / Dialogs\GUI items</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiSmsStreamItem.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiSmsStreamItem.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiSmsStreamItem.cpp">
+      <Filter>Source Files\Panels / Dialogs\GUI items</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiConfigurationDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiConfigurationDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiContactItem.cpp">
+      <Filter>Source Files\Business Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiEventItem.cpp">
+      <Filter>Source Files\Business Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="MobiiImageItem.cpp">
+      <Filter>Source Files\Business Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="helper.cpp">
+      <Filter>Source Files\Business Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DirectConnectionListener.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DirectConnectionListener.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectConnectionListener.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DevStylesheetEditorForm.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DevStylesheetEditorForm.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="DevStylesheetEditorForm.cpp">
+      <Filter>Source Files\Panels / Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_NotificationModule.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_NotificationModule.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="NotificationModule.cpp">
+      <Filter>Source Files\Core / Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MobiiSmsPanelForm.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MobiiSmsPanelForm.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="managemymobile_desktopclient.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiConfigurationDialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiConnectToMobileForm.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiHomeForm.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiLoginDialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiNewSmsDialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiPhoneConnectionControl.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiSmsPanel.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="netimpl.h">
+      <Filter>Header Files\Network</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EventBus.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </CustomBuild>
+    <CustomBuild Include="managemymobile_desktopclient.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiConfigurationDialog.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiConnectToMobileForm.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiHomeForm.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiLoginForm.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiNewSmsDialog.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiPhoneConnectionControlForm.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiSmsPanelForm.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiContactPanel.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiContactPanelForm.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiLegalNoticeDialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiLegalNoticeDialog.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mobii.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DeviceEntity.h">
+      <Filter>Header Files\Device Management</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DataFileSerializer.hpp">
+      <Filter>Header Files\Device Management</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiCore.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiCalendarPanel.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiContactInformations.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiEventInfDialog.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiCalendarPanel.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiContactInformations.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiEventInfDialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiImagePanel.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiImagePanel.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiSmsBulletItem.h">
+      <Filter>Header Files\Panels / Dialogs\GUI items</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiSmsStreamItem.h">
+      <Filter>Header Files\Panels / Dialogs\GUI items</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiSmsStreamItem.ui">
+      <Filter>Form Files\Items</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiSmsBulletItem.ui">
+      <Filter>Form Files\Items</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiSmsLoadMoreItem.ui">
+      <Filter>Form Files\Items</Filter>
+    </CustomBuild>
+    <CustomBuild Include="helper.h">
+      <Filter>Header Files\Business Entities</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiContactItem.h">
+      <Filter>Header Files\Business Entities</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiEventItem.h">
+      <Filter>Header Files\Business Entities</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiImageItem.h">
+      <Filter>Header Files\Business Entities</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CommandsProcessor.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CommunicationServices.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DirectConnectionListener.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DevStylesheetEditorForm.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DevStylesheetEditorForm.h">
+      <Filter>Header Files\Panels / Dialogs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="NotificationModule.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MobiiPleaseWaitPopup.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InterclientProtocolHelper.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="json.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkPool.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketBuilder.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigurationFileIo.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseNetworkingEmitter.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="IBaseNetworkingReceiver.h">
+      <Filter>Header Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="IEventBusClient.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="MobiiOperationCodes.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="MobiiStandardPacket.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="MobiiEventBusCodes.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MobiiLegalNoticeDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserEntity.h">
+      <Filter>Header Files\Device Management</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionController.h">
+      <Filter>Header Files\Device Management</Filter>
+    </ClInclude>
+    <ClInclude Include="ISessionController.h">
+      <Filter>Header Files\Device Management</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MobiiCalendarPanel.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MobiiContactInformations.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MobiiEventInfDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugLogToFile.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MobiiImagePanel.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MobiiSmsBulletItem.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MobiiSmsStreamItem.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MobiiSmsLoadMoreItem.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AExtendedUiWidget.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="AModuleDependencyUser.h">
+      <Filter>Header Files\Core / Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_DevStylesheetEditorForm.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_MobiiPleaseWaitPopup.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="mobii_logo.rc" />
+  </ItemGroup>
+</Project>
