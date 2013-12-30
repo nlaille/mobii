@@ -4,7 +4,8 @@ Mobii Client
 Welcome to Mobii! We hope you will enjoy contributing to this project.
 
 
-1.	Requirements
+Requirements
+---------
 
 Mobii is based on the Qt Framework, in order to ensure a complete cross-platform compatibility among various operating systems, notably Microsoft Windows, MacOS X and Linux.
 
@@ -16,23 +17,27 @@ You will need the following tools in order to start coding:
 
 Please see the server branch documentation for further informations about how to use the Mobii server application.
 
-2.	Compiling the client
+Compiling the client
+---------
 
 Before proceeding, please make sure you have a fully functional development environment (see above).
 
-	a.	Libraries
+Libraries
+---------
 
 If you compile the client within Visual Studio, Qt libraries should be linked automatically if your Qt setup is configured properly.
 
-When deploying 
-	
-3.	RTFM!
+Please read the official Qt documentation to know which files you should include when deploying the client.
+
+RTFM!
+---------
 
 We are going to deploy a detailed documentation within a few weeks. We are strongly advising you to read it once it becomes available.
 
 Besides the client application itself, it will explain you the philosophy and the technical architecture which drives the entire platform.
 
-4.	Authors
+Authors
+---------
 
 Before it was released to the general public, Mobii has been developed as a part of a student project, whose original members are (in alphabetical order):
 
