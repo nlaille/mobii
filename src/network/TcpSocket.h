@@ -25,9 +25,20 @@ typedef boost::asio::ip::tcp::socket   boost_tcp_socket;
 class TcpSocket : public Socket
 {
 public:
-
+   /**
+    * \fn TcpSocket(boost_tcp_socket* boostSocket)
+	* \brief Constructor new socket with boost socket
+	* \param boostSocket
+	*/
    TcpSocket(boost_tcp_socket* boostSocket);
+
+   /**
+    * \fn TcpSocket(boost_tcp_socket* boostSocket)
+	* \brief Constructor
+	* \param boostSocket
+	*/
    virtual ~TcpSocket(void);
+
 
    virtual void read(std::vector<char>& message, boost_read_callback callback);
    virtual void write(const std::string& message, boost_write_callback callback);
@@ -36,5 +47,5 @@ private:
    void  handleRead(boost_read_callback, const boost::system::error_code&, size_t);
    void  handleWrite(boost_write_callback, const boost::system::error_code&);
 
-   boost_tcp_socket*              m_socket;
+   boost_tcp_socket*              m_socket; /*!< boost socket */
 };

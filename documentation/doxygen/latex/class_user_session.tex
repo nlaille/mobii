@@ -1,0 +1,95 @@
+\hypertarget{class_user_session}{\section{User\-Session Class Reference}
+\label{class_user_session}\index{User\-Session@{User\-Session}}
+}
+
+
+Representation of a client application.  
+
+
+
+
+{\ttfamily \#include $<$User\-Session.\-h$>$}
+
+Inheritance diagram for User\-Session\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_user_session}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_user_session_ac8ed03f6784f2e84e642d1c77aa63298}{virtual \hyperlink{class_user_session_ac8ed03f6784f2e84e642d1c77aa63298}{$\sim$\-User\-Session} (void)}\label{class_user_session_ac8ed03f6784f2e84e642d1c77aa63298}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_user_session_a93c2510fa0fd6bb2411b7b6640c12606}{is} (\hyperlink{class_i_session_a7989a93d03d8345d213a021d7444a32f}{Session\-Type} type) const 
+\begin{DoxyCompactList}\small\item\em Check if type is \hyperlink{struct_user}{User}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static I\-Session\-::session \hyperlink{class_user_session_a542ad4b16a842ba7b88a8f60760423a9}{create} (I\-Connection\-::connection connection, const std\-::string \&id)
+\begin{DoxyCompactList}\small\item\em Create session of type \hyperlink{struct_user}{User}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_user_session_aaedf316feb3691e07bfdcbb9f3d6cb21}{{\bfseries User\-Session} (I\-Connection\-::connection connection, const std\-::string \&id)}\label{class_user_session_aaedf316feb3691e07bfdcbb9f3d6cb21}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Representation of a client application. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_user_session_a542ad4b16a842ba7b88a8f60760423a9}{\index{User\-Session@{User\-Session}!create@{create}}
+\index{create@{create}!UserSession@{User\-Session}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}I\-Session\-::session User\-Session\-::create (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection, }
+\item[{const std\-::string \&}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_user_session_a542ad4b16a842ba7b88a8f60760423a9}
+
+
+Create session of type \hyperlink{struct_user}{User}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session 
+\end{DoxyReturn}
+\hypertarget{class_user_session_a93c2510fa0fd6bb2411b7b6640c12606}{\index{User\-Session@{User\-Session}!is@{is}}
+\index{is@{is}!UserSession@{User\-Session}}
+\subsubsection[{is}]{\setlength{\rightskip}{0pt plus 5cm}bool User\-Session\-::is (
+\begin{DoxyParamCaption}
+\item[{{\bf Session\-Type}}]{type}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_user_session_a93c2510fa0fd6bb2411b7b6640c12606}
+
+
+Check if type is \hyperlink{struct_user}{User}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_session_afdebd34ba244081dcc22e8071bdb1578}{Session}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/session/\hyperlink{_user_session_8h}{User\-Session.\-h}\item 
+src/session/User\-Session.\-cpp\end{DoxyCompactItemize}

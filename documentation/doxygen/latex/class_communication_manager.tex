@@ -1,0 +1,132 @@
+\hypertarget{class_communication_manager}{\section{Communication\-Manager Class Reference}
+\label{class_communication_manager}\index{Communication\-Manager@{Communication\-Manager}}
+}
+
+
+Stack communication between Sessions.  
+
+
+
+
+{\ttfamily \#include $<$Communication\-Manager.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_communication_manager_a61bb1f5dc835a45386336d66a8d29df6}{add} (I\-Session\-::session session1, I\-Session\-::session session2)
+\begin{DoxyCompactList}\small\item\em Stack new communication between session1 and session2, throw exception if already exists. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_communication_manager_a2407d8fe327c508a908a17ae59026770}{close} (I\-Session\-::session session1, I\-Session\-::session session2)
+\begin{DoxyCompactList}\small\item\em close communication between session1 and session2, throw exception if doesn't exists \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_communication_manager_a711cd6d95cbf28f8f4019abb5404b3f8}{close\-All} (I\-Session\-::session session)
+\begin{DoxyCompactList}\small\item\em close all communication which in session is related \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_communication_manager_a9c6d619c4df5652b351cc45a04aa6df6}{send\-All} (I\-Session\-::session session, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em send packet to all communication which in session is related \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_communication_manager_ae2cee89208eb5a2210f9730a7a54a78e}{exists} (I\-Session\-::session session1, I\-Session\-::session session2) const 
+\begin{DoxyCompactList}\small\item\em Check if communication between session1 and session2 exists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stack communication between Sessions. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_communication_manager_a61bb1f5dc835a45386336d66a8d29df6}{\index{Communication\-Manager@{Communication\-Manager}!add@{add}}
+\index{add@{add}!CommunicationManager@{Communication\-Manager}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Communication\-Manager\-::add (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{session1, }
+\item[{I\-Session\-::session}]{session2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_communication_manager_a61bb1f5dc835a45386336d66a8d29df6}
+
+
+Stack new communication between session1 and session2, throw exception if already exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session1} & \\
+\hline
+{\em session2} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_communication_manager_a2407d8fe327c508a908a17ae59026770}{\index{Communication\-Manager@{Communication\-Manager}!close@{close}}
+\index{close@{close}!CommunicationManager@{Communication\-Manager}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void Communication\-Manager\-::close (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{session1, }
+\item[{I\-Session\-::session}]{session2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_communication_manager_a2407d8fe327c508a908a17ae59026770}
+
+
+close communication between session1 and session2, throw exception if doesn't exists 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session1} & \\
+\hline
+{\em session2} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_communication_manager_a711cd6d95cbf28f8f4019abb5404b3f8}{\index{Communication\-Manager@{Communication\-Manager}!close\-All@{close\-All}}
+\index{close\-All@{close\-All}!CommunicationManager@{Communication\-Manager}}
+\subsubsection[{close\-All}]{\setlength{\rightskip}{0pt plus 5cm}void Communication\-Manager\-::close\-All (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{session}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_communication_manager_a711cd6d95cbf28f8f4019abb5404b3f8}
+
+
+close all communication which in session is related 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_communication_manager_ae2cee89208eb5a2210f9730a7a54a78e}{\index{Communication\-Manager@{Communication\-Manager}!exists@{exists}}
+\index{exists@{exists}!CommunicationManager@{Communication\-Manager}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}bool Communication\-Manager\-::exists (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{session1, }
+\item[{I\-Session\-::session}]{session2}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_communication_manager_ae2cee89208eb5a2210f9730a7a54a78e}
+
+
+Check if communication between session1 and session2 exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session1} & \\
+\hline
+{\em session2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Existing of communication between session1 and session2 
+\end{DoxyReturn}
+\hypertarget{class_communication_manager_a9c6d619c4df5652b351cc45a04aa6df6}{\index{Communication\-Manager@{Communication\-Manager}!send\-All@{send\-All}}
+\index{send\-All@{send\-All}!CommunicationManager@{Communication\-Manager}}
+\subsubsection[{send\-All}]{\setlength{\rightskip}{0pt plus 5cm}void Communication\-Manager\-::send\-All (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{session, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_communication_manager_a9c6d619c4df5652b351cc45a04aa6df6}
+
+
+send packet to all communication which in session is related 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/session/\hyperlink{_communication_manager_8h}{Communication\-Manager.\-h}\item 
+src/session/Communication\-Manager.\-cpp\end{DoxyCompactItemize}

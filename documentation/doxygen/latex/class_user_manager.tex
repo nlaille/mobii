@@ -1,0 +1,103 @@
+\hypertarget{class_user_manager}{\section{User\-Manager Class Reference}
+\label{class_user_manager}\index{User\-Manager@{User\-Manager}}
+}
+
+
+Stack logged \hyperlink{struct_user}{User}.  
+
+
+
+
+{\ttfamily \#include $<$User\-Manager.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_user_manager_a7ea6a5a58e03fb502e00d1157cdbb68e}{\hyperlink{class_user_manager_a7ea6a5a58e03fb502e00d1157cdbb68e}{User\-Manager} ()}\label{class_user_manager_a7ea6a5a58e03fb502e00d1157cdbb68e}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_user_manager_ad6f661321c38b332c0e0eff3a933e753}{virtual \hyperlink{class_user_manager_ad6f661321c38b332c0e0eff3a933e753}{$\sim$\-User\-Manager} ()}\label{class_user_manager_ad6f661321c38b332c0e0eff3a933e753}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_user_manager_adfec9d77ca905979852568ed5a2d91ad}{login} (I\-Session\-::session session, \hyperlink{struct_user}{User} user)
+\begin{DoxyCompactList}\small\item\em Log In session for user. \end{DoxyCompactList}\item 
+\hypertarget{class_user_manager_a2f2c0ad3b2b827eab9c58ccc5b65eabb}{virtual void {\bfseries logout} (I\-Session\-::session session)}\label{class_user_manager_a2f2c0ad3b2b827eab9c58ccc5b65eabb}
+
+\item 
+virtual \hyperlink{struct_user}{User} \hyperlink{class_user_manager_a90966f2e20bc40428ee1953bea9f4804}{get\-User} (I\-Session\-::session session) const 
+\begin{DoxyCompactList}\small\item\em Get user associated to the session. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_user_manager_af7c920903186bff679fe1c0d3f21af41}{is\-Log} (I\-Session\-::session session) const 
+\begin{DoxyCompactList}\small\item\em Check if session is log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stack logged \hyperlink{struct_user}{User}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_user_manager_a90966f2e20bc40428ee1953bea9f4804}{\index{User\-Manager@{User\-Manager}!get\-User@{get\-User}}
+\index{get\-User@{get\-User}!UserManager@{User\-Manager}}
+\subsubsection[{get\-User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User} User\-Manager\-::get\-User (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{session}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_user_manager_a90966f2e20bc40428ee1953bea9f4804}
+
+
+Get user associated to the session. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+user 
+\end{DoxyReturn}
+\hypertarget{class_user_manager_af7c920903186bff679fe1c0d3f21af41}{\index{User\-Manager@{User\-Manager}!is\-Log@{is\-Log}}
+\index{is\-Log@{is\-Log}!UserManager@{User\-Manager}}
+\subsubsection[{is\-Log}]{\setlength{\rightskip}{0pt plus 5cm}bool User\-Manager\-::is\-Log (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{session}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_user_manager_af7c920903186bff679fe1c0d3f21af41}
+
+
+Check if session is log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{class_user_manager_adfec9d77ca905979852568ed5a2d91ad}{\index{User\-Manager@{User\-Manager}!login@{login}}
+\index{login@{login}!UserManager@{User\-Manager}}
+\subsubsection[{login}]{\setlength{\rightskip}{0pt plus 5cm}void User\-Manager\-::login (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{session, }
+\item[{{\bf User}}]{user}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_user_manager_adfec9d77ca905979852568ed5a2d91ad}
+
+
+Log In session for user. 
+
+Log Out session.
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+{\em user} & \\
+\hline
+{\em session} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/database/\hyperlink{_user_manager_8h}{User\-Manager.\-h}\item 
+src/database/User\-Manager.\-cpp\end{DoxyCompactItemize}

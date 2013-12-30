@@ -21,6 +21,11 @@
 class ProtocolQueue : public Queue<std::pair<IConnection::connection, Packet> >
 {
 public:
+   /**
+    * \fn static ProtocolQueue&  instance()
+    * \brief Get instance
+	* \return instance
+	*/
    static ProtocolQueue&  instance()
    {
       static ProtocolQueue   instance;

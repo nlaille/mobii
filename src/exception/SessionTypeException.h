@@ -16,6 +16,16 @@
 class SessionTypeException : public std::runtime_error
 {
 public:
+   /**
+    * \fn SessionTypeException(const std::string& message)
+	* \brief Constructor
+	* \param message
+	*/
    SessionTypeException(const std::string& message);
+
+   /**
+    * \fn ~SessionTypeException()
+	* \brief Destructor
+	*/
    virtual ~SessionTypeException() throw ();
 };

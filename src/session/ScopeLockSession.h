@@ -18,9 +18,18 @@
 class ScopeLockSession
 {
 public:
+   /**
+    * \fn ScopeLockSession(ISession::session session)
+	* \brief Lock the session until the class is destroy
+	* \param session
+	*/
    ScopeLockSession(ISession::session session);
+   /**
+    * \fn ~ScopeLockSession()
+	* \brief Unlock the session
+	*/
    ~ScopeLockSession();
 
 private:
-   ISession::session   m_session;
+   ISession::session   m_session; /*!< session */
 };

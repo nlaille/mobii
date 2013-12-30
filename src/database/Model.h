@@ -11,6 +11,10 @@
 #include <string>
 #include <soci.h>
 
+/**
+ * \struct SmartPhone
+ * \brief Representation of Database Smartphones
+ */
 struct SmartPhone
 {
 	std::string	uid;
@@ -25,6 +29,10 @@ struct SmartPhone
 	}
 };
 
+/**
+ * \struct SmartPhoneName
+ * \brief Representation of Database Smartphones
+ */
 struct SmartPhoneName
 {
 	std::string	uid;
@@ -40,6 +48,10 @@ struct SmartPhoneName
 	}
 };
 
+/**
+ * \struct User
+ * \brief Representation of Database Users
+ */
 struct User
 {
 	int id;
@@ -53,6 +65,10 @@ struct User
 	}
 };
 
+/**
+ * \struct Uid
+ * \brief Representation of Database Uids
+ */
 struct Uid
 {
 	std::string	uid;
@@ -65,6 +81,10 @@ struct Uid
 	}
 };
 
+/**
+ * \struct UserSmartPhone
+ * \brief Representation of Database UserSmartPhones
+ */
 struct UserSmartPhone
 {
 	std::string	name;

@@ -1,0 +1,95 @@
+\hypertarget{class_smart_phone_session}{\section{Smart\-Phone\-Session Class Reference}
+\label{class_smart_phone_session}\index{Smart\-Phone\-Session@{Smart\-Phone\-Session}}
+}
+
+
+Representation of a mobile application.  
+
+
+
+
+{\ttfamily \#include $<$Smart\-Phone\-Session.\-h$>$}
+
+Inheritance diagram for Smart\-Phone\-Session\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_smart_phone_session}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_smart_phone_session_a6d5e1555e09ed070829410935ca1f796}{virtual \hyperlink{class_smart_phone_session_a6d5e1555e09ed070829410935ca1f796}{$\sim$\-Smart\-Phone\-Session} (void)}\label{class_smart_phone_session_a6d5e1555e09ed070829410935ca1f796}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_smart_phone_session_a26c68401114a1efe3f171f17c4cd2441}{is} (\hyperlink{class_i_session_a7989a93d03d8345d213a021d7444a32f}{Session\-Type} type) const 
+\begin{DoxyCompactList}\small\item\em Check if type is \hyperlink{struct_smart_phone}{Smart\-Phone}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static I\-Session\-::session \hyperlink{class_smart_phone_session_a64ac020d23621a6b8855dea4e1a77d82}{create} (I\-Connection\-::connection connection, const std\-::string \&id)
+\begin{DoxyCompactList}\small\item\em Create session of type \hyperlink{struct_smart_phone}{Smart\-Phone}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_smart_phone_session_aeba20795593f463705d70a9984a5369f}{{\bfseries Smart\-Phone\-Session} (I\-Connection\-::connection connection, const std\-::string \&id)}\label{class_smart_phone_session_aeba20795593f463705d70a9984a5369f}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Representation of a mobile application. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_smart_phone_session_a64ac020d23621a6b8855dea4e1a77d82}{\index{Smart\-Phone\-Session@{Smart\-Phone\-Session}!create@{create}}
+\index{create@{create}!SmartPhoneSession@{Smart\-Phone\-Session}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}I\-Session\-::session Smart\-Phone\-Session\-::create (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection, }
+\item[{const std\-::string \&}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_smart_phone_session_a64ac020d23621a6b8855dea4e1a77d82}
+
+
+Create session of type \hyperlink{struct_smart_phone}{Smart\-Phone}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new session 
+\end{DoxyReturn}
+\hypertarget{class_smart_phone_session_a26c68401114a1efe3f171f17c4cd2441}{\index{Smart\-Phone\-Session@{Smart\-Phone\-Session}!is@{is}}
+\index{is@{is}!SmartPhoneSession@{Smart\-Phone\-Session}}
+\subsubsection[{is}]{\setlength{\rightskip}{0pt plus 5cm}bool Smart\-Phone\-Session\-::is (
+\begin{DoxyParamCaption}
+\item[{{\bf Session\-Type}}]{type}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_smart_phone_session_a26c68401114a1efe3f171f17c4cd2441}
+
+
+Check if type is \hyperlink{struct_smart_phone}{Smart\-Phone}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new boolean 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_session_afdebd34ba244081dcc22e8071bdb1578}{Session}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/session/\hyperlink{_smart_phone_session_8h}{Smart\-Phone\-Session.\-h}\item 
+src/session/Smart\-Phone\-Session.\-cpp\end{DoxyCompactItemize}

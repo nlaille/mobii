@@ -16,6 +16,16 @@
 class OpcodeException : public std::runtime_error
 {
 public:
+   /**
+    * \fn OpcodeException(const std::string& message)
+	* \brief Constructor
+	* \param message
+	*/
    OpcodeException(const std::string& message);
+
+   /**
+    * \fn ~OpcodeException()
+	* \brief Destructor
+	*/
    virtual ~OpcodeException() throw ();
 };

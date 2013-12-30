@@ -1,0 +1,136 @@
+\hypertarget{class_unregistered_session}{\section{Unregistered\-Session Class Reference}
+\label{class_unregistered_session}\index{Unregistered\-Session@{Unregistered\-Session}}
+}
+
+
+Representation of an unregistered session.  
+
+
+
+
+{\ttfamily \#include $<$Unregistered\-Session.\-h$>$}
+
+Inheritance diagram for Unregistered\-Session\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_unregistered_session}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_unregistered_session_a8ff4c967364ff77be4522877d7c814d8}{virtual \hyperlink{class_unregistered_session_a8ff4c967364ff77be4522877d7c814d8}{$\sim$\-Unregistered\-Session} (void)}\label{class_unregistered_session_a8ff4c967364ff77be4522877d7c814d8}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_unregistered_session_a5b40e3288ec28f66360e75e6f42cc736}{is} (\hyperlink{class_i_session_a7989a93d03d8345d213a021d7444a32f}{Session\-Type} type) const 
+\begin{DoxyCompactList}\small\item\em Check if type is Unregistered. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_unregistered_session_a62d3d5de779c9a276aca1286063e6ecd}{valid} (const std\-::string \&id) const 
+\begin{DoxyCompactList}\small\item\em Return false, cause the session is not associated with an id. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_unregistered_session_a494b190737e24094eb9f7ba68e8453c8}{write} (const std\-::string \&message)
+\begin{DoxyCompactList}\small\item\em Throws an exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static I\-Session\-::session \hyperlink{class_unregistered_session_a6bc0e753ee6c65bb504890fef96d4946}{create} (I\-Connection\-::connection connection)
+\begin{DoxyCompactList}\small\item\em Create session of type Unregistered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_unregistered_session_a2aafcfd015420519660bf9b0813b324c}{{\bfseries Unregistered\-Session} (I\-Connection\-::connection connection)}\label{class_unregistered_session_a2aafcfd015420519660bf9b0813b324c}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Representation of an unregistered session. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_unregistered_session_a6bc0e753ee6c65bb504890fef96d4946}{\index{Unregistered\-Session@{Unregistered\-Session}!create@{create}}
+\index{create@{create}!UnregisteredSession@{Unregistered\-Session}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}static I\-Session\-::session Unregistered\-Session\-::create (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_unregistered_session_a6bc0e753ee6c65bb504890fef96d4946}
+
+
+Create session of type Unregistered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_unregistered_session_a5b40e3288ec28f66360e75e6f42cc736}{\index{Unregistered\-Session@{Unregistered\-Session}!is@{is}}
+\index{is@{is}!UnregisteredSession@{Unregistered\-Session}}
+\subsubsection[{is}]{\setlength{\rightskip}{0pt plus 5cm}bool Unregistered\-Session\-::is (
+\begin{DoxyParamCaption}
+\item[{{\bf Session\-Type}}]{type}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_unregistered_session_a5b40e3288ec28f66360e75e6f42cc736}
+
+
+Check if type is Unregistered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_session_afdebd34ba244081dcc22e8071bdb1578}{Session}.
+
+\hypertarget{class_unregistered_session_a62d3d5de779c9a276aca1286063e6ecd}{\index{Unregistered\-Session@{Unregistered\-Session}!valid@{valid}}
+\index{valid@{valid}!UnregisteredSession@{Unregistered\-Session}}
+\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Unregistered\-Session\-::valid (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{id}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_unregistered_session_a62d3d5de779c9a276aca1286063e6ecd}
+
+
+Return false, cause the session is not associated with an id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_session_ae54e71dd24a2308a8fdc5d2f6c9cf12f}{Session}.
+
+\hypertarget{class_unregistered_session_a494b190737e24094eb9f7ba68e8453c8}{\index{Unregistered\-Session@{Unregistered\-Session}!write@{write}}
+\index{write@{write}!UnregisteredSession@{Unregistered\-Session}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void Unregistered\-Session\-::write (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_unregistered_session_a494b190737e24094eb9f7ba68e8453c8}
+
+
+Throws an exception. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_session_ace8f448f15e36a0b625cbaccfdf0d58e}{Session}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/session/\hyperlink{_unregistered_session_8h}{Unregistered\-Session.\-h}\item 
+src/session/Unregistered\-Session.\-cpp\end{DoxyCompactItemize}

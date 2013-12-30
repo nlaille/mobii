@@ -22,13 +22,31 @@
 class NetworkManager
 {
 public:
+   /**
+    * \fn NetworkManager()
+	* \brief Constructor
+	*/
    NetworkManager(void);
+
+   /**
+    * \fn ~NetworkManager()
+	* \brief Destructor
+	*/
    ~NetworkManager(void);
 
+   /**
+    * \fn void  add(Acceptor* acceptor)
+	* \brief Add an acceptor
+	* \param acceptor
+	*/
    void  add(Acceptor* acceptor);
 
+   /**
+    * \fn void start(void)
+	* \brief Start all acceptors
+	*/
    void start(void);
 private:
-   std::list<Acceptor*>       m_networks;
+   std::list<Acceptor*>       m_networks; /*!< acceptors */
 };
 

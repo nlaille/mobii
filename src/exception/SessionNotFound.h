@@ -16,6 +16,16 @@
 class SessionNotFound : public std::runtime_error
 {
 public:
+   /**
+    * \fn SessionNotFound(const std::string& message)
+	* \brief Constructor
+	* \param message
+	*/
    SessionNotFound(const std::string& message);
+
+   /**
+    * \fn ~SessionNotFound()
+	* \brief Destructor
+	*/
    virtual ~SessionNotFound() throw ();
 };

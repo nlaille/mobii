@@ -1,0 +1,133 @@
+\hypertarget{class_register_protocol}{\section{Register\-Protocol Class Reference}
+\label{class_register_protocol}\index{Register\-Protocol@{Register\-Protocol}}
+}
+
+
+Handle register protocol.  
+
+
+
+
+{\ttfamily \#include $<$Register\-Protocol.\-h$>$}
+
+Inheritance diagram for Register\-Protocol\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_register_protocol}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_register_protocol_aa9ef59e1cc96fe4ed579e52d34a90b8c}{Register\-Protocol} (\hyperlink{class_session_manager}{Session\-Manager} \&session\-Manager, \hyperlink{class_database_connector}{Database\-Connector} \&database\-Connector)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_register_protocol_a83e607d290459abdbeb63f2ee095ccbe}{virtual \hyperlink{class_register_protocol_a83e607d290459abdbeb63f2ee095ccbe}{$\sim$\-Register\-Protocol} (void)}\label{class_register_protocol_a83e607d290459abdbeb63f2ee095ccbe}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_register_protocol_a5c8eaa376312f54aeb01705aaf22297a}{register\-Smart\-Phone} (I\-Connection\-::connection connection, const std\-::string \&id, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Register a \hyperlink{struct_smart_phone}{Smart\-Phone} application to the server, check if id match on database with additionnals informations. \end{DoxyCompactList}\item 
+void \hyperlink{class_register_protocol_aefffada19e90558fcfaa587b41105306}{register\-User} (I\-Connection\-::connection connection, const std\-::string \&id, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Register an \hyperlink{struct_user}{User} application to the server, check if id match on database with additionnals informations. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_register_protocol_a624eb1e0724960c8a352e77150ebdd7e}{operator()} (I\-Connection\-::connection connection, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Handle packet received from connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handle register protocol. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_register_protocol_aa9ef59e1cc96fe4ed579e52d34a90b8c}{\index{Register\-Protocol@{Register\-Protocol}!Register\-Protocol@{Register\-Protocol}}
+\index{Register\-Protocol@{Register\-Protocol}!RegisterProtocol@{Register\-Protocol}}
+\subsubsection[{Register\-Protocol}]{\setlength{\rightskip}{0pt plus 5cm}Register\-Protocol\-::\-Register\-Protocol (
+\begin{DoxyParamCaption}
+\item[{{\bf Session\-Manager} \&}]{session\-Manager, }
+\item[{{\bf Database\-Connector} \&}]{database\-Connector}
+\end{DoxyParamCaption}
+)}}\label{class_register_protocol_aa9ef59e1cc96fe4ed579e52d34a90b8c}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\-Manager} & \\
+\hline
+{\em database\-Connector} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_register_protocol_a624eb1e0724960c8a352e77150ebdd7e}{\index{Register\-Protocol@{Register\-Protocol}!operator()@{operator()}}
+\index{operator()@{operator()}!RegisterProtocol@{Register\-Protocol}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void Register\-Protocol\-::operator() (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_register_protocol_a624eb1e0724960c8a352e77150ebdd7e}
+
+
+Handle packet received from connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_protocol_handler_abcdcfa563b512a954b08bee298e6e1ed}{I\-Protocol\-Handler}.
+
+\hypertarget{class_register_protocol_a5c8eaa376312f54aeb01705aaf22297a}{\index{Register\-Protocol@{Register\-Protocol}!register\-Smart\-Phone@{register\-Smart\-Phone}}
+\index{register\-Smart\-Phone@{register\-Smart\-Phone}!RegisterProtocol@{Register\-Protocol}}
+\subsubsection[{register\-Smart\-Phone}]{\setlength{\rightskip}{0pt plus 5cm}void Register\-Protocol\-::register\-Smart\-Phone (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection, }
+\item[{const std\-::string \&}]{id, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)}}\label{class_register_protocol_a5c8eaa376312f54aeb01705aaf22297a}
+
+
+Register a \hyperlink{struct_smart_phone}{Smart\-Phone} application to the server, check if id match on database with additionnals informations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em id} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_register_protocol_aefffada19e90558fcfaa587b41105306}{\index{Register\-Protocol@{Register\-Protocol}!register\-User@{register\-User}}
+\index{register\-User@{register\-User}!RegisterProtocol@{Register\-Protocol}}
+\subsubsection[{register\-User}]{\setlength{\rightskip}{0pt plus 5cm}void Register\-Protocol\-::register\-User (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection, }
+\item[{const std\-::string \&}]{id, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)}}\label{class_register_protocol_aefffada19e90558fcfaa587b41105306}
+
+
+Register an \hyperlink{struct_user}{User} application to the server, check if id match on database with additionnals informations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em id} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/protocol/\hyperlink{_register_protocol_8h}{Register\-Protocol.\-h}\item 
+src/protocol/Register\-Protocol.\-cpp\end{DoxyCompactItemize}

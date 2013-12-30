@@ -1,0 +1,88 @@
+\hypertarget{class_internal_protocol}{\section{Internal\-Protocol Class Reference}
+\label{class_internal_protocol}\index{Internal\-Protocol@{Internal\-Protocol}}
+}
+
+
+Handle internal protocol.  
+
+
+
+
+{\ttfamily \#include $<$Internal\-Protocol.\-h$>$}
+
+Inheritance diagram for Internal\-Protocol\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_internal_protocol}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_internal_protocol_a2634fccf334cbf2b6b504ddc4dfbb1c4}{Internal\-Protocol} (\hyperlink{class_session_manager}{Session\-Manager} \&session\-Manager, \hyperlink{class_communication_manager}{Communication\-Manager} \&communication\-Manager, \hyperlink{class_user_manager}{User\-Manager} \&user\-Manager)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_internal_protocol_a1f504e62a129e7a157dded749436252d}{virtual \hyperlink{class_internal_protocol_a1f504e62a129e7a157dded749436252d}{$\sim$\-Internal\-Protocol} (void)}\label{class_internal_protocol_a1f504e62a129e7a157dded749436252d}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_internal_protocol_acce8217bd72e8236a3dbc7f9245b71e0}{operator()} (I\-Connection\-::connection connection, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Handle packet of type Internal (Connect/\-Disconnect) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handle internal protocol. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_internal_protocol_a2634fccf334cbf2b6b504ddc4dfbb1c4}{\index{Internal\-Protocol@{Internal\-Protocol}!Internal\-Protocol@{Internal\-Protocol}}
+\index{Internal\-Protocol@{Internal\-Protocol}!InternalProtocol@{Internal\-Protocol}}
+\subsubsection[{Internal\-Protocol}]{\setlength{\rightskip}{0pt plus 5cm}Internal\-Protocol\-::\-Internal\-Protocol (
+\begin{DoxyParamCaption}
+\item[{{\bf Session\-Manager} \&}]{session\-Manager, }
+\item[{{\bf Communication\-Manager} \&}]{communication\-Manager, }
+\item[{{\bf User\-Manager} \&}]{user\-Manager}
+\end{DoxyParamCaption}
+)}}\label{class_internal_protocol_a2634fccf334cbf2b6b504ddc4dfbb1c4}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\-Manager} & \\
+\hline
+{\em communication\-Manager} & \\
+\hline
+{\em user\-Manager} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_internal_protocol_acce8217bd72e8236a3dbc7f9245b71e0}{\index{Internal\-Protocol@{Internal\-Protocol}!operator()@{operator()}}
+\index{operator()@{operator()}!InternalProtocol@{Internal\-Protocol}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void Internal\-Protocol\-::operator() (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_internal_protocol_acce8217bd72e8236a3dbc7f9245b71e0}
+
+
+Handle packet of type Internal (Connect/\-Disconnect) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_protocol_handler_abcdcfa563b512a954b08bee298e6e1ed}{I\-Protocol\-Handler}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/protocol/\hyperlink{_internal_protocol_8h}{Internal\-Protocol.\-h}\item 
+src/protocol/Internal\-Protocol.\-cpp\end{DoxyCompactItemize}

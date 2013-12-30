@@ -1,0 +1,85 @@
+\hypertarget{class_database_protocol}{\section{Database\-Protocol Class Reference}
+\label{class_database_protocol}\index{Database\-Protocol@{Database\-Protocol}}
+}
+
+
+Handle database protocol.  
+
+
+
+
+{\ttfamily \#include $<$Database\-Protocol.\-h$>$}
+
+Inheritance diagram for Database\-Protocol\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_database_protocol}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_database_protocol_a00f6196e9019334c51b9659469537eca}{Database\-Protocol} (\hyperlink{class_session_manager}{Session\-Manager} \&session\-Manager, \hyperlink{class_database_connector}{Database\-Connector} \&database\-Connector)
+\begin{DoxyCompactList}\small\item\em Constructor, initialize \hyperlink{class_database_protocol}{Database\-Protocol}. \end{DoxyCompactList}\item 
+\hypertarget{class_database_protocol_a61c224614f329a4a2052998b02557848}{virtual \hyperlink{class_database_protocol_a61c224614f329a4a2052998b02557848}{$\sim$\-Database\-Protocol} (void)}\label{class_database_protocol_a61c224614f329a4a2052998b02557848}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_database_protocol_af42a4c8a0aeee9defe8b8313657af019}{operator()} (I\-Connection\-::connection connection, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Handle packet of type Database (Register U\-I\-D) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handle database protocol. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_database_protocol_a00f6196e9019334c51b9659469537eca}{\index{Database\-Protocol@{Database\-Protocol}!Database\-Protocol@{Database\-Protocol}}
+\index{Database\-Protocol@{Database\-Protocol}!DatabaseProtocol@{Database\-Protocol}}
+\subsubsection[{Database\-Protocol}]{\setlength{\rightskip}{0pt plus 5cm}Database\-Protocol\-::\-Database\-Protocol (
+\begin{DoxyParamCaption}
+\item[{{\bf Session\-Manager} \&}]{session\-Manager, }
+\item[{{\bf Database\-Connector} \&}]{database\-Connector}
+\end{DoxyParamCaption}
+)}}\label{class_database_protocol_a00f6196e9019334c51b9659469537eca}
+
+
+Constructor, initialize \hyperlink{class_database_protocol}{Database\-Protocol}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\-Manager} & \\
+\hline
+{\em database\-Connector} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_database_protocol_af42a4c8a0aeee9defe8b8313657af019}{\index{Database\-Protocol@{Database\-Protocol}!operator()@{operator()}}
+\index{operator()@{operator()}!DatabaseProtocol@{Database\-Protocol}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void Database\-Protocol\-::operator() (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_database_protocol_af42a4c8a0aeee9defe8b8313657af019}
+
+
+Handle packet of type Database (Register U\-I\-D) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_protocol_handler_abcdcfa563b512a954b08bee298e6e1ed}{I\-Protocol\-Handler}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/protocol/\hyperlink{_database_protocol_8h}{Database\-Protocol.\-h}\item 
+src/protocol/Database\-Protocol.\-cpp\end{DoxyCompactItemize}

@@ -12,7 +12,7 @@
 Server::Server()
    : m_ioService(),
    m_networkManager(),
-   m_protocoleManager()
+   m_protocolManager()
 {
 }
 
@@ -39,7 +39,7 @@ void     Server::init()
 
 void     Server::start()
 {
-   m_protocoleManager.start();
+   m_protocolManager.start();
    m_networkManager.start();
    m_ioService.run();
 }

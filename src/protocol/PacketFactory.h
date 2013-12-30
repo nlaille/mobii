@@ -16,6 +16,13 @@
 class PacketFactory
 {
 public:
+   /**
+    * \fn static Packet create(char dispatch, char opcode)
+    * \brief Create packet dynamically with dispatch and opcode
+	* \param dispatch
+	* \param opcode
+	* \return new packet
+	*/
    static Packet create(char dispatch, char opcode);
 private:
    explicit PacketFactory();

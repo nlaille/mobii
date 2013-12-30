@@ -1,0 +1,199 @@
+\hypertarget{class_session_manager}{\section{Session\-Manager Class Reference}
+\label{class_session_manager}\index{Session\-Manager@{Session\-Manager}}
+}
+
+
+Stores sessions and sessions's id and sessions's connector.  
+
+
+
+
+{\ttfamily \#include $<$Session\-Manager.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_session_manager_a319f29dc0dcee4ef9b78867de08b4628}{typedef boost\-::bimap\\*
+$<$ std\-::string, \\*
+I\-Session\-::session $>$ {\bfseries ids\-Map}}\label{class_session_manager_a319f29dc0dcee4ef9b78867de08b4628}
+
+\item 
+\hypertarget{class_session_manager_a599af1bb9fed83ad9dddd9d213ecdc9e}{typedef boost\-::bimap\\*
+$<$ I\-Connection\-::connection, \\*
+I\-Session\-::session $>$ {\bfseries connections\-Map}}\label{class_session_manager_a599af1bb9fed83ad9dddd9d213ecdc9e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_session_manager_aaf49f6f3c3ee0fe9dc24fc31c043f548}{\hyperlink{class_session_manager_aaf49f6f3c3ee0fe9dc24fc31c043f548}{Session\-Manager} (void)}\label{class_session_manager_aaf49f6f3c3ee0fe9dc24fc31c043f548}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_session_manager_ab92f318df1eeb77c505a1540ff83af79}{virtual \hyperlink{class_session_manager_ab92f318df1eeb77c505a1540ff83af79}{$\sim$\-Session\-Manager} (void)}\label{class_session_manager_ab92f318df1eeb77c505a1540ff83af79}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_session_manager_a325642d870111283157cc8721a5b464a}{add} (const std\-::string \&id, I\-Session\-::session session)
+\begin{DoxyCompactList}\small\item\em Add a session with id. \end{DoxyCompactList}\item 
+virtual I\-Session\-::session \hyperlink{class_session_manager_a09512bc0f68bab62375b4420b4405a97}{get} (const std\-::string \&id) const 
+\begin{DoxyCompactList}\small\item\em Get session from id. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_session_manager_a61701636681ed298d502788def613474}{exists} (const std\-::string \&id) const 
+\begin{DoxyCompactList}\small\item\em Check if session's id exists. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_session_manager_aa5abd0c09fd8c9ac77d951a9cc163584}{add} (I\-Connection\-::connection \&connection, I\-Session\-::session session)
+\begin{DoxyCompactList}\small\item\em Add a session with connection. \end{DoxyCompactList}\item 
+virtual I\-Session\-::session \hyperlink{class_session_manager_a5465b1c549f0dff95ffab4264853b5de}{get} (I\-Connection\-::connection \&connection) const 
+\begin{DoxyCompactList}\small\item\em Get session from connection. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_session_manager_a2290370b1cbe3c78d45e4c0601af59e9}{exists} (I\-Connection\-::connection \&connection) const 
+\begin{DoxyCompactList}\small\item\em Check if session's connection exists. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_session_manager_afe4d931b6fcdb1ed205b7204aea3a86f}{valid} (I\-Connection\-::connection \&connection, const std\-::string \&id) const 
+\begin{DoxyCompactList}\small\item\em Check connection's id, uses connection\-Sessions to get session associated to the connection then check session's id. \end{DoxyCompactList}\item 
+\hypertarget{class_session_manager_a5ca894c7c5f0ff5c18bb595bfbd1afb3}{virtual void \hyperlink{class_session_manager_a5ca894c7c5f0ff5c18bb595bfbd1afb3}{remove} (I\-Session\-::session session)}\label{class_session_manager_a5ca894c7c5f0ff5c18bb595bfbd1afb3}
+
+\begin{DoxyCompactList}\small\item\em Remove session. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores sessions and sessions's id and sessions's connector. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_session_manager_a325642d870111283157cc8721a5b464a}{\index{Session\-Manager@{Session\-Manager}!add@{add}}
+\index{add@{add}!SessionManager@{Session\-Manager}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Session\-Manager\-::add (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{id, }
+\item[{I\-Session\-::session}]{session}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_session_manager_a325642d870111283157cc8721a5b464a}
+
+
+Add a session with id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em session} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_session_manager_aa5abd0c09fd8c9ac77d951a9cc163584}{\index{Session\-Manager@{Session\-Manager}!add@{add}}
+\index{add@{add}!SessionManager@{Session\-Manager}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Session\-Manager\-::add (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection \&}]{connection, }
+\item[{I\-Session\-::session}]{session}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_session_manager_aa5abd0c09fd8c9ac77d951a9cc163584}
+
+
+Add a session with connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em session} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_session_manager_a61701636681ed298d502788def613474}{\index{Session\-Manager@{Session\-Manager}!exists@{exists}}
+\index{exists@{exists}!SessionManager@{Session\-Manager}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}bool Session\-Manager\-::exists (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{id}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_session_manager_a61701636681ed298d502788def613474}
+
+
+Check if session's id exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{class_session_manager_a2290370b1cbe3c78d45e4c0601af59e9}{\index{Session\-Manager@{Session\-Manager}!exists@{exists}}
+\index{exists@{exists}!SessionManager@{Session\-Manager}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}bool Session\-Manager\-::exists (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection \&}]{connection}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_session_manager_a2290370b1cbe3c78d45e4c0601af59e9}
+
+
+Check if session's connection exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+\hypertarget{class_session_manager_a09512bc0f68bab62375b4420b4405a97}{\index{Session\-Manager@{Session\-Manager}!get@{get}}
+\index{get@{get}!SessionManager@{Session\-Manager}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}I\-Session\-::session Session\-Manager\-::get (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{id}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_session_manager_a09512bc0f68bab62375b4420b4405a97}
+
+
+Get session from id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session 
+\end{DoxyReturn}
+\hypertarget{class_session_manager_a5465b1c549f0dff95ffab4264853b5de}{\index{Session\-Manager@{Session\-Manager}!get@{get}}
+\index{get@{get}!SessionManager@{Session\-Manager}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}I\-Session\-::session Session\-Manager\-::get (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection \&}]{connection}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_session_manager_a5465b1c549f0dff95ffab4264853b5de}
+
+
+Get session from connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session 
+\end{DoxyReturn}
+\hypertarget{class_session_manager_afe4d931b6fcdb1ed205b7204aea3a86f}{\index{Session\-Manager@{Session\-Manager}!valid@{valid}}
+\index{valid@{valid}!SessionManager@{Session\-Manager}}
+\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Session\-Manager\-::valid (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection \&}]{connection, }
+\item[{const std\-::string \&}]{id}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_session_manager_afe4d931b6fcdb1ed205b7204aea3a86f}
+
+
+Check connection's id, uses connection\-Sessions to get session associated to the connection then check session's id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em is} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/session/\hyperlink{_session_manager_8h}{Session\-Manager.\-h}\item 
+src/session/Session\-Manager.\-cpp\end{DoxyCompactItemize}

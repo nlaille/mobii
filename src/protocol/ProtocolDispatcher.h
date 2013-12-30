@@ -24,19 +24,41 @@
 class ProtocolDispatcher
 {
 public:
+   /**
+    * \fn ProtocolDispatcher(SessionManager& sessionManager, CommunicationManager& communicationManager, DatabaseConnector& databaseConnector, UserManager& userManager)
+	* \brief Constructor
+	* \param session manager
+	* \param communication manager
+	* \param database connector
+	* \param user manager
+	*/
    ProtocolDispatcher(SessionManager& sessionManager, CommunicationManager& communicationManager, DatabaseConnector& databaseConnector, UserManager& userManager);
+   
+   /**
+    * \fn ProtocolDispatcher(const ProtocolDispatcher& dispatcher)
+	* \brief Copy constructor
+	* \param dispatcher
+	*/
    ProtocolDispatcher(const ProtocolDispatcher& dispatcher);
 
+   /**
+    * \fn ~ProtocolDispatcher()
+	* \brief destructor
+	*/
    ~ProtocolDispatcher();
 
+   /**
+    * \fn void start()
+	* \breif Start a thread which will dispatch Packet to IProtocolHandler
+	*/
    void  start();
 private:
    void  handle_();
 
-   bool                 m_isAlive;
-   boost::thread        m_thread;
+   bool                 m_isAlive; /*!< is alive */
+   boost::thread        m_thread; /*!< thread */
 
-   SessionManager&      m_sessionManager;
+   SessionManager&      m_sessionManager; /*!< session manager */
 
-   std::map<char, IProtocolHandler*>  m_handlers;
+   std::map<char, IProtocolHandler*>  m_handlers; /*!< handlers */
 };

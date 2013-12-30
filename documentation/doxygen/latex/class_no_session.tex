@@ -1,0 +1,188 @@
+\hypertarget{class_no_session}{\section{No\-Session Class Reference}
+\label{class_no_session}\index{No\-Session@{No\-Session}}
+}
+
+
+Representation of an un-\/existed session, throws \hyperlink{class_no_session_exception}{No\-Session\-Exception}.  
+
+
+
+
+{\ttfamily \#include $<$No\-Session.\-h$>$}
+
+Inheritance diagram for No\-Session\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_no_session}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_no_session_ae3d194013e7fbe54a1706c83ac6eff85}{is} (\hyperlink{class_i_session_a7989a93d03d8345d213a021d7444a32f}{Session\-Type} type) const 
+\begin{DoxyCompactList}\small\item\em Check type of session. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_no_session_a722db0a22a10cdb1ed20ae2c9b5cbf27}{valid} (const std\-::string \&id) const 
+\begin{DoxyCompactList}\small\item\em Check session id. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_no_session_ab24439680fcf4bec40e05126ea7b717c}{write} (const std\-::string \&message)
+\begin{DoxyCompactList}\small\item\em Write message to this. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_no_session_ae281aac87c5d2f1b1c0e48d142080f9a}{send\-To} (\hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Send packet to this session. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_no_session_ac94b682544d3b6180e7488705dd22d87}{send\-From\-To} (I\-Session\-::session \&session, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Send packet from this to session. \end{DoxyCompactList}\item 
+virtual I\-Connection\-::connection \hyperlink{class_no_session_a1370fdfdaba32877d91de56b12d6d8b2}{get\-Connection} () const 
+\begin{DoxyCompactList}\small\item\em Get \hyperlink{class_i_connection}{I\-Connection} associated to this. \end{DoxyCompactList}\item 
+\hypertarget{class_no_session_a2f7955b7466a3b3a607eff0114b14ae5}{virtual void \hyperlink{class_no_session_a2f7955b7466a3b3a607eff0114b14ae5}{lock} ()}\label{class_no_session_a2f7955b7466a3b3a607eff0114b14ae5}
+
+\begin{DoxyCompactList}\small\item\em Lock this to prevent concurrential access. \end{DoxyCompactList}\item 
+\hypertarget{class_no_session_a29d4e5968930eb6d8c49ec5cdd3589ac}{virtual void \hyperlink{class_no_session_a29d4e5968930eb6d8c49ec5cdd3589ac}{unlock} ()}\label{class_no_session_a29d4e5968930eb6d8c49ec5cdd3589ac}
+
+\begin{DoxyCompactList}\small\item\em Unlock this to prevent concurrential access. \end{DoxyCompactList}\item 
+\hypertarget{class_no_session_ae821b6733f6865c6c18207841fe20bbd}{virtual void \hyperlink{class_no_session_ae821b6733f6865c6c18207841fe20bbd}{close} ()}\label{class_no_session_ae821b6733f6865c6c18207841fe20bbd}
+
+\begin{DoxyCompactList}\small\item\em Close this. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_no_session_aba3f88ce7d1008ffcf0838b1d90e6512}{static I\-Session\-::session {\bfseries create} ()}\label{class_no_session_aba3f88ce7d1008ffcf0838b1d90e6512}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Representation of an un-\/existed session, throws \hyperlink{class_no_session_exception}{No\-Session\-Exception}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_no_session_a1370fdfdaba32877d91de56b12d6d8b2}{\index{No\-Session@{No\-Session}!get\-Connection@{get\-Connection}}
+\index{get\-Connection@{get\-Connection}!NoSession@{No\-Session}}
+\subsubsection[{get\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}I\-Connection\-::connection No\-Session\-::get\-Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_no_session_a1370fdfdaba32877d91de56b12d6d8b2}
+
+
+Get \hyperlink{class_i_connection}{I\-Connection} associated to this. 
+
+\begin{DoxyReturn}{Returns}
+connection 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_i_session_abd939e612b904cad379d35babaec4b05}{I\-Session}.
+
+\hypertarget{class_no_session_ae3d194013e7fbe54a1706c83ac6eff85}{\index{No\-Session@{No\-Session}!is@{is}}
+\index{is@{is}!NoSession@{No\-Session}}
+\subsubsection[{is}]{\setlength{\rightskip}{0pt plus 5cm}bool No\-Session\-::is (
+\begin{DoxyParamCaption}
+\item[{{\bf Session\-Type}}]{type}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_no_session_ae3d194013e7fbe54a1706c83ac6eff85}
+
+
+Check type of session. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_i_session_a45929a4acdd831f243b73fb1be825410}{I\-Session}.
+
+\hypertarget{class_no_session_ac94b682544d3b6180e7488705dd22d87}{\index{No\-Session@{No\-Session}!send\-From\-To@{send\-From\-To}}
+\index{send\-From\-To@{send\-From\-To}!NoSession@{No\-Session}}
+\subsubsection[{send\-From\-To}]{\setlength{\rightskip}{0pt plus 5cm}void No\-Session\-::send\-From\-To (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session \&}]{session, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_no_session_ac94b682544d3b6180e7488705dd22d87}
+
+
+Send packet from this to session. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_session_adf3b8c5fcf9891b3ffcc5846da568a71}{I\-Session}.
+
+\hypertarget{class_no_session_ae281aac87c5d2f1b1c0e48d142080f9a}{\index{No\-Session@{No\-Session}!send\-To@{send\-To}}
+\index{send\-To@{send\-To}!NoSession@{No\-Session}}
+\subsubsection[{send\-To}]{\setlength{\rightskip}{0pt plus 5cm}void No\-Session\-::send\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_no_session_ae281aac87c5d2f1b1c0e48d142080f9a}
+
+
+Send packet to this session. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_session_a229146f239f1af10a531f869c730f8f6}{I\-Session}.
+
+\hypertarget{class_no_session_a722db0a22a10cdb1ed20ae2c9b5cbf27}{\index{No\-Session@{No\-Session}!valid@{valid}}
+\index{valid@{valid}!NoSession@{No\-Session}}
+\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}bool No\-Session\-::valid (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{id}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_no_session_a722db0a22a10cdb1ed20ae2c9b5cbf27}
+
+
+Check session id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_i_session_aa58f6d0ce4e8faac6a416d78b83765ff}{I\-Session}.
+
+\hypertarget{class_no_session_ab24439680fcf4bec40e05126ea7b717c}{\index{No\-Session@{No\-Session}!write@{write}}
+\index{write@{write}!NoSession@{No\-Session}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void No\-Session\-::write (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_no_session_ab24439680fcf4bec40e05126ea7b717c}
+
+
+Write message to this. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_session_acbf362464fcfb9210001ebc85a074401}{I\-Session}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/session/\hyperlink{_no_session_8h}{No\-Session.\-h}\item 
+src/session/No\-Session.\-cpp\end{DoxyCompactItemize}

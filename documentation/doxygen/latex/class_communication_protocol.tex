@@ -1,0 +1,109 @@
+\hypertarget{class_communication_protocol}{\section{Communication\-Protocol Class Reference}
+\label{class_communication_protocol}\index{Communication\-Protocol@{Communication\-Protocol}}
+}
+
+
+Handle communication protocol.  
+
+
+
+
+{\ttfamily \#include $<$Communication\-Protocol.\-h$>$}
+
+Inheritance diagram for Communication\-Protocol\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_communication_protocol}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_communication_protocol_a32b69b9b85454de9a05be614fcd99d58}{{\bfseries Communication\-Protocol} (\hyperlink{class_session_manager}{Session\-Manager} \&session\-Manager, \hyperlink{class_communication_manager}{Communication\-Manager} \&communication\-Manager)}\label{class_communication_protocol_a32b69b9b85454de9a05be614fcd99d58}
+
+\item 
+void \hyperlink{class_communication_protocol_aef79d1dc63ca6da6d656b875a3cb0889}{close\-Communication} (I\-Session\-::session source, I\-Session\-::session destination, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Close communication between source and destination. \end{DoxyCompactList}\item 
+void \hyperlink{class_communication_protocol_a6b56df7aaf70f7d1c91d3b7eee63562d}{redirect\-Packet} (I\-Session\-::session source, I\-Session\-::session destination, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Redirect packet to destination. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_communication_protocol_a441c1ee5d4482e759c7bb88922c2ef55}{operator()} (I\-Connection\-::connection connection, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Handle packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handle communication protocol. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_communication_protocol_aef79d1dc63ca6da6d656b875a3cb0889}{\index{Communication\-Protocol@{Communication\-Protocol}!close\-Communication@{close\-Communication}}
+\index{close\-Communication@{close\-Communication}!CommunicationProtocol@{Communication\-Protocol}}
+\subsubsection[{close\-Communication}]{\setlength{\rightskip}{0pt plus 5cm}void Communication\-Protocol\-::close\-Communication (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{source, }
+\item[{I\-Session\-::session}]{destination, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)}}\label{class_communication_protocol_aef79d1dc63ca6da6d656b875a3cb0889}
+
+
+Close communication between source and destination. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+{\em destination} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_communication_protocol_a441c1ee5d4482e759c7bb88922c2ef55}{\index{Communication\-Protocol@{Communication\-Protocol}!operator()@{operator()}}
+\index{operator()@{operator()}!CommunicationProtocol@{Communication\-Protocol}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void Communication\-Protocol\-::operator() (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_communication_protocol_a441c1ee5d4482e759c7bb88922c2ef55}
+
+
+Handle packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_protocol_handler_abcdcfa563b512a954b08bee298e6e1ed}{I\-Protocol\-Handler}.
+
+\hypertarget{class_communication_protocol_a6b56df7aaf70f7d1c91d3b7eee63562d}{\index{Communication\-Protocol@{Communication\-Protocol}!redirect\-Packet@{redirect\-Packet}}
+\index{redirect\-Packet@{redirect\-Packet}!CommunicationProtocol@{Communication\-Protocol}}
+\subsubsection[{redirect\-Packet}]{\setlength{\rightskip}{0pt plus 5cm}void Communication\-Protocol\-::redirect\-Packet (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{source, }
+\item[{I\-Session\-::session}]{destination, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)}}\label{class_communication_protocol_a6b56df7aaf70f7d1c91d3b7eee63562d}
+
+
+Redirect packet to destination. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+{\em destination} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/protocol/\hyperlink{_communication_protocol_8h}{Communication\-Protocol.\-h}\item 
+src/protocol/Communication\-Protocol.\-cpp\end{DoxyCompactItemize}

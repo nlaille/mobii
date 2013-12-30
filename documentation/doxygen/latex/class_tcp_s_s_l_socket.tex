@@ -1,0 +1,123 @@
+\hypertarget{class_tcp_s_s_l_socket}{\section{Tcp\-S\-S\-L\-Socket Class Reference}
+\label{class_tcp_s_s_l_socket}\index{Tcp\-S\-S\-L\-Socket@{Tcp\-S\-S\-L\-Socket}}
+}
+Inheritance diagram for Tcp\-S\-S\-L\-Socket\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tcp_s_s_l_socket}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tcp_s_s_l_socket_adc3acccf5cfbe7c7821b6161b36d756b}{typedef boost\-::function$<$ void(const \\*
+\hyperlink{_connection_error_8h_a3eb2ebd912cc5460d23e45f7188a0a86}{Connection\-Error} \&)$>$ {\bfseries boost\-\_\-handshake\-\_\-callback}}\label{class_tcp_s_s_l_socket_adc3acccf5cfbe7c7821b6161b36d756b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tcp_s_s_l_socket_a0adab1e428716caaccfb7020c975d2c6}{Tcp\-S\-S\-L\-Socket} (boost\-\_\-ssl\-\_\-tcp\-\_\-socket $\ast$boost\-S\-S\-L\-Socket)
+\begin{DoxyCompactList}\small\item\em Create new boost ssl socket. \end{DoxyCompactList}\item 
+\hypertarget{class_tcp_s_s_l_socket_a7ccebf2c6ec77dc8354b0fe4792009f8}{virtual \hyperlink{class_tcp_s_s_l_socket_a7ccebf2c6ec77dc8354b0fe4792009f8}{$\sim$\-Tcp\-S\-S\-L\-Socket} (void)}\label{class_tcp_s_s_l_socket_a7ccebf2c6ec77dc8354b0fe4792009f8}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_tcp_s_s_l_socket_a5c91e917bfdefe91bfb85195b7f3c868}{read} (std\-::vector$<$ char $>$ \&message, boost\-\_\-read\-\_\-callback callback)
+\begin{DoxyCompactList}\small\item\em Read data from the socket, data are put into message, then callback is called. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_tcp_s_s_l_socket_a6b35535438fa43029629a0be9af6ae4a}{write} (const std\-::string \&message, boost\-\_\-write\-\_\-callback callback)
+\begin{DoxyCompactList}\small\item\em Write message to the socket then callback is called. \end{DoxyCompactList}\item 
+\hypertarget{class_tcp_s_s_l_socket_a34c302f3d74e46421f3cc670865d34b3}{virtual void \hyperlink{class_tcp_s_s_l_socket_a34c302f3d74e46421f3cc670865d34b3}{close} ()}\label{class_tcp_s_s_l_socket_a34c302f3d74e46421f3cc670865d34b3}
+
+\begin{DoxyCompactList}\small\item\em Close the socket. \end{DoxyCompactList}\item 
+void \hyperlink{class_tcp_s_s_l_socket_a851149cec83bb51e1a03c8a202a203f0}{handshake} (boost\-\_\-handshake\-\_\-callback callback)
+\begin{DoxyCompactList}\small\item\em Handshake to finalize ssl connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_tcp_s_s_l_socket_a0adab1e428716caaccfb7020c975d2c6}{\index{Tcp\-S\-S\-L\-Socket@{Tcp\-S\-S\-L\-Socket}!Tcp\-S\-S\-L\-Socket@{Tcp\-S\-S\-L\-Socket}}
+\index{Tcp\-S\-S\-L\-Socket@{Tcp\-S\-S\-L\-Socket}!TcpSSLSocket@{Tcp\-S\-S\-L\-Socket}}
+\subsubsection[{Tcp\-S\-S\-L\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}Tcp\-S\-S\-L\-Socket\-::\-Tcp\-S\-S\-L\-Socket (
+\begin{DoxyParamCaption}
+\item[{boost\-\_\-ssl\-\_\-tcp\-\_\-socket $\ast$}]{boost\-S\-S\-L\-Socket}
+\end{DoxyParamCaption}
+)}}\label{class_tcp_s_s_l_socket_a0adab1e428716caaccfb7020c975d2c6}
+
+
+Create new boost ssl socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em boost\-S\-S\-L\-Socket} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tcp_s_s_l_socket_a851149cec83bb51e1a03c8a202a203f0}{\index{Tcp\-S\-S\-L\-Socket@{Tcp\-S\-S\-L\-Socket}!handshake@{handshake}}
+\index{handshake@{handshake}!TcpSSLSocket@{Tcp\-S\-S\-L\-Socket}}
+\subsubsection[{handshake}]{\setlength{\rightskip}{0pt plus 5cm}void Tcp\-S\-S\-L\-Socket\-::handshake (
+\begin{DoxyParamCaption}
+\item[{boost\-\_\-handshake\-\_\-callback}]{callback}
+\end{DoxyParamCaption}
+)}}\label{class_tcp_s_s_l_socket_a851149cec83bb51e1a03c8a202a203f0}
+
+
+Handshake to finalize ssl connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_tcp_s_s_l_socket_a5c91e917bfdefe91bfb85195b7f3c868}{\index{Tcp\-S\-S\-L\-Socket@{Tcp\-S\-S\-L\-Socket}!read@{read}}
+\index{read@{read}!TcpSSLSocket@{Tcp\-S\-S\-L\-Socket}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}void Tcp\-S\-S\-L\-Socket\-::read (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ char $>$ \&}]{message, }
+\item[{boost\-\_\-read\-\_\-callback}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tcp_s_s_l_socket_a5c91e917bfdefe91bfb85195b7f3c868}
+
+
+Read data from the socket, data are put into message, then callback is called. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+{\em callback} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_socket_a8d2e283377acc8504bdc18e0b07d8d6a}{Socket}.
+
+\hypertarget{class_tcp_s_s_l_socket_a6b35535438fa43029629a0be9af6ae4a}{\index{Tcp\-S\-S\-L\-Socket@{Tcp\-S\-S\-L\-Socket}!write@{write}}
+\index{write@{write}!TcpSSLSocket@{Tcp\-S\-S\-L\-Socket}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void Tcp\-S\-S\-L\-Socket\-::write (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{message, }
+\item[{boost\-\_\-write\-\_\-callback}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tcp_s_s_l_socket_a6b35535438fa43029629a0be9af6ae4a}
+
+
+Write message to the socket then callback is called. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+{\em callback} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_socket_a26aaf8ea1c9436d7d315aa58ad1c3f3b}{Socket}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/network/Tcp\-S\-S\-L\-Socket.\-h\item 
+src/network/Tcp\-S\-S\-L\-Socket.\-cpp\end{DoxyCompactItemize}

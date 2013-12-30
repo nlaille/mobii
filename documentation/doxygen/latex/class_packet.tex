@@ -1,0 +1,361 @@
+\hypertarget{class_packet}{\section{Packet Class Reference}
+\label{class_packet}\index{Packet@{Packet}}
+}
+
+
+Representation of \hyperlink{class_packet}{Packet} (Protocol)  
+
+
+
+
+{\ttfamily \#include $<$Packet.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_packet_ade4ce5d8ea9429374c83dafcf3865506}{Packet} (const \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Constructor by copy. \end{DoxyCompactList}\item 
+\hypertarget{class_packet_aabcfb963c0d5bc0fa554668f92989622}{\hyperlink{class_packet_aabcfb963c0d5bc0fa554668f92989622}{Packet} ()}\label{class_packet_aabcfb963c0d5bc0fa554668f92989622}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_packet_a15a1f007e2e37e855e5533c27fc3fb7b}{$\sim$\-Packet} (void)
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_packet}{Packet} \& \hyperlink{class_packet_a9b3ce351cdcb3bb7ae881df3101a4ee1}{operator=} (const \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Copy operator. \end{DoxyCompactList}\item 
+void \hyperlink{class_packet_acf3e7bee5ebd03fdc928b49b763f6371}{set\-Header} (const std\-::vector$<$ char $>$ header)
+\begin{DoxyCompactList}\small\item\em Set header property from vector. \end{DoxyCompactList}\item 
+void \hyperlink{class_packet_ab41c57cd980743aae774f8b844da7621}{set\-Header} (const char header\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Set header property from char\mbox{[}\mbox{]}. \end{DoxyCompactList}\item 
+void \hyperlink{class_packet_ad8aa839a313442aede56019f3eca6017}{set\-Source} (const std\-::string \&source)
+\begin{DoxyCompactList}\small\item\em Set source. \end{DoxyCompactList}\item 
+void \hyperlink{class_packet_a3adcb9c08d562129f3562c6505aef8ec}{set\-Destination} (const std\-::string \&destination)
+\begin{DoxyCompactList}\small\item\em Set destination. \end{DoxyCompactList}\item 
+void \hyperlink{class_packet_a93698da3726e1fd1e57ae75cf51a28ea}{set\-Dispatch} (char dispatch)
+\begin{DoxyCompactList}\small\item\em Set dispatch. \end{DoxyCompactList}\item 
+void \hyperlink{class_packet_ac909fb062666c06b70c45c08be7facde}{set\-Opcode} (char opcode)
+\begin{DoxyCompactList}\small\item\em Set opcode. \end{DoxyCompactList}\item 
+void \hyperlink{class_packet_a054264b62da2d34df07733ac139aa44c}{set\-Message} (const std\-::string \&message)
+\begin{DoxyCompactList}\small\item\em Set message to send. \end{DoxyCompactList}\item 
+const std\-::string \& \hyperlink{class_packet_a51d506acce24c2b8ac926a85e9732418}{get\-Source} () const 
+\begin{DoxyCompactList}\small\item\em Get source. \end{DoxyCompactList}\item 
+const std\-::string \& \hyperlink{class_packet_ab1d5e174f9ebaa20b10ed9f2e8ca8606}{get\-Destination} () const 
+\begin{DoxyCompactList}\small\item\em Get destination. \end{DoxyCompactList}\item 
+char \hyperlink{class_packet_aace6f931cc1f52fd31832cc52abec585}{get\-Dispatch} () const 
+\begin{DoxyCompactList}\small\item\em Get dispatch. \end{DoxyCompactList}\item 
+char \hyperlink{class_packet_aaa20097d85d4ade8de178b4ceccd5a00}{get\-Opcode} () const 
+\begin{DoxyCompactList}\small\item\em Get opcode. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_packet_a653d04484a4f8906704ac8e03c8619fc}{get\-Message\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Get message size. \end{DoxyCompactList}\item 
+const std\-::string \& \hyperlink{class_packet_a54897d861a74bd7244c678fc90cc9956}{get\-Message} () const 
+\begin{DoxyCompactList}\small\item\em Get message. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_packet_aa4f4ad4075cad5a29af1646c3e289399}{to\-String} ()
+\begin{DoxyCompactList}\small\item\em Convert packet to string. \end{DoxyCompactList}\item 
+\hypertarget{class_packet_ad43ea0f5524ffa2d2d9a2a8b028840f2}{void \hyperlink{class_packet_ad43ea0f5524ffa2d2d9a2a8b028840f2}{clean} ()}\label{class_packet_ad43ea0f5524ffa2d2d9a2a8b028840f2}
+
+\begin{DoxyCompactList}\small\item\em Clean the packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{class_packet_a064469fc269e3dc24cd7003f6824e038}{operator$<$$<$} (std\-::ostream \&ostream, const \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Constructor by copy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representation of \hyperlink{class_packet}{Packet} (Protocol) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_packet_ade4ce5d8ea9429374c83dafcf3865506}{\index{Packet@{Packet}!Packet@{Packet}}
+\index{Packet@{Packet}!Packet@{Packet}}
+\subsubsection[{Packet}]{\setlength{\rightskip}{0pt plus 5cm}Packet\-::\-Packet (
+\begin{DoxyParamCaption}
+\item[{const {\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)}}\label{class_packet_ade4ce5d8ea9429374c83dafcf3865506}
+
+
+Constructor by copy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_packet_a15a1f007e2e37e855e5533c27fc3fb7b}{\index{Packet@{Packet}!$\sim$\-Packet@{$\sim$\-Packet}}
+\index{$\sim$\-Packet@{$\sim$\-Packet}!Packet@{Packet}}
+\subsubsection[{$\sim$\-Packet}]{\setlength{\rightskip}{0pt plus 5cm}Packet\-::$\sim$\-Packet (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_packet_a15a1f007e2e37e855e5533c27fc3fb7b}
+
+
+Destructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_packet_ab1d5e174f9ebaa20b10ed9f2e8ca8606}{\index{Packet@{Packet}!get\-Destination@{get\-Destination}}
+\index{get\-Destination@{get\-Destination}!Packet@{Packet}}
+\subsubsection[{get\-Destination}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string \& Packet\-::get\-Destination (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_packet_ab1d5e174f9ebaa20b10ed9f2e8ca8606}
+
+
+Get destination. 
+
+\begin{DoxyReturn}{Returns}
+destination 
+\end{DoxyReturn}
+\hypertarget{class_packet_aace6f931cc1f52fd31832cc52abec585}{\index{Packet@{Packet}!get\-Dispatch@{get\-Dispatch}}
+\index{get\-Dispatch@{get\-Dispatch}!Packet@{Packet}}
+\subsubsection[{get\-Dispatch}]{\setlength{\rightskip}{0pt plus 5cm}char Packet\-::get\-Dispatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_packet_aace6f931cc1f52fd31832cc52abec585}
+
+
+Get dispatch. 
+
+\begin{DoxyReturn}{Returns}
+dispatch 
+\end{DoxyReturn}
+\hypertarget{class_packet_a54897d861a74bd7244c678fc90cc9956}{\index{Packet@{Packet}!get\-Message@{get\-Message}}
+\index{get\-Message@{get\-Message}!Packet@{Packet}}
+\subsubsection[{get\-Message}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string \& Packet\-::get\-Message (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_packet_a54897d861a74bd7244c678fc90cc9956}
+
+
+Get message. 
+
+\begin{DoxyReturn}{Returns}
+message 
+\end{DoxyReturn}
+\hypertarget{class_packet_a653d04484a4f8906704ac8e03c8619fc}{\index{Packet@{Packet}!get\-Message\-Size@{get\-Message\-Size}}
+\index{get\-Message\-Size@{get\-Message\-Size}!Packet@{Packet}}
+\subsubsection[{get\-Message\-Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Packet\-::get\-Message\-Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_packet_a653d04484a4f8906704ac8e03c8619fc}
+
+
+Get message size. 
+
+\begin{DoxyReturn}{Returns}
+message size 
+\end{DoxyReturn}
+\hypertarget{class_packet_aaa20097d85d4ade8de178b4ceccd5a00}{\index{Packet@{Packet}!get\-Opcode@{get\-Opcode}}
+\index{get\-Opcode@{get\-Opcode}!Packet@{Packet}}
+\subsubsection[{get\-Opcode}]{\setlength{\rightskip}{0pt plus 5cm}char Packet\-::get\-Opcode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}}\label{class_packet_aaa20097d85d4ade8de178b4ceccd5a00}
+
+
+Get opcode. 
+
+\begin{DoxyReturn}{Returns}
+opcode 
+\end{DoxyReturn}
+\hypertarget{class_packet_a51d506acce24c2b8ac926a85e9732418}{\index{Packet@{Packet}!get\-Source@{get\-Source}}
+\index{get\-Source@{get\-Source}!Packet@{Packet}}
+\subsubsection[{get\-Source}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string \& Packet\-::get\-Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_packet_a51d506acce24c2b8ac926a85e9732418}
+
+
+Get source. 
+
+\begin{DoxyReturn}{Returns}
+source 
+\end{DoxyReturn}
+\hypertarget{class_packet_a9b3ce351cdcb3bb7ae881df3101a4ee1}{\index{Packet@{Packet}!operator=@{operator=}}
+\index{operator=@{operator=}!Packet@{Packet}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Packet} \& Packet\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)}}\label{class_packet_a9b3ce351cdcb3bb7ae881df3101a4ee1}
+
+
+Copy operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+copy of packet 
+\end{DoxyReturn}
+\hypertarget{class_packet_a3adcb9c08d562129f3562c6505aef8ec}{\index{Packet@{Packet}!set\-Destination@{set\-Destination}}
+\index{set\-Destination@{set\-Destination}!Packet@{Packet}}
+\subsubsection[{set\-Destination}]{\setlength{\rightskip}{0pt plus 5cm}void Packet\-::set\-Destination (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{destination}
+\end{DoxyParamCaption}
+)}}\label{class_packet_a3adcb9c08d562129f3562c6505aef8ec}
+
+
+Set destination. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destination} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_packet_a93698da3726e1fd1e57ae75cf51a28ea}{\index{Packet@{Packet}!set\-Dispatch@{set\-Dispatch}}
+\index{set\-Dispatch@{set\-Dispatch}!Packet@{Packet}}
+\subsubsection[{set\-Dispatch}]{\setlength{\rightskip}{0pt plus 5cm}void Packet\-::set\-Dispatch (
+\begin{DoxyParamCaption}
+\item[{char}]{dispatch}
+\end{DoxyParamCaption}
+)}}\label{class_packet_a93698da3726e1fd1e57ae75cf51a28ea}
+
+
+Set dispatch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dispatch} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_packet_acf3e7bee5ebd03fdc928b49b763f6371}{\index{Packet@{Packet}!set\-Header@{set\-Header}}
+\index{set\-Header@{set\-Header}!Packet@{Packet}}
+\subsubsection[{set\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Packet\-::set\-Header (
+\begin{DoxyParamCaption}
+\item[{const std\-::vector$<$ char $>$}]{header}
+\end{DoxyParamCaption}
+)}}\label{class_packet_acf3e7bee5ebd03fdc928b49b763f6371}
+
+
+Set header property from vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em header} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_packet_ab41c57cd980743aae774f8b844da7621}{\index{Packet@{Packet}!set\-Header@{set\-Header}}
+\index{set\-Header@{set\-Header}!Packet@{Packet}}
+\subsubsection[{set\-Header}]{\setlength{\rightskip}{0pt plus 5cm}void Packet\-::set\-Header (
+\begin{DoxyParamCaption}
+\item[{const char}]{header\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{class_packet_ab41c57cd980743aae774f8b844da7621}
+
+
+Set header property from char\mbox{[}\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_packet_a054264b62da2d34df07733ac139aa44c}{\index{Packet@{Packet}!set\-Message@{set\-Message}}
+\index{set\-Message@{set\-Message}!Packet@{Packet}}
+\subsubsection[{set\-Message}]{\setlength{\rightskip}{0pt plus 5cm}void Packet\-::set\-Message (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_packet_a054264b62da2d34df07733ac139aa44c}
+
+
+Set message to send. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_packet_ac909fb062666c06b70c45c08be7facde}{\index{Packet@{Packet}!set\-Opcode@{set\-Opcode}}
+\index{set\-Opcode@{set\-Opcode}!Packet@{Packet}}
+\subsubsection[{set\-Opcode}]{\setlength{\rightskip}{0pt plus 5cm}void Packet\-::set\-Opcode (
+\begin{DoxyParamCaption}
+\item[{char}]{opcode}
+\end{DoxyParamCaption}
+)}}\label{class_packet_ac909fb062666c06b70c45c08be7facde}
+
+
+Set opcode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opcode} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_packet_ad8aa839a313442aede56019f3eca6017}{\index{Packet@{Packet}!set\-Source@{set\-Source}}
+\index{set\-Source@{set\-Source}!Packet@{Packet}}
+\subsubsection[{set\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void Packet\-::set\-Source (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{source}
+\end{DoxyParamCaption}
+)}}\label{class_packet_ad8aa839a313442aede56019f3eca6017}
+
+
+Set source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_packet_aa4f4ad4075cad5a29af1646c3e289399}{\index{Packet@{Packet}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Packet@{Packet}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Packet\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_packet_aa4f4ad4075cad5a29af1646c3e289399}
+
+
+Convert packet to string. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_packet_a064469fc269e3dc24cd7003f6824e038}{\index{Packet@{Packet}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Packet@{Packet}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{ostream, }
+\item[{const {\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{class_packet_a064469fc269e3dc24cd7003f6824e038}
+
+
+Constructor by copy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ostream} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ostream 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/protocol/\hyperlink{_packet_8h}{Packet.\-h}\item 
+src/protocol/Packet.\-cpp\end{DoxyCompactItemize}

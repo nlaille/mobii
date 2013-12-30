@@ -18,18 +18,51 @@ template<typename T, typename U>
 class Map
 {
 public:
+	/**
+	 * \fn Map()
+	 * \brief Constructor
+	 */
    Map();
+
+    /**
+	 * \fn ~Map()
+	 * \brief Destructor
+	 */
    ~Map();
 
-   void  insert(const T&, const U&);
-   void  erase(const T&);
-   U&    operator[](const T&);
+   /**
+	 * \fn void  insert(const T&, const U&)
+	 * \brief Insert a pair of Key/Value
+	 * \param key
+	 * \param value
+	 */
+   void  insert(const T& key, const U& value);
 
-   bool  exists(const T&) const;
+   /**
+	 * \fn void  erase(const T&)
+	 * \brief Erase pair from key
+	 * \param key
+	 */
+   void  erase(const T& key);
+
+   /**
+	 * \fn U&    operator[](const T&)
+	 * \brief Get value of pair 
+	 * \param key
+	 * \return value
+	 */
+   U&    operator[](const T& key);
+
+   /**
+	 * \fn bool  exists(const T&) const
+	 * \brief Check if key exists
+	 * \param key
+	 */
+   bool  exists(const T& key) const;
 private:
-   std::map<T, U>             m_map;
-   mutable boost::mutex       m_mutex;
-   boost::condition_variable  m_condition_variable;
+   std::map<T, U>             m_map; /*!< map */
+   mutable boost::mutex       m_mutex; /*!< mutex */
+   boost::condition_variable  m_condition_variable; /*!< condition_variable */
 };
 
 #include "Map.inl"

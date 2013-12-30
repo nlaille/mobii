@@ -1,0 +1,60 @@
+\hypertarget{class_i_protocol_handler}{\section{I\-Protocol\-Handler Class Reference}
+\label{class_i_protocol_handler}\index{I\-Protocol\-Handler@{I\-Protocol\-Handler}}
+}
+
+
+Interface for protocole handler.  
+
+
+
+
+{\ttfamily \#include $<$I\-Protocol\-Handler.\-h$>$}
+
+Inheritance diagram for I\-Protocol\-Handler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.052632cm]{class_i_protocol_handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_i_protocol_handler_a216ce6786694b00a901f2f9fc234f261}{virtual \hyperlink{class_i_protocol_handler_a216ce6786694b00a901f2f9fc234f261}{$\sim$\-I\-Protocol\-Handler} ()}\label{class_i_protocol_handler_a216ce6786694b00a901f2f9fc234f261}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_protocol_handler_abcdcfa563b512a954b08bee298e6e1ed}{operator()} (I\-Connection\-::connection connection, \hyperlink{class_packet}{Packet} \&packet)=0
+\begin{DoxyCompactList}\small\item\em Handle packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for protocole handler. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_i_protocol_handler_abcdcfa563b512a954b08bee298e6e1ed}{\index{I\-Protocol\-Handler@{I\-Protocol\-Handler}!operator()@{operator()}}
+\index{operator()@{operator()}!IProtocolHandler@{I\-Protocol\-Handler}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void I\-Protocol\-Handler\-::operator() (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_protocol_handler_abcdcfa563b512a954b08bee298e6e1ed}
+
+
+Handle packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_user_protocol_ace2c056bac47892fa8c30f9c8d820204}{User\-Protocol}, \hyperlink{class_register_protocol_a624eb1e0724960c8a352e77150ebdd7e}{Register\-Protocol}, \hyperlink{class_smart_phone_protocol_ab45cc54c451580109ab2911d81aab978}{Smart\-Phone\-Protocol}, \hyperlink{class_database_protocol_af42a4c8a0aeee9defe8b8313657af019}{Database\-Protocol}, \hyperlink{class_internal_protocol_acce8217bd72e8236a3dbc7f9245b71e0}{Internal\-Protocol}, \hyperlink{class_communication_protocol_a441c1ee5d4482e759c7bb88922c2ef55}{Communication\-Protocol}, and \hyperlink{class_udp_protocol_aae3a5ab60c55602d33c4721af00b58a0}{Udp\-Protocol}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/protocol/\hyperlink{_i_protocol_handler_8h}{I\-Protocol\-Handler.\-h}\end{DoxyCompactItemize}

@@ -16,6 +16,16 @@
 class NoDataFound : public std::runtime_error
 {
 public:
+   /**
+    * \fn NoDataFound(const std::string& message)
+	* \brief Constructor
+	* \param message
+	*/
    NoDataFound(const std::string& message);
+
+   /**
+    * \fn ~NoDataFound()
+	* \brief Destructor
+	*/
    virtual ~NoDataFound() throw ();
 };

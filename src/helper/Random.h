@@ -15,6 +15,13 @@ namespace Helper
 {
 	namespace Random
 	{
+		/**
+		 * \fn int			generate(int min = 1, int max = 255255)
+		 * \brief Generate a random number
+		 * \param min
+		 * \param max
+		 * \return random number
+		 */
 		int			generate(int min = 1, int max = 255255);
 	}
 }

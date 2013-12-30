@@ -1,0 +1,133 @@
+\hypertarget{class_smart_phone_protocol}{\section{Smart\-Phone\-Protocol Class Reference}
+\label{class_smart_phone_protocol}\index{Smart\-Phone\-Protocol@{Smart\-Phone\-Protocol}}
+}
+
+
+Handle smartphone protocol.  
+
+
+
+
+{\ttfamily \#include $<$Smart\-Phone\-Protocol.\-h$>$}
+
+Inheritance diagram for Smart\-Phone\-Protocol\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_smart_phone_protocol}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_smart_phone_protocol_a788b481331f6a804a2d6a281c50b00cd}{Smart\-Phone\-Protocol} (\hyperlink{class_session_manager}{Session\-Manager} \&session\-Manager, \hyperlink{class_communication_manager}{Communication\-Manager} \&communication\-Manager)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_smart_phone_protocol_a11c3fa7089ca957b0b9e8b771cd39833}{virtual \hyperlink{class_smart_phone_protocol_a11c3fa7089ca957b0b9e8b771cd39833}{$\sim$\-Smart\-Phone\-Protocol} (void)}\label{class_smart_phone_protocol_a11c3fa7089ca957b0b9e8b771cd39833}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_smart_phone_protocol_a2cd050a068df7af61263e20dfd736bb0}{accept\-Connection} (I\-Session\-::session \&source, I\-Session\-::session \&destination, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Accept connection from source session which is a \hyperlink{class_user_session}{User\-Session}. \end{DoxyCompactList}\item 
+void \hyperlink{class_smart_phone_protocol_a8d050275f1f224c0d56057330fcfcf2c}{decline\-Connection} (I\-Session\-::session \&source, I\-Session\-::session \&destination, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Decline connection from source session which is a \hyperlink{class_user_session}{User\-Session}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_smart_phone_protocol_ab45cc54c451580109ab2911d81aab978}{operator()} (I\-Connection\-::connection connection, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Handle packet received from connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handle smartphone protocol. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_smart_phone_protocol_a788b481331f6a804a2d6a281c50b00cd}{\index{Smart\-Phone\-Protocol@{Smart\-Phone\-Protocol}!Smart\-Phone\-Protocol@{Smart\-Phone\-Protocol}}
+\index{Smart\-Phone\-Protocol@{Smart\-Phone\-Protocol}!SmartPhoneProtocol@{Smart\-Phone\-Protocol}}
+\subsubsection[{Smart\-Phone\-Protocol}]{\setlength{\rightskip}{0pt plus 5cm}Smart\-Phone\-Protocol\-::\-Smart\-Phone\-Protocol (
+\begin{DoxyParamCaption}
+\item[{{\bf Session\-Manager} \&}]{session\-Manager, }
+\item[{{\bf Communication\-Manager} \&}]{communication\-Manager}
+\end{DoxyParamCaption}
+)}}\label{class_smart_phone_protocol_a788b481331f6a804a2d6a281c50b00cd}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\-Manager} & \\
+\hline
+{\em communication\-Manager} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_smart_phone_protocol_a2cd050a068df7af61263e20dfd736bb0}{\index{Smart\-Phone\-Protocol@{Smart\-Phone\-Protocol}!accept\-Connection@{accept\-Connection}}
+\index{accept\-Connection@{accept\-Connection}!SmartPhoneProtocol@{Smart\-Phone\-Protocol}}
+\subsubsection[{accept\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}void Smart\-Phone\-Protocol\-::accept\-Connection (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session \&}]{source, }
+\item[{I\-Session\-::session \&}]{destination, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)}}\label{class_smart_phone_protocol_a2cd050a068df7af61263e20dfd736bb0}
+
+
+Accept connection from source session which is a \hyperlink{class_user_session}{User\-Session}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+{\em destination} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_smart_phone_protocol_a8d050275f1f224c0d56057330fcfcf2c}{\index{Smart\-Phone\-Protocol@{Smart\-Phone\-Protocol}!decline\-Connection@{decline\-Connection}}
+\index{decline\-Connection@{decline\-Connection}!SmartPhoneProtocol@{Smart\-Phone\-Protocol}}
+\subsubsection[{decline\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}void Smart\-Phone\-Protocol\-::decline\-Connection (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session \&}]{source, }
+\item[{I\-Session\-::session \&}]{destination, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)}}\label{class_smart_phone_protocol_a8d050275f1f224c0d56057330fcfcf2c}
+
+
+Decline connection from source session which is a \hyperlink{class_user_session}{User\-Session}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+{\em destination} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_smart_phone_protocol_ab45cc54c451580109ab2911d81aab978}{\index{Smart\-Phone\-Protocol@{Smart\-Phone\-Protocol}!operator()@{operator()}}
+\index{operator()@{operator()}!SmartPhoneProtocol@{Smart\-Phone\-Protocol}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void Smart\-Phone\-Protocol\-::operator() (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_smart_phone_protocol_ab45cc54c451580109ab2911d81aab978}
+
+
+Handle packet received from connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_protocol_handler_abcdcfa563b512a954b08bee298e6e1ed}{I\-Protocol\-Handler}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/protocol/\hyperlink{_smart_phone_protocol_8h}{Smart\-Phone\-Protocol.\-h}\item 
+src/protocol/Smart\-Phone\-Protocol.\-cpp\end{DoxyCompactItemize}

@@ -1,0 +1,196 @@
+\hypertarget{class_i_connection}{\section{I\-Connection Class Reference}
+\label{class_i_connection}\index{I\-Connection@{I\-Connection}}
+}
+
+
+Interface for \hyperlink{class_connection}{Connection}.  
+
+
+
+
+{\ttfamily \#include $<$I\-Connection.\-h$>$}
+
+Inheritance diagram for I\-Connection\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_i_connection}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_i_connection_ada45d66792ba21839e28391ba3703186}{typedef boost\-::shared\-\_\-ptr\\*
+$<$ \hyperlink{class_i_connection}{I\-Connection} $>$ {\bfseries connection}}\label{class_i_connection_ada45d66792ba21839e28391ba3703186}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_i_connection_a226d9b2460b0230a30216396610cb905}{virtual \hyperlink{class_i_connection_a226d9b2460b0230a30216396610cb905}{$\sim$\-I\-Connection} ()}\label{class_i_connection_a226d9b2460b0230a30216396610cb905}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_connection_a1099dbaffac0d95c3bd7ff1ed774b272}{write} (const std\-::string \&message)=0
+\begin{DoxyCompactList}\small\item\em Send message through the connection. \end{DoxyCompactList}\item 
+\hypertarget{class_i_connection_a9db08e54eac52b9c5eee34d1c7020b03}{virtual void \hyperlink{class_i_connection_a9db08e54eac52b9c5eee34d1c7020b03}{close} ()=0}\label{class_i_connection_a9db08e54eac52b9c5eee34d1c7020b03}
+
+\begin{DoxyCompactList}\small\item\em Close the connection. \end{DoxyCompactList}\item 
+virtual const std\-::string \hyperlink{class_i_connection_aed73351e687ee739fd3faf2e0fa7ef3a}{get\-Remote\-I\-P} () const =0
+\begin{DoxyCompactList}\small\item\em Get Remote I\-P of the connection. \end{DoxyCompactList}\item 
+virtual const std\-::string \hyperlink{class_i_connection_a33942193b20aa6e1635d8790036dbab8}{get\-I\-P} () const =0
+\begin{DoxyCompactList}\small\item\em Get local I\-P. \end{DoxyCompactList}\item 
+virtual const unsigned int \hyperlink{class_i_connection_ac7f0924463f269ce358b633f588ed69e}{get\-Port} () const =0
+\begin{DoxyCompactList}\small\item\em Get local port of the client application. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_connection_a4b9c53bb9296c2ba5e1bf15003cf5f12}{set\-Port} (unsigned int port)=0
+\begin{DoxyCompactList}\small\item\em Set local port of the client application. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_i_connection_a0db0e651a8c588b6f97f168ddb6a49c7}{set\-I\-P} (const std\-::string \&ip)=0
+\begin{DoxyCompactList}\small\item\em Set local I\-P. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_i_connection_a76c7eac153c78fc105e7f721aad83c19}{is\-Same\-Network} (I\-Connection\-::connection connection) const =0
+\begin{DoxyCompactList}\small\item\em Check if the 2 connections are on the same network. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for \hyperlink{class_connection}{Connection}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_i_connection_a33942193b20aa6e1635d8790036dbab8}{\index{I\-Connection@{I\-Connection}!get\-I\-P@{get\-I\-P}}
+\index{get\-I\-P@{get\-I\-P}!IConnection@{I\-Connection}}
+\subsubsection[{get\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string I\-Connection\-::get\-I\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_connection_a33942193b20aa6e1635d8790036dbab8}
+
+
+Get local I\-P. 
+
+\begin{DoxyReturn}{Returns}
+Local I\-P 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_connection_ad57ac2e8a57f96f6aa5d19d508461c4c}{Connection}, and \hyperlink{class_udp_connection_a0efddfd41ef2789199133eedf1848988}{Udp\-Connection}.
+
+\hypertarget{class_i_connection_ac7f0924463f269ce358b633f588ed69e}{\index{I\-Connection@{I\-Connection}!get\-Port@{get\-Port}}
+\index{get\-Port@{get\-Port}!IConnection@{I\-Connection}}
+\subsubsection[{get\-Port}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int I\-Connection\-::get\-Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_connection_ac7f0924463f269ce358b633f588ed69e}
+
+
+Get local port of the client application. 
+
+\begin{DoxyReturn}{Returns}
+Local port 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_connection_ae6131694cd2ddb0642ae31a0be32c0f4}{Connection}, and \hyperlink{class_udp_connection_a56385a5013e0a3c87166cd8d7e459e51}{Udp\-Connection}.
+
+\hypertarget{class_i_connection_aed73351e687ee739fd3faf2e0fa7ef3a}{\index{I\-Connection@{I\-Connection}!get\-Remote\-I\-P@{get\-Remote\-I\-P}}
+\index{get\-Remote\-I\-P@{get\-Remote\-I\-P}!IConnection@{I\-Connection}}
+\subsubsection[{get\-Remote\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string I\-Connection\-::get\-Remote\-I\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_connection_aed73351e687ee739fd3faf2e0fa7ef3a}
+
+
+Get Remote I\-P of the connection. 
+
+\begin{DoxyReturn}{Returns}
+Remote I\-P 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_connection_a6f607114a49fd0b3e28f81095f96ef70}{Connection}, and \hyperlink{class_udp_connection_a41e5801973dd69910fcbd7dab11df5c3}{Udp\-Connection}.
+
+\hypertarget{class_i_connection_a76c7eac153c78fc105e7f721aad83c19}{\index{I\-Connection@{I\-Connection}!is\-Same\-Network@{is\-Same\-Network}}
+\index{is\-Same\-Network@{is\-Same\-Network}!IConnection@{I\-Connection}}
+\subsubsection[{is\-Same\-Network}]{\setlength{\rightskip}{0pt plus 5cm}bool I\-Connection\-::is\-Same\-Network (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_connection_a76c7eac153c78fc105e7f721aad83c19}
+
+
+Check if the 2 connections are on the same network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_connection_a0813f88a0a023e00ebcf206cd5780acb}{Connection}, and \hyperlink{class_udp_connection_a97217e5efee70a1e2717b94e0d7574d7}{Udp\-Connection}.
+
+\hypertarget{class_i_connection_a0db0e651a8c588b6f97f168ddb6a49c7}{\index{I\-Connection@{I\-Connection}!set\-I\-P@{set\-I\-P}}
+\index{set\-I\-P@{set\-I\-P}!IConnection@{I\-Connection}}
+\subsubsection[{set\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}void I\-Connection\-::set\-I\-P (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_connection_a0db0e651a8c588b6f97f168ddb6a49c7}
+
+
+Set local I\-P. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_connection_aeaea6b4966b1202dc837973edd15aa80}{Connection}, and \hyperlink{class_udp_connection_a7e511d2ab27459d897a646b7d474a93c}{Udp\-Connection}.
+
+\hypertarget{class_i_connection_a4b9c53bb9296c2ba5e1bf15003cf5f12}{\index{I\-Connection@{I\-Connection}!set\-Port@{set\-Port}}
+\index{set\-Port@{set\-Port}!IConnection@{I\-Connection}}
+\subsubsection[{set\-Port}]{\setlength{\rightskip}{0pt plus 5cm}void I\-Connection\-::set\-Port (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_connection_a4b9c53bb9296c2ba5e1bf15003cf5f12}
+
+
+Set local port of the client application. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_connection_a22052c9cc1a32e779a7b719946092dc4}{Connection}, and \hyperlink{class_udp_connection_a04fe1075d98e4bd39158ad4d3f04a336}{Udp\-Connection}.
+
+\hypertarget{class_i_connection_a1099dbaffac0d95c3bd7ff1ed774b272}{\index{I\-Connection@{I\-Connection}!write@{write}}
+\index{write@{write}!IConnection@{I\-Connection}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void I\-Connection\-::write (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_i_connection_a1099dbaffac0d95c3bd7ff1ed774b272}
+
+
+Send message through the connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_connection_afab5a89f411c1a4050e27136e78ae0fe}{Connection}, and \hyperlink{class_udp_connection_aa6b07228cc03cdeac22a30d7d6fa93db}{Udp\-Connection}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/network/\hyperlink{_i_connection_8h}{I\-Connection.\-h}\end{DoxyCompactItemize}

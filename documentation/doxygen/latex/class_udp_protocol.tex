@@ -1,0 +1,52 @@
+\hypertarget{class_udp_protocol}{\section{Udp\-Protocol Class Reference}
+\label{class_udp_protocol}\index{Udp\-Protocol@{Udp\-Protocol}}
+}
+Inheritance diagram for Udp\-Protocol\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_udp_protocol}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_udp_protocol_a7c1ddcddc1d351a6760942c26bf329d9}{{\bfseries Udp\-Protocol} (\hyperlink{class_session_manager}{Session\-Manager} \&session\-Manager, \hyperlink{class_communication_manager}{Communication\-Manager} \&communication\-Manager, \hyperlink{class_database_connector}{Database\-Connector} \&database\-Connector)}\label{class_udp_protocol_a7c1ddcddc1d351a6760942c26bf329d9}
+
+\item 
+\hypertarget{class_udp_protocol_a937119a3e2dd990c1d1618f3a87071fc}{void {\bfseries udp\-Hole\-Punching} (I\-Session\-::session source, I\-Session\-::session destination, I\-Connection\-::connection connection, \hyperlink{class_packet}{Packet} \&packet)}\label{class_udp_protocol_a937119a3e2dd990c1d1618f3a87071fc}
+
+\item 
+virtual void \hyperlink{class_udp_protocol_aae3a5ab60c55602d33c4721af00b58a0}{operator()} (I\-Connection\-::connection connection, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Handle packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_udp_protocol_aae3a5ab60c55602d33c4721af00b58a0}{\index{Udp\-Protocol@{Udp\-Protocol}!operator()@{operator()}}
+\index{operator()@{operator()}!UdpProtocol@{Udp\-Protocol}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void Udp\-Protocol\-::operator() (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_udp_protocol_aae3a5ab60c55602d33c4721af00b58a0}
+
+
+Handle packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_protocol_handler_abcdcfa563b512a954b08bee298e6e1ed}{I\-Protocol\-Handler}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/protocol/Udp\-Protocol.\-h\item 
+src/protocol/Udp\-Protocol.\-cpp\end{DoxyCompactItemize}

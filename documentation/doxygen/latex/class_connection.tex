@@ -1,0 +1,221 @@
+\hypertarget{class_connection}{\section{Connection Class Reference}
+\label{class_connection}\index{Connection@{Connection}}
+}
+
+
+Representation of \hyperlink{class_socket}{Socket}.  
+
+
+
+
+{\ttfamily \#include $<$Connection.\-h$>$}
+
+Inheritance diagram for Connection\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.937063cm]{class_connection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_connection_afab5a89f411c1a4050e27136e78ae0fe}{write} (const std\-::string \&message)
+\begin{DoxyCompactList}\small\item\em Write message to socket. \end{DoxyCompactList}\item 
+\hypertarget{class_connection_aea9f9d78e2b92747d4e4575ccb97361e}{virtual void \hyperlink{class_connection_aea9f9d78e2b92747d4e4575ccb97361e}{close} ()}\label{class_connection_aea9f9d78e2b92747d4e4575ccb97361e}
+
+\begin{DoxyCompactList}\small\item\em Close connection (socket) \end{DoxyCompactList}\item 
+virtual const std\-::string \hyperlink{class_connection_a6f607114a49fd0b3e28f81095f96ef70}{get\-Remote\-I\-P} () const 
+\begin{DoxyCompactList}\small\item\em return remote\-Ip \end{DoxyCompactList}\item 
+virtual const std\-::string \hyperlink{class_connection_ad57ac2e8a57f96f6aa5d19d508461c4c}{get\-I\-P} () const 
+\begin{DoxyCompactList}\small\item\em return private\-Ip \end{DoxyCompactList}\item 
+virtual const unsigned int \hyperlink{class_connection_ae6131694cd2ddb0642ae31a0be32c0f4}{get\-Port} () const 
+\begin{DoxyCompactList}\small\item\em return port \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_connection_a22052c9cc1a32e779a7b719946092dc4}{set\-Port} (unsigned int port)
+\begin{DoxyCompactList}\small\item\em set port \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_connection_aeaea6b4966b1202dc837973edd15aa80}{set\-I\-P} (const std\-::string \&ip)
+\begin{DoxyCompactList}\small\item\em set ip \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_connection_a0813f88a0a023e00ebcf206cd5780acb}{is\-Same\-Network} (I\-Connection\-::connection connection) const 
+\begin{DoxyCompactList}\small\item\em Check if connection is in same network. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static I\-Connection\-::connection \hyperlink{class_connection_afc44a0f038c9fc8bb935396736d32b1b}{create} (\hyperlink{class_socket}{Socket} $\ast$socket, const std\-::string \&remote\-Ip)
+\begin{DoxyCompactList}\small\item\em Create new connection, start connection to wait for data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_connection_ad5c89eb2bf04de302a978b97cdf80f4e}{{\bfseries Connection} (\hyperlink{class_socket}{Socket} $\ast$socket, const std\-::string \&remote\-Ip)}\label{class_connection_ad5c89eb2bf04de302a978b97cdf80f4e}
+
+\item 
+\hypertarget{class_connection_af5a62eefc03e9e72414d0674872af948}{void {\bfseries wait\-For\-Data} ()}\label{class_connection_af5a62eefc03e9e72414d0674872af948}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Representation of \hyperlink{class_socket}{Socket}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_connection_afc44a0f038c9fc8bb935396736d32b1b}{\index{Connection@{Connection}!create@{create}}
+\index{create@{create}!Connection@{Connection}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}static I\-Connection\-::connection Connection\-::create (
+\begin{DoxyParamCaption}
+\item[{{\bf Socket} $\ast$}]{socket, }
+\item[{const std\-::string \&}]{remote\-Ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_connection_afc44a0f038c9fc8bb935396736d32b1b}
+
+
+Create new connection, start connection to wait for data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em socket} & \\
+\hline
+{\em remote\-Ip} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_connection_ad57ac2e8a57f96f6aa5d19d508461c4c}{\index{Connection@{Connection}!get\-I\-P@{get\-I\-P}}
+\index{get\-I\-P@{get\-I\-P}!Connection@{Connection}}
+\subsubsection[{get\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string Connection\-::get\-I\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_connection_ad57ac2e8a57f96f6aa5d19d508461c4c}
+
+
+return private\-Ip 
+
+\begin{DoxyReturn}{Returns}
+private\-Ip 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_i_connection_a33942193b20aa6e1635d8790036dbab8}{I\-Connection}.
+
+\hypertarget{class_connection_ae6131694cd2ddb0642ae31a0be32c0f4}{\index{Connection@{Connection}!get\-Port@{get\-Port}}
+\index{get\-Port@{get\-Port}!Connection@{Connection}}
+\subsubsection[{get\-Port}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string Connection\-::get\-Port (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_connection_ae6131694cd2ddb0642ae31a0be32c0f4}
+
+
+return port 
+
+\begin{DoxyReturn}{Returns}
+port 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_i_connection_ac7f0924463f269ce358b633f588ed69e}{I\-Connection}.
+
+\hypertarget{class_connection_a6f607114a49fd0b3e28f81095f96ef70}{\index{Connection@{Connection}!get\-Remote\-I\-P@{get\-Remote\-I\-P}}
+\index{get\-Remote\-I\-P@{get\-Remote\-I\-P}!Connection@{Connection}}
+\subsubsection[{get\-Remote\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}const std\-::string Connection\-::get\-Remote\-I\-P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_connection_a6f607114a49fd0b3e28f81095f96ef70}
+
+
+return remote\-Ip 
+
+\begin{DoxyReturn}{Returns}
+remote\-Ip 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_i_connection_aed73351e687ee739fd3faf2e0fa7ef3a}{I\-Connection}.
+
+\hypertarget{class_connection_a0813f88a0a023e00ebcf206cd5780acb}{\index{Connection@{Connection}!is\-Same\-Network@{is\-Same\-Network}}
+\index{is\-Same\-Network@{is\-Same\-Network}!Connection@{Connection}}
+\subsubsection[{is\-Same\-Network}]{\setlength{\rightskip}{0pt plus 5cm}bool Connection\-::is\-Same\-Network (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_connection_a0813f88a0a023e00ebcf206cd5780acb}
+
+
+Check if connection is in same network. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_i_connection_a76c7eac153c78fc105e7f721aad83c19}{I\-Connection}.
+
+\hypertarget{class_connection_aeaea6b4966b1202dc837973edd15aa80}{\index{Connection@{Connection}!set\-I\-P@{set\-I\-P}}
+\index{set\-I\-P@{set\-I\-P}!Connection@{Connection}}
+\subsubsection[{set\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}void Connection\-::set\-I\-P (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_connection_aeaea6b4966b1202dc837973edd15aa80}
+
+
+set ip 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_connection_a0db0e651a8c588b6f97f168ddb6a49c7}{I\-Connection}.
+
+\hypertarget{class_connection_a22052c9cc1a32e779a7b719946092dc4}{\index{Connection@{Connection}!set\-Port@{set\-Port}}
+\index{set\-Port@{set\-Port}!Connection@{Connection}}
+\subsubsection[{set\-Port}]{\setlength{\rightskip}{0pt plus 5cm}void Connection\-::set\-Port (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_connection_a22052c9cc1a32e779a7b719946092dc4}
+
+
+set port 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_connection_a4b9c53bb9296c2ba5e1bf15003cf5f12}{I\-Connection}.
+
+\hypertarget{class_connection_afab5a89f411c1a4050e27136e78ae0fe}{\index{Connection@{Connection}!write@{write}}
+\index{write@{write}!Connection@{Connection}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void Connection\-::write (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_connection_afab5a89f411c1a4050e27136e78ae0fe}
+
+
+Write message to socket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_connection_a1099dbaffac0d95c3bd7ff1ed774b272}{I\-Connection}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/network/\hyperlink{_connection_8h}{Connection.\-h}\item 
+src/network/Connection.\-cpp\end{DoxyCompactItemize}

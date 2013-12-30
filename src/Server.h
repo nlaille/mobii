@@ -22,17 +22,35 @@
 class Server
 {
 public:
+   /**
+    * \fn Server()
+	* \brief Constructor
+	*/
    Server();
+
+   /**
+    * \fn Server()
+	* \brief Destructor
+	*/
    ~Server();
 
+   /**
+    * \fn void  init()
+	* \brief Initialize property of the server (acceptors, protocol handlers, loggers, ..)
+	*/
    void  init();
+
+   /**
+    * \fn void  start()
+	* \brief Start acceptors, protocol handlers
+	*/
    void  start();
 private:
-   boost::asio::io_service      m_ioService;
+   boost::asio::io_service      m_ioService; /*!< ioService, boost */
 
-   NetworkManager               m_networkManager;
-   ProtocolManager              m_protocoleManager;
+   NetworkManager               m_networkManager; /*!< networkManager, acceptors */
+   ProtocolManager              m_protocolManager; /*!< protocolManager, protocols */
 
-   std::ofstream				m_accessLogFile;
-   std::ofstream				m_errorLogFile;
+   std::ofstream				m_accessLogFile; /*!< accessLogFile, logs */
+   std::ofstream				m_errorLogFile; /*!< errorLogFile, logs */
 };

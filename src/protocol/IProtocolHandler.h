@@ -18,7 +18,17 @@
 class IProtocolHandler
 {
 public:
+   /**
+	* \fn ~IProtocolHandler()
+	* \brief Destructor
+	*/
    virtual ~IProtocolHandler() {}
 
+   /**
+	* \fn void  operator()(IConnection::connection connection, Packet& packet)
+	* \brief Handle packet
+	* \param connection
+	* \param packet
+	*/
    virtual void     operator()(IConnection::connection connection, Packet& packet) = 0;
 };

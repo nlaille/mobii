@@ -1,0 +1,163 @@
+\hypertarget{class_user_protocol}{\section{User\-Protocol Class Reference}
+\label{class_user_protocol}\index{User\-Protocol@{User\-Protocol}}
+}
+
+
+Handle user protocol.  
+
+
+
+
+{\ttfamily \#include $<$User\-Protocol.\-h$>$}
+
+Inheritance diagram for User\-Protocol\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_user_protocol}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_user_protocol_ad8692b2f1941f5bff1688af61e5286a6}{User\-Protocol} (\hyperlink{class_session_manager}{Session\-Manager} \&session\-Manager, \hyperlink{class_communication_manager}{Communication\-Manager} \&communication\-Manager, \hyperlink{class_database_connector}{Database\-Connector} \&database\-Connector, \hyperlink{class_user_manager}{User\-Manager} \&user\-Manager)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_user_protocol_a07b070be1cb9c8d3b9f6f6192e27b33e}{virtual \hyperlink{class_user_protocol_a07b070be1cb9c8d3b9f6f6192e27b33e}{$\sim$\-User\-Protocol} (void)}\label{class_user_protocol_a07b070be1cb9c8d3b9f6f6192e27b33e}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_user_protocol_a1a1e21ce4ee558677f4199137c82d854}{ask\-Connection\-To\-Phone} (I\-Session\-::session source, I\-Session\-::session destination, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Source (\hyperlink{struct_user}{User}) asks destination (\hyperlink{struct_smart_phone}{Smart\-Phone}) to open a connection. \end{DoxyCompactList}\item 
+void \hyperlink{class_user_protocol_ad63fe50c1e862fe5b76c59a74e2f5ec3}{login} (I\-Session\-::session source, I\-Session\-::session, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Source (\hyperlink{struct_user}{User}) tries to login. \end{DoxyCompactList}\item 
+void \hyperlink{class_user_protocol_ab9e47090e000f99549b4709b884f7b0c}{contact} (I\-Session\-::session source, I\-Session\-::session, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Source (\hyperlink{struct_user}{User}) get list of smartphones associated to is \hyperlink{struct_user}{User}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_user_protocol_ace2c056bac47892fa8c30f9c8d820204}{operator()} (I\-Connection\-::connection connection, \hyperlink{class_packet}{Packet} \&packet)
+\begin{DoxyCompactList}\small\item\em Handle packet received from connection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handle user protocol. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_user_protocol_ad8692b2f1941f5bff1688af61e5286a6}{\index{User\-Protocol@{User\-Protocol}!User\-Protocol@{User\-Protocol}}
+\index{User\-Protocol@{User\-Protocol}!UserProtocol@{User\-Protocol}}
+\subsubsection[{User\-Protocol}]{\setlength{\rightskip}{0pt plus 5cm}User\-Protocol\-::\-User\-Protocol (
+\begin{DoxyParamCaption}
+\item[{{\bf Session\-Manager} \&}]{session\-Manager, }
+\item[{{\bf Communication\-Manager} \&}]{communication\-Manager, }
+\item[{{\bf Database\-Connector} \&}]{database\-Connector, }
+\item[{{\bf User\-Manager} \&}]{user\-Manager}
+\end{DoxyParamCaption}
+)}}\label{class_user_protocol_ad8692b2f1941f5bff1688af61e5286a6}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session\-Manager} & \\
+\hline
+{\em communication\-Manager} & \\
+\hline
+{\em database\-Connector} & \\
+\hline
+{\em user\-Manager} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_user_protocol_a1a1e21ce4ee558677f4199137c82d854}{\index{User\-Protocol@{User\-Protocol}!ask\-Connection\-To\-Phone@{ask\-Connection\-To\-Phone}}
+\index{ask\-Connection\-To\-Phone@{ask\-Connection\-To\-Phone}!UserProtocol@{User\-Protocol}}
+\subsubsection[{ask\-Connection\-To\-Phone}]{\setlength{\rightskip}{0pt plus 5cm}void User\-Protocol\-::ask\-Connection\-To\-Phone (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{source, }
+\item[{I\-Session\-::session}]{destination, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)}}\label{class_user_protocol_a1a1e21ce4ee558677f4199137c82d854}
+
+
+Source (\hyperlink{struct_user}{User}) asks destination (\hyperlink{struct_smart_phone}{Smart\-Phone}) to open a connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+{\em destination} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_user_protocol_ab9e47090e000f99549b4709b884f7b0c}{\index{User\-Protocol@{User\-Protocol}!contact@{contact}}
+\index{contact@{contact}!UserProtocol@{User\-Protocol}}
+\subsubsection[{contact}]{\setlength{\rightskip}{0pt plus 5cm}void User\-Protocol\-::contact (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{source, }
+\item[{I\-Session\-::session}]{, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)}}\label{class_user_protocol_ab9e47090e000f99549b4709b884f7b0c}
+
+
+Source (\hyperlink{struct_user}{User}) get list of smartphones associated to is \hyperlink{struct_user}{User}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+{\em destination} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_user_protocol_ad63fe50c1e862fe5b76c59a74e2f5ec3}{\index{User\-Protocol@{User\-Protocol}!login@{login}}
+\index{login@{login}!UserProtocol@{User\-Protocol}}
+\subsubsection[{login}]{\setlength{\rightskip}{0pt plus 5cm}void User\-Protocol\-::login (
+\begin{DoxyParamCaption}
+\item[{I\-Session\-::session}]{source, }
+\item[{I\-Session\-::session}]{, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)}}\label{class_user_protocol_ad63fe50c1e862fe5b76c59a74e2f5ec3}
+
+
+Source (\hyperlink{struct_user}{User}) tries to login. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+{\em destination} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_user_protocol_ace2c056bac47892fa8c30f9c8d820204}{\index{User\-Protocol@{User\-Protocol}!operator()@{operator()}}
+\index{operator()@{operator()}!UserProtocol@{User\-Protocol}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}void User\-Protocol\-::operator() (
+\begin{DoxyParamCaption}
+\item[{I\-Connection\-::connection}]{connection, }
+\item[{{\bf Packet} \&}]{packet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_user_protocol_ace2c056bac47892fa8c30f9c8d820204}
+
+
+Handle packet received from connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & \\
+\hline
+{\em packet} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_i_protocol_handler_abcdcfa563b512a954b08bee298e6e1ed}{I\-Protocol\-Handler}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/protocol/\hyperlink{_user_protocol_8h}{User\-Protocol.\-h}\item 
+src/protocol/User\-Protocol.\-cpp\end{DoxyCompactItemize}

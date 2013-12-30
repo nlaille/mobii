@@ -16,6 +16,16 @@
 class UnableToLock : public std::runtime_error
 {
 public:
+   /**
+    * \fn UnableToLock(const std::string& message)
+	* \brief Constructor
+	* \param message
+	*/
    UnableToLock(const std::string& message);
+
+   /**
+    * \fn ~UnableToLock()
+	* \brief Destructor
+	*/
    virtual ~UnableToLock() throw ();
 };

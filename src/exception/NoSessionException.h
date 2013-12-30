@@ -16,6 +16,16 @@
 class NoSessionException : public std::runtime_error
 {
 public:
+	/**
+    * \fn NoSessionException(const std::string& message)
+	* \brief Constructor
+	* \param message
+	*/
    NoSessionException(const std::string& message);
+
+   /**
+    * \fn ~NoSessionException()
+	* \brief Destructor
+	*/
    virtual ~NoSessionException() throw ();
 };

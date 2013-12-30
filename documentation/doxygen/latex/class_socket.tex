@@ -1,0 +1,99 @@
+\hypertarget{class_socket}{\section{Socket Class Reference}
+\label{class_socket}\index{Socket@{Socket}}
+}
+
+
+Encapsulsation of socket system.  
+
+
+
+
+{\ttfamily \#include $<$Socket.\-h$>$}
+
+Inheritance diagram for Socket\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_socket}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_socket_a5cf0c0c4e1738aa7dbbf0d653835dfbb}{typedef boost\-::function$<$ void(const \\*
+\hyperlink{_connection_error_8h_a3eb2ebd912cc5460d23e45f7188a0a86}{Connection\-Error} \&, size\-\_\-t)$>$ {\bfseries boost\-\_\-read\-\_\-callback}}\label{class_socket_a5cf0c0c4e1738aa7dbbf0d653835dfbb}
+
+\item 
+\hypertarget{class_socket_ab219adabe2cd414b563dc40547c4a575}{typedef boost\-::function$<$ void(const \\*
+\hyperlink{_connection_error_8h_a3eb2ebd912cc5460d23e45f7188a0a86}{Connection\-Error} \&)$>$ {\bfseries boost\-\_\-write\-\_\-callback}}\label{class_socket_ab219adabe2cd414b563dc40547c4a575}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_socket_aeac4eb6379a543d38ed88977d3b6630a}{virtual \hyperlink{class_socket_aeac4eb6379a543d38ed88977d3b6630a}{$\sim$\-Socket} ()}\label{class_socket_aeac4eb6379a543d38ed88977d3b6630a}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_socket_a8d2e283377acc8504bdc18e0b07d8d6a}{read} (std\-::vector$<$ char $>$ \&message, boost\-\_\-read\-\_\-callback callback)=0
+\begin{DoxyCompactList}\small\item\em Read data from the socket, data are put into message, then callback is called. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_socket_a26aaf8ea1c9436d7d315aa58ad1c3f3b}{write} (const std\-::string \&message, boost\-\_\-write\-\_\-callback callback)=0
+\begin{DoxyCompactList}\small\item\em Write message to the socket then callback is called. \end{DoxyCompactList}\item 
+\hypertarget{class_socket_ad34df1e8405deab5991bf5818565ca4a}{virtual void \hyperlink{class_socket_ad34df1e8405deab5991bf5818565ca4a}{close} ()=0}\label{class_socket_ad34df1e8405deab5991bf5818565ca4a}
+
+\begin{DoxyCompactList}\small\item\em Close the socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Encapsulsation of socket system. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_socket_a8d2e283377acc8504bdc18e0b07d8d6a}{\index{Socket@{Socket}!read@{read}}
+\index{read@{read}!Socket@{Socket}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}void Socket\-::read (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ char $>$ \&}]{message, }
+\item[{boost\-\_\-read\-\_\-callback}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_socket_a8d2e283377acc8504bdc18e0b07d8d6a}
+
+
+Read data from the socket, data are put into message, then callback is called. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+{\em callback} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_tcp_socket_a2e7d82d4f71b93c648f2686cbe02a89d}{Tcp\-Socket}, and \hyperlink{class_tcp_s_s_l_socket_a5c91e917bfdefe91bfb85195b7f3c868}{Tcp\-S\-S\-L\-Socket}.
+
+\hypertarget{class_socket_a26aaf8ea1c9436d7d315aa58ad1c3f3b}{\index{Socket@{Socket}!write@{write}}
+\index{write@{write}!Socket@{Socket}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void Socket\-::write (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{message, }
+\item[{boost\-\_\-write\-\_\-callback}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_socket_a26aaf8ea1c9436d7d315aa58ad1c3f3b}
+
+
+Write message to the socket then callback is called. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+{\em callback} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_tcp_socket_adc03eee685e2cd6704dd2042142d71dd}{Tcp\-Socket}, and \hyperlink{class_tcp_s_s_l_socket_a6b35535438fa43029629a0be9af6ae4a}{Tcp\-S\-S\-L\-Socket}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/network/\hyperlink{_socket_8h}{Socket.\-h}\end{DoxyCompactItemize}

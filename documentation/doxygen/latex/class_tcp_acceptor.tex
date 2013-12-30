@@ -1,0 +1,100 @@
+\hypertarget{class_tcp_acceptor}{\section{Tcp\-Acceptor Class Reference}
+\label{class_tcp_acceptor}\index{Tcp\-Acceptor@{Tcp\-Acceptor}}
+}
+
+
+\hyperlink{class_acceptor}{Acceptor} for tcp connection.  
+
+
+
+
+{\ttfamily \#include $<$Tcp\-Acceptor.\-h$>$}
+
+Inheritance diagram for Tcp\-Acceptor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tcp_acceptor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tcp_acceptor_a71bbd613ee35e20b7db858c173fd52c0}{Tcp\-Acceptor} (boost\-::asio\-::io\-\_\-service \&io\-Service, int port)
+\begin{DoxyCompactList}\small\item\em Constructor, initialize a tcp acceptor which listen on port. \end{DoxyCompactList}\item 
+\hypertarget{class_tcp_acceptor_affefddc37347a117e5a51dfe86cd781f}{virtual \hyperlink{class_tcp_acceptor_affefddc37347a117e5a51dfe86cd781f}{$\sim$\-Tcp\-Acceptor} (void)}\label{class_tcp_acceptor_affefddc37347a117e5a51dfe86cd781f}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_tcp_acceptor_aa3d7ee0f8878d8223f82e8fac5d30649}{start} (void)
+\begin{DoxyCompactList}\small\item\em Enable acceptor to accept new connection. \end{DoxyCompactList}\item 
+\hypertarget{class_tcp_acceptor_af2895639d37de0940765ac38c624e617}{virtual void {\bfseries stop} (void)}\label{class_tcp_acceptor_af2895639d37de0940765ac38c624e617}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tcp_acceptor_a9cdb1cbb8059f4b0407c56d013e32171}{void {\bfseries wait\-Accept} ()}\label{class_tcp_acceptor_a9cdb1cbb8059f4b0407c56d013e32171}
+
+\item 
+\hypertarget{class_tcp_acceptor_ae85e4f53f0e2a58d0e976ce126dadba2}{virtual void {\bfseries handle\-Accept} (boost\-\_\-tcp\-\_\-socket $\ast$boost\-Socket, const boost\-::system\-::error\-\_\-code \&error)}\label{class_tcp_acceptor_ae85e4f53f0e2a58d0e976ce126dadba2}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\-::asio\-::ip\-::tcp\-::acceptor \hyperlink{class_tcp_acceptor_a332c21ae018fa5dfa1e093a32710f0c0}{m\-\_\-acceptor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_acceptor}{Acceptor} for tcp connection. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_tcp_acceptor_a71bbd613ee35e20b7db858c173fd52c0}{\index{Tcp\-Acceptor@{Tcp\-Acceptor}!Tcp\-Acceptor@{Tcp\-Acceptor}}
+\index{Tcp\-Acceptor@{Tcp\-Acceptor}!TcpAcceptor@{Tcp\-Acceptor}}
+\subsubsection[{Tcp\-Acceptor}]{\setlength{\rightskip}{0pt plus 5cm}Tcp\-Acceptor\-::\-Tcp\-Acceptor (
+\begin{DoxyParamCaption}
+\item[{boost\-::asio\-::io\-\_\-service \&}]{io\-Service, }
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}}\label{class_tcp_acceptor_a71bbd613ee35e20b7db858c173fd52c0}
+
+
+Constructor, initialize a tcp acceptor which listen on port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em io\-Service} & \\
+\hline
+{\em port} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tcp_acceptor_aa3d7ee0f8878d8223f82e8fac5d30649}{\index{Tcp\-Acceptor@{Tcp\-Acceptor}!start@{start}}
+\index{start@{start}!TcpAcceptor@{Tcp\-Acceptor}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Tcp\-Acceptor\-::start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tcp_acceptor_aa3d7ee0f8878d8223f82e8fac5d30649}
+
+
+Enable acceptor to accept new connection. 
+
+Disable acceptor to accept new connection. 
+
+Implements \hyperlink{class_acceptor_a624e3c004d6bdc7c1b5238aef1bb2e29}{Acceptor}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_tcp_acceptor_a332c21ae018fa5dfa1e093a32710f0c0}{\index{Tcp\-Acceptor@{Tcp\-Acceptor}!m\-\_\-acceptor@{m\-\_\-acceptor}}
+\index{m\-\_\-acceptor@{m\-\_\-acceptor}!TcpAcceptor@{Tcp\-Acceptor}}
+\subsubsection[{m\-\_\-acceptor}]{\setlength{\rightskip}{0pt plus 5cm}boost\-::asio\-::ip\-::tcp\-::acceptor Tcp\-Acceptor\-::m\-\_\-acceptor\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_tcp_acceptor_a332c21ae018fa5dfa1e093a32710f0c0}
+boost acceptor 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/network/\hyperlink{_tcp_acceptor_8h}{Tcp\-Acceptor.\-h}\item 
+src/network/Tcp\-Acceptor.\-cpp\end{DoxyCompactItemize}

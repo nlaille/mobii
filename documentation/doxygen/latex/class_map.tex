@@ -1,0 +1,99 @@
+\hypertarget{class_map}{\section{Map$<$ T, U $>$ Class Template Reference}
+\label{class_map}\index{Map$<$ T, U $>$@{Map$<$ T, U $>$}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_map_a97160ed26e941a2d3dd684e8cb1f81e1}{\hyperlink{class_map_a97160ed26e941a2d3dd684e8cb1f81e1}{Map} ()}\label{class_map_a97160ed26e941a2d3dd684e8cb1f81e1}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_map_a73313a8e61d1582204213cd171f9da7a}{\hyperlink{class_map_a73313a8e61d1582204213cd171f9da7a}{$\sim$\-Map} ()}\label{class_map_a73313a8e61d1582204213cd171f9da7a}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_map_a28fb587fff26d7d99bb85f0c13c58a7d}{insert} (const T \&key, const U \&value)
+\begin{DoxyCompactList}\small\item\em Insert a pair of Key/\-Value. \end{DoxyCompactList}\item 
+void \hyperlink{class_map_a06eb6c9421ad5b67889680045850eeb5}{erase} (const T \&key)
+\begin{DoxyCompactList}\small\item\em Erase pair from key. \end{DoxyCompactList}\item 
+U \& \hyperlink{class_map_ab36f5b23e13763cf56b5c736486dc6f1}{operator\mbox{[}$\,$\mbox{]}} (const T \&key)
+\begin{DoxyCompactList}\small\item\em Get value of pair. \end{DoxyCompactList}\item 
+bool \hyperlink{class_map_ab01fe44928fff4f9078910ea60a475a4}{exists} (const T \&key) const 
+\begin{DoxyCompactList}\small\item\em Check if key exists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_map_a06eb6c9421ad5b67889680045850eeb5}{\index{Map@{Map}!erase@{erase}}
+\index{erase@{erase}!Map@{Map}}
+\subsubsection[{erase}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename U $>$ void {\bf Map}$<$ T, U $>$\-::erase (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_map_a06eb6c9421ad5b67889680045850eeb5}
+
+
+Erase pair from key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_map_ab01fe44928fff4f9078910ea60a475a4}{\index{Map@{Map}!exists@{exists}}
+\index{exists@{exists}!Map@{Map}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename U $>$ bool {\bf Map}$<$ T, U $>$\-::exists (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{key}
+\end{DoxyParamCaption}
+) const}}\label{class_map_ab01fe44928fff4f9078910ea60a475a4}
+
+
+Check if key exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_map_a28fb587fff26d7d99bb85f0c13c58a7d}{\index{Map@{Map}!insert@{insert}}
+\index{insert@{insert}!Map@{Map}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename U $>$ void {\bf Map}$<$ T, U $>$\-::insert (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{key, }
+\item[{const U \&}]{value}
+\end{DoxyParamCaption}
+)}}\label{class_map_a28fb587fff26d7d99bb85f0c13c58a7d}
+
+
+Insert a pair of Key/\-Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+{\em value} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_map_ab36f5b23e13763cf56b5c736486dc6f1}{\index{Map@{Map}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Map@{Map}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename U $>$ U \& {\bf Map}$<$ T, U $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_map_ab36f5b23e13763cf56b5c736486dc6f1}
+
+
+Get value of pair. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/safe/\hyperlink{_map_8h}{Map.\-h}\item 
+src/safe/Map.\-inl\end{DoxyCompactItemize}

@@ -18,12 +18,40 @@
 class UnregisteredSession : public Session
 {
 public:
+   /**
+    * \fn static ISession::session   create(IConnection::connection connection)
+	* \brief Create session of type Unregistered
+	* \param connection
+	*/
    static ISession::session   create(IConnection::connection connection);
+
+   /**
+    * \fn ~UnregisteredSession(void)
+	* \brief Destructor
+	*/
    virtual ~UnregisteredSession(void);
 
+   /**
+    * \fn bool is(SessionType type) const
+	* \brief Check if type is Unregistered
+	* \param type
+	* \return boolean
+	*/
    virtual bool is(SessionType type) const;
+
+   /**
+    * \fn bool valid(const std::string& id) const
+	* \brief Return false, cause the session is not associated with an id
+	* \param id
+	* \return false
+	*/
    virtual bool valid(const std::string& id) const;
 
+   /**
+    * \fn void write(const std::string& message)
+	* \brief Throws an exception
+	* \param message
+	*/
    virtual void write(const std::string& message);
 protected:
    explicit UnregisteredSession(IConnection::connection connection);

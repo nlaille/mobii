@@ -1,0 +1,81 @@
+\hypertarget{_protocol_8h}{\section{src/protocol/\-Protocol.h File Reference}
+\label{_protocol_8h}\index{src/protocol/\-Protocol.\-h@{src/protocol/\-Protocol.\-h}}
+}
+
+
+Declaration of protocol variables.  
+
+
+{\ttfamily \#include $<$string$>$}\\*
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries S\-O\-U\-R\-C\-E} =0, 
+{\bfseries S\-O\-U\-R\-C\-E\-\_\-\-S\-I\-Z\-E} =6, 
+{\bfseries D\-E\-S\-T\-I\-N\-A\-T\-I\-O\-N} =6, 
+{\bfseries D\-E\-S\-T\-I\-N\-A\-T\-I\-O\-N\-\_\-\-S\-I\-Z\-E} =6, 
+\\*
+{\bfseries D\-I\-S\-P\-A\-T\-C\-H} =12, 
+{\bfseries O\-P\-C\-O\-D\-E} =13, 
+{\bfseries M\-E\-S\-S\-A\-G\-E\-\_\-\-S\-I\-Z\-E} =14, 
+{\bfseries M\-E\-S\-S\-A\-G\-E\-\_\-\-S\-I\-Z\-E\-\_\-\-S\-I\-Z\-E} =4
+ \}
+\item 
+enum \{ \\*
+{\bfseries S\-E\-R\-V\-E\-R\-\_\-\-H\-A\-N\-D\-L\-E\-R} ='\textbackslash{}x00', 
+{\bfseries R\-E\-G\-I\-S\-T\-E\-R\-\_\-\-H\-A\-N\-D\-L\-E\-R} ='\textbackslash{}x05', 
+{\bfseries P\-H\-O\-N\-E\-\_\-\-H\-A\-N\-D\-L\-E\-R} ='\textbackslash{}x10', 
+{\bfseries C\-L\-I\-E\-N\-T\-\_\-\-H\-A\-N\-D\-L\-E\-R} ='\textbackslash{}x20', 
+\\*
+{\bfseries C\-O\-M\-M\-U\-N\-I\-C\-A\-T\-I\-O\-N\-\_\-\-H\-A\-N\-D\-L\-E\-R} ='\textbackslash{}x30', 
+{\bfseries U\-D\-P\-\_\-\-H\-A\-N\-D\-L\-E\-R} ='\textbackslash{}x40', 
+{\bfseries D\-A\-T\-A\-B\-A\-S\-E\-\_\-\-H\-A\-N\-D\-L\-E\-R} ='\textbackslash{}x50'
+ \}
+\item 
+enum \{ {\bfseries C\-O\-N\-N\-E\-C\-T} ='\textbackslash{}x00', 
+{\bfseries D\-I\-S\-C\-O\-N\-N\-E\-C\-T} ='\textbackslash{}x01', 
+{\bfseries E\-X\-C\-E\-P\-T\-I\-O\-N} ='\textbackslash{}xff'
+ \}
+\item 
+enum \{ {\bfseries S\-M\-A\-R\-T\-P\-H\-O\-N\-E} ='\textbackslash{}x00', 
+{\bfseries U\-S\-E\-R} ='\textbackslash{}x01', 
+{\bfseries R\-E\-G\-I\-S\-T\-E\-R\-E\-D} ='\textbackslash{}x11', 
+{\bfseries U\-N\-A\-B\-L\-E\-\_\-\-T\-O\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R} ='\textbackslash{}x\-F0'
+ \}
+\item 
+enum \{ {\bfseries A\-C\-C\-E\-P\-T\-\_\-\-C\-O\-M\-M\-U\-N\-I\-C\-A\-T\-I\-O\-N} ='\textbackslash{}x10', 
+{\bfseries D\-E\-C\-L\-I\-N\-E\-\_\-\-C\-O\-M\-M\-U\-N\-I\-C\-A\-T\-I\-O\-N} ='\textbackslash{}x11'
+ \}
+\item 
+enum \{ \\*
+{\bfseries L\-O\-G\-I\-N} ='\textbackslash{}x00', 
+{\bfseries L\-O\-G\-I\-N\-\_\-\-S\-U\-C\-C\-E\-S\-S\-E\-D} ='\textbackslash{}x01', 
+{\bfseries L\-O\-G\-I\-N\-\_\-\-F\-A\-I\-L\-U\-R\-E} ='\textbackslash{}x02', 
+{\bfseries C\-O\-N\-T\-A\-C\-T} ='\textbackslash{}x05', 
+\\*
+{\bfseries O\-P\-E\-N\-\_\-\-C\-O\-M\-M\-U\-N\-I\-C\-A\-T\-I\-O\-N} ='\textbackslash{}x10'
+ \}
+\item 
+enum \{ {\bfseries C\-L\-O\-S\-E\-\_\-\-C\-O\-M\-M\-U\-N\-I\-C\-A\-T\-I\-O\-N} ='\textbackslash{}x00', 
+{\bfseries O\-P\-E\-N\-\_\-\-C\-O\-M\-M\-U\-N\-I\-C\-A\-T\-I\-O\-N} ='\textbackslash{}x01', 
+{\bfseries R\-E\-D\-I\-R\-E\-C\-T\-\_\-\-P\-A\-C\-K\-E\-T} ='\textbackslash{}x10'
+ \}
+\item 
+enum \{ {\bfseries U\-I\-D} ='\textbackslash{}x10', 
+{\bfseries U\-I\-D\-\_\-\-C\-R\-E\-A\-T\-E\-D} ='\textbackslash{}x11', 
+{\bfseries U\-I\-D\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-U\-S\-E\-D} ='\textbackslash{}x12'
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Declaration of protocol variables. \begin{DoxyAuthor}{Author}
+Nicolas Laille 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+24 Octobre 2013 
+\end{DoxyDate}

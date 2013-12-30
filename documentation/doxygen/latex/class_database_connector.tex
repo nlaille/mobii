@@ -1,0 +1,184 @@
+\hypertarget{class_database_connector}{\section{Database\-Connector Class Reference}
+\label{class_database_connector}\index{Database\-Connector@{Database\-Connector}}
+}
+
+
+Connector to the database.  
+
+
+
+
+{\ttfamily \#include $<$Database\-Connector.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_database_connector_a8807b25ac1173dcc8f75d9e872843d2c}{Database\-Connector} (const std\-::size\-\_\-t number\-Of\-Connexion=1)
+\begin{DoxyCompactList}\small\item\em Constructor, initialize connection\-\_\-pool with number\-Of\-Connexion. \end{DoxyCompactList}\item 
+\hypertarget{class_database_connector_a4312f4426fbfd8519bea54c919c27c6a}{virtual \hyperlink{class_database_connector_a4312f4426fbfd8519bea54c919c27c6a}{$\sim$\-Database\-Connector} ()}\label{class_database_connector_a4312f4426fbfd8519bea54c919c27c6a}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_database_connector_ad016f789f03f9822363582f7774295a4}{set\-Connection} (const std\-::string \&connexion)
+\begin{DoxyCompactList}\small\item\em Initialize connection\-\_\-pool with connexion as settings. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{class_database_connector_aed80d4653583db6545cf1b22661b7119}{select} (const std\-::string \&select\-Query)
+\begin{DoxyCompactList}\small\item\em Retreive an instance of T class into the database. \end{DoxyCompactList}\item 
+\hypertarget{class_database_connector_a45cdbb802a2619aa938a5f82a1ea9370}{{\footnotesize template$<$typename T , typename U $>$ }\\T {\bfseries select} (const std\-::string \&select\-Query, const U \&condition)}\label{class_database_connector_a45cdbb802a2619aa938a5f82a1ea9370}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\-::vector$<$ T $>$ \hyperlink{class_database_connector_a6a36b1ea105eec24a17803cc6343861a}{selects} (const std\-::string \&select\-Query)
+\begin{DoxyCompactList}\small\item\em Retreive instances of T class into the database. \end{DoxyCompactList}\item 
+\hypertarget{class_database_connector_a85b54e4015558e207a5f5bc319959d01}{{\footnotesize template$<$typename T , typename U $>$ }\\std\-::vector$<$ T $>$ {\bfseries selects} (const std\-::string \&select\-Query, const U \&condition)}\label{class_database_connector_a85b54e4015558e207a5f5bc319959d01}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_database_connector_a9188c7ca1b02f42cb77aa8bec3bbe374}{update} (const std\-::string \&update\-Query, T \&model)
+\begin{DoxyCompactList}\small\item\em Update an instance of T class into the database. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_database_connector_ac56b1888a8047d14fa18ea3df34c4f9a}{insert} (const std\-::string \&insert\-Query, T \&model)
+\begin{DoxyCompactList}\small\item\em Insert an instance of T class into the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Connector to the database. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_database_connector_a8807b25ac1173dcc8f75d9e872843d2c}{\index{Database\-Connector@{Database\-Connector}!Database\-Connector@{Database\-Connector}}
+\index{Database\-Connector@{Database\-Connector}!DatabaseConnector@{Database\-Connector}}
+\subsubsection[{Database\-Connector}]{\setlength{\rightskip}{0pt plus 5cm}Database\-Connector\-::\-Database\-Connector (
+\begin{DoxyParamCaption}
+\item[{const std\-::size\-\_\-t}]{number\-Of\-Connexion = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{class_database_connector_a8807b25ac1173dcc8f75d9e872843d2c}
+
+
+Constructor, initialize connection\-\_\-pool with number\-Of\-Connexion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\-Of\-Connexion} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_database_connector_ac56b1888a8047d14fa18ea3df34c4f9a}{\index{Database\-Connector@{Database\-Connector}!insert@{insert}}
+\index{insert@{insert}!DatabaseConnector@{Database\-Connector}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Database\-Connector\-::insert (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{insert\-Query, }
+\item[{T \&}]{model}
+\end{DoxyParamCaption}
+)}}\label{class_database_connector_ac56b1888a8047d14fa18ea3df34c4f9a}
+
+
+Insert an instance of T class into the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em insert\-Query} & \\
+\hline
+{\em model} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_database_connector_aed80d4653583db6545cf1b22661b7119}{\index{Database\-Connector@{Database\-Connector}!select@{select}}
+\index{select@{select}!DatabaseConnector@{Database\-Connector}}
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T Database\-Connector\-::select (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{select\-Query}
+\end{DoxyParamCaption}
+)}}\label{class_database_connector_aed80d4653583db6545cf1b22661b7119}
+
+
+Retreive an instance of T class into the database. 
+
+Retreive an instance of T class into the database, with condition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em select\-Query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em select\-Query} & \\
+\hline
+{\em condition} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An instance 
+\end{DoxyReturn}
+\hypertarget{class_database_connector_a6a36b1ea105eec24a17803cc6343861a}{\index{Database\-Connector@{Database\-Connector}!selects@{selects}}
+\index{selects@{selects}!DatabaseConnector@{Database\-Connector}}
+\subsubsection[{selects}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\-::vector$<$ T $>$ Database\-Connector\-::selects (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{select\-Query}
+\end{DoxyParamCaption}
+)}}\label{class_database_connector_a6a36b1ea105eec24a17803cc6343861a}
+
+
+Retreive instances of T class into the database. 
+
+Retreive an instance of T class into the database, with condition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em select\-Query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instances
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em select\-Query} & \\
+\hline
+{\em condition} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instances 
+\end{DoxyReturn}
+\hypertarget{class_database_connector_ad016f789f03f9822363582f7774295a4}{\index{Database\-Connector@{Database\-Connector}!set\-Connection@{set\-Connection}}
+\index{set\-Connection@{set\-Connection}!DatabaseConnector@{Database\-Connector}}
+\subsubsection[{set\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}void Database\-Connector\-::set\-Connection (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{connexion}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_database_connector_ad016f789f03f9822363582f7774295a4}
+
+
+Initialize connection\-\_\-pool with connexion as settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connexion} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_database_connector_a9188c7ca1b02f42cb77aa8bec3bbe374}{\index{Database\-Connector@{Database\-Connector}!update@{update}}
+\index{update@{update}!DatabaseConnector@{Database\-Connector}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void Database\-Connector\-::update (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{update\-Query, }
+\item[{T \&}]{model}
+\end{DoxyParamCaption}
+)}}\label{class_database_connector_a9188c7ca1b02f42cb77aa8bec3bbe374}
+
+
+Update an instance of T class into the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em update\-Query} & \\
+\hline
+{\em model} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/database/\hyperlink{_database_connector_8h}{Database\-Connector.\-h}\item 
+src/database/Database\-Connector.\-cpp\item 
+src/database/Database\-Connector.\-inl\end{DoxyCompactItemize}

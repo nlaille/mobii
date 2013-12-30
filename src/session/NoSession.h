@@ -11,7 +11,7 @@
 
 /**
  * \class NoSession
- * \brief Representation of an un-existed session
+ * \brief Representation of an un-existed session, throws NoSessionException
  */
 class NoSession : public ISession
 {

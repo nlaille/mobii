@@ -1,0 +1,112 @@
+\hypertarget{class_tcp_socket}{\section{Tcp\-Socket Class Reference}
+\label{class_tcp_socket}\index{Tcp\-Socket@{Tcp\-Socket}}
+}
+
+
+Representation of tcp socket system.  
+
+
+
+
+{\ttfamily \#include $<$Tcp\-Socket.\-h$>$}
+
+Inheritance diagram for Tcp\-Socket\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tcp_socket}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tcp_socket_a4f16ba413f63ae6995d754538bf4bfa3}{Tcp\-Socket} (boost\-\_\-tcp\-\_\-socket $\ast$boost\-Socket)
+\begin{DoxyCompactList}\small\item\em Constructor new socket with boost socket. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_tcp_socket_a2e7d82d4f71b93c648f2686cbe02a89d}{read} (std\-::vector$<$ char $>$ \&message, boost\-\_\-read\-\_\-callback callback)
+\begin{DoxyCompactList}\small\item\em Read data from the socket, data are put into message, then callback is called. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_tcp_socket_adc03eee685e2cd6704dd2042142d71dd}{write} (const std\-::string \&message, boost\-\_\-write\-\_\-callback callback)
+\begin{DoxyCompactList}\small\item\em Write message to the socket then callback is called. \end{DoxyCompactList}\item 
+\hypertarget{class_tcp_socket_a68f30d391495a328074eb28f5defdd7d}{virtual void \hyperlink{class_tcp_socket_a68f30d391495a328074eb28f5defdd7d}{close} ()}\label{class_tcp_socket_a68f30d391495a328074eb28f5defdd7d}
+
+\begin{DoxyCompactList}\small\item\em Close the socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Representation of tcp socket system. 
+
+Representation of tcp socket system using S\-S\-L. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_tcp_socket_a4f16ba413f63ae6995d754538bf4bfa3}{\index{Tcp\-Socket@{Tcp\-Socket}!Tcp\-Socket@{Tcp\-Socket}}
+\index{Tcp\-Socket@{Tcp\-Socket}!TcpSocket@{Tcp\-Socket}}
+\subsubsection[{Tcp\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}Tcp\-Socket\-::\-Tcp\-Socket (
+\begin{DoxyParamCaption}
+\item[{boost\-\_\-tcp\-\_\-socket $\ast$}]{boost\-Socket}
+\end{DoxyParamCaption}
+)}}\label{class_tcp_socket_a4f16ba413f63ae6995d754538bf4bfa3}
+
+
+Constructor new socket with boost socket. 
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em boost\-Socket} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tcp_socket_a2e7d82d4f71b93c648f2686cbe02a89d}{\index{Tcp\-Socket@{Tcp\-Socket}!read@{read}}
+\index{read@{read}!TcpSocket@{Tcp\-Socket}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}void Tcp\-Socket\-::read (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ char $>$ \&}]{message, }
+\item[{boost\-\_\-read\-\_\-callback}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tcp_socket_a2e7d82d4f71b93c648f2686cbe02a89d}
+
+
+Read data from the socket, data are put into message, then callback is called. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+{\em callback} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_socket_a8d2e283377acc8504bdc18e0b07d8d6a}{Socket}.
+
+\hypertarget{class_tcp_socket_adc03eee685e2cd6704dd2042142d71dd}{\index{Tcp\-Socket@{Tcp\-Socket}!write@{write}}
+\index{write@{write}!TcpSocket@{Tcp\-Socket}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void Tcp\-Socket\-::write (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{message, }
+\item[{boost\-\_\-write\-\_\-callback}]{callback}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tcp_socket_adc03eee685e2cd6704dd2042142d71dd}
+
+
+Write message to the socket then callback is called. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+{\em callback} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_socket_a26aaf8ea1c9436d7d315aa58ad1c3f3b}{Socket}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/network/\hyperlink{_tcp_socket_8h}{Tcp\-Socket.\-h}\item 
+src/network/Tcp\-Socket.\-cpp\end{DoxyCompactItemize}

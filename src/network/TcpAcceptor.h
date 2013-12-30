@@ -20,8 +20,18 @@
 class TcpAcceptor : public Acceptor
 {
 public:
+	/**
+	 * \fn TcpAcceptor(boost::asio::io_service& ioService, int port)
+	 * \brief Constructor, initialize a tcp acceptor which listen on port
+	 * \param ioService
+	 * \param port
+	 */
 	TcpAcceptor(boost::asio::io_service& ioService, int port);
 
+   /**
+	* \fn ~TcpAcceptor(void)
+	* \brief Destructor
+	*/
    virtual ~TcpAcceptor(void);
 
    virtual void start(void);
@@ -31,5 +41,5 @@ protected:
    void  waitAccept();
    virtual void  handleAccept(boost_tcp_socket* boostSocket, const boost::system::error_code& error);
 
-   boost::asio::ip::tcp::acceptor    m_acceptor;
+   boost::asio::ip::tcp::acceptor    m_acceptor; /*!< boost acceptor */
 };

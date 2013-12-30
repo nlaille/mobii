@@ -1,0 +1,87 @@
+\hypertarget{class_protocol_dispatcher}{\section{Protocol\-Dispatcher Class Reference}
+\label{class_protocol_dispatcher}\index{Protocol\-Dispatcher@{Protocol\-Dispatcher}}
+}
+
+
+Dispatch packet to \hyperlink{class_i_protocol_handler}{I\-Protocol\-Handler}.  
+
+
+
+
+{\ttfamily \#include $<$Protocol\-Dispatcher.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_protocol_dispatcher_a905f7ef56bc5715db40e8da433c1a321}{Protocol\-Dispatcher} (\hyperlink{class_session_manager}{Session\-Manager} \&session\-Manager, \hyperlink{class_communication_manager}{Communication\-Manager} \&communication\-Manager, \hyperlink{class_database_connector}{Database\-Connector} \&database\-Connector, \hyperlink{class_user_manager}{User\-Manager} \&user\-Manager)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_protocol_dispatcher_aaf829070c0c5cf522a76ec4621c55b8a}{Protocol\-Dispatcher} (const \hyperlink{class_protocol_dispatcher}{Protocol\-Dispatcher} \&dispatcher)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_protocol_dispatcher_a72ba7398c45d60a66252d25b22660340}{\hyperlink{class_protocol_dispatcher_a72ba7398c45d60a66252d25b22660340}{$\sim$\-Protocol\-Dispatcher} ()}\label{class_protocol_dispatcher_a72ba7398c45d60a66252d25b22660340}
+
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+void \hyperlink{class_protocol_dispatcher_a1c2669eee4bfc210221ab9c4a365b820}{start} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Dispatch packet to \hyperlink{class_i_protocol_handler}{I\-Protocol\-Handler}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_protocol_dispatcher_a905f7ef56bc5715db40e8da433c1a321}{\index{Protocol\-Dispatcher@{Protocol\-Dispatcher}!Protocol\-Dispatcher@{Protocol\-Dispatcher}}
+\index{Protocol\-Dispatcher@{Protocol\-Dispatcher}!ProtocolDispatcher@{Protocol\-Dispatcher}}
+\subsubsection[{Protocol\-Dispatcher}]{\setlength{\rightskip}{0pt plus 5cm}Protocol\-Dispatcher\-::\-Protocol\-Dispatcher (
+\begin{DoxyParamCaption}
+\item[{{\bf Session\-Manager} \&}]{session\-Manager, }
+\item[{{\bf Communication\-Manager} \&}]{communication\-Manager, }
+\item[{{\bf Database\-Connector} \&}]{database\-Connector, }
+\item[{{\bf User\-Manager} \&}]{user\-Manager}
+\end{DoxyParamCaption}
+)}}\label{class_protocol_dispatcher_a905f7ef56bc5715db40e8da433c1a321}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & manager \\
+\hline
+{\em communication} & manager \\
+\hline
+{\em database} & connector \\
+\hline
+{\em user} & manager \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_protocol_dispatcher_aaf829070c0c5cf522a76ec4621c55b8a}{\index{Protocol\-Dispatcher@{Protocol\-Dispatcher}!Protocol\-Dispatcher@{Protocol\-Dispatcher}}
+\index{Protocol\-Dispatcher@{Protocol\-Dispatcher}!ProtocolDispatcher@{Protocol\-Dispatcher}}
+\subsubsection[{Protocol\-Dispatcher}]{\setlength{\rightskip}{0pt plus 5cm}Protocol\-Dispatcher\-::\-Protocol\-Dispatcher (
+\begin{DoxyParamCaption}
+\item[{const {\bf Protocol\-Dispatcher} \&}]{dispatcher}
+\end{DoxyParamCaption}
+)}}\label{class_protocol_dispatcher_aaf829070c0c5cf522a76ec4621c55b8a}
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dispatcher} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_protocol_dispatcher_a1c2669eee4bfc210221ab9c4a365b820}{\index{Protocol\-Dispatcher@{Protocol\-Dispatcher}!start@{start}}
+\index{start@{start}!ProtocolDispatcher@{Protocol\-Dispatcher}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void Protocol\-Dispatcher\-::start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_protocol_dispatcher_a1c2669eee4bfc210221ab9c4a365b820}
+Start a thread which will dispatch \hyperlink{class_packet}{Packet} to \hyperlink{class_i_protocol_handler}{I\-Protocol\-Handler} 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/protocol/\hyperlink{_protocol_dispatcher_8h}{Protocol\-Dispatcher.\-h}\item 
+src/protocol/Protocol\-Dispatcher.\-cpp\end{DoxyCompactItemize}
