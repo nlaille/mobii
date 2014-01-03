@@ -1,0 +1,84 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1convert_1_1_period_converter}{\section{org.\-joda.\-time.\-convert.\-Period\-Converter Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1convert_1_1_period_converter}\index{org.\-joda.\-time.\-convert.\-Period\-Converter@{org.\-joda.\-time.\-convert.\-Period\-Converter}}
+}
+Inheritance diagram for org.\-joda.\-time.\-convert.\-Period\-Converter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1joda_1_1time_1_1convert_1_1_period_converter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1convert_1_1_period_converter_ad1cb736987bbad9c142a1ed15b284612}{set\-Into} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_period}{Read\-Writable\-Period} period, Object object, \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chrono)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_period_type}{Period\-Type} \hyperlink{interfaceorg_1_1joda_1_1time_1_1convert_1_1_period_converter_afc789671f7398c80c1ecd0aca47719a0}{get\-Period\-Type} (Object object)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interfaceorg_1_1joda_1_1time_1_1convert_1_1_period_converter}{Period\-Converter} defines how an object is converted to a time period.
+
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1convert_1_1_period_converter_afc789671f7398c80c1ecd0aca47719a0}{\index{org\-::joda\-::time\-::convert\-::\-Period\-Converter@{org\-::joda\-::time\-::convert\-::\-Period\-Converter}!get\-Period\-Type@{get\-Period\-Type}}
+\index{get\-Period\-Type@{get\-Period\-Type}!org::joda::time::convert::PeriodConverter@{org\-::joda\-::time\-::convert\-::\-Period\-Converter}}
+\subsubsection[{get\-Period\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Period\-Type} org.\-joda.\-time.\-convert.\-Period\-Converter.\-get\-Period\-Type (
+\begin{DoxyParamCaption}
+\item[{Object}]{object}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1convert_1_1_period_converter_afc789671f7398c80c1ecd0aca47719a0}
+Selects a suitable period type for the given object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to examine, must not be null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the period type, never null 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Class\-Cast\-Exception} & if the object is invalid \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1convert_1_1_period_converter_ad1cb736987bbad9c142a1ed15b284612}{\index{org\-::joda\-::time\-::convert\-::\-Period\-Converter@{org\-::joda\-::time\-::convert\-::\-Period\-Converter}!set\-Into@{set\-Into}}
+\index{set\-Into@{set\-Into}!org::joda::time::convert::PeriodConverter@{org\-::joda\-::time\-::convert\-::\-Period\-Converter}}
+\subsubsection[{set\-Into}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-convert.\-Period\-Converter.\-set\-Into (
+\begin{DoxyParamCaption}
+\item[{{\bf Read\-Writable\-Period}}]{period, }
+\item[{Object}]{object, }
+\item[{{\bf Chronology}}]{chrono}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1convert_1_1_period_converter_ad1cb736987bbad9c142a1ed15b284612}
+Extracts duration values from an object of this converter's type, and sets them into the given Read\-Writable\-Duration.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & the period to modify \\
+\hline
+{\em object} & the object to convert, must not be null \\
+\hline
+{\em chrono} & the chronology to use, must not be null \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Class\-Cast\-Exception} & if the object is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/convert/Period\-Converter.\-java\end{DoxyCompactItemize}

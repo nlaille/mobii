@@ -1,0 +1,70 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_local}{\section{org.\-joda.\-time.\-base.\-Base\-Local Class Reference}
+\label{classorg_1_1joda_1_1time_1_1base_1_1_base_local}\index{org.\-joda.\-time.\-base.\-Base\-Local@{org.\-joda.\-time.\-base.\-Base\-Local}}
+}
+Inheritance diagram for org.\-joda.\-time.\-base.\-Base\-Local\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.423381cm]{classorg_1_1joda_1_1time_1_1base_1_1_base_local}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_local_acb8c2326bb570cdc3ffbc58db2fbf1a1}{Base\-Local} ()
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_local_a4efc237dbc03edd2ba570cfc6be7e409}{get\-Local\-Millis} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_local}{Base\-Local} is an abstract implementation of \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial}{Readable\-Partial} that use a local milliseconds internal representation. 
+
+This class should generally not be used directly by A\-P\-I users. The \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial}{org.\-joda.\-time.\-Readable\-Partial} interface should be used when different kinds of partial objects are to be referenced. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial}{Base\-Partial} subclasses may be mutable and not thread-\/safe.
+
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-5 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_local_acb8c2326bb570cdc3ffbc58db2fbf1a1}{\index{org\-::joda\-::time\-::base\-::\-Base\-Local@{org\-::joda\-::time\-::base\-::\-Base\-Local}!Base\-Local@{Base\-Local}}
+\index{Base\-Local@{Base\-Local}!org::joda::time::base::BaseLocal@{org\-::joda\-::time\-::base\-::\-Base\-Local}}
+\subsubsection[{Base\-Local}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-base.\-Base\-Local.\-Base\-Local (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_local_acb8c2326bb570cdc3ffbc58db2fbf1a1}
+Constructs a partial with the current time, using I\-S\-O\-Chronology in the default zone to extract the fields. 
+
+The constructor uses the default time zone, resulting in the local time being initialised. Once the constructor is complete, all further calculations are performed without reference to a timezone (by switching to U\-T\-C). 
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_local_a4efc237dbc03edd2ba570cfc6be7e409}{\index{org\-::joda\-::time\-::base\-::\-Base\-Local@{org\-::joda\-::time\-::base\-::\-Base\-Local}!get\-Local\-Millis@{get\-Local\-Millis}}
+\index{get\-Local\-Millis@{get\-Local\-Millis}!org::joda::time::base::BaseLocal@{org\-::joda\-::time\-::base\-::\-Base\-Local}}
+\subsubsection[{get\-Local\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-base.\-Base\-Local.\-get\-Local\-Millis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_local_a4efc237dbc03edd2ba570cfc6be7e409}
+Gets the local milliseconds from the Java epoch of 1970-\/01-\/01\-T00\-:00\-:00 (not fixed to any specific time zone). 
+
+This method is useful in certain circustances for high performance access to the datetime fields.
+
+\begin{DoxyReturn}{Returns}
+the number of milliseconds since 1970-\/01-\/01\-T00\-:00\-:00 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_local_time_a413a33f47a0a0e47baaa8cdb22e22856}{org.\-joda.\-time.\-Local\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_time_a1e28e48e8f55c041f1619d8f3d2b8d79}{org.\-joda.\-time.\-Local\-Date\-Time}, and \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_a42b9ff9f065fe6510a04a5882393856c}{org.\-joda.\-time.\-Local\-Date}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/base/Base\-Local.\-java\end{DoxyCompactItemize}

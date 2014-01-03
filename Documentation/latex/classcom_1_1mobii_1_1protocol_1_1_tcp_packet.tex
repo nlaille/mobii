@@ -1,0 +1,234 @@
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet}{\section{com.\-mobii.\-protocol.\-Tcp\-Packet Class Reference}
+\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet}\index{com.\-mobii.\-protocol.\-Tcp\-Packet@{com.\-mobii.\-protocol.\-Tcp\-Packet}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a7dee0ef5de06871e1a7c977338af9903}{{\bfseries Tcp\-Packet} (\hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet}{Tcp\-Packet} p)}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a7dee0ef5de06871e1a7c977338af9903}
+
+\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a7f30a0589465a83aeb39e049187418bb}{get\-Packet} (byte\mbox{[}$\,$\mbox{]} src, byte\mbox{[}$\,$\mbox{]} dest, String dispatch, String opcode, String data)
+\begin{DoxyCompactList}\small\item\em Gets packets. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_ae337cb8003fd067f5c45109cf91afb2e}{parse\-Packet} (byte\mbox{[}$\,$\mbox{]} packet)
+\begin{DoxyCompactList}\small\item\em Packets parsing. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_abc8e79a24ff0eb7bae67e214698201e2}{parse\-Msg} (byte\mbox{[}$\,$\mbox{]} packet)
+\begin{DoxyCompactList}\small\item\em Messages parsing. \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a3001fbd72e206e59f42cc686041385ba}{get\-Dest} ()
+\begin{DoxyCompactList}\small\item\em Destination getter. \end{DoxyCompactList}\item 
+String \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_ab9a61518a373d2a8cadf580699c1dc04}{get\-Dispatch} ()
+\begin{DoxyCompactList}\small\item\em Dispatch getter. \end{DoxyCompactList}\item 
+String \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a71e701f9a9b89e9b9d40d0bdc59da12a}{get\-Opcode} ()
+\begin{DoxyCompactList}\small\item\em Opcode getter. \end{DoxyCompactList}\item 
+String \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_ac384ed7a57d6eda4e761876b3d02efce}{get\-Msg} ()
+\begin{DoxyCompactList}\small\item\em Message getter. \end{DoxyCompactList}\item 
+boolean \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a59a03d4bf78f73aa50ad633b5080c583}{recv\-Cli\-Connect\-Req} (\hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client}{Tcp\-Client} client, \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet}{Tcp\-Packet} tcp\-Packet, boolean cli\-Connected)
+\begin{DoxyCompactList}\small\item\em Client connection request. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a60c9a7afa84b32b68452e23f5dcd48f7}{send\-Infos} (\hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client}{Tcp\-Client} client, byte\mbox{[}$\,$\mbox{]} src)
+\begin{DoxyCompactList}\small\item\em Sending infos. \end{DoxyCompactList}\item 
+boolean \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a0f1accd6b90f5057067a87689e6a80dd}{recv\-Com} (\hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client}{Tcp\-Client} client, \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet}{Tcp\-Packet} tcp\-Packet, boolean cli\-Connected)
+\begin{DoxyCompactList}\small\item\em Packets handling. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a630871c14eba897405b12dceb6c43373}{Shared\-Preferences {\bfseries m\-Shared\-Mobii} = Mobii\-Connection\-Activity.\-get\-Shared\-Preferences()}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a630871c14eba897405b12dceb6c43373}
+
+\item 
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a00a139f95f26c9012d8e2a4246fec367}{Context {\bfseries m\-Ctx} = Mobii\-Connection\-Activity.\-get\-Context\-Application()}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a00a139f95f26c9012d8e2a4246fec367}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a3001fbd72e206e59f42cc686041385ba}{\index{com\-::mobii\-::protocol\-::\-Tcp\-Packet@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}!get\-Dest@{get\-Dest}}
+\index{get\-Dest@{get\-Dest}!com::mobii::protocol::TcpPacket@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}}
+\subsubsection[{get\-Dest}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} com.\-mobii.\-protocol.\-Tcp\-Packet.\-get\-Dest (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a3001fbd72e206e59f42cc686041385ba}
+
+
+Destination getter. 
+
+\begin{DoxyReturn}{Returns}
+Returns the client id. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_ab9a61518a373d2a8cadf580699c1dc04}{\index{com\-::mobii\-::protocol\-::\-Tcp\-Packet@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}!get\-Dispatch@{get\-Dispatch}}
+\index{get\-Dispatch@{get\-Dispatch}!com::mobii::protocol::TcpPacket@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}}
+\subsubsection[{get\-Dispatch}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-mobii.\-protocol.\-Tcp\-Packet.\-get\-Dispatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_ab9a61518a373d2a8cadf580699c1dc04}
+
+
+Dispatch getter. 
+
+\begin{DoxyReturn}{Returns}
+Returns the dispatch of the received packet. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_ac384ed7a57d6eda4e761876b3d02efce}{\index{com\-::mobii\-::protocol\-::\-Tcp\-Packet@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}!get\-Msg@{get\-Msg}}
+\index{get\-Msg@{get\-Msg}!com::mobii::protocol::TcpPacket@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}}
+\subsubsection[{get\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-mobii.\-protocol.\-Tcp\-Packet.\-get\-Msg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_ac384ed7a57d6eda4e761876b3d02efce}
+
+
+Message getter. 
+
+\begin{DoxyReturn}{Returns}
+Returns the message of the received packet. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a71e701f9a9b89e9b9d40d0bdc59da12a}{\index{com\-::mobii\-::protocol\-::\-Tcp\-Packet@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}!get\-Opcode@{get\-Opcode}}
+\index{get\-Opcode@{get\-Opcode}!com::mobii::protocol::TcpPacket@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}}
+\subsubsection[{get\-Opcode}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-mobii.\-protocol.\-Tcp\-Packet.\-get\-Opcode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a71e701f9a9b89e9b9d40d0bdc59da12a}
+
+
+Opcode getter. 
+
+\begin{DoxyReturn}{Returns}
+Returns the opcode of the received packet. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a7f30a0589465a83aeb39e049187418bb}{\index{com\-::mobii\-::protocol\-::\-Tcp\-Packet@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}!get\-Packet@{get\-Packet}}
+\index{get\-Packet@{get\-Packet}!com::mobii::protocol::TcpPacket@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}}
+\subsubsection[{get\-Packet}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} com.\-mobii.\-protocol.\-Tcp\-Packet.\-get\-Packet (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{src, }
+\item[{byte\mbox{[}$\,$\mbox{]}}]{dest, }
+\item[{String}]{dispatch, }
+\item[{String}]{opcode, }
+\item[{String}]{data}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a7f30a0589465a83aeb39e049187418bb}
+
+
+Gets packets. 
+
+Creates a packet to send. 
+\begin{DoxyParams}{Parameters}
+{\em src} & A byte array corresponding to the user id. \\
+\hline
+{\em dest} & A byte array corresponding to the client id. \\
+\hline
+{\em dispatch} & Dispatch. \\
+\hline
+{\em opcode} & Opcode. \\
+\hline
+{\em data} & Message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a byte array which is the created packet to send. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_abc8e79a24ff0eb7bae67e214698201e2}{\index{com\-::mobii\-::protocol\-::\-Tcp\-Packet@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}!parse\-Msg@{parse\-Msg}}
+\index{parse\-Msg@{parse\-Msg}!com::mobii::protocol::TcpPacket@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}}
+\subsubsection[{parse\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-mobii.\-protocol.\-Tcp\-Packet.\-parse\-Msg (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{packet}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_abc8e79a24ff0eb7bae67e214698201e2}
+
+
+Messages parsing. 
+
+Parses the messages of received packets. 
+\begin{DoxyParams}{Parameters}
+{\em packet} & A received packet. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_ae337cb8003fd067f5c45109cf91afb2e}{\index{com\-::mobii\-::protocol\-::\-Tcp\-Packet@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}!parse\-Packet@{parse\-Packet}}
+\index{parse\-Packet@{parse\-Packet}!com::mobii::protocol::TcpPacket@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}}
+\subsubsection[{parse\-Packet}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-mobii.\-protocol.\-Tcp\-Packet.\-parse\-Packet (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{packet}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_ae337cb8003fd067f5c45109cf91afb2e}
+
+
+Packets parsing. 
+
+Parses the received packets to get destination, dispatch and opcode. 
+\begin{DoxyParams}{Parameters}
+{\em packet} & A received packet. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a59a03d4bf78f73aa50ad633b5080c583}{\index{com\-::mobii\-::protocol\-::\-Tcp\-Packet@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}!recv\-Cli\-Connect\-Req@{recv\-Cli\-Connect\-Req}}
+\index{recv\-Cli\-Connect\-Req@{recv\-Cli\-Connect\-Req}!com::mobii::protocol::TcpPacket@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}}
+\subsubsection[{recv\-Cli\-Connect\-Req}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\-mobii.\-protocol.\-Tcp\-Packet.\-recv\-Cli\-Connect\-Req (
+\begin{DoxyParamCaption}
+\item[{{\bf Tcp\-Client}}]{client, }
+\item[{{\bf Tcp\-Packet}}]{tcp\-Packet, }
+\item[{boolean}]{cli\-Connected}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a59a03d4bf78f73aa50ad633b5080c583}
+
+
+Client connection request. 
+
+Checks if a client is already connected and if the password is valid. 
+\begin{DoxyParams}{Parameters}
+{\em client} & Tcp\-Client object. \\
+\hline
+{\em tcp\-Packet} & \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet}{Tcp\-Packet} object. \\
+\hline
+{\em cli\-Connected} & A boolean which is true if a client is connected. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if no client is connected and password is valid; otherwise returns false. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a0f1accd6b90f5057067a87689e6a80dd}{\index{com\-::mobii\-::protocol\-::\-Tcp\-Packet@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}!recv\-Com@{recv\-Com}}
+\index{recv\-Com@{recv\-Com}!com::mobii::protocol::TcpPacket@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}}
+\subsubsection[{recv\-Com}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\-mobii.\-protocol.\-Tcp\-Packet.\-recv\-Com (
+\begin{DoxyParamCaption}
+\item[{{\bf Tcp\-Client}}]{client, }
+\item[{{\bf Tcp\-Packet}}]{tcp\-Packet, }
+\item[{boolean}]{cli\-Connected}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a0f1accd6b90f5057067a87689e6a80dd}
+
+
+Packets handling. 
+
+Handles receiving packets. 
+\begin{DoxyParams}{Parameters}
+{\em client} & Tcp\-Client object. \\
+\hline
+{\em tcp\-Packet} & \hyperlink{classcom_1_1mobii_1_1protocol_1_1_tcp_packet}{Tcp\-Packet} object. \\
+\hline
+{\em cli\-Connected} & A boolean which is true if a client is connected. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns false if a client disconnection packet has been received; otherwise returns true. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a60c9a7afa84b32b68452e23f5dcd48f7}{\index{com\-::mobii\-::protocol\-::\-Tcp\-Packet@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}!send\-Infos@{send\-Infos}}
+\index{send\-Infos@{send\-Infos}!com::mobii::protocol::TcpPacket@{com\-::mobii\-::protocol\-::\-Tcp\-Packet}}
+\subsubsection[{send\-Infos}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-mobii.\-protocol.\-Tcp\-Packet.\-send\-Infos (
+\begin{DoxyParamCaption}
+\item[{{\bf Tcp\-Client}}]{client, }
+\item[{byte\mbox{[}$\,$\mbox{]}}]{src}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1protocol_1_1_tcp_packet_a60c9a7afa84b32b68452e23f5dcd48f7}
+
+
+Sending infos. 
+
+Sends mobile information. 
+\begin{DoxyParams}{Parameters}
+{\em client} & Tcp\-Client object. \\
+\hline
+{\em src} & A byte array corresponding to the user id. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/src/com/mobii/protocol/Tcp\-Packet.\-java\end{DoxyCompactItemize}

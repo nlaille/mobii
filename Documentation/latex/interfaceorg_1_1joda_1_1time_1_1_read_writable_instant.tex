@@ -1,0 +1,358 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant}{\section{org.\-joda.\-time.\-Read\-Writable\-Instant Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant}\index{org.\-joda.\-time.\-Read\-Writable\-Instant@{org.\-joda.\-time.\-Read\-Writable\-Instant}}
+}
+Inheritance diagram for org.\-joda.\-time.\-Read\-Writable\-Instant\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_ae90bda5043ad45feb53af6f3ee29335b}{set\-Millis} (long instant)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a77145ef36c6eb178960208b1f5e55469}{set\-Millis} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} instant)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a21aed832c2b30b4f22e6a0ccd9299583}{set\-Chronology} (\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chronology)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_adcb4582ac7c3e9f44628ac0a78bf09cd}{set\-Zone} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a9f6a78cba16191727a1cdfbd89886d73}{set\-Zone\-Retain\-Fields} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_aa8a9aa3306c0680e48e255df2eebc044}{add} (long duration)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a1475f7aa1688ba8723f3c0f2c2c351b9}{add} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration}{Readable\-Duration} duration)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_ade14401563b31ecda92112f996166d8e}{add} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration}{Readable\-Duration} duration, int scalar)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a8dd72f461dae1a3cd0797fce39ddd647}{add} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} period)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a5639e47f6079a4607e7a07727aea4d76}{add} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} period, int scalar)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a8933cef336fd354fe46882c57f6e1c8e}{set} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} type, int value)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a14e0428dc39c6ac3e348e20c50265d77}{add} (\hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} type, int amount)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines an instant in the datetime continuum that can be queried and modified. This interface expresses the datetime as milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z. 
+
+The implementation of this interface will be mutable. It may provide more advanced methods than those in the interface.
+
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_aa8a9aa3306c0680e48e255df2eebc044}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Instant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}!add@{add}}
+\index{add@{add}!org::joda::time::ReadWritableInstant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Instant.\-add (
+\begin{DoxyParamCaption}
+\item[{long}]{duration}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_aa8a9aa3306c0680e48e255df2eebc044}
+Adds a millisecond duration to this instant. 
+
+This will typically change the value of ost fields.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & the millis to add \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the value is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_a4d0dc6186b0a0861c6f6e006d0c23b0d}{org.\-joda.\-time.\-Mutable\-Date\-Time}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a1475f7aa1688ba8723f3c0f2c2c351b9}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Instant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}!add@{add}}
+\index{add@{add}!org::joda::time::ReadWritableInstant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Instant.\-add (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Duration}}]{duration}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a1475f7aa1688ba8723f3c0f2c2c351b9}
+Adds a duration to this instant. 
+
+This will typically change the value of most fields.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & the duration to add, null means add zero \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the result exceeds the capacity of the instant \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_ad0245e7644fd54c2b627189df6e334bb}{org.\-joda.\-time.\-Mutable\-Date\-Time}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_ade14401563b31ecda92112f996166d8e}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Instant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}!add@{add}}
+\index{add@{add}!org::joda::time::ReadWritableInstant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Instant.\-add (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Duration}}]{duration, }
+\item[{int}]{scalar}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_ade14401563b31ecda92112f996166d8e}
+Adds a duration to this instant specifying how many times to add. 
+
+This will typically change the value of most fields.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & the duration to add, null means add zero \\
+\hline
+{\em scalar} & direction and amount to add, which may be negative \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the result exceeds the capacity of the instant \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_aff95af1570f4b262d5c979fe99333315}{org.\-joda.\-time.\-Mutable\-Date\-Time}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a8dd72f461dae1a3cd0797fce39ddd647}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Instant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}!add@{add}}
+\index{add@{add}!org::joda::time::ReadWritableInstant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Instant.\-add (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Period}}]{period}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a8dd72f461dae1a3cd0797fce39ddd647}
+Adds a period to this instant. 
+
+This will typically change the value of most fields.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & the period to add, null means add zero \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the result exceeds the capacity of the instant \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_ad99b36f01e675d81a92cc08427d4bd81}{org.\-joda.\-time.\-Mutable\-Date\-Time}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a5639e47f6079a4607e7a07727aea4d76}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Instant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}!add@{add}}
+\index{add@{add}!org::joda::time::ReadWritableInstant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Instant.\-add (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Period}}]{period, }
+\item[{int}]{scalar}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a5639e47f6079a4607e7a07727aea4d76}
+Adds a period to this instant specifying how many times to add. 
+
+This will typically change the value of most fields.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & the period to add, null means add zero \\
+\hline
+{\em scalar} & direction and amount to add, which may be negative \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the result exceeds the capacity of the instant \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_ade761e4900dfb977242ea4221c9adf8f}{org.\-joda.\-time.\-Mutable\-Date\-Time}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a14e0428dc39c6ac3e348e20c50265d77}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Instant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}!add@{add}}
+\index{add@{add}!org::joda::time::ReadWritableInstant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Instant.\-add (
+\begin{DoxyParamCaption}
+\item[{{\bf Duration\-Field\-Type}}]{type, }
+\item[{int}]{amount}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a14e0428dc39c6ac3e348e20c50265d77}
+Adds to the instant specifying the duration and multiple to add.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a field type, usually obtained from \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type}, null ignored \\
+\hline
+{\em amount} & the amount to add of this duration \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the result exceeds the capacity of the instant \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_aa188d217252f4c70b69df43d05a8d37e}{org.\-joda.\-time.\-Mutable\-Date\-Time}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a8933cef336fd354fe46882c57f6e1c8e}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Instant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}!set@{set}}
+\index{set@{set}!org::joda::time::ReadWritableInstant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Instant.\-set (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field\-Type}}]{type, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a8933cef336fd354fe46882c57f6e1c8e}
+Sets the value of one of the fields of the instant, such as hour\-Of\-Day.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a field type, usually obtained from \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type}, null ignored \\
+\hline
+{\em value} & the value to set the field to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the value is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_a6beb6dc00464b7e9b9fc4b0e0c664ab4}{org.\-joda.\-time.\-Mutable\-Date\-Time}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a21aed832c2b30b4f22e6a0ccd9299583}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Instant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}!set\-Chronology@{set\-Chronology}}
+\index{set\-Chronology@{set\-Chronology}!org::joda::time::ReadWritableInstant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}}
+\subsubsection[{set\-Chronology}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Instant.\-set\-Chronology (
+\begin{DoxyParamCaption}
+\item[{{\bf Chronology}}]{chronology}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a21aed832c2b30b4f22e6a0ccd9299583}
+Sets the chronology of the datetime, which has no effect if not applicable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chronology} & the chronology to use, null means I\-S\-O\-Chronology in default zone \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the value is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_a66f6c06865c61fc86becef17bfe2b940}{org.\-joda.\-time.\-Mutable\-Date\-Time}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_ae90bda5043ad45feb53af6f3ee29335b}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Instant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}!set\-Millis@{set\-Millis}}
+\index{set\-Millis@{set\-Millis}!org::joda::time::ReadWritableInstant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}}
+\subsubsection[{set\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Instant.\-set\-Millis (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_ae90bda5043ad45feb53af6f3ee29335b}
+Sets the value as the number of milliseconds since the epoch, 1970-\/01-\/01\-T00\-:00\-:00\-Z.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds since 1970-\/01-\/01\-T00\-:00\-:00\-Z to set the instant to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the value is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_aedfc4d80869624f55bc554004c6ea63c}{org.\-joda.\-time.\-Mutable\-Date\-Time}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a77145ef36c6eb178960208b1f5e55469}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Instant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}!set\-Millis@{set\-Millis}}
+\index{set\-Millis@{set\-Millis}!org::joda::time::ReadWritableInstant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}}
+\subsubsection[{set\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Instant.\-set\-Millis (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Instant}}]{instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a77145ef36c6eb178960208b1f5e55469}
+Sets the millisecond instant of this instant from another. 
+
+This method does not change the chronology of this instant, just the millisecond instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the instant to use, null means now \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_a627e8ce806cb8a028c98ee9ec6e5e6c5}{org.\-joda.\-time.\-Mutable\-Date\-Time}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_adcb4582ac7c3e9f44628ac0a78bf09cd}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Instant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}!set\-Zone@{set\-Zone}}
+\index{set\-Zone@{set\-Zone}!org::joda::time::ReadWritableInstant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}}
+\subsubsection[{set\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Instant.\-set\-Zone (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{zone}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_adcb4582ac7c3e9f44628ac0a78bf09cd}
+Sets the time zone of the datetime, changing the chronology and field values. 
+
+Changing the zone using this method retains the millisecond instant. The millisecond instant is adjusted in the new zone to compensate.
+
+chronology. Setting the time zone does not affect the millisecond value of this instant. 
+
+If the chronology already has this time zone, no change occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone} & the time zone to use, null means default zone \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a9f6a78cba16191727a1cdfbd89886d73}{set\-Zone\-Retain\-Fields} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_ab03b58a7e43682f4860f2dec51d30fe9}{org.\-joda.\-time.\-Mutable\-Date\-Time}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a9f6a78cba16191727a1cdfbd89886d73}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Instant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}!set\-Zone\-Retain\-Fields@{set\-Zone\-Retain\-Fields}}
+\index{set\-Zone\-Retain\-Fields@{set\-Zone\-Retain\-Fields}!org::joda::time::ReadWritableInstant@{org\-::joda\-::time\-::\-Read\-Writable\-Instant}}
+\subsubsection[{set\-Zone\-Retain\-Fields}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Instant.\-set\-Zone\-Retain\-Fields (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{zone}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_a9f6a78cba16191727a1cdfbd89886d73}
+Sets the time zone of the datetime, changing the chronology and millisecond. 
+
+Changing the zone using this method retains the field values. The millisecond instant is adjusted in the new zone to compensate. 
+
+If the chronology already has this time zone, no change occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone} & the time zone to use, null means default zone \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_instant_adcb4582ac7c3e9f44628ac0a78bf09cd}{set\-Zone} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_aefcb4cd4480695acef00d3ab96d009d3}{org.\-joda.\-time.\-Mutable\-Date\-Time}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/Read\-Writable\-Instant.\-java\end{DoxyCompactItemize}

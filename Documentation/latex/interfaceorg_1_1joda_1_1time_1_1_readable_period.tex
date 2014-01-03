@@ -1,0 +1,302 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_period}{\section{org.\-joda.\-time.\-Readable\-Period Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1_readable_period}\index{org.\-joda.\-time.\-Readable\-Period@{org.\-joda.\-time.\-Readable\-Period}}
+}
+Inheritance diagram for org.\-joda.\-time.\-Readable\-Period\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.281250cm]{interfaceorg_1_1joda_1_1time_1_1_readable_period}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_period_type}{Period\-Type} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period_afb2459c7c2b73ac0e3ad8a20b9644233}{get\-Period\-Type} ()
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period_a873b4c6842bb068b91910bec4bd2bafe}{size} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period_a327cfd05bb6902381ec0677d98f84911}{get\-Field\-Type} (int index)
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period_abfe796efa57272802e85af24b0dc4a3b}{get\-Value} (int index)
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period_a9879a97f6a9c2790cfda79d96799afb7}{get} (\hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} field)
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period_a25165eb48424a5eadf0a404dab09db15}{is\-Supported} (\hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} field)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_period}{Period} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period_a529d53f15f57d58abed1a69877bcb71a}{to\-Period} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_mutable_period}{Mutable\-Period} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period_a1992a9694945a2cbba75d49d5134cbec}{to\-Mutable\-Period} ()
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period_a5098cc2af4aa9811d419118e7099c96f}{equals} (Object readable\-Period)
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period_a23027f5be82e78bc3478c6417856aca7}{hash\-Code} ()
+\item 
+String \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period_a6040c2282959a2d2f6694421591ad0f2}{to\-String} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines a time period specified in terms of individual duration fields such as years and days. 
+
+The implementation of this interface may be mutable or immutable. This interface only gives access to retrieve data, never to change it. 
+
+Periods are split up into multiple fields, for example days and seconds. Implementations are not required to evenly distribute the values across the fields. The value for each field may be positive or negative. 
+
+When a time period is added to an instant, the effect is to add each field in turn. For example, a time period could be defined as 3 months, 2 days and -\/1 hours. In most circumstances this would be the same as 3 months, 1 day, and 23 hours. However, when adding across a daylight savings boundary, a day may be 23 or 25 hours long. Thus, the time period is always added field by field to the datetime. 
+
+Periods are independent of chronology, and can only be treated as durations when paired with a time via an interval.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration}{Readable\-Duration} 
+
+\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_interval}{Readable\-Interval} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_period_a5098cc2af4aa9811d419118e7099c96f}{\index{org\-::joda\-::time\-::\-Readable\-Period@{org\-::joda\-::time\-::\-Readable\-Period}!equals@{equals}}
+\index{equals@{equals}!org::joda::time::ReadablePeriod@{org\-::joda\-::time\-::\-Readable\-Period}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Period.\-equals (
+\begin{DoxyParamCaption}
+\item[{Object}]{readable\-Period}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_period_a5098cc2af4aa9811d419118e7099c96f}
+Compares this object with the specified object for equality based on the value and type of each supported field. All \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} instances are accepted. 
+
+Note that a period of 1 day is not equal to a period of 24 hours, nor is 1 hour equal to 60 minutes. Only periods with the same amount in each field are equal. 
+
+This is because periods represent an abstracted definition of a time period (eg. a day may not actually be 24 hours, it might be 23 or 25 at daylight savings boundary). 
+
+To compare the actual duration of two periods, convert both to \hyperlink{classorg_1_1joda_1_1time_1_1_duration}{Duration}s, an operation that emphasises that the result may differ according to the date you choose.
+
+
+\begin{DoxyParams}{Parameters}
+{\em readable\-Period} & a readable period to check against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if all the field values and types are equal, false if not or the period is null or of an incorrect type 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_single_field_period_a35a80cfdb713f6ce995d3cf839186cd5}{org.\-joda.\-time.\-base.\-Base\-Single\-Field\-Period}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_period_a803080258e20018555e3eb95ac75c3db}{org.\-joda.\-time.\-base.\-Abstract\-Period}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_period_a9879a97f6a9c2790cfda79d96799afb7}{\index{org\-::joda\-::time\-::\-Readable\-Period@{org\-::joda\-::time\-::\-Readable\-Period}!get@{get}}
+\index{get@{get}!org::joda::time::ReadablePeriod@{org\-::joda\-::time\-::\-Readable\-Period}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Readable\-Period.\-get (
+\begin{DoxyParamCaption}
+\item[{{\bf Duration\-Field\-Type}}]{field}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_period_a9879a97f6a9c2790cfda79d96799afb7}
+Gets the value of one of the fields. 
+
+If the field type specified is not supported by the period then zero is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & the field type to query, null returns zero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of that field, zero if field not supported 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_single_field_period_a302a562e8aa86c4b2ea421cee511322d}{org.\-joda.\-time.\-base.\-Base\-Single\-Field\-Period}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_period_adced56e70e842485e0396f8dfe428cc5}{org.\-joda.\-time.\-base.\-Abstract\-Period}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_period_a327cfd05bb6902381ec0677d98f84911}{\index{org\-::joda\-::time\-::\-Readable\-Period@{org\-::joda\-::time\-::\-Readable\-Period}!get\-Field\-Type@{get\-Field\-Type}}
+\index{get\-Field\-Type@{get\-Field\-Type}!org::joda::time::ReadablePeriod@{org\-::joda\-::time\-::\-Readable\-Period}}
+\subsubsection[{get\-Field\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Duration\-Field\-Type} org.\-joda.\-time.\-Readable\-Period.\-get\-Field\-Type (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_period_a327cfd05bb6902381ec0677d98f84911}
+Gets the field type at the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the field at the specified index 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\-Out\-Of\-Bounds\-Exception} & if the index is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_single_field_period_a0ef5f11ed6bb37845b7ed7ae1ab5a11b}{org.\-joda.\-time.\-base.\-Base\-Single\-Field\-Period}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_period_a2f366ba30cb3ef23e5e0af16545daa9c}{org.\-joda.\-time.\-base.\-Abstract\-Period}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_period_afb2459c7c2b73ac0e3ad8a20b9644233}{\index{org\-::joda\-::time\-::\-Readable\-Period@{org\-::joda\-::time\-::\-Readable\-Period}!get\-Period\-Type@{get\-Period\-Type}}
+\index{get\-Period\-Type@{get\-Period\-Type}!org::joda::time::ReadablePeriod@{org\-::joda\-::time\-::\-Readable\-Period}}
+\subsubsection[{get\-Period\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Period\-Type} org.\-joda.\-time.\-Readable\-Period.\-get\-Period\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_period_afb2459c7c2b73ac0e3ad8a20b9644233}
+Gets the period type that defines which fields are included in the period.
+
+\begin{DoxyReturn}{Returns}
+the period type 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_period_a2bc1681c1753880e6dc84d37781d5b7a}{org.\-joda.\-time.\-base.\-Base\-Period}, \hyperlink{classorg_1_1joda_1_1time_1_1_hours_a6340d8bf136206b62d8ac77d8ce5bfcf}{org.\-joda.\-time.\-Hours}, \hyperlink{classorg_1_1joda_1_1time_1_1_days_a7fac3ac667ee3d8bb1c523d205218c28}{org.\-joda.\-time.\-Days}, \hyperlink{classorg_1_1joda_1_1time_1_1_months_a2983f3f2ded7e1bdea8b0bbbbc62675e}{org.\-joda.\-time.\-Months}, \hyperlink{classorg_1_1joda_1_1time_1_1_minutes_aac15f69f2e9807f834f83fc060b7d709}{org.\-joda.\-time.\-Minutes}, \hyperlink{classorg_1_1joda_1_1time_1_1_seconds_a61dcd22e6005f812628c88b05e3fac36}{org.\-joda.\-time.\-Seconds}, \hyperlink{classorg_1_1joda_1_1time_1_1_weeks_a52084312299aca7d652354824048b70f}{org.\-joda.\-time.\-Weeks}, \hyperlink{classorg_1_1joda_1_1time_1_1_years_a68c49318920bdda4efc5dee41302900e}{org.\-joda.\-time.\-Years}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_single_field_period_adec745b2f348aa2d2748334f61fd0df5}{org.\-joda.\-time.\-base.\-Base\-Single\-Field\-Period}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_period_abfe796efa57272802e85af24b0dc4a3b}{\index{org\-::joda\-::time\-::\-Readable\-Period@{org\-::joda\-::time\-::\-Readable\-Period}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!org::joda::time::ReadablePeriod@{org\-::joda\-::time\-::\-Readable\-Period}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Readable\-Period.\-get\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_period_abfe796efa57272802e85af24b0dc4a3b}
+Gets the value at the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the field at the specified index 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\-Out\-Of\-Bounds\-Exception} & if the index is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_period_a1852a6a8338454b9e40f91fb841661fd}{org.\-joda.\-time.\-base.\-Base\-Period}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_single_field_period_a50f329bede939a4e6a1f8fb85167339f}{org.\-joda.\-time.\-base.\-Base\-Single\-Field\-Period}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_period_a23027f5be82e78bc3478c6417856aca7}{\index{org\-::joda\-::time\-::\-Readable\-Period@{org\-::joda\-::time\-::\-Readable\-Period}!hash\-Code@{hash\-Code}}
+\index{hash\-Code@{hash\-Code}!org::joda::time::ReadablePeriod@{org\-::joda\-::time\-::\-Readable\-Period}}
+\subsubsection[{hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Readable\-Period.\-hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_period_a23027f5be82e78bc3478c6417856aca7}
+Gets a hash code for the period that is compatible with the equals method. The hashcode is calculated as follows\-: 
+\begin{DoxyPre}
+ int total = 17;
+ for (int i = 0; i < fields.length; i++) \{
+     total = 27 * total + getValue(i);
+     total = 27 * total + getFieldType(i).\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period_a23027f5be82e78bc3478c6417856aca7}{hashCode()};
+ \}
+ return total;
+\end{DoxyPre}
+
+
+\begin{DoxyReturn}{Returns}
+a hash code 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_single_field_period_ab12744e48b85a2883813d22faac43380}{org.\-joda.\-time.\-base.\-Base\-Single\-Field\-Period}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_period_a618c2e11da985c8f995d8e16bb1a3ef5}{org.\-joda.\-time.\-base.\-Abstract\-Period}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_period_a25165eb48424a5eadf0a404dab09db15}{\index{org\-::joda\-::time\-::\-Readable\-Period@{org\-::joda\-::time\-::\-Readable\-Period}!is\-Supported@{is\-Supported}}
+\index{is\-Supported@{is\-Supported}!org::joda::time::ReadablePeriod@{org\-::joda\-::time\-::\-Readable\-Period}}
+\subsubsection[{is\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Period.\-is\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Duration\-Field\-Type}}]{field}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_period_a25165eb48424a5eadf0a404dab09db15}
+Checks whether the field type specified is supported by this period.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & the field to check, may be null which returns false \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the field is supported 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_single_field_period_aadaa51788e3e81cdca7052f6567487eb}{org.\-joda.\-time.\-base.\-Base\-Single\-Field\-Period}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_period_a74d471025dd6d99c700ad3d7bf08a0d7}{org.\-joda.\-time.\-base.\-Abstract\-Period}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_period_a873b4c6842bb068b91910bec4bd2bafe}{\index{org\-::joda\-::time\-::\-Readable\-Period@{org\-::joda\-::time\-::\-Readable\-Period}!size@{size}}
+\index{size@{size}!org::joda::time::ReadablePeriod@{org\-::joda\-::time\-::\-Readable\-Period}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Readable\-Period.\-size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_period_a873b4c6842bb068b91910bec4bd2bafe}
+Gets the number of fields that this period supports.
+
+\begin{DoxyReturn}{Returns}
+the number of fields supported 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_single_field_period_a897bd25b3967a600d67778212b27ef98}{org.\-joda.\-time.\-base.\-Base\-Single\-Field\-Period}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_period_ad3d943a6c7e3e78d33ae86d4fcd6064a}{org.\-joda.\-time.\-base.\-Abstract\-Period}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_period_a1992a9694945a2cbba75d49d5134cbec}{\index{org\-::joda\-::time\-::\-Readable\-Period@{org\-::joda\-::time\-::\-Readable\-Period}!to\-Mutable\-Period@{to\-Mutable\-Period}}
+\index{to\-Mutable\-Period@{to\-Mutable\-Period}!org::joda::time::ReadablePeriod@{org\-::joda\-::time\-::\-Readable\-Period}}
+\subsubsection[{to\-Mutable\-Period}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mutable\-Period} org.\-joda.\-time.\-Readable\-Period.\-to\-Mutable\-Period (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_period_a1992a9694945a2cbba75d49d5134cbec}
+Get this object as a {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_period}{Mutable\-Period}}. 
+
+This will always return a new {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_period}{Mutable\-Period}} with the same fields.
+
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_period}{Mutable\-Period} using the same field set and values 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_single_field_period_a1b3c0160fa7e5e404d9cc2ae008eb939}{org.\-joda.\-time.\-base.\-Base\-Single\-Field\-Period}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_period_ae97812d50c18357dd61f05b518a3e679}{org.\-joda.\-time.\-base.\-Abstract\-Period}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_period_a529d53f15f57d58abed1a69877bcb71a}{\index{org\-::joda\-::time\-::\-Readable\-Period@{org\-::joda\-::time\-::\-Readable\-Period}!to\-Period@{to\-Period}}
+\index{to\-Period@{to\-Period}!org::joda::time::ReadablePeriod@{org\-::joda\-::time\-::\-Readable\-Period}}
+\subsubsection[{to\-Period}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Period} org.\-joda.\-time.\-Readable\-Period.\-to\-Period (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_period_a529d53f15f57d58abed1a69877bcb71a}
+Get this period as an immutable {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_period}{Period}} object. 
+
+This will either typecast this instance, or create a new {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_period}{Period}}.
+
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classorg_1_1joda_1_1time_1_1_duration}{Duration} using the same field set and values 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_period_a704610ed148eca03ec1c687cdd5ca544}{org.\-joda.\-time.\-Period}, \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_single_field_period_a0f7b2baca22b5416a196f787e9cef910}{org.\-joda.\-time.\-base.\-Base\-Single\-Field\-Period}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_period_a426c9cd3a412a7427aef7252484dee33}{org.\-joda.\-time.\-base.\-Abstract\-Period}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_period_a6040c2282959a2d2f6694421591ad0f2}{\index{org\-::joda\-::time\-::\-Readable\-Period@{org\-::joda\-::time\-::\-Readable\-Period}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!org::joda::time::ReadablePeriod@{org\-::joda\-::time\-::\-Readable\-Period}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-Readable\-Period.\-to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_period_a6040c2282959a2d2f6694421591ad0f2}
+Gets the value as a String in the style of the I\-S\-O8601 duration format. Technically, the output can breach the I\-S\-O specification as weeks may be included. 
+
+For example, \char`\"{}\-P\-T6\-H3\-M5\-S\char`\"{} represents 6 hours, 3 minutes, 5 seconds.
+
+\begin{DoxyReturn}{Returns}
+the value as an I\-S\-O8601 style string 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_days_ae7e24a2794a010b230b752915bcc7a80}{org.\-joda.\-time.\-Days}, \hyperlink{classorg_1_1joda_1_1time_1_1_hours_a90dc05260f0da0e83e495a3c2079ca1d}{org.\-joda.\-time.\-Hours}, \hyperlink{classorg_1_1joda_1_1time_1_1_weeks_aeb4fd79f3b43816a53efa9796beff149}{org.\-joda.\-time.\-Weeks}, \hyperlink{classorg_1_1joda_1_1time_1_1_minutes_a3d92c8be7544c3c76582dfb273a262c0}{org.\-joda.\-time.\-Minutes}, \hyperlink{classorg_1_1joda_1_1time_1_1_seconds_ad22c0faff86e28ccb1b6e79659e0a714}{org.\-joda.\-time.\-Seconds}, \hyperlink{classorg_1_1joda_1_1time_1_1_months_a9bb2730768a361b934f30a4216d70b61}{org.\-joda.\-time.\-Months}, \hyperlink{classorg_1_1joda_1_1time_1_1_years_a5f75cf4f2e09700e9c65b72d1dccbf6d}{org.\-joda.\-time.\-Years}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_period_adf7381fed44ce148d0576e6defaaa229}{org.\-joda.\-time.\-base.\-Abstract\-Period}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/Readable\-Period.\-java\end{DoxyCompactItemize}

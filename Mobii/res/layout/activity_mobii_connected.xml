@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mobii_interface"
+    android:orientation="vertical"
+    android:screenOrientation="portrait" >
+
+   	<RelativeLayout
+        android:id="@+id/relativeLayoutPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="192.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutUid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayoutPwd"
+        android:layout_above="@+id/relativeLayoutConnection" >
+
+        <TextView
+            android:id="@+id/text_connection_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:text="@string/tv_connection_code"
+            android:textColor="@color/connection_code_color"
+            android:textSize="12sp"
+            android:textStyle="normal|bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tv_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tv_uid"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="normal"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="209dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/bt_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button_connection"
+            android:clickable="true"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="@string/bt_disconnection"
+            android:textColor="@color/text_connect_color"
+            android:textSize="@dimen/size_text_connect"
+            android:textStyle="normal|bold"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:screenOrientation="portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mobii_interface"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutUid"
+        android:layout_width="@dimen/width_rl_uid"
+        android:layout_height="@dimen/height_rl_uid"
+        android:layout_above="@+id/relativeLayoutConnection"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/pos_rl_uid" >
+
+		<TextView
+            android:id="@+id/text_connection_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tv_connection_code"
+            android:textColor="@color/connection_code_color"
+            android:textSize="12sp"
+            android:textStyle="normal|bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tv_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tv_uid"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="normal"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutConnection"
+        android:layout_width="@dimen/width_rl_disconnect"
+        android:layout_height="@dimen/height_rl_disconnect"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:id="@+id/bt_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/pos_bt_disconnect"
+            android:background="@drawable/button_connection"
+            android:clickable="true"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="@string/bt_disconnection"
+            android:textColor="@color/text_connect_color"
+            android:textSize="@dimen/size_text_connect"
+            android:textStyle="normal|bold"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+</RelativeLayout>
+-->
+<!--
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MobiiConnectionActivity" />
+-->

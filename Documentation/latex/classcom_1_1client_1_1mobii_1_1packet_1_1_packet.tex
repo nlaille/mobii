@@ -1,0 +1,96 @@
+\hypertarget{classcom_1_1client_1_1mobii_1_1packet_1_1_packet}{\section{com.\-client.\-mobii.\-packet.\-Packet Class Reference}
+\label{classcom_1_1client_1_1mobii_1_1packet_1_1_packet}\index{com.\-client.\-mobii.\-packet.\-Packet@{com.\-client.\-mobii.\-packet.\-Packet}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_aabdbb2642dd37f8ad8b65f7f4c4cc782}{{\bfseries Packet} (Context ctx, Data\-Output\-Stream o\-Stream, Buffered\-Reader i\-Stream, int port)}\label{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_aabdbb2642dd37f8ad8b65f7f4c4cc782}
+
+\item 
+\hypertarget{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_a7898f6023b7fb83b2d2293327a444077}{{\bfseries Packet} (\hyperlink{classcom_1_1client_1_1mobii_1_1packet_1_1_packet}{Packet} p)}\label{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_a7898f6023b7fb83b2d2293327a444077}
+
+\item 
+String \hyperlink{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_ab4cb0c94df2fc340589f41dbca735073}{get\-Msg} ()
+\begin{DoxyCompactList}\small\item\em Gets a message from a received packet. \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_a30d210e2b7b8f4a2e43eef3d5c61b201}{get\-Packet} (final String action, String msg)
+\begin{DoxyCompactList}\small\item\em Creates a packet. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_a13135e046fa6e53b347ee1eb32f319ea}{send\-Packet} (byte\mbox{[}$\,$\mbox{]} packet)
+\begin{DoxyCompactList}\small\item\em Sends a packet. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_a29ff172dda03e55401abb3188df401de}{recv\-Packet} (boolean is\-Run)
+\begin{DoxyCompactList}\small\item\em Waits for incoming connections. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_ab4cb0c94df2fc340589f41dbca735073}{\index{com\-::client\-::mobii\-::packet\-::\-Packet@{com\-::client\-::mobii\-::packet\-::\-Packet}!get\-Msg@{get\-Msg}}
+\index{get\-Msg@{get\-Msg}!com::client::mobii::packet::Packet@{com\-::client\-::mobii\-::packet\-::\-Packet}}
+\subsubsection[{get\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-client.\-mobii.\-packet.\-Packet.\-get\-Msg (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_ab4cb0c94df2fc340589f41dbca735073}
+
+
+Gets a message from a received packet. 
+
+\begin{DoxyReturn}{Returns}
+A {\itshape String} corresponding to the message. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_a30d210e2b7b8f4a2e43eef3d5c61b201}{\index{com\-::client\-::mobii\-::packet\-::\-Packet@{com\-::client\-::mobii\-::packet\-::\-Packet}!get\-Packet@{get\-Packet}}
+\index{get\-Packet@{get\-Packet}!com::client::mobii::packet::Packet@{com\-::client\-::mobii\-::packet\-::\-Packet}}
+\subsubsection[{get\-Packet}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} com.\-client.\-mobii.\-packet.\-Packet.\-get\-Packet (
+\begin{DoxyParamCaption}
+\item[{final String}]{action, }
+\item[{String}]{msg}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_a30d210e2b7b8f4a2e43eef3d5c61b201}
+
+
+Creates a packet. 
+
+Creates a packet by concatenating a header and the message {\itshape msg}. 
+\begin{DoxyParams}{Parameters}
+{\em action} & A String corresponding to the header to create. \\
+\hline
+{\em msg} & A String corresponding to the message to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A {\itshape byte}\mbox{[}\mbox{]} corresponding to the created packet. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_a29ff172dda03e55401abb3188df401de}{\index{com\-::client\-::mobii\-::packet\-::\-Packet@{com\-::client\-::mobii\-::packet\-::\-Packet}!recv\-Packet@{recv\-Packet}}
+\index{recv\-Packet@{recv\-Packet}!com::client::mobii::packet::Packet@{com\-::client\-::mobii\-::packet\-::\-Packet}}
+\subsubsection[{recv\-Packet}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-client.\-mobii.\-packet.\-Packet.\-recv\-Packet (
+\begin{DoxyParamCaption}
+\item[{boolean}]{is\-Run}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_a29ff172dda03e55401abb3188df401de}
+
+
+Waits for incoming connections. 
+
+Listens to incoming connections from clients. 
+\begin{DoxyParams}{Parameters}
+{\em is\-Run} & A {\itshape boolean} which is true if the client is run, otherwise false. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_a13135e046fa6e53b347ee1eb32f319ea}{\index{com\-::client\-::mobii\-::packet\-::\-Packet@{com\-::client\-::mobii\-::packet\-::\-Packet}!send\-Packet@{send\-Packet}}
+\index{send\-Packet@{send\-Packet}!com::client::mobii::packet::Packet@{com\-::client\-::mobii\-::packet\-::\-Packet}}
+\subsubsection[{send\-Packet}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-client.\-mobii.\-packet.\-Packet.\-send\-Packet (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{packet}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1client_1_1mobii_1_1packet_1_1_packet_a13135e046fa6e53b347ee1eb32f319ea}
+
+
+Sends a packet. 
+
+Sends a packet to a client. 
+\begin{DoxyParams}{Parameters}
+{\em packet} & A {\itshape byte}\mbox{[}\mbox{]} corresponding to the packet. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/src/com/client/mobii/packet/\hyperlink{_packet_8java}{Packet.\-java}\end{DoxyCompactItemize}

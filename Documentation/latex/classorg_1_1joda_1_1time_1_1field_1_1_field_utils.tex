@@ -1,0 +1,448 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils}{\section{org.\-joda.\-time.\-field.\-Field\-Utils Class Reference}
+\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils}\index{org.\-joda.\-time.\-field.\-Field\-Utils@{org.\-joda.\-time.\-field.\-Field\-Utils}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a705c83804744557c5c05f09b93944fc3}{safe\-Negate} (int value)
+\item 
+static int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a46be905ceb58fa034d39f8a987188f0b}{safe\-Add} (int val1, int val2)
+\item 
+static long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a4d8c52538ca2288c8d34f8b5a3ad2181}{safe\-Add} (long val1, long val2)
+\item 
+static long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_ace9e5f9870a74af25800dff49c52fa28}{safe\-Subtract} (long val1, long val2)
+\item 
+static int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a4de4df2d9b5b18890ad2fe20f6de7963}{safe\-Multiply} (int val1, int val2)
+\item 
+static long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a758dd39bf99c80b7cc2ece30a2709b39}{safe\-Multiply} (long val1, int val2)
+\item 
+static long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_ae8b0034f2a4160571b8066c99cca2c95}{safe\-Multiply} (long val1, long val2)
+\item 
+static int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_adc00a918d6178df5e3ac854e6d3dbb0c}{safe\-To\-Int} (long value)
+\item 
+static int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_af64db544210df61407b188ac5e01cd02}{safe\-Multiply\-To\-Int} (long val1, long val2)
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a7b8378a99aad6a706bc27624713b4625}{verify\-Value\-Bounds} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} field, int value, int lower\-Bound, int upper\-Bound)
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a8a100306f630846be797554d3d093b56}{verify\-Value\-Bounds} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} field\-Type, int value, int lower\-Bound, int upper\-Bound)
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a4f5655d95f607aff8b8a105047f0c539}{verify\-Value\-Bounds} (String field\-Name, int value, int lower\-Bound, int upper\-Bound)
+\item 
+static int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a9d96c39461bfb32c4f67fe8f833c2f00}{get\-Wrapped\-Value} (int current\-Value, int wrap\-Value, int min\-Value, int max\-Value)
+\item 
+static int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a6a074abd36c5c8c0a230dbcc547d9d12}{get\-Wrapped\-Value} (int value, int min\-Value, int max\-Value)
+\item 
+static boolean \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a8a9e95e10da57bea59b31b295788c5f9}{equals} (Object object1, Object object2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+General utilities that don't fit elsewhere. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_field_utils}{Field\-Utils} is thread-\/safe and immutable.
+
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a8a9e95e10da57bea59b31b295788c5f9}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!equals@{equals}}
+\index{equals@{equals}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}static boolean org.\-joda.\-time.\-field.\-Field\-Utils.\-equals (
+\begin{DoxyParamCaption}
+\item[{Object}]{object1, }
+\item[{Object}]{object2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a8a9e95e10da57bea59b31b295788c5f9}
+Compares two objects as equals handling null.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object1} & the first object \\
+\hline
+{\em object2} & the second object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if equal 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\-4 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a9d96c39461bfb32c4f67fe8f833c2f00}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!get\-Wrapped\-Value@{get\-Wrapped\-Value}}
+\index{get\-Wrapped\-Value@{get\-Wrapped\-Value}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{get\-Wrapped\-Value}]{\setlength{\rightskip}{0pt plus 5cm}static int org.\-joda.\-time.\-field.\-Field\-Utils.\-get\-Wrapped\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{current\-Value, }
+\item[{int}]{wrap\-Value, }
+\item[{int}]{min\-Value, }
+\item[{int}]{max\-Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a9d96c39461bfb32c4f67fe8f833c2f00}
+Utility method used by add\-Wrap\-Field implementations to ensure the new value lies within the field's legal value range.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-Value} & the current value of the data, which may lie outside the wrapped value range \\
+\hline
+{\em wrap\-Value} & the value to add to current value before wrapping. This may be negative. \\
+\hline
+{\em min\-Value} & the wrap range minimum value. \\
+\hline
+{\em max\-Value} & the wrap range maximum value. This must be greater than min\-Value (checked by the method). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the wrapped value 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if min\-Value is greater than or equal to max\-Value \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a6a074abd36c5c8c0a230dbcc547d9d12}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!get\-Wrapped\-Value@{get\-Wrapped\-Value}}
+\index{get\-Wrapped\-Value@{get\-Wrapped\-Value}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{get\-Wrapped\-Value}]{\setlength{\rightskip}{0pt plus 5cm}static int org.\-joda.\-time.\-field.\-Field\-Utils.\-get\-Wrapped\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{value, }
+\item[{int}]{min\-Value, }
+\item[{int}]{max\-Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a6a074abd36c5c8c0a230dbcc547d9d12}
+Utility method that ensures the given value lies within the field's legal value range.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value to fit into the wrapped value range \\
+\hline
+{\em min\-Value} & the wrap range minimum value. \\
+\hline
+{\em max\-Value} & the wrap range maximum value. This must be greater than min\-Value (checked by the method). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the wrapped value 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if min\-Value is greater than or equal to max\-Value \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a46be905ceb58fa034d39f8a987188f0b}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!safe\-Add@{safe\-Add}}
+\index{safe\-Add@{safe\-Add}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{safe\-Add}]{\setlength{\rightskip}{0pt plus 5cm}static int org.\-joda.\-time.\-field.\-Field\-Utils.\-safe\-Add (
+\begin{DoxyParamCaption}
+\item[{int}]{val1, }
+\item[{int}]{val2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a46be905ceb58fa034d39f8a987188f0b}
+Add two values throwing an exception if overflow occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val1} & the first value \\
+\hline
+{\em val2} & the second value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new total 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the value is too big or too small \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a4d8c52538ca2288c8d34f8b5a3ad2181}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!safe\-Add@{safe\-Add}}
+\index{safe\-Add@{safe\-Add}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{safe\-Add}]{\setlength{\rightskip}{0pt plus 5cm}static long org.\-joda.\-time.\-field.\-Field\-Utils.\-safe\-Add (
+\begin{DoxyParamCaption}
+\item[{long}]{val1, }
+\item[{long}]{val2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a4d8c52538ca2288c8d34f8b5a3ad2181}
+Add two values throwing an exception if overflow occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val1} & the first value \\
+\hline
+{\em val2} & the second value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new total 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the value is too big or too small \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a4de4df2d9b5b18890ad2fe20f6de7963}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!safe\-Multiply@{safe\-Multiply}}
+\index{safe\-Multiply@{safe\-Multiply}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{safe\-Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static int org.\-joda.\-time.\-field.\-Field\-Utils.\-safe\-Multiply (
+\begin{DoxyParamCaption}
+\item[{int}]{val1, }
+\item[{int}]{val2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a4de4df2d9b5b18890ad2fe20f6de7963}
+Multiply two values throwing an exception if overflow occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val1} & the first value \\
+\hline
+{\em val2} & the second value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new total 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the value is too big or too small \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+1.\-2 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a758dd39bf99c80b7cc2ece30a2709b39}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!safe\-Multiply@{safe\-Multiply}}
+\index{safe\-Multiply@{safe\-Multiply}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{safe\-Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static long org.\-joda.\-time.\-field.\-Field\-Utils.\-safe\-Multiply (
+\begin{DoxyParamCaption}
+\item[{long}]{val1, }
+\item[{int}]{val2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a758dd39bf99c80b7cc2ece30a2709b39}
+Multiply two values throwing an exception if overflow occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val1} & the first value \\
+\hline
+{\em val2} & the second value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new total 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the value is too big or too small \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+1.\-2 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_ae8b0034f2a4160571b8066c99cca2c95}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!safe\-Multiply@{safe\-Multiply}}
+\index{safe\-Multiply@{safe\-Multiply}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{safe\-Multiply}]{\setlength{\rightskip}{0pt plus 5cm}static long org.\-joda.\-time.\-field.\-Field\-Utils.\-safe\-Multiply (
+\begin{DoxyParamCaption}
+\item[{long}]{val1, }
+\item[{long}]{val2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_ae8b0034f2a4160571b8066c99cca2c95}
+Multiply two values throwing an exception if overflow occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val1} & the first value \\
+\hline
+{\em val2} & the second value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new total 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the value is too big or too small \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_af64db544210df61407b188ac5e01cd02}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!safe\-Multiply\-To\-Int@{safe\-Multiply\-To\-Int}}
+\index{safe\-Multiply\-To\-Int@{safe\-Multiply\-To\-Int}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{safe\-Multiply\-To\-Int}]{\setlength{\rightskip}{0pt plus 5cm}static int org.\-joda.\-time.\-field.\-Field\-Utils.\-safe\-Multiply\-To\-Int (
+\begin{DoxyParamCaption}
+\item[{long}]{val1, }
+\item[{long}]{val2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_af64db544210df61407b188ac5e01cd02}
+Multiply two values to return an int throwing an exception if overflow occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val1} & the first value \\
+\hline
+{\em val2} & the second value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new total 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the value is too big or too small \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a705c83804744557c5c05f09b93944fc3}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!safe\-Negate@{safe\-Negate}}
+\index{safe\-Negate@{safe\-Negate}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{safe\-Negate}]{\setlength{\rightskip}{0pt plus 5cm}static int org.\-joda.\-time.\-field.\-Field\-Utils.\-safe\-Negate (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a705c83804744557c5c05f09b93944fc3}
+Negates the input throwing an exception if it can't negate it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value to negate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the negated value 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the value is Integer.\-M\-I\-N\-\_\-\-V\-A\-L\-U\-E \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+1.\-1 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_ace9e5f9870a74af25800dff49c52fa28}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!safe\-Subtract@{safe\-Subtract}}
+\index{safe\-Subtract@{safe\-Subtract}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{safe\-Subtract}]{\setlength{\rightskip}{0pt plus 5cm}static long org.\-joda.\-time.\-field.\-Field\-Utils.\-safe\-Subtract (
+\begin{DoxyParamCaption}
+\item[{long}]{val1, }
+\item[{long}]{val2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_ace9e5f9870a74af25800dff49c52fa28}
+Subtracts two values throwing an exception if overflow occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val1} & the first value, to be taken away from \\
+\hline
+{\em val2} & the second value, the amount to take away \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new total 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the value is too big or too small \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_adc00a918d6178df5e3ac854e6d3dbb0c}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!safe\-To\-Int@{safe\-To\-Int}}
+\index{safe\-To\-Int@{safe\-To\-Int}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{safe\-To\-Int}]{\setlength{\rightskip}{0pt plus 5cm}static int org.\-joda.\-time.\-field.\-Field\-Utils.\-safe\-To\-Int (
+\begin{DoxyParamCaption}
+\item[{long}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_adc00a918d6178df5e3ac854e6d3dbb0c}
+Casts to an int throwing an exception if overflow occurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value as an int 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the value is too big or too small \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a7b8378a99aad6a706bc27624713b4625}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!verify\-Value\-Bounds@{verify\-Value\-Bounds}}
+\index{verify\-Value\-Bounds@{verify\-Value\-Bounds}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{verify\-Value\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-field.\-Field\-Utils.\-verify\-Value\-Bounds (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field}}]{field, }
+\item[{int}]{value, }
+\item[{int}]{lower\-Bound, }
+\item[{int}]{upper\-Bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a7b8378a99aad6a706bc27624713b4625}
+Verify that input values are within specified bounds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value to check \\
+\hline
+{\em lower\-Bound} & the lower bound allowed for value \\
+\hline
+{\em upper\-Bound} & the upper bound allowed for value \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classorg_1_1joda_1_1time_1_1_illegal_field_value_exception}{Illegal\-Field\-Value\-Exception}} & if value is not in the specified bounds \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a8a100306f630846be797554d3d093b56}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!verify\-Value\-Bounds@{verify\-Value\-Bounds}}
+\index{verify\-Value\-Bounds@{verify\-Value\-Bounds}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{verify\-Value\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-field.\-Field\-Utils.\-verify\-Value\-Bounds (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field\-Type}}]{field\-Type, }
+\item[{int}]{value, }
+\item[{int}]{lower\-Bound, }
+\item[{int}]{upper\-Bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a8a100306f630846be797554d3d093b56}
+Verify that input values are within specified bounds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value to check \\
+\hline
+{\em lower\-Bound} & the lower bound allowed for value \\
+\hline
+{\em upper\-Bound} & the upper bound allowed for value \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classorg_1_1joda_1_1time_1_1_illegal_field_value_exception}{Illegal\-Field\-Value\-Exception}} & if value is not in the specified bounds \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+1.\-1 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a4f5655d95f607aff8b8a105047f0c539}{\index{org\-::joda\-::time\-::field\-::\-Field\-Utils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}!verify\-Value\-Bounds@{verify\-Value\-Bounds}}
+\index{verify\-Value\-Bounds@{verify\-Value\-Bounds}!org::joda::time::field::FieldUtils@{org\-::joda\-::time\-::field\-::\-Field\-Utils}}
+\subsubsection[{verify\-Value\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-field.\-Field\-Utils.\-verify\-Value\-Bounds (
+\begin{DoxyParamCaption}
+\item[{String}]{field\-Name, }
+\item[{int}]{value, }
+\item[{int}]{lower\-Bound, }
+\item[{int}]{upper\-Bound}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_field_utils_a4f5655d95f607aff8b8a105047f0c539}
+Verify that input values are within specified bounds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value to check \\
+\hline
+{\em lower\-Bound} & the lower bound allowed for value \\
+\hline
+{\em upper\-Bound} & the upper bound allowed for value \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classorg_1_1joda_1_1time_1_1_illegal_field_value_exception}{Illegal\-Field\-Value\-Exception}} & if value is not in the specified bounds \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/field/Field\-Utils.\-java\end{DoxyCompactItemize}

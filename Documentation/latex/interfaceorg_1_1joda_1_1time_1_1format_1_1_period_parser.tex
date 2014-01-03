@@ -1,0 +1,86 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_parser}{\section{org.\-joda.\-time.\-format.\-Period\-Parser Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_parser}\index{org.\-joda.\-time.\-format.\-Period\-Parser@{org.\-joda.\-time.\-format.\-Period\-Parser}}
+}
+
+
+Inherited by org.\-joda.\-time.\-format.\-Period\-Formatter\-Builder.\-Composite, org.\-joda.\-time.\-format.\-Period\-Formatter\-Builder.\-Field\-Formatter, org.\-joda.\-time.\-format.\-Period\-Formatter\-Builder.\-Literal, and org.\-joda.\-time.\-format.\-Period\-Formatter\-Builder.\-Separator.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_parser_a499cb819b1f8e114a050032e2cbba42e}{parse\-Into} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_period}{Read\-Writable\-Period} period, String period\-Str, int position, Locale locale)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Internal interface for parsing textual representations of time periods. 
+
+Application users will rarely use this class directly. Instead, you will use one of the factory classes to create a \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter}. 
+
+The factory classes are\-:\par
+
+\begin{DoxyItemize}
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_builder}{Period\-Formatter\-Builder}\par
+
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_format}{Period\-Format}\par
+
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_i_s_o_period_format}{I\-S\-O\-Period\-Format}\par
+
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_builder}{Period\-Formatter\-Builder} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_format}{Period\-Format} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_parser_a499cb819b1f8e114a050032e2cbba42e}{\index{org\-::joda\-::time\-::format\-::\-Period\-Parser@{org\-::joda\-::time\-::format\-::\-Period\-Parser}!parse\-Into@{parse\-Into}}
+\index{parse\-Into@{parse\-Into}!org::joda::time::format::PeriodParser@{org\-::joda\-::time\-::format\-::\-Period\-Parser}}
+\subsubsection[{parse\-Into}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-format.\-Period\-Parser.\-parse\-Into (
+\begin{DoxyParamCaption}
+\item[{{\bf Read\-Writable\-Period}}]{period, }
+\item[{String}]{period\-Str, }
+\item[{int}]{position, }
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_parser_a499cb819b1f8e114a050032e2cbba42e}
+Parses a period from the given text, at the given position, saving the result into the fields of the given \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_period}{Read\-Writable\-Period}. If the parse succeeds, the return value is the new text position. Note that the parse may succeed without fully reading the text. 
+
+If it fails, the return value is negative, but the period may still be modified. To determine the position where the parse failed, apply the one's complement operator ($\sim$) on the return value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & a period that will be modified \\
+\hline
+{\em period\-Str} & text to parse \\
+\hline
+{\em position} & position to start parsing from \\
+\hline
+{\em locale} & the locale to use for parsing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new position, if negative, parse failed. Apply complement operator ($\sim$) to get position of failure 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if any field is out of range \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/format/Period\-Parser.\-java\end{DoxyCompactItemize}

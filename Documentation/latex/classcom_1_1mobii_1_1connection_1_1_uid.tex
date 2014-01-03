@@ -1,0 +1,108 @@
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_uid}{\section{com.\-mobii.\-connection.\-Uid Class Reference}
+\label{classcom_1_1mobii_1_1connection_1_1_uid}\index{com.\-mobii.\-connection.\-Uid@{com.\-mobii.\-connection.\-Uid}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_uid_ac58a45e58d9288474f8ea2342d988747}{{\bfseries Uid} (\hyperlink{classcom_1_1mobii_1_1connection_1_1_uid}{Uid} uid)}\label{classcom_1_1mobii_1_1connection_1_1_uid_ac58a45e58d9288474f8ea2342d988747}
+
+\item 
+String \hyperlink{classcom_1_1mobii_1_1connection_1_1_uid_a82ff84b2e43d812eb45b48d3b543b79b}{display\-Uid} (String uid)
+\begin{DoxyCompactList}\small\item\em Change user id string to display it. \end{DoxyCompactList}\item 
+String \hyperlink{classcom_1_1mobii_1_1connection_1_1_uid_ae54ca4783fc1070b45e38fb50a7c8c79}{generate\-Uid} ()
+\begin{DoxyCompactList}\small\item\em Generate uid. \end{DoxyCompactList}\item 
+boolean \hyperlink{classcom_1_1mobii_1_1connection_1_1_uid_a2b6b810c93d7b530d609ca3565880304}{reserve\-Uid} (\hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client}{Tcp\-Client} client, String uid)
+\begin{DoxyCompactList}\small\item\em Reserves a uid. \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1mobii_1_1connection_1_1_uid_aca2a1e0475545ec4d99a9f0b821ca7b6}{parse\-Uid} (String uid)
+\begin{DoxyCompactList}\small\item\em Parse uid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_uid_a977066cb7b43a52e718fc39a1a598d8f}{static Shared\-Preferences {\bfseries m\-Shared\-Mobii} = Mobii\-Connection\-Activity.\-get\-Shared\-Preferences()}\label{classcom_1_1mobii_1_1connection_1_1_uid_a977066cb7b43a52e718fc39a1a598d8f}
+
+\item 
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_uid_a6c362848dca4c4d7996073f02ec8adb1}{static Context {\bfseries m\-Ctx} = Mobii\-Connection\-Activity.\-get\-Context\-Application()}\label{classcom_1_1mobii_1_1connection_1_1_uid_a6c362848dca4c4d7996073f02ec8adb1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_uid_a82ff84b2e43d812eb45b48d3b543b79b}{\index{com\-::mobii\-::connection\-::\-Uid@{com\-::mobii\-::connection\-::\-Uid}!display\-Uid@{display\-Uid}}
+\index{display\-Uid@{display\-Uid}!com::mobii::connection::Uid@{com\-::mobii\-::connection\-::\-Uid}}
+\subsubsection[{display\-Uid}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-mobii.\-connection.\-Uid.\-display\-Uid (
+\begin{DoxyParamCaption}
+\item[{String}]{uid}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1connection_1_1_uid_a82ff84b2e43d812eb45b48d3b543b79b}
+
+
+Change user id string to display it. 
+
+Add a space each two characters to the user id string. 
+\begin{DoxyParams}{Parameters}
+{\em uid} & The user id string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the modified uid. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_uid_ae54ca4783fc1070b45e38fb50a7c8c79}{\index{com\-::mobii\-::connection\-::\-Uid@{com\-::mobii\-::connection\-::\-Uid}!generate\-Uid@{generate\-Uid}}
+\index{generate\-Uid@{generate\-Uid}!com::mobii::connection::Uid@{com\-::mobii\-::connection\-::\-Uid}}
+\subsubsection[{generate\-Uid}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-mobii.\-connection.\-Uid.\-generate\-Uid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1connection_1_1_uid_ae54ca4783fc1070b45e38fb50a7c8c79}
+
+
+Generate uid. 
+
+Generate a random user id. \begin{DoxyReturn}{Returns}
+Returns the generated string. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_uid_aca2a1e0475545ec4d99a9f0b821ca7b6}{\index{com\-::mobii\-::connection\-::\-Uid@{com\-::mobii\-::connection\-::\-Uid}!parse\-Uid@{parse\-Uid}}
+\index{parse\-Uid@{parse\-Uid}!com::mobii::connection::Uid@{com\-::mobii\-::connection\-::\-Uid}}
+\subsubsection[{parse\-Uid}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} com.\-mobii.\-connection.\-Uid.\-parse\-Uid (
+\begin{DoxyParamCaption}
+\item[{String}]{uid}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1connection_1_1_uid_aca2a1e0475545ec4d99a9f0b821ca7b6}
+
+
+Parse uid. 
+
+Convert the user id string to a byte array. 
+\begin{DoxyParams}{Parameters}
+{\em uid} & The user id string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the modified uid. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_uid_a2b6b810c93d7b530d609ca3565880304}{\index{com\-::mobii\-::connection\-::\-Uid@{com\-::mobii\-::connection\-::\-Uid}!reserve\-Uid@{reserve\-Uid}}
+\index{reserve\-Uid@{reserve\-Uid}!com::mobii::connection::Uid@{com\-::mobii\-::connection\-::\-Uid}}
+\subsubsection[{reserve\-Uid}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\-mobii.\-connection.\-Uid.\-reserve\-Uid (
+\begin{DoxyParamCaption}
+\item[{{\bf Tcp\-Client}}]{client, }
+\item[{String}]{uid}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1connection_1_1_uid_a2b6b810c93d7b530d609ca3565880304}
+
+
+Reserves a uid. 
+
+Verifies if a user id already exists. If not, requests the server to reserve it. 
+\begin{DoxyParams}{Parameters}
+{\em client} & A \hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client}{Tcp\-Client} object. \\
+\hline
+{\em uid} & The user id string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if user id already exists; otherwise returns false. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/src/com/mobii/connection/\hyperlink{_uid_8java}{Uid.\-java}\end{DoxyCompactItemize}

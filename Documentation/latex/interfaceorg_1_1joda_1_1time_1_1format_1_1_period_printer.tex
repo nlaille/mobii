@@ -1,0 +1,142 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer}{\section{org.\-joda.\-time.\-format.\-Period\-Printer Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer}\index{org.\-joda.\-time.\-format.\-Period\-Printer@{org.\-joda.\-time.\-format.\-Period\-Printer}}
+}
+
+
+Inherited by org.\-joda.\-time.\-format.\-Period\-Formatter\-Builder.\-Composite, org.\-joda.\-time.\-format.\-Period\-Formatter\-Builder.\-Field\-Formatter, org.\-joda.\-time.\-format.\-Period\-Formatter\-Builder.\-Literal, and org.\-joda.\-time.\-format.\-Period\-Formatter\-Builder.\-Separator.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer_abe2b9fa359d2ec857d65803ef3e8a8e7}{calculate\-Printed\-Length} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} period, Locale locale)
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer_a8b195910582fce46c82e207d183d7790}{count\-Fields\-To\-Print} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} period, int stop\-At, Locale locale)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer_a719233e1485c639b5f47a7c420d8e427}{print\-To} (String\-Buffer buf, \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} period, Locale locale)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer_aea939d73a4d4100ee39ff1bd2b40a8c0}{print\-To} (Writer out, \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} period, Locale locale)  throws I\-O\-Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Internal interface for printing textual representations of time periods. 
+
+Application users will rarely use this class directly. Instead, you will use one of the factory classes to create a \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter}. 
+
+The factory classes are\-:\par
+
+\begin{DoxyItemize}
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_builder}{Period\-Formatter\-Builder}\par
+
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_format}{Period\-Format}\par
+
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_i_s_o_period_format}{I\-S\-O\-Period\-Format}\par
+
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_builder}{Period\-Formatter\-Builder} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_format}{Period\-Format} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer_abe2b9fa359d2ec857d65803ef3e8a8e7}{\index{org\-::joda\-::time\-::format\-::\-Period\-Printer@{org\-::joda\-::time\-::format\-::\-Period\-Printer}!calculate\-Printed\-Length@{calculate\-Printed\-Length}}
+\index{calculate\-Printed\-Length@{calculate\-Printed\-Length}!org::joda::time::format::PeriodPrinter@{org\-::joda\-::time\-::format\-::\-Period\-Printer}}
+\subsubsection[{calculate\-Printed\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-format.\-Period\-Printer.\-calculate\-Printed\-Length (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Period}}]{period, }
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer_abe2b9fa359d2ec857d65803ef3e8a8e7}
+Returns the exact number of characters produced for the given period.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & the period to use \\
+\hline
+{\em locale} & the locale to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the estimated length 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer_a8b195910582fce46c82e207d183d7790}{\index{org\-::joda\-::time\-::format\-::\-Period\-Printer@{org\-::joda\-::time\-::format\-::\-Period\-Printer}!count\-Fields\-To\-Print@{count\-Fields\-To\-Print}}
+\index{count\-Fields\-To\-Print@{count\-Fields\-To\-Print}!org::joda::time::format::PeriodPrinter@{org\-::joda\-::time\-::format\-::\-Period\-Printer}}
+\subsubsection[{count\-Fields\-To\-Print}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-format.\-Period\-Printer.\-count\-Fields\-To\-Print (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Period}}]{period, }
+\item[{int}]{stop\-At, }
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer_a8b195910582fce46c82e207d183d7790}
+Returns the amount of fields from the given period that this printer will print.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & the period to use \\
+\hline
+{\em stop\-At} & stop counting at this value, enter a number {$\ge$} 256 to count all \\
+\hline
+{\em locale} & the locale to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+amount of fields printed 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer_a719233e1485c639b5f47a7c420d8e427}{\index{org\-::joda\-::time\-::format\-::\-Period\-Printer@{org\-::joda\-::time\-::format\-::\-Period\-Printer}!print\-To@{print\-To}}
+\index{print\-To@{print\-To}!org::joda::time::format::PeriodPrinter@{org\-::joda\-::time\-::format\-::\-Period\-Printer}}
+\subsubsection[{print\-To}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-format.\-Period\-Printer.\-print\-To (
+\begin{DoxyParamCaption}
+\item[{String\-Buffer}]{buf, }
+\item[{{\bf Readable\-Period}}]{period, }
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer_a719233e1485c639b5f47a7c420d8e427}
+Prints a \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} to a String\-Buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the formatted period is appended to this buffer \\
+\hline
+{\em period} & the period to format \\
+\hline
+{\em locale} & the locale to use \\
+\hline
+\end{DoxyParams}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer_aea939d73a4d4100ee39ff1bd2b40a8c0}{\index{org\-::joda\-::time\-::format\-::\-Period\-Printer@{org\-::joda\-::time\-::format\-::\-Period\-Printer}!print\-To@{print\-To}}
+\index{print\-To@{print\-To}!org::joda::time::format::PeriodPrinter@{org\-::joda\-::time\-::format\-::\-Period\-Printer}}
+\subsubsection[{print\-To}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-format.\-Period\-Printer.\-print\-To (
+\begin{DoxyParamCaption}
+\item[{Writer}]{out, }
+\item[{{\bf Readable\-Period}}]{period, }
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception}}\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer_aea939d73a4d4100ee39ff1bd2b40a8c0}
+Prints a \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} to a Writer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the formatted period is written out \\
+\hline
+{\em period} & the period to format \\
+\hline
+{\em locale} & the locale to use \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/format/Period\-Printer.\-java\end{DoxyCompactItemize}

@@ -1,0 +1,215 @@
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com}{\section{com.\-mobii.\-protocol.\-I\-Protocol\-Com Interface Reference}
+\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com}\index{com.\-mobii.\-protocol.\-I\-Protocol\-Com@{com.\-mobii.\-protocol.\-I\-Protocol\-Com}}
+}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a579929ef117c950f1ce2a0e3fc91768a}{int {\bfseries s\-\_\-source} = 6}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a579929ef117c950f1ce2a0e3fc91768a}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_afb30382e7b7aa0a695bf6d42f3a70273}{int {\bfseries s\-\_\-dest} = 6}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_afb30382e7b7aa0a695bf6d42f3a70273}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_aa630f9f17f5015d0eb029d46ab4623f1}{int {\bfseries s\-\_\-dispatch} = 1}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_aa630f9f17f5015d0eb029d46ab4623f1}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a687f779599483b313ef78117c5ba9f95}{int {\bfseries s\-\_\-opcode} = 1}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a687f779599483b313ef78117c5ba9f95}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_aba51b58a8911a91b46d647e40bb99caa}{int {\bfseries s\-\_\-msg\-Size} = 4}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_aba51b58a8911a91b46d647e40bb99caa}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a469300b5cd7f2a1cd99fdd70e375df00}{int {\bfseries s\-\_\-empty} = 0}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a469300b5cd7f2a1cd99fdd70e375df00}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a7fabeb5c0e54f5ceaa2d9130ab7d4e97}{int {\bfseries s\-\_\-id} = 6}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a7fabeb5c0e54f5ceaa2d9130ab7d4e97}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a7822bed811216e432186f9beed34a6c6}{int {\bfseries s\-\_\-header} = s\-\_\-source + s\-\_\-dest + s\-\_\-dispatch + s\-\_\-opcode + s\-\_\-msg\-Size}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a7822bed811216e432186f9beed34a6c6}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a2755cee9153acb5f75c7c8e49409a2e8}{int {\bfseries p\-\_\-source} = 0}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a2755cee9153acb5f75c7c8e49409a2e8}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a4e58802e290cdf1e6641a93f25d98784}{int {\bfseries p\-\_\-dest} = p\-\_\-source + s\-\_\-source}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a4e58802e290cdf1e6641a93f25d98784}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a3c1f4aa710f1c991b5871b57b6053197}{int {\bfseries p\-\_\-dispatch} = p\-\_\-dest + s\-\_\-dest}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a3c1f4aa710f1c991b5871b57b6053197}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a86f9b18a18d1b46d4304d4db36674b7f}{int {\bfseries p\-\_\-opcode} = p\-\_\-dispatch + s\-\_\-dispatch}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a86f9b18a18d1b46d4304d4db36674b7f}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae0bb45a2490859c45cd01fb6458116a6}{int {\bfseries p\-\_\-msg\-Size} = p\-\_\-opcode + s\-\_\-opcode}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae0bb45a2490859c45cd01fb6458116a6}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae9b1d8977d38232a6ff736d4999034cb}{int {\bfseries p\-\_\-msg} = p\-\_\-msg\-Size + s\-\_\-msg\-Size}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae9b1d8977d38232a6ff736d4999034cb}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_aaa56f767bf9c9b17ae65a5c2c79132cb}{String {\bfseries init\-Source} = \char`\"{}\textbackslash{}u0000\textbackslash{}u0000\textbackslash{}u0000\textbackslash{}u0000\textbackslash{}u0000\textbackslash{}u0000\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_aaa56f767bf9c9b17ae65a5c2c79132cb}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_acac7affdef12d531fde2c34f184ece8e}{String {\bfseries init\-Dest} = \char`\"{}\textbackslash{}u0000\textbackslash{}u0000\textbackslash{}u0000\textbackslash{}u0000\textbackslash{}u0000\textbackslash{}u0000\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_acac7affdef12d531fde2c34f184ece8e}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a2c54ad212b7e64b07d3dfe2a88c4803e}{String {\bfseries d\-\_\-srv\-Report} = \char`\"{}\textbackslash{}u0000\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a2c54ad212b7e64b07d3dfe2a88c4803e}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ad0614702ff02b179e07f406b74de0567}{int {\bfseries d\-\_\-srv\-Report\-Val} = 0}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ad0614702ff02b179e07f406b74de0567}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a0bfadea739179c3c8b70276f0e65a24a}{String {\bfseries d\-\_\-srv\-Connect} = \char`\"{}\textbackslash{}u0005\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a0bfadea739179c3c8b70276f0e65a24a}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a1f04e7f5f653e2c8a1d6d58582bd4cd1}{int {\bfseries d\-\_\-srv\-Connect\-Val} = 5}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a1f04e7f5f653e2c8a1d6d58582bd4cd1}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a7de54c02168d596dea6246fa5861b91e}{String {\bfseries d\-\_\-cli\-Connect} = \char`\"{}\textbackslash{}u0010\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a7de54c02168d596dea6246fa5861b91e}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a1d30609ae3114d2affbe5a5a39f8cb35}{int {\bfseries d\-\_\-cli\-Connect\-Val} = 16}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a1d30609ae3114d2affbe5a5a39f8cb35}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae569f50129263c72b51b673e7b30b1ce}{String {\bfseries d\-\_\-cli\-Connect\-Req} = \char`\"{}\textbackslash{}u0020\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae569f50129263c72b51b673e7b30b1ce}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ad89ebd2828db1cff488bb05297969793}{int {\bfseries d\-\_\-cli\-Connect\-Req\-Val} = 32}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ad89ebd2828db1cff488bb05297969793}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ade13ad28ce33c0a06dc81a45e8bb9c50}{String {\bfseries d\-\_\-com} = \char`\"{}\textbackslash{}u0030\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ade13ad28ce33c0a06dc81a45e8bb9c50}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_af3f054b9032f0e34bbcb761a06b2e469}{int {\bfseries d\-\_\-com\-Val} = 48}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_af3f054b9032f0e34bbcb761a06b2e469}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a93e8dbef0dd35cc44570fe256ea1d31c}{String {\bfseries d\-\_\-udp\-Hp} = \char`\"{}\textbackslash{}u0040\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a93e8dbef0dd35cc44570fe256ea1d31c}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a464de0102b79108e4213b1749816a64b}{int {\bfseries d\-\_\-udp\-Hp\-Val} = 64}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a464de0102b79108e4213b1749816a64b}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ab52680f542fcb3233edfdbd90b62167f}{String {\bfseries d\-\_\-auth} = \char`\"{}\textbackslash{}u0050\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ab52680f542fcb3233edfdbd90b62167f}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a57daa5ef368c29b5a9415b5757aee4d2}{int {\bfseries d\-\_\-auth\-Val} = 80}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a57daa5ef368c29b5a9415b5757aee4d2}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a452ea16077966601c78a7c323da703fa}{String {\bfseries o\-\_\-srv\-Error} = \char`\"{}\textbackslash{}u00ff\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a452ea16077966601c78a7c323da703fa}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a19f04a041c19d27cacedca3ca87d67dc}{int {\bfseries o\-\_\-srv\-Error\-Val} = 255}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a19f04a041c19d27cacedca3ca87d67dc}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae986c9ca40b8e1ddd8e78e06c7873f4b}{String {\bfseries o\-\_\-mob\-To\-Srv\-Connect} = \char`\"{}\textbackslash{}u0000\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae986c9ca40b8e1ddd8e78e06c7873f4b}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_acdd1f50304c3d4d93771e8e443e7a338}{int {\bfseries o\-\_\-mob\-To\-Srv\-Connect\-Val} = 0}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_acdd1f50304c3d4d93771e8e443e7a338}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae8a8f1b5d279c217769ed291f39028e2}{String {\bfseries o\-\_\-cli\-To\-Srv\-Connect} = \char`\"{}\textbackslash{}u0001\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae8a8f1b5d279c217769ed291f39028e2}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a0008183b60bfca91ae4873f1ba712a75}{int {\bfseries o\-\_\-cli\-To\-Srv\-Connect\-Val} = 1}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a0008183b60bfca91ae4873f1ba712a75}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae3af1b6ada8617699268c43baf4c71b9}{String {\bfseries o\-\_\-srv\-Connect\-Notif} = \char`\"{}\textbackslash{}u0011\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae3af1b6ada8617699268c43baf4c71b9}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a1fbed089644a98c5ab0c1811505c7da3}{int {\bfseries o\-\_\-srv\-Connect\-Notif\-Val} = 17}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a1fbed089644a98c5ab0c1811505c7da3}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_aefc9e5fc83c0512b9c5abeddac53ed08}{String {\bfseries o\-\_\-cli\-Connect\-Accept} = \char`\"{}\textbackslash{}u0010\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_aefc9e5fc83c0512b9c5abeddac53ed08}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ac7aee73212e671d9a42dcfd58590fdeb}{int {\bfseries o\-\_\-cli\-Connect\-Accept\-Val} = 16}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ac7aee73212e671d9a42dcfd58590fdeb}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a984a7101830417fd14b2bad68f069f90}{String {\bfseries o\-\_\-cli\-Connect\-Denied} = \char`\"{}\textbackslash{}u0011\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a984a7101830417fd14b2bad68f069f90}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a816817acaad0e80c9cc721444156b84f}{int {\bfseries o\-\_\-cli\-Connect\-Denied\-Val} = 17}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a816817acaad0e80c9cc721444156b84f}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ad1fb0ff0450387c611563bd3d59a6653}{String {\bfseries o\-\_\-cli\-Connect\-Req} = \char`\"{}\textbackslash{}u0010\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ad1fb0ff0450387c611563bd3d59a6653}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a03c035536cad299e259c5e689877eb07}{int {\bfseries o\-\_\-cli\-Connect\-Req\-Val} = 16}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a03c035536cad299e259c5e689877eb07}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_affec940c7e9ae3301dfa9ebadb1ef38d}{String {\bfseries o\-\_\-cli\-Disconnected} = \char`\"{}\textbackslash{}u0000\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_affec940c7e9ae3301dfa9ebadb1ef38d}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a3706ff0f84684cdaace144210d28994a}{int {\bfseries o\-\_\-cli\-Disconnected\-Val} = 0}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a3706ff0f84684cdaace144210d28994a}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_adab644cd8c873ac6bb19815e2db292a8}{String {\bfseries o\-\_\-cli\-Connected\-Notif} = \char`\"{}\textbackslash{}u0001\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_adab644cd8c873ac6bb19815e2db292a8}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a8ce0aa65787db3c1e53587128402b047}{int {\bfseries o\-\_\-cli\-Connected\-Notif\-Val} = 1}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a8ce0aa65787db3c1e53587128402b047}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ab19173f239b014508371a9ed827583c0}{String {\bfseries o\-\_\-json\-Msg} = \char`\"{}\textbackslash{}u0010\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ab19173f239b014508371a9ed827583c0}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_af5b3c911d9680c8bd319bdb551542fc3}{int {\bfseries o\-\_\-json\-Msg\-Val} = 16}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_af5b3c911d9680c8bd319bdb551542fc3}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_af9bb7173bf181d318c8edaa6aed3bf71}{String {\bfseries o\-\_\-hp} = \char`\"{}\textbackslash{}u0020\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_af9bb7173bf181d318c8edaa6aed3bf71}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a2a42b4844204ab86750ba1c466dcb52b}{int {\bfseries o\-\_\-hp\-Val} = 32}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a2a42b4844204ab86750ba1c466dcb52b}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a17ac67a32beffc1eb2ba83a8609c1e10}{String {\bfseries o\-\_\-udp\-Hp} = \char`\"{}\textbackslash{}u0000\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a17ac67a32beffc1eb2ba83a8609c1e10}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a553b30f31df6333a010c1c93d6424fc1}{int {\bfseries o\-\_\-udp\-Hp\-Val} = 0}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a553b30f31df6333a010c1c93d6424fc1}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a00f1d551f89b18afeedd5167f359e513}{String {\bfseries o\-\_\-udp\-Notif} = \char`\"{}\textbackslash{}u0001\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a00f1d551f89b18afeedd5167f359e513}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_acd617e5ffe2d3bab717dcd24de5e08fd}{int {\bfseries o\-\_\-udp\-Notif\-Val} = 1}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_acd617e5ffe2d3bab717dcd24de5e08fd}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a0eadf79566934894acf1fc405c908ba5}{String {\bfseries o\-\_\-auth\-Req} = \char`\"{}\textbackslash{}u0000\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a0eadf79566934894acf1fc405c908ba5}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a5447b0a47b99d5ec55d799d8700fb4d9}{int {\bfseries o\-\_\-auth\-Req\-Val} = 0}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a5447b0a47b99d5ec55d799d8700fb4d9}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a2a2ba83e7fa34f3f5b82dc1aeca12994}{String {\bfseries o\-\_\-auth\-Success} = \char`\"{}\textbackslash{}u0001\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a2a2ba83e7fa34f3f5b82dc1aeca12994}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_aebaeef99a84e5994ddcfda470ada4f49}{int {\bfseries o\-\_\-auth\-Success\-Val} = 1}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_aebaeef99a84e5994ddcfda470ada4f49}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_adde679c4f1990bf30c135637cc71d939}{String {\bfseries o\-\_\-auth\-Failure} = \char`\"{}\textbackslash{}u0002\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_adde679c4f1990bf30c135637cc71d939}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_aab7afee67c23f8a17ae03b40179a2c2d}{int {\bfseries o\-\_\-auth\-Failure\-Val} = 2}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_aab7afee67c23f8a17ae03b40179a2c2d}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ad60db23dda2f46d7b3a71552e20e3d66}{String {\bfseries o\-\_\-uid\-Reserv\-Req} = \char`\"{}\textbackslash{}u0010\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ad60db23dda2f46d7b3a71552e20e3d66}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ab0d3fca81c7dc067db2509dcb25ccf95}{int {\bfseries o\-\_\-uid\-Reserv\-Req\-Val} = 16}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ab0d3fca81c7dc067db2509dcb25ccf95}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae96df75d45ffc16e79a86389f27fd7d1}{String {\bfseries o\-\_\-uid\-Reserved} = \char`\"{}\textbackslash{}u0011\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_ae96df75d45ffc16e79a86389f27fd7d1}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a6e442a0448aaef102d28e906f34e46e9}{int {\bfseries o\-\_\-uid\-Reserved\-Val} = 17}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a6e442a0448aaef102d28e906f34e46e9}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_adcdf7df181d5326c2463584e8f31ac5f}{String {\bfseries o\-\_\-uid\-Exists} = \char`\"{}\textbackslash{}u0012\char`\"{}}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_adcdf7df181d5326c2463584e8f31ac5f}
+
+\item 
+\hypertarget{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a413c418c82abe9a71fefc1a490510108}{int {\bfseries o\-\_\-uid\-Exists\-Val} = 18}\label{interfacecom_1_1mobii_1_1protocol_1_1_i_protocol_com_a413c418c82abe9a71fefc1a490510108}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/src/com/mobii/protocol/\hyperlink{_i_protocol_com_8java}{I\-Protocol\-Com.\-java}\end{DoxyCompactItemize}

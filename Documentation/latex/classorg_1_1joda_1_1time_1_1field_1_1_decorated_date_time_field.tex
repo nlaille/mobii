@@ -1,0 +1,278 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field}{\section{org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field Class Reference}
+\label{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field}\index{org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field@{org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field}}
+}
+Inheritance diagram for org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.105263cm]{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+final \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_aa57cf514485795da7b838d0c8986c545}{get\-Wrapped\-Field} ()
+\item 
+boolean \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a6123c943d6b22028bd8b2e808929369c}{is\-Lenient} ()
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a16c65d5fd974660e6f23ad75261ee51f}{get} (long instant)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a2c48e6d5c609215a6b33049feb869f7a}{set} (long instant, int value)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_duration_field}{Duration\-Field} \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_aaf9740f64287368d141a9b6945d3c7f4}{get\-Duration\-Field} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_duration_field}{Duration\-Field} \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a93faaa98152ca549bb9095280262ed40}{get\-Range\-Duration\-Field} ()
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a06833850ac8650f7f7cad7670b1365c3}{get\-Minimum\-Value} ()
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a0c31921960fa2402e42f292dd09d5c08}{get\-Maximum\-Value} ()
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a900b454e29332973f15ce88e34774878}{round\-Floor} (long instant)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a11b54f8b7c2de1a152e558dab97af3fe}{Decorated\-Date\-Time\-Field} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} field, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} type)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+{\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field}{Decorated\-Date\-Time\-Field}} extends \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field}{Base\-Date\-Time\-Field}, implementing only the minimum required set of methods. These implemented methods delegate to a wrapped field. 
+
+This design allows new \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} types to be defined that piggyback on top of another, inheriting all the safe method implementations from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field}{Base\-Date\-Time\-Field}. Should any method require pure delegation to the wrapped field, simply override and use the provided get\-Wrapped\-Field method. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field}{Decorated\-Date\-Time\-Field} is thread-\/safe and immutable, and its subclasses must be as well.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_date_time_field}{Delegated\-Date\-Time\-Field} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a11b54f8b7c2de1a152e558dab97af3fe}{\index{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}!Decorated\-Date\-Time\-Field@{Decorated\-Date\-Time\-Field}}
+\index{Decorated\-Date\-Time\-Field@{Decorated\-Date\-Time\-Field}!org::joda::time::field::DecoratedDateTimeField@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}}
+\subsubsection[{Decorated\-Date\-Time\-Field}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field.\-Decorated\-Date\-Time\-Field (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field}}]{field, }
+\item[{{\bf Date\-Time\-Field\-Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a11b54f8b7c2de1a152e558dab97af3fe}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & the field being decorated \\
+\hline
+{\em type} & allow type to be overridden \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a16c65d5fd974660e6f23ad75261ee51f}{\index{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}!get@{get}}
+\index{get@{get}!org::joda::time::field::DecoratedDateTimeField@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field.\-get (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a16c65d5fd974660e6f23ad75261ee51f}
+Get the value of this field from the milliseconds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the field, in the units of the field 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_abf5b59083b265cd3031cc5e6fed8419e}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+
+
+Reimplemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a706fee5929e7b887d560889134c9ad20}{org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_offset_date_time_field_acc5e5079abfdca1478f46e4a9f633097}{org.\-joda.\-time.\-field.\-Offset\-Date\-Time\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_remainder_date_time_field_a9e2df35ca0d2b0206c179964258a4b4d}{org.\-joda.\-time.\-field.\-Remainder\-Date\-Time\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_zero_is_max_date_time_field_ae7e6180434e6e3a93a266951ce547d0f}{org.\-joda.\-time.\-field.\-Zero\-Is\-Max\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_aaf9740f64287368d141a9b6945d3c7f4}{\index{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}!get\-Duration\-Field@{get\-Duration\-Field}}
+\index{get\-Duration\-Field@{get\-Duration\-Field}!org::joda::time::field::DecoratedDateTimeField@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}}
+\subsubsection[{get\-Duration\-Field}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Duration\-Field} org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field.\-get\-Duration\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_aaf9740f64287368d141a9b6945d3c7f4}
+Returns the duration per unit value of this field. For example, if this field represents \char`\"{}hour of day\char`\"{}, then the unit duration is an hour.
+
+\begin{DoxyReturn}{Returns}
+the duration of this field, or \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field}{Unsupported\-Duration\-Field} if field has no duration 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_aa7354981ac68fbceeef46a348e6797b0}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+
+
+Reimplemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a50e81f0996b8cdf7c510e62f2d5a9e48}{org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a0c31921960fa2402e42f292dd09d5c08}{\index{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}!get\-Maximum\-Value@{get\-Maximum\-Value}}
+\index{get\-Maximum\-Value@{get\-Maximum\-Value}!org::joda::time::field::DecoratedDateTimeField@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}}
+\subsubsection[{get\-Maximum\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field.\-get\-Maximum\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a0c31921960fa2402e42f292dd09d5c08}
+Get the maximum allowable value for this field.
+
+\begin{DoxyReturn}{Returns}
+the maximum valid value for this field, in the units of the field 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a0c573fe3864e64e1935dd633069cdeed}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+
+
+Reimplemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a42cf5677e5c74e8edb59ad79d4ec8a2f}{org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_offset_date_time_field_af7f64a9904aea1fc1b46b7d575f2cba2}{org.\-joda.\-time.\-field.\-Offset\-Date\-Time\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_remainder_date_time_field_a27778f559e6443db7a9dfa7e508448cb}{org.\-joda.\-time.\-field.\-Remainder\-Date\-Time\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_zero_is_max_date_time_field_a842df6f02b166503e444fee5abc2362c}{org.\-joda.\-time.\-field.\-Zero\-Is\-Max\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a06833850ac8650f7f7cad7670b1365c3}{\index{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}!get\-Minimum\-Value@{get\-Minimum\-Value}}
+\index{get\-Minimum\-Value@{get\-Minimum\-Value}!org::joda::time::field::DecoratedDateTimeField@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}}
+\subsubsection[{get\-Minimum\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field.\-get\-Minimum\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a06833850ac8650f7f7cad7670b1365c3}
+Get the minimum allowable value for this field.
+
+\begin{DoxyReturn}{Returns}
+the minimum valid value for this field, in the units of the field 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a9902f902cd4909aff1ca967dc5e10d72}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+
+
+Reimplemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a2730033489510a1c2f542eec89a8ffea}{org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_offset_date_time_field_ac80f2868242a88800ef668c2267c9841}{org.\-joda.\-time.\-field.\-Offset\-Date\-Time\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_remainder_date_time_field_aa198f33b6104e787e222956fc2e52d8c}{org.\-joda.\-time.\-field.\-Remainder\-Date\-Time\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_zero_is_max_date_time_field_ad7e9c4966783f6ac7ce0dce61a26dbc8}{org.\-joda.\-time.\-field.\-Zero\-Is\-Max\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a93faaa98152ca549bb9095280262ed40}{\index{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}!get\-Range\-Duration\-Field@{get\-Range\-Duration\-Field}}
+\index{get\-Range\-Duration\-Field@{get\-Range\-Duration\-Field}!org::joda::time::field::DecoratedDateTimeField@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}}
+\subsubsection[{get\-Range\-Duration\-Field}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Duration\-Field} org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field.\-get\-Range\-Duration\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a93faaa98152ca549bb9095280262ed40}
+Returns the range duration of this field. For example, if this field represents \char`\"{}hour of day\char`\"{}, then the range duration is a day.
+
+\begin{DoxyReturn}{Returns}
+the range duration of this field, or null if field has no range 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a915525b6aa6fe15d6cedf91e530bc836}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+
+
+Reimplemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_remainder_date_time_field_aef3b150b0244587431e7ea2bf10c4024}{org.\-joda.\-time.\-field.\-Remainder\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_aa57cf514485795da7b838d0c8986c545}{\index{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}!get\-Wrapped\-Field@{get\-Wrapped\-Field}}
+\index{get\-Wrapped\-Field@{get\-Wrapped\-Field}!org::joda::time::field::DecoratedDateTimeField@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}}
+\subsubsection[{get\-Wrapped\-Field}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Date\-Time\-Field} org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field.\-get\-Wrapped\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_aa57cf514485795da7b838d0c8986c545}
+Gets the wrapped date time field.
+
+\begin{DoxyReturn}{Returns}
+the wrapped \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a6123c943d6b22028bd8b2e808929369c}{\index{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}!is\-Lenient@{is\-Lenient}}
+\index{is\-Lenient@{is\-Lenient}!org::joda::time::field::DecoratedDateTimeField@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}}
+\subsubsection[{is\-Lenient}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field.\-is\-Lenient (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a6123c943d6b22028bd8b2e808929369c}
+Returns true if the set method is lenient. If so, it accepts values that are out of bounds. For example, a lenient day of month field accepts 32 for January, converting it to February 1.
+
+\begin{DoxyReturn}{Returns}
+true if this field is lenient 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_ae3e7156e3590227cb0df0e9d6d7f0e3c}{org.\-joda.\-time.\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a900b454e29332973f15ce88e34774878}{\index{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}!round\-Floor@{round\-Floor}}
+\index{round\-Floor@{round\-Floor}!org::joda::time::field::DecoratedDateTimeField@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}}
+\subsubsection[{round\-Floor}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field.\-round\-Floor (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a900b454e29332973f15ce88e34774878}
+Round to the lowest whole unit of this field. After rounding, the value of this field and all fields of a higher magnitude are retained. The fractional millis that cannot be expressed in whole increments of this field are set to minimum. 
+
+For example, a datetime of 2002-\/11-\/02\-T23\-:34\-:56.\-789, rounded to the lowest whole hour is 2002-\/11-\/02\-T23\-:00\-:00.\-000.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to round \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rounded milliseconds 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a4708ea912777d8dc5e9c6a8eaef33473}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+
+
+Reimplemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_aa6797087fc15f87da79e732a664699e6}{org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_offset_date_time_field_af7e8fc6783ae94a1e11b9582a38160c9}{org.\-joda.\-time.\-field.\-Offset\-Date\-Time\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_zero_is_max_date_time_field_a036742db40169291705fe496604c5978}{org.\-joda.\-time.\-field.\-Zero\-Is\-Max\-Date\-Time\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_remainder_date_time_field_abb13f870c07e593a156e45f6797f8c61}{org.\-joda.\-time.\-field.\-Remainder\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a2c48e6d5c609215a6b33049feb869f7a}{\index{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}!set@{set}}
+\index{set@{set}!org::joda::time::field::DecoratedDateTimeField@{org\-::joda\-::time\-::field\-::\-Decorated\-Date\-Time\-Field}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field.\-set (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a2c48e6d5c609215a6b33049feb869f7a}
+Sets a value in the milliseconds supplied. 
+
+The value of this field will be set. If the value is invalid, an exception if thrown. 
+
+If setting this field would make other fields invalid, then those fields may be changed. For example if the current date is the 31st January, and the month is set to February, the day would be invalid. Instead, the day would be changed to the closest value -\/ the 28th/29th February as appropriate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to set in \\
+\hline
+{\em value} & the value to set, in the units of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated milliseconds 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the value is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_ace20661fb97d7f15a921bcc8999aa1fc}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+
+
+Reimplemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_ac0c45a41709ae12c4592a54d68eac4f6}{org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_offset_date_time_field_afe8603c5a0bf138a712ee706ce3c25ac}{org.\-joda.\-time.\-field.\-Offset\-Date\-Time\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_remainder_date_time_field_ae850bdcf2a2682f30fea40eb87a8682e}{org.\-joda.\-time.\-field.\-Remainder\-Date\-Time\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_zero_is_max_date_time_field_af04c39572f3c0c695b5238c5e62a2bd9}{org.\-joda.\-time.\-field.\-Zero\-Is\-Max\-Date\-Time\-Field}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/field/Decorated\-Date\-Time\-Field.\-java\end{DoxyCompactItemize}

@@ -1,0 +1,322 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_partial}{\section{org.\-joda.\-time.\-Readable\-Partial Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1_readable_partial}\index{org.\-joda.\-time.\-Readable\-Partial@{org.\-joda.\-time.\-Readable\-Partial}}
+}
+Inheritance diagram for org.\-joda.\-time.\-Readable\-Partial\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interfaceorg_1_1joda_1_1time_1_1_readable_partial}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a2cbc5753aa7a7e36ebba1d8460f2809a}{size} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a58424535f13ec5537ca78530fbb0875e}{get\-Field\-Type} (int index)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a8db95369818265f5329e475457d0f2cb}{get\-Field} (int index)
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_aabea09e9a9f08ae0e594b0be9a7ee145}{get\-Value} (int index)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a1068597bc2697f6daddb744be48188e9}{get\-Chronology} ()
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a5844c779ac1ebd81281466fe2d23547a}{get} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} field)
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_ae7477788d24376e625e07248ce8c7655}{is\-Supported} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} field)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time}{Date\-Time} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a874b3d628bd8c1f969cc9d24dc6c11fb}{to\-Date\-Time} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} base\-Instant)
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_acd6a5380355f598ee9213ca7969b9a19}{equals} (Object partial)
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a9f82fe654ac3bbf2b1913188589ec31a}{hash\-Code} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines a partial time that does not support every datetime field, and is thus a local time. 
+
+A
+\begin{DoxyCode}
+ReadablePartial 
+\end{DoxyCode}
+ supports a subset of those fields on the chronology. It cannot be compared to a
+\begin{DoxyCode}
+ReadableInstant 
+\end{DoxyCode}
+ , as it does not fully specify an instant in time. The time it does specify is a local time, and does not include a time zone. 
+
+A
+\begin{DoxyCode}
+ReadablePartial 
+\end{DoxyCode}
+ can be converted to a
+\begin{DoxyCode}
+ReadableInstant 
+\end{DoxyCode}
+ using the
+\begin{DoxyCode}
+\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a874b3d628bd8c1f969cc9d24dc6c11fb}{toDateTime} 
+\end{DoxyCode}
+ method. This works by providing a full base instant that can be used to 'fill in the gaps' and specify a time zone. 
+
+
+\begin{DoxyCode}
+ReadablePartial 
+\end{DoxyCode}
+ is
+\begin{DoxyCode}
+Comparable 
+\end{DoxyCode}
+ from v2.\-0. The comparison is based on the fields, compared in order, from largest to smallest. The first field that is non-\/equal is used to determine the result.
+
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_partial_acd6a5380355f598ee9213ca7969b9a19}{\index{org\-::joda\-::time\-::\-Readable\-Partial@{org\-::joda\-::time\-::\-Readable\-Partial}!equals@{equals}}
+\index{equals@{equals}!org::joda::time::ReadablePartial@{org\-::joda\-::time\-::\-Readable\-Partial}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Partial.\-equals (
+\begin{DoxyParamCaption}
+\item[{Object}]{partial}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_partial_acd6a5380355f598ee9213ca7969b9a19}
+Compares this partial with the specified object for equality based on the supported fields, chronology and values. 
+
+Two instances of \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial}{Readable\-Partial} are equal if they have the same chronology, same field types (in same order) and same values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em partial} & the object to compare to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if equal 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_local_time_abba51b841c759cc108d76c2fddd9dbc1}{org.\-joda.\-time.\-Local\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_time_af1b4e2cab354fd7f6c1304e801502298}{org.\-joda.\-time.\-Local\-Date\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_a3a30ba5efa27fa6257e61e8f04bf38c5}{org.\-joda.\-time.\-Local\-Date}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_partial_abb989d9628c610b8eb46f92b2fe1c846}{org.\-joda.\-time.\-base.\-Abstract\-Partial}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a5844c779ac1ebd81281466fe2d23547a}{\index{org\-::joda\-::time\-::\-Readable\-Partial@{org\-::joda\-::time\-::\-Readable\-Partial}!get@{get}}
+\index{get@{get}!org::joda::time::ReadablePartial@{org\-::joda\-::time\-::\-Readable\-Partial}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Readable\-Partial.\-get (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field\-Type}}]{field}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a5844c779ac1ebd81281466fe2d23547a}
+Gets the value of one of the fields. 
+
+The field type specified must be one of those that is supported by the partial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & a \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} instance that is supported by this partial \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of that field 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the field is null or not supported \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_time_a8522a1f89ce780bbc37faaae7ba0629c}{org.\-joda.\-time.\-Local\-Date\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_time_a86ca0f93d2efe606a3264870d0b70c66}{org.\-joda.\-time.\-Local\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_a1f215dbc2a3f142e34cd5475b8204421}{org.\-joda.\-time.\-Local\-Date}, \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_partial_aceac8b22fd87e01003163b68d41bc7d8}{org.\-joda.\-time.\-base.\-Abstract\-Partial}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_partial_aed6a477f0d093bdf71d8d78f4be313b9}{org.\-joda.\-time.\-Mock\-Partial}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a1068597bc2697f6daddb744be48188e9}{\index{org\-::joda\-::time\-::\-Readable\-Partial@{org\-::joda\-::time\-::\-Readable\-Partial}!get\-Chronology@{get\-Chronology}}
+\index{get\-Chronology@{get\-Chronology}!org::joda::time::ReadablePartial@{org\-::joda\-::time\-::\-Readable\-Partial}}
+\subsubsection[{get\-Chronology}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chronology} org.\-joda.\-time.\-Readable\-Partial.\-get\-Chronology (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a1068597bc2697f6daddb744be48188e9}
+Gets the chronology of the partial which is never null. 
+
+The \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} is the calculation engine behind the partial and provides conversion and validation of the fields in a particular calendar system.
+
+\begin{DoxyReturn}{Returns}
+the chronology, never null 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_local_time_ae2a4503fb7a70ff0a2090cf79519133d}{org.\-joda.\-time.\-Local\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_time_af1f05d9c5ada2d7f71c5dfd46a4917fa}{org.\-joda.\-time.\-Local\-Date\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_a5ad9d7c497c7e64fe7363d9bafc06c19}{org.\-joda.\-time.\-Local\-Date}, \hyperlink{classorg_1_1joda_1_1time_1_1_partial_a974496fc4369187da4926b3d8f8f78f9}{org.\-joda.\-time.\-Partial}, \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_af9c9a7e407cb3c976853f14d4050ee7c}{org.\-joda.\-time.\-base.\-Base\-Partial}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_partial_a78d22e8eea48a97aa3132b8a3f64f143}{org.\-joda.\-time.\-Mock\-Partial}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a8db95369818265f5329e475457d0f2cb}{\index{org\-::joda\-::time\-::\-Readable\-Partial@{org\-::joda\-::time\-::\-Readable\-Partial}!get\-Field@{get\-Field}}
+\index{get\-Field@{get\-Field}!org::joda::time::ReadablePartial@{org\-::joda\-::time\-::\-Readable\-Partial}}
+\subsubsection[{get\-Field}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time\-Field} org.\-joda.\-time.\-Readable\-Partial.\-get\-Field (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a8db95369818265f5329e475457d0f2cb}
+Gets the field at the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the field at the specified index 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\-Out\-Of\-Bounds\-Exception} & if the index is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_partial_aeefc8208d69625301414f6a0b91948df}{org.\-joda.\-time.\-base.\-Abstract\-Partial}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_partial_a3736aa1d57c2a8a9c738a2e71d34f813}{org.\-joda.\-time.\-Mock\-Partial}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a58424535f13ec5537ca78530fbb0875e}{\index{org\-::joda\-::time\-::\-Readable\-Partial@{org\-::joda\-::time\-::\-Readable\-Partial}!get\-Field\-Type@{get\-Field\-Type}}
+\index{get\-Field\-Type@{get\-Field\-Type}!org::joda::time::ReadablePartial@{org\-::joda\-::time\-::\-Readable\-Partial}}
+\subsubsection[{get\-Field\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time\-Field\-Type} org.\-joda.\-time.\-Readable\-Partial.\-get\-Field\-Type (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a58424535f13ec5537ca78530fbb0875e}
+Gets the field type at the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the field at the specified index 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\-Out\-Of\-Bounds\-Exception} & if the index is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_time_of_day_a7ce0fde8cd274852eeb9f2434b7b2864}{org.\-joda.\-time.\-Time\-Of\-Day}, \hyperlink{classorg_1_1joda_1_1time_1_1_month_day_aec54e0264beec25837765b09426116ca}{org.\-joda.\-time.\-Month\-Day}, \hyperlink{classorg_1_1joda_1_1time_1_1_year_month_a0e4e7a6a9ae7b9f02c07b2acbe86739d}{org.\-joda.\-time.\-Year\-Month}, \hyperlink{classorg_1_1joda_1_1time_1_1_year_month_day_ab0cfb49acf5a5516f9cb2685d8cb73f7}{org.\-joda.\-time.\-Year\-Month\-Day}, \hyperlink{classorg_1_1joda_1_1time_1_1_partial_a30f69248005cbc4a262b95585d0a9fdb}{org.\-joda.\-time.\-Partial}, \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_partial_aa47e74e86919de9b2b0a5b19b80072fb}{org.\-joda.\-time.\-base.\-Abstract\-Partial}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_partial_a7eb51a25ed937d2d4f41df0adbcee756}{org.\-joda.\-time.\-Mock\-Partial}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_partial_aabea09e9a9f08ae0e594b0be9a7ee145}{\index{org\-::joda\-::time\-::\-Readable\-Partial@{org\-::joda\-::time\-::\-Readable\-Partial}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!org::joda::time::ReadablePartial@{org\-::joda\-::time\-::\-Readable\-Partial}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Readable\-Partial.\-get\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_partial_aabea09e9a9f08ae0e594b0be9a7ee145}
+Gets the value at the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the field at the specified index 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\-Out\-Of\-Bounds\-Exception} & if the index is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_time_a612fc7e814325440c7b25e79ab894d87}{org.\-joda.\-time.\-Local\-Date\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_time_aa45a30e0e87f8cf7893833c13a1e55b0}{org.\-joda.\-time.\-Local\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_a20d2aa8bd311a7907a29834bc6aadecf}{org.\-joda.\-time.\-Local\-Date}, \hyperlink{classorg_1_1joda_1_1time_1_1_partial_a6ad1176a09de5f07903bc72ce702dab4}{org.\-joda.\-time.\-Partial}, \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_aa04eacdf3f53eec94fe0a89d694d73aa}{org.\-joda.\-time.\-base.\-Base\-Partial}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_partial_ab3ff5413fdf83a1ee727758e2c9c79bd}{org.\-joda.\-time.\-Mock\-Partial}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a9f82fe654ac3bbf2b1913188589ec31a}{\index{org\-::joda\-::time\-::\-Readable\-Partial@{org\-::joda\-::time\-::\-Readable\-Partial}!hash\-Code@{hash\-Code}}
+\index{hash\-Code@{hash\-Code}!org::joda::time::ReadablePartial@{org\-::joda\-::time\-::\-Readable\-Partial}}
+\subsubsection[{hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Readable\-Partial.\-hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a9f82fe654ac3bbf2b1913188589ec31a}
+Gets a hash code for the partial that is compatible with the equals method. 
+
+The formula used must be\-: 
+\begin{DoxyPre}
+ int total = 157;
+ for (int i = 0; i < fields.length; i++) \{
+     total = 23 * total + values[i];
+     total = 23 * total + fieldTypes[i].\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a9f82fe654ac3bbf2b1913188589ec31a}{hashCode()};
+ \}
+ total += chronology.hashCode();
+ return total;
+\end{DoxyPre}
+
+
+\begin{DoxyReturn}{Returns}
+a suitable hash code 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_a2c1ad03fb871b23693589a8b058f0513}{org.\-joda.\-time.\-Local\-Date}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_partial_aa3435c9b8ceed4256678e3c666dd2ee1}{org.\-joda.\-time.\-base.\-Abstract\-Partial}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_partial_ae7477788d24376e625e07248ce8c7655}{\index{org\-::joda\-::time\-::\-Readable\-Partial@{org\-::joda\-::time\-::\-Readable\-Partial}!is\-Supported@{is\-Supported}}
+\index{is\-Supported@{is\-Supported}!org::joda::time::ReadablePartial@{org\-::joda\-::time\-::\-Readable\-Partial}}
+\subsubsection[{is\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Partial.\-is\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field\-Type}}]{field}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_partial_ae7477788d24376e625e07248ce8c7655}
+Checks whether the field type specified is supported by this partial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & the field to check, may be null which returns false \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the field is supported 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_time_ad121b085afa90f974370d77a580217fe}{org.\-joda.\-time.\-Local\-Date\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_time_ab9d82a5b0b15c394a21fe221535dc880}{org.\-joda.\-time.\-Local\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_a29c678f852c3826e7536b50d44364f3d}{org.\-joda.\-time.\-Local\-Date}, \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_partial_a4aa5cf59be026488511f6850ca217824}{org.\-joda.\-time.\-base.\-Abstract\-Partial}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_partial_acd859d61afeb86bbfa0ea43eb965556c}{org.\-joda.\-time.\-Mock\-Partial}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a2cbc5753aa7a7e36ebba1d8460f2809a}{\index{org\-::joda\-::time\-::\-Readable\-Partial@{org\-::joda\-::time\-::\-Readable\-Partial}!size@{size}}
+\index{size@{size}!org::joda::time::ReadablePartial@{org\-::joda\-::time\-::\-Readable\-Partial}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Readable\-Partial.\-size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a2cbc5753aa7a7e36ebba1d8460f2809a}
+Gets the number of fields that this partial supports.
+
+\begin{DoxyReturn}{Returns}
+the number of fields supported 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_time_afd00893a75af43c5612132fb75fd5c24}{org.\-joda.\-time.\-Local\-Date\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_time_a7f7fec9e367c90efc4457375b7664c17}{org.\-joda.\-time.\-Local\-Time}, \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_af03ec5ba9e86b43e305e29b22bdab30e}{org.\-joda.\-time.\-Local\-Date}, \hyperlink{classorg_1_1joda_1_1time_1_1_time_of_day_a75d92ceb05a03d66e12d5e23580f17d3}{org.\-joda.\-time.\-Time\-Of\-Day}, \hyperlink{classorg_1_1joda_1_1time_1_1_month_day_aa4cf6de23583f87cb3311ab89efad9c8}{org.\-joda.\-time.\-Month\-Day}, \hyperlink{classorg_1_1joda_1_1time_1_1_year_month_a1e7b0d2625a502922c7fa92052968ba6}{org.\-joda.\-time.\-Year\-Month}, \hyperlink{classorg_1_1joda_1_1time_1_1_year_month_day_a1362ea5e109576271f038e1567e87990}{org.\-joda.\-time.\-Year\-Month\-Day}, \hyperlink{classorg_1_1joda_1_1time_1_1_partial_afdfd7342ca2f1023d07455364a4334f8}{org.\-joda.\-time.\-Partial}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_partial_aad4f468f8f3bf4a0ef0342e6e7153130}{org.\-joda.\-time.\-Mock\-Partial}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a874b3d628bd8c1f969cc9d24dc6c11fb}{\index{org\-::joda\-::time\-::\-Readable\-Partial@{org\-::joda\-::time\-::\-Readable\-Partial}!to\-Date\-Time@{to\-Date\-Time}}
+\index{to\-Date\-Time@{to\-Date\-Time}!org::joda::time::ReadablePartial@{org\-::joda\-::time\-::\-Readable\-Partial}}
+\subsubsection[{to\-Date\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time} org.\-joda.\-time.\-Readable\-Partial.\-to\-Date\-Time (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Instant}}]{base\-Instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a874b3d628bd8c1f969cc9d24dc6c11fb}
+Converts this partial to a full datetime by resolving it against another datetime. 
+
+This method takes the specified datetime and sets the fields from this instant on top. The chronology from the base instant is used. 
+
+For example, if this partial represents a time, then the result of this method will be the datetime from the specified base instant plus the time from this partial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\-Instant} & the instant that provides the missing fields, null means now \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the combined datetime 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_partial_ac09df7e71445efc808eb25238d6b9452}{org.\-joda.\-time.\-base.\-Abstract\-Partial}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_partial_a0f59e6f8002a6a6914dc08d640132c47}{org.\-joda.\-time.\-Mock\-Partial}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/Readable\-Partial.\-java\end{DoxyCompactItemize}

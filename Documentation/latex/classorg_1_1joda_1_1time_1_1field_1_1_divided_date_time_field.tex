@@ -1,0 +1,407 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field}{\section{org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field Class Reference}
+\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field}\index{org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field@{org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field}}
+}
+Inheritance diagram for org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a4c0c824d5120421bbada399f74d122dd}{Divided\-Date\-Time\-Field} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} field, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} type, int divisor)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_ae55437722152146285d8ec858dbab51e}{Divided\-Date\-Time\-Field} (\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_remainder_date_time_field}{Remainder\-Date\-Time\-Field} remainder\-Field, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} type)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a706fee5929e7b887d560889134c9ad20}{get} (long instant)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a7732726ba3c05b4076cf80c50f82c2d4}{add} (long instant, int amount)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a4c98e594dbe95ef86d8fa364b68219f1}{add} (long instant, long amount)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a00ff6c6b186806e384731ee89c32c8f3}{add\-Wrap\-Field} (long instant, int amount)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a4536d8c9f33814d494a4cf5f8058aa0b}{get\-Difference} (long minuend\-Instant, long subtrahend\-Instant)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a90a71fba08cd4d64919d8edf661a81db}{get\-Difference\-As\-Long} (long minuend\-Instant, long subtrahend\-Instant)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_ac0c45a41709ae12c4592a54d68eac4f6}{set} (long instant, int value)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_duration_field}{Duration\-Field} \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a50e81f0996b8cdf7c510e62f2d5a9e48}{get\-Duration\-Field} ()
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a2730033489510a1c2f542eec89a8ffea}{get\-Minimum\-Value} ()
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a42cf5677e5c74e8edb59ad79d4ec8a2f}{get\-Maximum\-Value} ()
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_aa6797087fc15f87da79e732a664699e6}{round\-Floor} (long instant)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a2639fc23317aae40cf80374dfc6001c5}{remainder} (long instant)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a810840620692a08991128d3f46d580cb}{get\-Divisor} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Divides a \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} such that the retrieved values are reduced by a fixed divisor. The field's unit duration is scaled accordingly, but the range duration is unchanged. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field}{Divided\-Date\-Time\-Field} is thread-\/safe and immutable.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_remainder_date_time_field}{Remainder\-Date\-Time\-Field}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a4c0c824d5120421bbada399f74d122dd}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!Divided\-Date\-Time\-Field@{Divided\-Date\-Time\-Field}}
+\index{Divided\-Date\-Time\-Field@{Divided\-Date\-Time\-Field}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{Divided\-Date\-Time\-Field}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-Divided\-Date\-Time\-Field (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field}}]{field, }
+\item[{{\bf Date\-Time\-Field\-Type}}]{type, }
+\item[{int}]{divisor}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a4c0c824d5120421bbada399f74d122dd}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & the field to wrap, like \char`\"{}year()\char`\"{}. \\
+\hline
+{\em type} & the field type this field will actually use \\
+\hline
+{\em divisor} & divisor, such as 100 years in a century \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if divisor is less than two \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_ae55437722152146285d8ec858dbab51e}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!Divided\-Date\-Time\-Field@{Divided\-Date\-Time\-Field}}
+\index{Divided\-Date\-Time\-Field@{Divided\-Date\-Time\-Field}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{Divided\-Date\-Time\-Field}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-Divided\-Date\-Time\-Field (
+\begin{DoxyParamCaption}
+\item[{{\bf Remainder\-Date\-Time\-Field}}]{remainder\-Field, }
+\item[{{\bf Date\-Time\-Field\-Type}}]{type}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_ae55437722152146285d8ec858dbab51e}
+Construct a \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field}{Divided\-Date\-Time\-Field} that compliments the given \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_remainder_date_time_field}{Remainder\-Date\-Time\-Field}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em remainder\-Field} & complimentary remainder field, like \char`\"{}year\-Of\-Century()\char`\"{}. \\
+\hline
+{\em type} & the field type this field will actually use \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a7732726ba3c05b4076cf80c50f82c2d4}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!add@{add}}
+\index{add@{add}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-add (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{int}]{amount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a7732726ba3c05b4076cf80c50f82c2d4}
+Add the specified amount of scaled units to the specified time instant. The amount added may be negative.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the time instant in millis to update. \\
+\hline
+{\em amount} & the amount of scaled units to add (can be negative). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated time instant. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a45cd5fea81f2bc65735921f95052069b}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a4c98e594dbe95ef86d8fa364b68219f1}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!add@{add}}
+\index{add@{add}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-add (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{long}]{amount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a4c98e594dbe95ef86d8fa364b68219f1}
+Add the specified amount of scaled units to the specified time instant. The amount added may be negative.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the time instant in millis to update. \\
+\hline
+{\em amount} & the amount of scaled units to add (can be negative). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated time instant. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a6f45aa2157f580c29f0ec7e5d529c952}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a00ff6c6b186806e384731ee89c32c8f3}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!add\-Wrap\-Field@{add\-Wrap\-Field}}
+\index{add\-Wrap\-Field@{add\-Wrap\-Field}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{add\-Wrap\-Field}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-add\-Wrap\-Field (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{int}]{amount}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a00ff6c6b186806e384731ee89c32c8f3}
+Add to the scaled component of the specified time instant, wrapping around within that component if necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the time instant in millis to update. \\
+\hline
+{\em amount} & the amount of scaled units to add (can be negative). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated time instant. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a5b34f8821250f63795c4e7952260138c}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a706fee5929e7b887d560889134c9ad20}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!get@{get}}
+\index{get@{get}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-get (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a706fee5929e7b887d560889134c9ad20}
+Get the amount of scaled units from the specified time instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the time instant in millis to query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the amount of scaled units extracted from the input. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a16c65d5fd974660e6f23ad75261ee51f}{org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a4536d8c9f33814d494a4cf5f8058aa0b}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!get\-Difference@{get\-Difference}}
+\index{get\-Difference@{get\-Difference}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{get\-Difference}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-get\-Difference (
+\begin{DoxyParamCaption}
+\item[{long}]{minuend\-Instant, }
+\item[{long}]{subtrahend\-Instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a4536d8c9f33814d494a4cf5f8058aa0b}
+Computes the difference between two instants, as measured in the units of this field. Any fractional units are dropped from the result. Calling get\-Difference reverses the effect of calling add. In the following code\-:
+
+
+\begin{DoxyPre}
+long instant = ...
+int v = ...
+int age = getDifference(add(instant, v), instant);
+\end{DoxyPre}
+
+
+The value 'age' is the same as the value 'v'.
+
+
+\begin{DoxyParams}{Parameters}
+{\em minuend\-Instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract from \\
+\hline
+{\em subtrahend\-Instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract off the minuend \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the difference in the units of this field 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a2cbaf43580ad7e1a176d28ae3f5e8ca3}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a90a71fba08cd4d64919d8edf661a81db}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!get\-Difference\-As\-Long@{get\-Difference\-As\-Long}}
+\index{get\-Difference\-As\-Long@{get\-Difference\-As\-Long}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{get\-Difference\-As\-Long}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-get\-Difference\-As\-Long (
+\begin{DoxyParamCaption}
+\item[{long}]{minuend\-Instant, }
+\item[{long}]{subtrahend\-Instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a90a71fba08cd4d64919d8edf661a81db}
+Computes the difference between two instants, as measured in the units of this field. Any fractional units are dropped from the result. Calling get\-Difference reverses the effect of calling add. In the following code\-:
+
+
+\begin{DoxyPre}
+long instant = ...
+long v = ...
+long age = getDifferenceAsLong(add(instant, v), instant);
+\end{DoxyPre}
+
+
+The value 'age' is the same as the value 'v'.
+
+
+\begin{DoxyParams}{Parameters}
+{\em minuend\-Instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract from \\
+\hline
+{\em subtrahend\-Instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract off the minuend \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the difference in the units of this field 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a9e94d93aa8379eef0cfc5887fbef05db}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a810840620692a08991128d3f46d580cb}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!get\-Divisor@{get\-Divisor}}
+\index{get\-Divisor@{get\-Divisor}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{get\-Divisor}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-get\-Divisor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a810840620692a08991128d3f46d580cb}
+Returns the divisor applied, in the field's units.
+
+\begin{DoxyReturn}{Returns}
+the divisor 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a50e81f0996b8cdf7c510e62f2d5a9e48}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!get\-Duration\-Field@{get\-Duration\-Field}}
+\index{get\-Duration\-Field@{get\-Duration\-Field}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{get\-Duration\-Field}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Duration\-Field} org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-get\-Duration\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a50e81f0996b8cdf7c510e62f2d5a9e48}
+Returns a scaled version of the wrapped field's unit duration field. 
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_aaf9740f64287368d141a9b6945d3c7f4}{org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a42cf5677e5c74e8edb59ad79d4ec8a2f}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!get\-Maximum\-Value@{get\-Maximum\-Value}}
+\index{get\-Maximum\-Value@{get\-Maximum\-Value}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{get\-Maximum\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-get\-Maximum\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a42cf5677e5c74e8edb59ad79d4ec8a2f}
+Get the maximum value for the field.
+
+\begin{DoxyReturn}{Returns}
+the maximum value 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a0c31921960fa2402e42f292dd09d5c08}{org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a2730033489510a1c2f542eec89a8ffea}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!get\-Minimum\-Value@{get\-Minimum\-Value}}
+\index{get\-Minimum\-Value@{get\-Minimum\-Value}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{get\-Minimum\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-get\-Minimum\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a2730033489510a1c2f542eec89a8ffea}
+Get the minimum value for the field.
+
+\begin{DoxyReturn}{Returns}
+the minimum value 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a06833850ac8650f7f7cad7670b1365c3}{org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a2639fc23317aae40cf80374dfc6001c5}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!remainder@{remainder}}
+\index{remainder@{remainder}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{remainder}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-remainder (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_a2639fc23317aae40cf80374dfc6001c5}
+Returns the fractional duration milliseconds of this field. In other words, calling remainder returns the duration that round\-Floor would subtract. 
+
+For example, on a datetime of 2002-\/11-\/02\-T23\-:34\-:56.\-789, the remainder by hour is 34 minutes and 56.\-789 seconds. 
+
+The default implementation computes {\ttfamily instant -\/ round\-Floor(instant)}. Subclasses are encouraged to provide a more efficient implementation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to get the remainder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+remainder duration, in milliseconds 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a30b401edc9f2663feebdc79dc18d7578}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_aa6797087fc15f87da79e732a664699e6}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!round\-Floor@{round\-Floor}}
+\index{round\-Floor@{round\-Floor}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{round\-Floor}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-round\-Floor (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_aa6797087fc15f87da79e732a664699e6}
+Round to the lowest whole unit of this field. After rounding, the value of this field and all fields of a higher magnitude are retained. The fractional millis that cannot be expressed in whole increments of this field are set to minimum. 
+
+For example, a datetime of 2002-\/11-\/02\-T23\-:34\-:56.\-789, rounded to the lowest whole hour is 2002-\/11-\/02\-T23\-:00\-:00.\-000.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to round \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rounded milliseconds 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a900b454e29332973f15ce88e34774878}{org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_ac0c45a41709ae12c4592a54d68eac4f6}{\index{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}!set@{set}}
+\index{set@{set}!org::joda::time::field::DividedDateTimeField@{org\-::joda\-::time\-::field\-::\-Divided\-Date\-Time\-Field}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Divided\-Date\-Time\-Field.\-set (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_divided_date_time_field_ac0c45a41709ae12c4592a54d68eac4f6}
+Set the specified amount of scaled units to the specified time instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the time instant in millis to update. \\
+\hline
+{\em value} & value of scaled units to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated time instant. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if value is too large or too small. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_date_time_field_a2c48e6d5c609215a6b33049feb869f7a}{org.\-joda.\-time.\-field.\-Decorated\-Date\-Time\-Field}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/field/Divided\-Date\-Time\-Field.\-java\end{DoxyCompactItemize}

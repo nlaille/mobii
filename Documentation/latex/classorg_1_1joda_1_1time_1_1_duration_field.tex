@@ -1,0 +1,571 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field}{\section{org.\-joda.\-time.\-Duration\-Field Class Reference}
+\label{classorg_1_1joda_1_1time_1_1_duration_field}\index{org.\-joda.\-time.\-Duration\-Field@{org.\-joda.\-time.\-Duration\-Field}}
+}
+Inheritance diagram for org.\-joda.\-time.\-Duration\-Field\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.058824cm]{classorg_1_1joda_1_1time_1_1_duration_field}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a10f96bd696c8cce2eb7020359ecec74f}{get\-Type} ()
+\item 
+abstract String \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a24e9b08ff10e58df81aa6d12e2e76128}{get\-Name} ()
+\item 
+abstract boolean \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a763809f34d5c827a715f7f81ac485ad0}{is\-Supported} ()
+\item 
+abstract boolean \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_aa068ba156fd9dc06ce2d6121690795fc}{is\-Precise} ()
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_ab77adc9488456690be1a2d333e009610}{get\-Unit\-Millis} ()
+\item 
+abstract int \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_aed983d82e98413d7e61e9f2f0830f2e4}{get\-Value} (long duration)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a2a0c7a02df94f09f0aeb623aca1976ce}{get\-Value\-As\-Long} (long duration)
+\item 
+abstract int \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a9586a654c5c554325f5f52b16bbc61fc}{get\-Value} (long duration, long instant)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_ac6f19b7c41593f5909396ac5da8f1de8}{get\-Value\-As\-Long} (long duration, long instant)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a5542c5363d362033215f5000ba0cf4b8}{get\-Millis} (int value)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a240c14dec7323c8232c033b5870dd5c0}{get\-Millis} (long value)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a480213438661b136f553ea390edbf8b3}{get\-Millis} (int value, long instant)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_ac6d505e0bb70feea591ca88bd083f7e1}{get\-Millis} (long value, long instant)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a58f09e9221db948139e50409d41232b0}{add} (long instant, int value)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a000a12da2e921d98e8fb19181193e574}{add} (long instant, long value)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a3f6fc0c9228664d657cd809954661b16}{subtract} (long instant, int value)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a7f1983460a11b1d50d36908a8a4c7c76}{subtract} (long instant, long value)
+\item 
+abstract int \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a52ca2db6b49f2038a12f0014f2eb293f}{get\-Difference} (long minuend\-Instant, long subtrahend\-Instant)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_a50d0b7dedeae16b29df3a9ab0ba15295}{get\-Difference\-As\-Long} (long minuend\-Instant, long subtrahend\-Instant)
+\item 
+abstract String \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_aaa417cdb32c44747df3f8d8e482caf61}{to\-String} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the calculation engine for duration fields. The interface defines a set of methods that manipulate a millisecond duration with regards to a single field, such as months or seconds. 
+
+This design is extensible so, if you wish, you can extract a different field from the millisecond duration. A number of standard implementations are provided to assist.
+
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a58f09e9221db948139e50409d41232b0}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!add@{add}}
+\index{add@{add}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-Duration\-Field.\-add (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a58f09e9221db948139e50409d41232b0}
+Adds a duration value (which may be negative) to the instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to add to \\
+\hline
+{\em value} & the value to add, in the units of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated milliseconds 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_ad5033411db66704f889d9d9200a3b6d3}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_adb1ff32bf99383594f23745b40ff9d22}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_a1840a06489bf147b12201e924d0fc476}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_field_adfe6961b200e38058488d25d8d8ed99d}{org.\-joda.\-time.\-field.\-Precise\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_a248500399fa11514987785346585d33c}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_duration_field_ad910cd9707cdc78df722cee6ab052e5d}{org.\-joda.\-time.\-field.\-Decorated\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a000a12da2e921d98e8fb19181193e574}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!add@{add}}
+\index{add@{add}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-Duration\-Field.\-add (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{long}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a000a12da2e921d98e8fb19181193e574}
+Adds a duration value (which may be negative) to the instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to add to \\
+\hline
+{\em value} & the value to add, in the units of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated milliseconds 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_a61fba4566d7fceb319b586e02b1ac8ca}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_af662c7d3f85871bfbb250153e0582356}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_ae9d5dcfcd4da0d0feef198ab058ed0f5}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_field_a6b82325897d2d047277999a9fd447350}{org.\-joda.\-time.\-field.\-Precise\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_a873e7e02586bef214818d1ba3c2fd2a5}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_duration_field_a3a4abac0db03802a068164691f63bc6a}{org.\-joda.\-time.\-field.\-Decorated\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a52ca2db6b49f2038a12f0014f2eb293f}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Difference@{get\-Difference}}
+\index{get\-Difference@{get\-Difference}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Difference}]{\setlength{\rightskip}{0pt plus 5cm}abstract int org.\-joda.\-time.\-Duration\-Field.\-get\-Difference (
+\begin{DoxyParamCaption}
+\item[{long}]{minuend\-Instant, }
+\item[{long}]{subtrahend\-Instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a52ca2db6b49f2038a12f0014f2eb293f}
+Computes the difference between two instants, as measured in the units of this field. Any fractional units are dropped from the result. Calling get\-Difference reverses the effect of calling add. In the following code\-:
+
+
+\begin{DoxyPre}
+long instant = ...
+int v = ...
+int age = getDifference(add(instant, v), instant);
+\end{DoxyPre}
+
+
+The value 'age' is the same as the value 'v'.
+
+
+\begin{DoxyParams}{Parameters}
+{\em minuend\-Instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract from \\
+\hline
+{\em subtrahend\-Instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract off the minuend \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the difference in the units of this field 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_a5d3c2ed76857389cb8db63b309f9b69a}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_duration_field_adf240a882b1b5b3eafd23ec9e129f2c2}{org.\-joda.\-time.\-field.\-Base\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_a602022c1b7920eb6b978635795a63c2b}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_ac87abfae8f92616f429e98c2fdbaee20}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_a9a52315080457ac342de2f0dbd53acd4}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a50d0b7dedeae16b29df3a9ab0ba15295}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Difference\-As\-Long@{get\-Difference\-As\-Long}}
+\index{get\-Difference\-As\-Long@{get\-Difference\-As\-Long}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Difference\-As\-Long}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-Duration\-Field.\-get\-Difference\-As\-Long (
+\begin{DoxyParamCaption}
+\item[{long}]{minuend\-Instant, }
+\item[{long}]{subtrahend\-Instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a50d0b7dedeae16b29df3a9ab0ba15295}
+Computes the difference between two instants, as measured in the units of this field. Any fractional units are dropped from the result. Calling get\-Difference reverses the effect of calling add. In the following code\-:
+
+
+\begin{DoxyPre}
+long instant = ...
+long v = ...
+long age = getDifferenceAsLong(add(instant, v), instant);
+\end{DoxyPre}
+
+
+The value 'age' is the same as the value 'v'.
+
+
+\begin{DoxyParams}{Parameters}
+{\em minuend\-Instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract from \\
+\hline
+{\em subtrahend\-Instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract off the minuend \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the difference in the units of this field 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_aea117cfe5a42fb6fef4200b051755423}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_a41266d88dc358c5aa571162dfa93cde4}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_a00ef494a65044fa8d1599f8a4dbea921}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_field_abf35ad835c05b104a0e2467f1f5a8850}{org.\-joda.\-time.\-field.\-Precise\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_ad0860ff0cca09d702f2b3b7eab88e06d}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_duration_field_aefd88ed0a66d45628b224d935d391162}{org.\-joda.\-time.\-field.\-Decorated\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a5542c5363d362033215f5000ba0cf4b8}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Millis@{get\-Millis}}
+\index{get\-Millis@{get\-Millis}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-Duration\-Field.\-get\-Millis (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a5542c5363d362033215f5000ba0cf4b8}
+Get the millisecond duration of this field from its value, which is approximate if this field is imprecise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value of the field, which may be negative \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the milliseconds that the field represents, which may be negative 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_a8a9747bf89704d8755193dc934fe27ff}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_duration_field_a9d6602a0ea007da0c1ac298d17fd655e}{org.\-joda.\-time.\-field.\-Base\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_ae88971abcb1d3bc14f8c0ff62e126647}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_a9b9a32037fe7e0c9a980fd6eaf21fdb7}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_a071f0eac8fb5504aad8d4d4b43c7c476}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a240c14dec7323c8232c033b5870dd5c0}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Millis@{get\-Millis}}
+\index{get\-Millis@{get\-Millis}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-Duration\-Field.\-get\-Millis (
+\begin{DoxyParamCaption}
+\item[{long}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a240c14dec7323c8232c033b5870dd5c0}
+Get the millisecond duration of this field from its value, which is approximate if this field is imprecise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value of the field, which may be negative \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the milliseconds that the field represents, which may be negative 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_aee536a4d65542b129fa5837534a32f37}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_duration_field_a77b1a94256cd914936ff36b8c8fe81b7}{org.\-joda.\-time.\-field.\-Base\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_ae65b66abcd512273337a010a9790287c}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_a4ece41997ee0aba7760a36b1d3b34eba}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_a6c25858aa76109a63978fb0e34041d9d}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a480213438661b136f553ea390edbf8b3}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Millis@{get\-Millis}}
+\index{get\-Millis@{get\-Millis}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-Duration\-Field.\-get\-Millis (
+\begin{DoxyParamCaption}
+\item[{int}]{value, }
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a480213438661b136f553ea390edbf8b3}
+Get the millisecond duration of this field from its value relative to an instant. For precise fields this method produces the same result as for the single argument get\-Millis method. 
+
+If the value is positive, then the instant is treated as a \char`\"{}start
+instant\char`\"{}. If negative, the instant is treated as an \char`\"{}end instant\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value of the field, which may be negative \\
+\hline
+{\em instant} & the instant to calculate relative to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the millisecond duration that the field represents, which may be negative 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_a7a9f84c196370bcacd313f15e12167ff}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_ab40a35ce219ed6e7f1b653eecfd54814}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_a5530dc602a27d63bce576ddb41a62454}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_field_a9cf6328c0dd3cd6e08ee30c01a814ef0}{org.\-joda.\-time.\-field.\-Precise\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_duration_field_afd846fe59dd2b0d44509b6f6478c8ede}{org.\-joda.\-time.\-field.\-Decorated\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_a43c565c2c624166aad627bc91e01fc78}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_ac6d505e0bb70feea591ca88bd083f7e1}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Millis@{get\-Millis}}
+\index{get\-Millis@{get\-Millis}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-Duration\-Field.\-get\-Millis (
+\begin{DoxyParamCaption}
+\item[{long}]{value, }
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_ac6d505e0bb70feea591ca88bd083f7e1}
+Get the millisecond duration of this field from its value relative to an instant. For precise fields this method produces the same result as for the single argument get\-Millis method. 
+
+If the value is positive, then the instant is treated as a \char`\"{}start
+instant\char`\"{}. If negative, the instant is treated as an \char`\"{}end instant\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value of the field, which may be negative \\
+\hline
+{\em instant} & the instant to calculate relative to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the millisecond duration that the field represents, which may be negative 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_a1169630c439965043669ffdaac8e6bae}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_abf5351576f9f6ecb5e5bc85c4e576328}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_a341fee3644ee73386408da264f889dbc}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_field_a465e274161b15ab00c4e42c132113804}{org.\-joda.\-time.\-field.\-Precise\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_ad74d0f6a857019d825dacef386f74cfa}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_duration_field_ab940b4db255c3c5fbd971166520fd538}{org.\-joda.\-time.\-field.\-Decorated\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a24e9b08ff10e58df81aa6d12e2e76128}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}abstract String org.\-joda.\-time.\-Duration\-Field.\-get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a24e9b08ff10e58df81aa6d12e2e76128}
+Get the name of the field. 
+
+By convention, names are plural.
+
+\begin{DoxyReturn}{Returns}
+field name 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_ae0851dced375289c13602a5a2977c198}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_aaa6cc5695ae3762ce9845f3bb9e03621}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_duration_field_ab16aa653d798338f311093e677dfbc29}{org.\-joda.\-time.\-field.\-Base\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_a9de123f2b906d00c8a6256671383dd5a}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a10f96bd696c8cce2eb7020359ecec74f}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}abstract {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field.\-get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a10f96bd696c8cce2eb7020359ecec74f}
+Get the type of the field.
+
+\begin{DoxyReturn}{Returns}
+field type 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_a2d97ebc4d88f33289c958c62d4605433}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_a5a8de05af9b4efe48c8879a94a805882}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_duration_field_aece0dff3933b177f668d22ddb4aaf87e}{org.\-joda.\-time.\-field.\-Base\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_aadbafd301789f7058717cf7ba9c2041a}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_ab77adc9488456690be1a2d333e009610}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Unit\-Millis@{get\-Unit\-Millis}}
+\index{get\-Unit\-Millis@{get\-Unit\-Millis}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Unit\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-Duration\-Field.\-get\-Unit\-Millis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_ab77adc9488456690be1a2d333e009610}
+Returns the amount of milliseconds per unit value of this field. For example, if this field represents \char`\"{}seconds\char`\"{}, then this returns the milliseconds in one second. 
+
+For imprecise fields, the unit size is variable, and so this method returns a suitable average value.
+
+\begin{DoxyReturn}{Returns}
+the unit size of this field, in milliseconds 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_aa068ba156fd9dc06ce2d6121690795fc}{is\-Precise()} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_aa13917f22919900c2ed2c52df8cdd232}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_aef1ff941f73bc7cce103460fb66a08b0}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_a287a12fa844f8b713d3954624409862f}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_duration_field_a9cf3cb7f3ceb0e211641d4288ca3254d}{org.\-joda.\-time.\-field.\-Decorated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_aa8cc1771750c4b8782d1b034df956f55}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_field_a21686021dd6d07041e0fbe93b82294d8}{org.\-joda.\-time.\-field.\-Precise\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_aed983d82e98413d7e61e9f2f0830f2e4}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}abstract int org.\-joda.\-time.\-Duration\-Field.\-get\-Value (
+\begin{DoxyParamCaption}
+\item[{long}]{duration}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_aed983d82e98413d7e61e9f2f0830f2e4}
+Get the value of this field from the milliseconds, which is approximate if this field is imprecise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & the milliseconds to query, which may be negative \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the field, in the units of the field, which may be negative 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the value is too large for an int \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_a26a5a691a1f08f79a4688bdad8ea4d02}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_a86f56be6700867889965589876af953c}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_af16b4c0be8ea855670374a5c3a49e925}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_duration_field_a831fcbe71602a5e137280a3aab59ddd7}{org.\-joda.\-time.\-field.\-Base\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_aa7209449cbbf50fd49f8d00db4d0452a}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a9586a654c5c554325f5f52b16bbc61fc}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}abstract int org.\-joda.\-time.\-Duration\-Field.\-get\-Value (
+\begin{DoxyParamCaption}
+\item[{long}]{duration, }
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a9586a654c5c554325f5f52b16bbc61fc}
+Get the value of this field from the milliseconds relative to an instant. For precise fields this method produces the same result as for the single argument get method. 
+
+If the millisecond duration is positive, then the instant is treated as a \char`\"{}start instant\char`\"{}. If negative, the instant is treated as an \char`\"{}end instant\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & the milliseconds to query, which may be negative \\
+\hline
+{\em instant} & the start instant to calculate relative to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the field, in the units of the field, which may be negative 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the value is too large for an int \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_af7d8a53fbe6467db031ec50c7bae97e5}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_duration_field_ae7ede3f39304f938ac051539d1188af0}{org.\-joda.\-time.\-field.\-Base\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_a3fdde744b4156a08cb899ea25884d8f0}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_accf89bc5ba0bee630d80d095bea8eafc}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_a0725cbdd2dd34e0929ca7e462417046b}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a2a0c7a02df94f09f0aeb623aca1976ce}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Value\-As\-Long@{get\-Value\-As\-Long}}
+\index{get\-Value\-As\-Long@{get\-Value\-As\-Long}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Value\-As\-Long}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-Duration\-Field.\-get\-Value\-As\-Long (
+\begin{DoxyParamCaption}
+\item[{long}]{duration}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a2a0c7a02df94f09f0aeb623aca1976ce}
+Get the value of this field from the milliseconds, which is approximate if this field is imprecise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & the milliseconds to query, which may be negative \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the field, in the units of the field, which may be negative 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_a46404acba35f819599d158c7cad710b5}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_a4f7b80931848e313023e37019a0680cb}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_duration_field_ae2db64a1062b56bb2dbe1d8c67e406b1}{org.\-joda.\-time.\-field.\-Base\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_a3c8f6c24b71c630ea0681532dce705e2}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_aa05cbad813a3d90edbfcadf79fbe8075}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_ac6f19b7c41593f5909396ac5da8f1de8}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!get\-Value\-As\-Long@{get\-Value\-As\-Long}}
+\index{get\-Value\-As\-Long@{get\-Value\-As\-Long}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{get\-Value\-As\-Long}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-Duration\-Field.\-get\-Value\-As\-Long (
+\begin{DoxyParamCaption}
+\item[{long}]{duration, }
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_ac6f19b7c41593f5909396ac5da8f1de8}
+Get the value of this field from the milliseconds relative to an instant. For precise fields this method produces the same result as for the single argument get method. 
+
+If the millisecond duration is positive, then the instant is treated as a \char`\"{}start instant\char`\"{}. If negative, the instant is treated as an \char`\"{}end instant\char`\"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & the milliseconds to query, which may be negative \\
+\hline
+{\em instant} & the start instant to calculate relative to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the field, in the units of the field, which may be negative 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_aa03b66437d911538c5ff3ad7797787cd}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_a9ac37092b870c439222a46fcebce4f31}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_aa291f431038a3a8a02c9931c626d8c5f}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_duration_field_a69f8d8828774e72ebf99a3f8ce7ff972}{org.\-joda.\-time.\-field.\-Decorated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_field_adc63153af0bec8df0a38bf3dc91d2635}{org.\-joda.\-time.\-field.\-Precise\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_scaled_duration_field_aa2de0de25f4855b12c97d54692b6a63a}{org.\-joda.\-time.\-field.\-Scaled\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_aa068ba156fd9dc06ce2d6121690795fc}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!is\-Precise@{is\-Precise}}
+\index{is\-Precise@{is\-Precise}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{is\-Precise}]{\setlength{\rightskip}{0pt plus 5cm}abstract boolean org.\-joda.\-time.\-Duration\-Field.\-is\-Precise (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_aa068ba156fd9dc06ce2d6121690795fc}
+Is this field precise. A precise field can calculate its value from milliseconds without needing a reference date. Put another way, a precise field's unit size is not variable.
+
+\begin{DoxyReturn}{Returns}
+true if precise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_ab77adc9488456690be1a2d333e009610}{get\-Unit\-Millis()} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_a0a2a927818c0cc66d18b4cf000e754f0}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_a7a50ff57105876f7dcc5e6a83b99ca5c}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_decorated_duration_field_a818f5570e5f790dc41a5e17885051d1f}{org.\-joda.\-time.\-field.\-Decorated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_aa832b22e1a6dd45f8e9a50e7dea72dc7}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_field_a680625ae950384e9221c7af9b08e8cec}{org.\-joda.\-time.\-field.\-Precise\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a763809f34d5c827a715f7f81ac485ad0}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!is\-Supported@{is\-Supported}}
+\index{is\-Supported@{is\-Supported}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{is\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}abstract boolean org.\-joda.\-time.\-Duration\-Field.\-is\-Supported (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a763809f34d5c827a715f7f81ac485ad0}
+Returns true if this field is supported.
+
+\begin{DoxyReturn}{Returns}
+true if this field is supported 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_a5e67a0b47bbea249cb39cd90e6bdc0fc}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_a8ecbe4b7aa07ccc1af1a4c44a135ea0c}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_duration_field_aef1fc336b3a568e023c283a4ed69adfb}{org.\-joda.\-time.\-field.\-Base\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_adde0a72d4f750ae070c1c2ee4231d540}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a3f6fc0c9228664d657cd809954661b16}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!subtract@{subtract}}
+\index{subtract@{subtract}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{subtract}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-Duration\-Field.\-subtract (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a3f6fc0c9228664d657cd809954661b16}
+Subtracts a duration value (which may be negative) from the instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract from \\
+\hline
+{\em value} & the value to subtract, in the units of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated milliseconds 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\-1 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_a7f1983460a11b1d50d36908a8a4c7c76}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!subtract@{subtract}}
+\index{subtract@{subtract}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{subtract}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-Duration\-Field.\-subtract (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{long}]{value}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_duration_field_a7f1983460a11b1d50d36908a8a4c7c76}
+Subtracts a duration value (which may be negative) from the instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract from \\
+\hline
+{\em value} & the value to subtract, in the units of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated milliseconds 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\-1 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_aaa417cdb32c44747df3f8d8e482caf61}{\index{org\-::joda\-::time\-::\-Duration\-Field@{org\-::joda\-::time\-::\-Duration\-Field}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!org::joda::time::DurationField@{org\-::joda\-::time\-::\-Duration\-Field}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}abstract String org.\-joda.\-time.\-Duration\-Field.\-to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_aaa417cdb32c44747df3f8d8e482caf61}
+Compares this duration field with another duration field for ascending unit millisecond order. This ordering is inconsistent with equals, as it ignores name and precision.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration\-Field} & a duration field to check against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+negative value if this is less, 0 if equal, or positive value if greater 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\-Pointer\-Exception} & if the object is null \\
+\hline
+{\em Class\-Cast\-Exception} & if the object type is not supported Returns a localized unit name of this field, using the given value as an aid. For example, the unit name may differ if it is plural.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the duration value to use for selecting a unit name \\
+\hline
+{\em locale} & the locale to use for selecting a name, null for default Returns a localized unit name of this field, using the given value as an aid. For example, the unit name may differ if it is plural.\\
+\hline
+{\em value} & the duration value to use for selecting a unit name Get the maximum length string returned by get\-Unit\-Name.\\
+\hline
+{\em locale} & the locale to use for selecting a unit name, null for default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the maximum name length Get a suitable debug string.
+
+debug string 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field_aff51efdae45762b51d65ffd2b1a0519f}{org.\-joda.\-time.\-field.\-Unsupported\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_duration_field_a20f627e51fed6419e43032fa8bc8cb8c}{org.\-joda.\-time.\-field.\-Base\-Duration\-Field}, \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_duration_field_a76e10d760e585e116a9444a8bee92dd1}{org.\-joda.\-time.\-field.\-Delegated\-Duration\-Field}, and \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_millis_duration_field_a48474fe41d26915d67dbc5c255263445}{org.\-joda.\-time.\-field.\-Millis\-Duration\-Field}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/Duration\-Field.\-java\end{DoxyCompactItemize}

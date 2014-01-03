@@ -1,0 +1,342 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval}{\section{org.\-joda.\-time.\-Read\-Writable\-Interval Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval}\index{org.\-joda.\-time.\-Read\-Writable\-Interval@{org.\-joda.\-time.\-Read\-Writable\-Interval}}
+}
+Inheritance diagram for org.\-joda.\-time.\-Read\-Writable\-Interval\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a18c83f934e51d8d5d993857dcf1f6214}{set\-Interval} (long start\-Instant, long end\-Instant)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a854554ae764de9ae4b9d87cf1ed68b6d}{set\-Interval} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_interval}{Readable\-Interval} interval)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a020a2c99f391e69a51d9e8f496000978}{set\-Interval} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} start\-Instant, \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} end\-Instant)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a9297c7e514beac28ef51180da854a3da}{set\-Chronology} (\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chrono)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_ad8ae2ca8302ef3f2dc0e96336c120fe6}{set\-Start\-Millis} (long millis\-Instant)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_add3eadbb384e93d91a1ef026753b4bf8}{set\-Start} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} instant)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a29d4a5d3a41a1060ee960579a6c50915}{set\-End\-Millis} (long millis\-Instant)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a378f967fa1c8ef32f2f98436e4b92459}{set\-End} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} instant)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a7adab84dd3572ce24a46be380bfcbc64}{set\-Duration\-After\-Start} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration}{Readable\-Duration} duration)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_adfeb09e3273f74a98a81e31ee02185cf}{set\-Duration\-Before\-End} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration}{Readable\-Duration} duration)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a86a46d4bdd83e28a462ad2ef8b6bb4a3}{set\-Period\-After\-Start} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} period)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a9963bf7d45b004e97a6981e1907742a1}{set\-Period\-Before\-End} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} period)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Writable interface for an interval.
+
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a9297c7e514beac28ef51180da854a3da}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Interval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}!set\-Chronology@{set\-Chronology}}
+\index{set\-Chronology@{set\-Chronology}!org::joda::time::ReadWritableInterval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}}
+\subsubsection[{set\-Chronology}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Interval.\-set\-Chronology (
+\begin{DoxyParamCaption}
+\item[{{\bf Chronology}}]{chrono}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a9297c7e514beac28ef51180da854a3da}
+Sets the chronology of this time interval.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chrono} & the chronology to use, null means I\-S\-O default \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_interval_a90f2908e8325eb6216f94d6dafe2aec1}{org.\-joda.\-time.\-Mutable\-Interval}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a7adab84dd3572ce24a46be380bfcbc64}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Interval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}!set\-Duration\-After\-Start@{set\-Duration\-After\-Start}}
+\index{set\-Duration\-After\-Start@{set\-Duration\-After\-Start}!org::joda::time::ReadWritableInterval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}}
+\subsubsection[{set\-Duration\-After\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Interval.\-set\-Duration\-After\-Start (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Duration}}]{duration}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a7adab84dd3572ce24a46be380bfcbc64}
+Sets the duration of this time interval, preserving the start instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & new duration for interval \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the end is before the start \\
+\hline
+{\em Arithmetic\-Exception} & if the end instant exceeds the capacity of a long \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_interval_ab1f299bcbd26ccd83659f46c922bef58}{org.\-joda.\-time.\-Mutable\-Interval}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_adfeb09e3273f74a98a81e31ee02185cf}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Interval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}!set\-Duration\-Before\-End@{set\-Duration\-Before\-End}}
+\index{set\-Duration\-Before\-End@{set\-Duration\-Before\-End}!org::joda::time::ReadWritableInterval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}}
+\subsubsection[{set\-Duration\-Before\-End}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Interval.\-set\-Duration\-Before\-End (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Duration}}]{duration}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_adfeb09e3273f74a98a81e31ee02185cf}
+Sets the duration of this time interval, preserving the end instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & new duration for interval \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the end is before the start \\
+\hline
+{\em Arithmetic\-Exception} & if the start instant exceeds the capacity of a long \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_interval_a548d9b249b91368d4e212315a1bb6746}{org.\-joda.\-time.\-Mutable\-Interval}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a378f967fa1c8ef32f2f98436e4b92459}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Interval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}!set\-End@{set\-End}}
+\index{set\-End@{set\-End}!org::joda::time::ReadWritableInterval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}}
+\subsubsection[{set\-End}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Interval.\-set\-End (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Instant}}]{instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a378f967fa1c8ef32f2f98436e4b92459}
+Sets the end of this time interval as an \hyperlink{classorg_1_1joda_1_1time_1_1_instant}{Instant}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the end of the time interval \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the end is before the start \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_interval_afbd4bc7906f497664b3ac5df7c255518}{org.\-joda.\-time.\-Mutable\-Interval}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a29d4a5d3a41a1060ee960579a6c50915}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Interval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}!set\-End\-Millis@{set\-End\-Millis}}
+\index{set\-End\-Millis@{set\-End\-Millis}!org::joda::time::ReadWritableInterval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}}
+\subsubsection[{set\-End\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Interval.\-set\-End\-Millis (
+\begin{DoxyParamCaption}
+\item[{long}]{millis\-Instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a29d4a5d3a41a1060ee960579a6c50915}
+Sets the end of this time interval.
+
+
+\begin{DoxyParams}{Parameters}
+{\em millis\-Instant} & the end of the time interval, millisecond instant from 1970-\/01-\/01\-T00\-:00\-:00\-Z \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the end is before the start \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_interval_add83ca272cb02d18497cb9073f684cf5}{org.\-joda.\-time.\-Mutable\-Interval}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a18c83f934e51d8d5d993857dcf1f6214}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Interval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}!set\-Interval@{set\-Interval}}
+\index{set\-Interval@{set\-Interval}!org::joda::time::ReadWritableInterval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}}
+\subsubsection[{set\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Interval.\-set\-Interval (
+\begin{DoxyParamCaption}
+\item[{long}]{start\-Instant, }
+\item[{long}]{end\-Instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a18c83f934e51d8d5d993857dcf1f6214}
+Sets this interval from two millisecond instants.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\-Instant} & the start of the time interval \\
+\hline
+{\em end\-Instant} & the start of the time interval \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the end is before the start \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_interval_a8620bfaa7ce66c53b1eafb75cd78d1d4}{org.\-joda.\-time.\-Mutable\-Interval}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a854554ae764de9ae4b9d87cf1ed68b6d}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Interval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}!set\-Interval@{set\-Interval}}
+\index{set\-Interval@{set\-Interval}!org::joda::time::ReadWritableInterval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}}
+\subsubsection[{set\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Interval.\-set\-Interval (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Interval}}]{interval}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a854554ae764de9ae4b9d87cf1ed68b6d}
+Sets this interval to be the same as another.
+
+
+\begin{DoxyParams}{Parameters}
+{\em interval} & the interval to copy \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the end is before the start \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_interval_ac5f906649161e21e9e468a9465c458bd}{org.\-joda.\-time.\-Mutable\-Interval}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a020a2c99f391e69a51d9e8f496000978}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Interval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}!set\-Interval@{set\-Interval}}
+\index{set\-Interval@{set\-Interval}!org::joda::time::ReadWritableInterval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}}
+\subsubsection[{set\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Interval.\-set\-Interval (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Instant}}]{start\-Instant, }
+\item[{{\bf Readable\-Instant}}]{end\-Instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a020a2c99f391e69a51d9e8f496000978}
+Sets this interval from two instants.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\-Instant} & the start of the time interval \\
+\hline
+{\em end\-Instant} & the start of the time interval \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the end is before the start \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_interval_a227dc4d75c94ac1a014852345902f387}{org.\-joda.\-time.\-Mutable\-Interval}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a86a46d4bdd83e28a462ad2ef8b6bb4a3}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Interval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}!set\-Period\-After\-Start@{set\-Period\-After\-Start}}
+\index{set\-Period\-After\-Start@{set\-Period\-After\-Start}!org::joda::time::ReadWritableInterval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}}
+\subsubsection[{set\-Period\-After\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Interval.\-set\-Period\-After\-Start (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Period}}]{period}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a86a46d4bdd83e28a462ad2ef8b6bb4a3}
+Sets the period of this time interval, preserving the start instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & new period for interval, null means zero length \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the end is before the start \\
+\hline
+{\em Arithmetic\-Exception} & if the end instant exceeds the capacity of a long \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_interval_af2d249047a6b1b0dddb7c43a6b897a59}{org.\-joda.\-time.\-Mutable\-Interval}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a9963bf7d45b004e97a6981e1907742a1}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Interval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}!set\-Period\-Before\-End@{set\-Period\-Before\-End}}
+\index{set\-Period\-Before\-End@{set\-Period\-Before\-End}!org::joda::time::ReadWritableInterval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}}
+\subsubsection[{set\-Period\-Before\-End}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Interval.\-set\-Period\-Before\-End (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Period}}]{period}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_a9963bf7d45b004e97a6981e1907742a1}
+Sets the period of this time interval, preserving the end instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & new period for interval, null means zero length \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the end is before the start \\
+\hline
+{\em Arithmetic\-Exception} & if the start instant exceeds the capacity of a long \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_interval_abfee38d02efa11147844509f737d4805}{org.\-joda.\-time.\-Mutable\-Interval}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_add3eadbb384e93d91a1ef026753b4bf8}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Interval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}!set\-Start@{set\-Start}}
+\index{set\-Start@{set\-Start}!org::joda::time::ReadWritableInterval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}}
+\subsubsection[{set\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Interval.\-set\-Start (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Instant}}]{instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_add3eadbb384e93d91a1ef026753b4bf8}
+Sets the start of this time interval as an \hyperlink{classorg_1_1joda_1_1time_1_1_instant}{Instant}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the start of the time interval \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the end is before the start \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_interval_a5e658df3f5e7a5d3072f60f406506aad}{org.\-joda.\-time.\-Mutable\-Interval}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_ad8ae2ca8302ef3f2dc0e96336c120fe6}{\index{org\-::joda\-::time\-::\-Read\-Writable\-Interval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}!set\-Start\-Millis@{set\-Start\-Millis}}
+\index{set\-Start\-Millis@{set\-Start\-Millis}!org::joda::time::ReadWritableInterval@{org\-::joda\-::time\-::\-Read\-Writable\-Interval}}
+\subsubsection[{set\-Start\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-Read\-Writable\-Interval.\-set\-Start\-Millis (
+\begin{DoxyParamCaption}
+\item[{long}]{millis\-Instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval_ad8ae2ca8302ef3f2dc0e96336c120fe6}
+Sets the start of this time interval.
+
+
+\begin{DoxyParams}{Parameters}
+{\em millis\-Instant} & the start of the time interval, millisecond instant from 1970-\/01-\/01\-T00\-:00\-:00\-Z \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the end is before the start \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_interval_ace3c6d867af59d9d2698d63a2c0712c7}{org.\-joda.\-time.\-Mutable\-Interval}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/Read\-Writable\-Interval.\-java\end{DoxyCompactItemize}

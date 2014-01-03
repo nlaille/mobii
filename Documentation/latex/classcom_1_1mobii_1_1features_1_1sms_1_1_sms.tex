@@ -1,0 +1,86 @@
+\hypertarget{classcom_1_1mobii_1_1features_1_1sms_1_1_sms}{\section{com.\-mobii.\-features.\-sms.\-Sms Class Reference}
+\label{classcom_1_1mobii_1_1features_1_1sms_1_1_sms}\index{com.\-mobii.\-features.\-sms.\-Sms@{com.\-mobii.\-features.\-sms.\-Sms}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1mobii_1_1features_1_1sms_1_1_sms_a3e71b478d93c0f06b4a4b016759d9a74}{{\bfseries Sms} (\hyperlink{classcom_1_1mobii_1_1features_1_1sms_1_1_sms}{Sms} sms)}\label{classcom_1_1mobii_1_1features_1_1sms_1_1_sms_a3e71b478d93c0f06b4a4b016759d9a74}
+
+\item 
+String \hyperlink{classcom_1_1mobii_1_1features_1_1sms_1_1_sms_a6c3763f3cb6e8aef74be2a0814a6d078}{get\-Sms} (String msg)
+\begin{DoxyCompactList}\small\item\em Gets text messages. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1mobii_1_1features_1_1sms_1_1_sms_afc0a1cf03bb9a9c88976382555fb0071}{send\-Sms} (String phone\-Number, String msg)
+\begin{DoxyCompactList}\small\item\em Gets and sends a sms. \end{DoxyCompactList}\item 
+String \hyperlink{classcom_1_1mobii_1_1features_1_1sms_1_1_sms_a9d0bed2bde4f83151b0e37e030858aff}{forward\-Sms} (String date, String content, String sender)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcom_1_1mobii_1_1features_1_1sms_1_1_sms}{Sms} forwarding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1mobii_1_1features_1_1sms_1_1_sms_a9d0bed2bde4f83151b0e37e030858aff}{\index{com\-::mobii\-::features\-::sms\-::\-Sms@{com\-::mobii\-::features\-::sms\-::\-Sms}!forward\-Sms@{forward\-Sms}}
+\index{forward\-Sms@{forward\-Sms}!com::mobii::features::sms::Sms@{com\-::mobii\-::features\-::sms\-::\-Sms}}
+\subsubsection[{forward\-Sms}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-mobii.\-features.\-sms.\-Sms.\-forward\-Sms (
+\begin{DoxyParamCaption}
+\item[{String}]{date, }
+\item[{String}]{content, }
+\item[{String}]{sender}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1features_1_1sms_1_1_sms_a9d0bed2bde4f83151b0e37e030858aff}
+
+
+\hyperlink{classcom_1_1mobii_1_1features_1_1sms_1_1_sms}{Sms} forwarding. 
+
+Forwards a text message to the client when it has been received. 
+\begin{DoxyParams}{Parameters}
+{\em date} & The date when the text message has been received. \\
+\hline
+{\em content} & The body of the text message. \\
+\hline
+{\em sender} & The phone number of the sender. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A J\-Son string if it is successful created; otherwise {\bfseries null} is returned. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1features_1_1sms_1_1_sms_a6c3763f3cb6e8aef74be2a0814a6d078}{\index{com\-::mobii\-::features\-::sms\-::\-Sms@{com\-::mobii\-::features\-::sms\-::\-Sms}!get\-Sms@{get\-Sms}}
+\index{get\-Sms@{get\-Sms}!com::mobii::features::sms::Sms@{com\-::mobii\-::features\-::sms\-::\-Sms}}
+\subsubsection[{get\-Sms}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-mobii.\-features.\-sms.\-Sms.\-get\-Sms (
+\begin{DoxyParamCaption}
+\item[{String}]{msg}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1features_1_1sms_1_1_sms_a6c3763f3cb6e8aef74be2a0814a6d078}
+
+
+Gets text messages. 
+
+Calls get\-All\-Sms function. 
+\begin{DoxyParams}{Parameters}
+{\em msg} & A text message J\-Son string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+All text messages not yet synchronized. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1features_1_1sms_1_1_sms_afc0a1cf03bb9a9c88976382555fb0071}{\index{com\-::mobii\-::features\-::sms\-::\-Sms@{com\-::mobii\-::features\-::sms\-::\-Sms}!send\-Sms@{send\-Sms}}
+\index{send\-Sms@{send\-Sms}!com::mobii::features::sms::Sms@{com\-::mobii\-::features\-::sms\-::\-Sms}}
+\subsubsection[{send\-Sms}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-mobii.\-features.\-sms.\-Sms.\-send\-Sms (
+\begin{DoxyParamCaption}
+\item[{String}]{phone\-Number, }
+\item[{String}]{msg}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1features_1_1sms_1_1_sms_afc0a1cf03bb9a9c88976382555fb0071}
+
+
+Gets and sends a sms. 
+
+Gets the text message {\bfseries msg} and sends it to the phone number {\bfseries phone\-Number}. 
+\begin{DoxyParams}{Parameters}
+{\em phone\-Number} & The phone number of the destination. \\
+\hline
+{\em msg} & The message to send. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/src/com/mobii/features/sms/\hyperlink{_sms_8java}{Sms.\-java}\end{DoxyCompactItemize}

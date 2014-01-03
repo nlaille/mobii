@@ -1,0 +1,95 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_parser}{\section{org.\-joda.\-time.\-format.\-Date\-Time\-Parser Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_parser}\index{org.\-joda.\-time.\-format.\-Date\-Time\-Parser@{org.\-joda.\-time.\-format.\-Date\-Time\-Parser}}
+}
+
+
+Inherited by org.\-joda.\-time.\-format.\-Date\-Time\-Format.\-Style\-Formatter, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Character\-Literal, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Composite, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Fraction, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Matching\-Parser, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Number\-Formatter, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-String\-Literal, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Text\-Field, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Time\-Zone\-Id, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Time\-Zone\-Name, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Time\-Zone\-Offset, and org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Two\-Digit\-Year.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_parser_a656554b5063e79c32815b288ceff35d6}{estimate\-Parsed\-Length} ()
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_parser_ae3e39838715ec80672964b26dd90d2eb}{parse\-Into} (\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_parser_bucket}{Date\-Time\-Parser\-Bucket} bucket, String text, int position)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Internal interface for parsing textual representations of datetimes. 
+
+Application users will rarely use this class directly. Instead, you will use one of the factory classes to create a \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_formatter}{Date\-Time\-Formatter}. 
+
+The factory classes are\-:\par
+
+\begin{DoxyItemize}
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_formatter_builder}{Date\-Time\-Formatter\-Builder}\par
+
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_format}{Date\-Time\-Format}\par
+
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_i_s_o_date_time_format}{I\-S\-O\-Date\-Time\-Format}\par
+
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_formatter}{Date\-Time\-Formatter} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_formatter_builder}{Date\-Time\-Formatter\-Builder} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_format}{Date\-Time\-Format} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_parser_a656554b5063e79c32815b288ceff35d6}{\index{org\-::joda\-::time\-::format\-::\-Date\-Time\-Parser@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Parser}!estimate\-Parsed\-Length@{estimate\-Parsed\-Length}}
+\index{estimate\-Parsed\-Length@{estimate\-Parsed\-Length}!org::joda::time::format::DateTimeParser@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Parser}}
+\subsubsection[{estimate\-Parsed\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-format.\-Date\-Time\-Parser.\-estimate\-Parsed\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_parser_a656554b5063e79c32815b288ceff35d6}
+Returns the expected maximum number of characters consumed. The actual amount should rarely exceed this estimate.
+
+\begin{DoxyReturn}{Returns}
+the estimated length 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_parser_ae3e39838715ec80672964b26dd90d2eb}{\index{org\-::joda\-::time\-::format\-::\-Date\-Time\-Parser@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Parser}!parse\-Into@{parse\-Into}}
+\index{parse\-Into@{parse\-Into}!org::joda::time::format::DateTimeParser@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Parser}}
+\subsubsection[{parse\-Into}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-format.\-Date\-Time\-Parser.\-parse\-Into (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Parser\-Bucket}}]{bucket, }
+\item[{String}]{text, }
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_parser_ae3e39838715ec80672964b26dd90d2eb}
+Parse an element from the given text, saving any fields into the given \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_parser_bucket}{Date\-Time\-Parser\-Bucket}. If the parse succeeds, the return value is the new text position. Note that the parse may succeed without fully reading the text. 
+
+If it fails, the return value is negative. To determine the position where the parse failed, apply the one's complement operator ($\sim$) on the return value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bucket} & field are saved into this, not null \\
+\hline
+{\em text} & the text to parse, not null \\
+\hline
+{\em position} & position to start parsing from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new position, negative value means parse failed -\/ apply complement operator ($\sim$) to get position of failure 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if any field is out of range \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/format/Date\-Time\-Parser.\-java\end{DoxyCompactItemize}

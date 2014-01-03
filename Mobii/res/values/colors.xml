@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<color name="white">#FFFFFFFF</color>
+    <color name="green">#008000</color>
+    <color name="green2">#33FF33</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="blue2">#1D95B9</color>
+    <color name="yellow">#FFFF00</color>
+
+	<color name="background_color">#818181</color>
+	<color name="band_color">#525252</color>
+	<color name="connection_code_color">#747474</color>
+	<color name="button_connect_color">#d5d5d5</color>
+	<color name="text_connect_color">#525252</color>
+</resources>

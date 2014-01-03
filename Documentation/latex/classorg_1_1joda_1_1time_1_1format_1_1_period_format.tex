@@ -1,0 +1,118 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_format}{\section{org.\-joda.\-time.\-format.\-Period\-Format Class Reference}
+\label{classorg_1_1joda_1_1time_1_1format_1_1_period_format}\index{org.\-joda.\-time.\-format.\-Period\-Format@{org.\-joda.\-time.\-format.\-Period\-Format}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter} \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_format_a16d11043524ca940c5afd7ad247f2f4f}{get\-Default} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter} \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_format_a7d9b3f3a779510e0a68ddc641bd71c0a}{word\-Based} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter} \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_format_ac97c0c77a464d51cd64adb720b57d994}{word\-Based} (Locale locale)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_format_a7c237eda5b90a4171abe85810d4b6591}{Period\-Format} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Factory that creates instances of \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter}. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1_period}{Period} formatting is performed by the \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter} class. Three classes provide factory methods to create formatters, and this is one. The others are \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_i_s_o_period_format}{I\-S\-O\-Period\-Format} and \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_builder}{Period\-Formatter\-Builder}. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_format}{Period\-Format} is thread-\/safe and immutable, and the formatters it returns are as well.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_i_s_o_period_format}{I\-S\-O\-Period\-Format} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_builder}{Period\-Formatter\-Builder} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_format_a7c237eda5b90a4171abe85810d4b6591}{\index{org\-::joda\-::time\-::format\-::\-Period\-Format@{org\-::joda\-::time\-::format\-::\-Period\-Format}!Period\-Format@{Period\-Format}}
+\index{Period\-Format@{Period\-Format}!org::joda::time::format::PeriodFormat@{org\-::joda\-::time\-::format\-::\-Period\-Format}}
+\subsubsection[{Period\-Format}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-format.\-Period\-Format.\-Period\-Format (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_format_a7c237eda5b90a4171abe85810d4b6591}
+Constructor.
+
+\begin{DoxySince}{Since}
+1.\-1 (previously private) 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_format_a16d11043524ca940c5afd7ad247f2f4f}{\index{org\-::joda\-::time\-::format\-::\-Period\-Format@{org\-::joda\-::time\-::format\-::\-Period\-Format}!get\-Default@{get\-Default}}
+\index{get\-Default@{get\-Default}!org::joda::time::format::PeriodFormat@{org\-::joda\-::time\-::format\-::\-Period\-Format}}
+\subsubsection[{get\-Default}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Period\-Formatter} org.\-joda.\-time.\-format.\-Period\-Format.\-get\-Default (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_format_a16d11043524ca940c5afd7ad247f2f4f}
+Gets the default formatter that outputs words in English. 
+
+This calls \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_format_ac97c0c77a464d51cd64adb720b57d994}{word\-Based(\-Locale)} using a locale of
+\begin{DoxyCode}
+ENGLISH 
+\end{DoxyCode}
+ .
+
+\begin{DoxyReturn}{Returns}
+the formatter, not null 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_format_a7d9b3f3a779510e0a68ddc641bd71c0a}{\index{org\-::joda\-::time\-::format\-::\-Period\-Format@{org\-::joda\-::time\-::format\-::\-Period\-Format}!word\-Based@{word\-Based}}
+\index{word\-Based@{word\-Based}!org::joda::time::format::PeriodFormat@{org\-::joda\-::time\-::format\-::\-Period\-Format}}
+\subsubsection[{word\-Based}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Period\-Formatter} org.\-joda.\-time.\-format.\-Period\-Format.\-word\-Based (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_format_a7d9b3f3a779510e0a68ddc641bd71c0a}
+Returns a word based formatter for the J\-D\-K default locale. 
+
+This calls \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_format_ac97c0c77a464d51cd64adb720b57d994}{word\-Based(\-Locale)} using the \hyperlink{}{default locale}.
+
+\begin{DoxyReturn}{Returns}
+the formatter, not null 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\-0 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_format_ac97c0c77a464d51cd64adb720b57d994}{\index{org\-::joda\-::time\-::format\-::\-Period\-Format@{org\-::joda\-::time\-::format\-::\-Period\-Format}!word\-Based@{word\-Based}}
+\index{word\-Based@{word\-Based}!org::joda::time::format::PeriodFormat@{org\-::joda\-::time\-::format\-::\-Period\-Format}}
+\subsubsection[{word\-Based}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Period\-Formatter} org.\-joda.\-time.\-format.\-Period\-Format.\-word\-Based (
+\begin{DoxyParamCaption}
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_format_ac97c0c77a464d51cd64adb720b57d994}
+Returns a word based formatter for the specified locale. 
+
+The words are configured in a resource bundle text file -\/ 
+\begin{DoxyCode}
+org.joda.time.format.messages 
+\end{DoxyCode}
+ . This can be added to via the normal classpath resource bundle mechanisms. 
+
+Available languages are English, Danish, Dutch, French, German, Japanese, Portuguese, and Spanish.
+
+\begin{DoxyReturn}{Returns}
+the formatter, not null 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\-0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/format/Period\-Format.\-java\end{DoxyCompactItemize}

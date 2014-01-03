@@ -1,0 +1,298 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type}{\section{org.\-joda.\-time.\-Duration\-Field\-Type Class Reference}
+\label{classorg_1_1joda_1_1time_1_1_duration_field_type}\index{org.\-joda.\-time.\-Duration\-Field\-Type@{org.\-joda.\-time.\-Duration\-Field\-Type}}
+}
+Inheritance diagram for org.\-joda.\-time.\-Duration\-Field\-Type\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1joda_1_1time_1_1_duration_field_type}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_ae2bf4a073b1c8883095714895f753f17}{get\-Name} ()
+\item 
+abstract \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field}{Duration\-Field} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a2c04f7d6c5f7163985d78b47ede78025}{get\-Field} (\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chronology)
+\item 
+boolean \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a00d1930be731d975025b71249b77c5e6}{is\-Supported} (\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chronology)
+\item 
+String \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_aac276eeba1fe620c58f6a8504253b015}{to\-String} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_aec24f1cce58bd7c4ca431035b3fcd72c}{millis} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_af101eddfd23dd81d67a713325e09c3b9}{seconds} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a34880b6497c200bb98cfc5c832b13108}{minutes} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a7bc453bdc64d93609a56096f77a8dab6}{hours} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_ac619900ea4f7b15a8c97a7d1be3fcbe0}{halfdays} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a44d96899b1472be32731d4bebb446b11}{days} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a40b22e2c1ac6ca73389251fc09de754c}{weeks} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a2a626b31903fe29ab4279249bd6ae669}{weekyears} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a1235aac3dbaf26aa21c7c230bccb2a70}{months} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a5f49a04237000b49ef08e7316845ea06}{years} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a631cc4b394d51adda73731a11acd28a0}{centuries} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a3974aa62fe8e8ac3f307aa6fa8afabd9}{eras} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_afc24e1238529ca4b09d9d6b25cfb62a4}{Duration\-Field\-Type} (String name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Identifies a duration field, such as years or minutes, in a chronology-\/neutral way. 
+
+A duration field type defines the type of the field, such as hours. If does not directly enable any calculations, however it does provide a \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a2c04f7d6c5f7163985d78b47ede78025}{get\-Field(\-Chronology)} method that returns the actual calculation engine for a particular chronology. 
+
+Instances of {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type}} are singletons. They can be compared using {\ttfamily ==}. 
+
+If required, you can create your own field, for example a quarters. You must create a subclass of {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type}{Duration\-Field\-Type}} that defines the field type. This class returns the actual calculation engine from \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field_type_a2c04f7d6c5f7163985d78b47ede78025}{get\-Field(\-Chronology)}.
+
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_afc24e1238529ca4b09d9d6b25cfb62a4}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!Duration\-Field\-Type@{Duration\-Field\-Type}}
+\index{Duration\-Field\-Type@{Duration\-Field\-Type}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{Duration\-Field\-Type}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-Duration\-Field\-Type.\-Duration\-Field\-Type (
+\begin{DoxyParamCaption}
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_afc24e1238529ca4b09d9d6b25cfb62a4}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name to use, which by convention, are plural. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_a631cc4b394d51adda73731a11acd28a0}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!centuries@{centuries}}
+\index{centuries@{centuries}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{centuries}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field\-Type.\-centuries (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_a631cc4b394d51adda73731a11acd28a0}
+Get the centuries field type.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} constant 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_a44d96899b1472be32731d4bebb446b11}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!days@{days}}
+\index{days@{days}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{days}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field\-Type.\-days (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_a44d96899b1472be32731d4bebb446b11}
+Get the days field type.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} constant 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_a3974aa62fe8e8ac3f307aa6fa8afabd9}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!eras@{eras}}
+\index{eras@{eras}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{eras}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field\-Type.\-eras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_a3974aa62fe8e8ac3f307aa6fa8afabd9}
+Get the eras field type.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} constant 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_a2c04f7d6c5f7163985d78b47ede78025}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!get\-Field@{get\-Field}}
+\index{get\-Field@{get\-Field}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{get\-Field}]{\setlength{\rightskip}{0pt plus 5cm}abstract {\bf Duration\-Field} org.\-joda.\-time.\-Duration\-Field\-Type.\-get\-Field (
+\begin{DoxyParamCaption}
+\item[{{\bf Chronology}}]{chronology}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_a2c04f7d6c5f7163985d78b47ede78025}
+Gets a suitable field for this type from the given \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chronology} & the chronology to use, null means I\-S\-O\-Chronology in default zone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a suitable field 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_ae2bf4a073b1c8883095714895f753f17}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-Duration\-Field\-Type.\-get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_ae2bf4a073b1c8883095714895f753f17}
+Get the name of the field. By convention, names are plural.
+
+\begin{DoxyReturn}{Returns}
+field name 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_ac619900ea4f7b15a8c97a7d1be3fcbe0}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!halfdays@{halfdays}}
+\index{halfdays@{halfdays}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{halfdays}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field\-Type.\-halfdays (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_ac619900ea4f7b15a8c97a7d1be3fcbe0}
+Get the halfdays field type.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} constant 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_a7bc453bdc64d93609a56096f77a8dab6}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!hours@{hours}}
+\index{hours@{hours}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{hours}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field\-Type.\-hours (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_a7bc453bdc64d93609a56096f77a8dab6}
+Get the hours field type.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} constant 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_a00d1930be731d975025b71249b77c5e6}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!is\-Supported@{is\-Supported}}
+\index{is\-Supported@{is\-Supported}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{is\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Duration\-Field\-Type.\-is\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Chronology}}]{chronology}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_a00d1930be731d975025b71249b77c5e6}
+Checks whether this field supported in the given \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chronology} & the chronology to use, null means I\-S\-O\-Chronology in default zone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if supported 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_aec24f1cce58bd7c4ca431035b3fcd72c}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!millis@{millis}}
+\index{millis@{millis}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{millis}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field\-Type.\-millis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_aec24f1cce58bd7c4ca431035b3fcd72c}
+Get the millis field type.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} constant 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_a34880b6497c200bb98cfc5c832b13108}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!minutes@{minutes}}
+\index{minutes@{minutes}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{minutes}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field\-Type.\-minutes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_a34880b6497c200bb98cfc5c832b13108}
+Get the minutes field type.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} constant 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_a1235aac3dbaf26aa21c7c230bccb2a70}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!months@{months}}
+\index{months@{months}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{months}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field\-Type.\-months (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_a1235aac3dbaf26aa21c7c230bccb2a70}
+Get the months field type.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} constant 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_af101eddfd23dd81d67a713325e09c3b9}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!seconds@{seconds}}
+\index{seconds@{seconds}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{seconds}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field\-Type.\-seconds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_af101eddfd23dd81d67a713325e09c3b9}
+Get the seconds field type.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} constant 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_aac276eeba1fe620c58f6a8504253b015}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-Duration\-Field\-Type.\-to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_aac276eeba1fe620c58f6a8504253b015}
+Get a suitable debug string.
+
+\begin{DoxyReturn}{Returns}
+debug string 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_a40b22e2c1ac6ca73389251fc09de754c}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!weeks@{weeks}}
+\index{weeks@{weeks}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{weeks}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field\-Type.\-weeks (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_a40b22e2c1ac6ca73389251fc09de754c}
+Get the weeks field type.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} constant 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_a2a626b31903fe29ab4279249bd6ae669}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!weekyears@{weekyears}}
+\index{weekyears@{weekyears}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{weekyears}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field\-Type.\-weekyears (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_a2a626b31903fe29ab4279249bd6ae669}
+Get the weekyears field type.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} constant 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_duration_field_type_a5f49a04237000b49ef08e7316845ea06}{\index{org\-::joda\-::time\-::\-Duration\-Field\-Type@{org\-::joda\-::time\-::\-Duration\-Field\-Type}!years@{years}}
+\index{years@{years}!org::joda::time::DurationFieldType@{org\-::joda\-::time\-::\-Duration\-Field\-Type}}
+\subsubsection[{years}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Duration\-Field\-Type} org.\-joda.\-time.\-Duration\-Field\-Type.\-years (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_duration_field_type_a5f49a04237000b49ef08e7316845ea06}
+Get the years field type.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} constant 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/Duration\-Field\-Type.\-java\end{DoxyCompactItemize}

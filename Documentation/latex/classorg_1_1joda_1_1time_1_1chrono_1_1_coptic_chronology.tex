@@ -1,0 +1,187 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology}{\section{org.\-joda.\-time.\-chrono.\-Coptic\-Chronology Class Reference}
+\label{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology}\index{org.\-joda.\-time.\-chrono.\-Coptic\-Chronology@{org.\-joda.\-time.\-chrono.\-Coptic\-Chronology}}
+}
+
+
+Inherits org.\-joda.\-time.\-chrono.\-Basic\-Fixed\-Month\-Chronology.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a7b23ee9b458cd5a20c801eb48f7d8b1e}{with\-U\-T\-C} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a9ec2df548a651ae84941d4b2657f357b}{with\-Zone} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology}{Coptic\-Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_afc16687d2291c24b98fd00a1332b3a58}{get\-Instance\-U\-T\-C} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology}{Coptic\-Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a6818667ec3917883f817154fd5f114d9}{get\-Instance} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology}{Coptic\-Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a906f2f1deb93f925325415c8f567c49d}{get\-Instance} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone)
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology}{Coptic\-Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_aea934dc3a1eedb3d6105129f4c514949}{get\-Instance} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone, int min\-Days\-In\-First\-Week)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a8de4d760b512dce36009b0507c2410fa}{A\-M} = \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_constants_aacd9ad6e2964b143878d155f86db83bd}{Date\-Time\-Constants.\-C\-E}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_ac56c98d8ed75ad6b3d95e9602222c471}{assemble} (Fields fields)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements the Coptic calendar system, which defines every fourth year as leap, much like the Julian calendar. The year is broken down into 12 months, each 30 days in length. An extra period at the end of the year is either 5 or 6 days in length. In this implementation, it is considered a 13th month. 
+
+Year 1 in the Coptic calendar began on August 29, 284 C\-E (Julian), thus Coptic years do not begin at the same time as Julian years. This chronology is not proleptic, as it does not allow dates before the first Coptic year. 
+
+This implementation defines a day as midnight to midnight exactly as per the I\-S\-O chronology. Some references indicate that a coptic day starts at sunset on the previous I\-S\-O day, but this has not been confirmed and is not implemented. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology}{Coptic\-Chronology} is thread-\/safe and immutable.
+
+\begin{DoxySeeAlso}{See Also}
+\href{http://en.wikipedia.org/wiki/Coptic_calendar}{\tt Wikipedia} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_julian_chronology}{Julian\-Chronology}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_ac56c98d8ed75ad6b3d95e9602222c471}{\index{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}!assemble@{assemble}}
+\index{assemble@{assemble}!org::joda::time::chrono::CopticChronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}}
+\subsubsection[{assemble}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-chrono.\-Coptic\-Chronology.\-assemble (
+\begin{DoxyParamCaption}
+\item[{Fields}]{fields}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_ac56c98d8ed75ad6b3d95e9602222c471}
+Invoked by the constructor and after deserialization to allow subclasses to define all of its supported fields. All unset fields default to unsupported instances.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fields} & container of fields \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_assembled_chronology_a28011ddeb628fa98ee4ccc61be85094f}{org.\-joda.\-time.\-chrono.\-Assembled\-Chronology}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a6818667ec3917883f817154fd5f114d9}{\index{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!org::joda::time::chrono::CopticChronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Coptic\-Chronology} org.\-joda.\-time.\-chrono.\-Coptic\-Chronology.\-get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a6818667ec3917883f817154fd5f114d9}
+Gets an instance of the \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology}{Coptic\-Chronology} in the default time zone.
+
+\begin{DoxyReturn}{Returns}
+a chronology in the default time zone 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a906f2f1deb93f925325415c8f567c49d}{\index{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!org::joda::time::chrono::CopticChronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Coptic\-Chronology} org.\-joda.\-time.\-chrono.\-Coptic\-Chronology.\-get\-Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{zone}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a906f2f1deb93f925325415c8f567c49d}
+Gets an instance of the \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology}{Coptic\-Chronology} in the given time zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone} & the time zone to get the chronology in, null is default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a chronology in the specified time zone 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_aea934dc3a1eedb3d6105129f4c514949}{\index{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!org::joda::time::chrono::CopticChronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Coptic\-Chronology} org.\-joda.\-time.\-chrono.\-Coptic\-Chronology.\-get\-Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{zone, }
+\item[{int}]{min\-Days\-In\-First\-Week}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_aea934dc3a1eedb3d6105129f4c514949}
+Gets an instance of the \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology}{Coptic\-Chronology} in the given time zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone} & the time zone to get the chronology in, null is default \\
+\hline
+{\em min\-Days\-In\-First\-Week} & minimum number of days in first week of the year; default is 4 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a chronology in the specified time zone 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_afc16687d2291c24b98fd00a1332b3a58}{\index{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}!get\-Instance\-U\-T\-C@{get\-Instance\-U\-T\-C}}
+\index{get\-Instance\-U\-T\-C@{get\-Instance\-U\-T\-C}!org::joda::time::chrono::CopticChronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}}
+\subsubsection[{get\-Instance\-U\-T\-C}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Coptic\-Chronology} org.\-joda.\-time.\-chrono.\-Coptic\-Chronology.\-get\-Instance\-U\-T\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_afc16687d2291c24b98fd00a1332b3a58}
+Gets an instance of the \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology}{Coptic\-Chronology}. The time zone of the returned instance is U\-T\-C.
+
+\begin{DoxyReturn}{Returns}
+a singleton U\-T\-C instance of the chronology 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a7b23ee9b458cd5a20c801eb48f7d8b1e}{\index{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}!with\-U\-T\-C@{with\-U\-T\-C}}
+\index{with\-U\-T\-C@{with\-U\-T\-C}!org::joda::time::chrono::CopticChronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}}
+\subsubsection[{with\-U\-T\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chronology} org.\-joda.\-time.\-chrono.\-Coptic\-Chronology.\-with\-U\-T\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a7b23ee9b458cd5a20c801eb48f7d8b1e}
+Gets the \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} in the U\-T\-C time zone.
+
+\begin{DoxyReturn}{Returns}
+the chronology in U\-T\-C 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_base_chronology_a839fd4261bb4f4cfcb1eb56dcebbec70}{org.\-joda.\-time.\-chrono.\-Base\-Chronology}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a9ec2df548a651ae84941d4b2657f357b}{\index{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}!with\-Zone@{with\-Zone}}
+\index{with\-Zone@{with\-Zone}!org::joda::time::chrono::CopticChronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}}
+\subsubsection[{with\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chronology} org.\-joda.\-time.\-chrono.\-Coptic\-Chronology.\-with\-Zone (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{zone}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a9ec2df548a651ae84941d4b2657f357b}
+Gets the \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} in a specific time zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone} & the zone to get the chronology in, null is default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the chronology 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_base_chronology_a63d48bcfe7b36b349c8afb8289b94b0b}{org.\-joda.\-time.\-chrono.\-Base\-Chronology}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a8de4d760b512dce36009b0507c2410fa}{\index{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}!A\-M@{A\-M}}
+\index{A\-M@{A\-M}!org::joda::time::chrono::CopticChronology@{org\-::joda\-::time\-::chrono\-::\-Coptic\-Chronology}}
+\subsubsection[{A\-M}]{\setlength{\rightskip}{0pt plus 5cm}final int org.\-joda.\-time.\-chrono.\-Coptic\-Chronology.\-A\-M = {\bf Date\-Time\-Constants.\-C\-E}\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_coptic_chronology_a8de4d760b512dce36009b0507c2410fa}
+Constant value for 'Anno Martyrum' or 'Era of the Martyrs', equivalent to the value returned for A\-D/\-C\-E. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/chrono/Coptic\-Chronology.\-java\end{DoxyCompactItemize}

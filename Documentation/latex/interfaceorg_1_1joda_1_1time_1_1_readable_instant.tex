@@ -1,0 +1,334 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{\section{org.\-joda.\-time.\-Readable\-Instant Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant}\index{org.\-joda.\-time.\-Readable\-Instant@{org.\-joda.\-time.\-Readable\-Instant}}
+}
+Inheritance diagram for org.\-joda.\-time.\-Readable\-Instant\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.947137cm]{interfaceorg_1_1joda_1_1time_1_1_readable_instant}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_aa69c5d8aed4dab4209169446c1629f06}{get\-Millis} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a7c2a00b583a68416e7d1deb58112296e}{get\-Chronology} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_ad6cf47b5cc64e1b8effe00cd24a32b11}{get\-Zone} ()
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a076030918ca5525e5f8d2125c3c83459}{get} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} type)
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a28ffef1035f4176edf7d1b0c72cf0a63}{is\-Supported} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} field)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_instant}{Instant} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_acee12fc8f5e991ed56680a6b01bb1624}{to\-Instant} ()
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_aab6c281089bd83d9c240b638dbdf7a49}{is\-Equal} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} instant)
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a5e7db384b53eedc37c6a83dd944c359a}{is\-After} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} instant)
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a84a5df29e953135cff5d1ae7d0546c4f}{is\-Before} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} instant)
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_af2e65da86a093ae06fd24dde48d99d21}{equals} (Object readable\-Instant)
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a3083f60a321d2622b18d493845b39091}{hash\-Code} ()
+\item 
+String \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_aab63d161a1e6b3037aea0811a1cc7499}{to\-String} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines an instant in the datetime continuum. This interface expresses the datetime as milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z. 
+
+The implementation of this interface may be mutable or immutable. This interface only gives access to retrieve data, never to change it. 
+
+Methods in your application should be defined using {\ttfamily \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant}} as a parameter if the method only wants to read the instant without needing to know the specific datetime fields. 
+
+The
+\begin{DoxyCode}
+compareTo 
+\end{DoxyCode}
+ method is no longer defined in this class in version 2.\-0. Instead, the definition is simply inherited from the
+\begin{DoxyCode}
+Comparable 
+\end{DoxyCode}
+ interface. This approach is necessary to preserve binary compatibility. The definition of the comparison is ascending order by millisecond instant. Implementors are recommended to extend
+\begin{DoxyCode}
+AbstractInstant 
+\end{DoxyCode}
+ instead of this interface.
+
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant_af2e65da86a093ae06fd24dde48d99d21}{\index{org\-::joda\-::time\-::\-Readable\-Instant@{org\-::joda\-::time\-::\-Readable\-Instant}!equals@{equals}}
+\index{equals@{equals}!org::joda::time::ReadableInstant@{org\-::joda\-::time\-::\-Readable\-Instant}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Instant.\-equals (
+\begin{DoxyParamCaption}
+\item[{Object}]{readable\-Instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant_af2e65da86a093ae06fd24dde48d99d21}
+Compares this object with the specified object for equality based on the millisecond instant and the \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology}. All \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} instances are accepted. 
+
+To compare two instants for absolute time (ie. U\-T\-C milliseconds ignoring the chronology), use \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_aab6c281089bd83d9c240b638dbdf7a49}{is\-Equal(\-Readable\-Instant)} or \hyperlink{}{compare\-To(\-Object)}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em readable\-Instant} & a readable instant to check against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if millisecond and chronology are equal, false if not or the instant is null or of an incorrect type 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_instant_ac308a7d7056379738213cc6def86034d}{org.\-joda.\-time.\-base.\-Abstract\-Instant}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a076030918ca5525e5f8d2125c3c83459}{\index{org\-::joda\-::time\-::\-Readable\-Instant@{org\-::joda\-::time\-::\-Readable\-Instant}!get@{get}}
+\index{get@{get}!org::joda::time::ReadableInstant@{org\-::joda\-::time\-::\-Readable\-Instant}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Readable\-Instant.\-get (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field\-Type}}]{type}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a076030918ca5525e5f8d2125c3c83459}
+Get the value of one of the fields of a datetime. 
+
+This method uses the chronology of the instant to obtain the value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a field type, usually obtained from \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type}, not null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of that field 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the field type is null \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_instant_a9c5cfc1f9ef4d4fb8b56481b7acb871b}{org.\-joda.\-time.\-base.\-Abstract\-Instant}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_date_time_af30504cd429178fe15ecf1df8684cc85}{org.\-joda.\-time.\-base.\-Abstract\-Date\-Time}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a7c2a00b583a68416e7d1deb58112296e}{\index{org\-::joda\-::time\-::\-Readable\-Instant@{org\-::joda\-::time\-::\-Readable\-Instant}!get\-Chronology@{get\-Chronology}}
+\index{get\-Chronology@{get\-Chronology}!org::joda::time::ReadableInstant@{org\-::joda\-::time\-::\-Readable\-Instant}}
+\subsubsection[{get\-Chronology}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chronology} org.\-joda.\-time.\-Readable\-Instant.\-get\-Chronology (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a7c2a00b583a68416e7d1deb58112296e}
+Gets the chronology of the instant. 
+
+The \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} provides conversion from the millisecond value to meaningful fields in a particular calendar system.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology}, never null 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_date_time_ae6561de2895ddf6ce1fa84f16226b04a}{org.\-joda.\-time.\-base.\-Base\-Date\-Time}, and \hyperlink{classorg_1_1joda_1_1time_1_1_instant_a412135b8a9db9e05fd1dc4027636ef28}{org.\-joda.\-time.\-Instant}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant_aa69c5d8aed4dab4209169446c1629f06}{\index{org\-::joda\-::time\-::\-Readable\-Instant@{org\-::joda\-::time\-::\-Readable\-Instant}!get\-Millis@{get\-Millis}}
+\index{get\-Millis@{get\-Millis}!org::joda::time::ReadableInstant@{org\-::joda\-::time\-::\-Readable\-Instant}}
+\subsubsection[{get\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-Readable\-Instant.\-get\-Millis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant_aa69c5d8aed4dab4209169446c1629f06}
+Get the value as the number of milliseconds since the epoch, 1970-\/01-\/01\-T00\-:00\-:00\-Z.
+
+\begin{DoxyReturn}{Returns}
+the value as milliseconds 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_date_time_ad2e67a0aad5efc311eeee75ee3447551}{org.\-joda.\-time.\-base.\-Base\-Date\-Time}, and \hyperlink{classorg_1_1joda_1_1time_1_1_instant_afb20557b079092cd23cc4fd3c41b6506}{org.\-joda.\-time.\-Instant}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant_ad6cf47b5cc64e1b8effe00cd24a32b11}{\index{org\-::joda\-::time\-::\-Readable\-Instant@{org\-::joda\-::time\-::\-Readable\-Instant}!get\-Zone@{get\-Zone}}
+\index{get\-Zone@{get\-Zone}!org::joda::time::ReadableInstant@{org\-::joda\-::time\-::\-Readable\-Instant}}
+\subsubsection[{get\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time\-Zone} org.\-joda.\-time.\-Readable\-Instant.\-get\-Zone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant_ad6cf47b5cc64e1b8effe00cd24a32b11}
+Gets the time zone of the instant from the chronology.
+
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} that the instant is using, never null 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_instant_aca3c8882a1c8944e4af28db73fefa7a3}{org.\-joda.\-time.\-base.\-Abstract\-Instant}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a3083f60a321d2622b18d493845b39091}{\index{org\-::joda\-::time\-::\-Readable\-Instant@{org\-::joda\-::time\-::\-Readable\-Instant}!hash\-Code@{hash\-Code}}
+\index{hash\-Code@{hash\-Code}!org::joda::time::ReadableInstant@{org\-::joda\-::time\-::\-Readable\-Instant}}
+\subsubsection[{hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Readable\-Instant.\-hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a3083f60a321d2622b18d493845b39091}
+Gets a hash code for the instant that is compatible with the equals method. 
+
+The formula used must be as follows\-: 
+\begin{DoxyPre}
+((int) (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_aa69c5d8aed4dab4209169446c1629f06}{getMillis()} ^ (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_aa69c5d8aed4dab4209169446c1629f06}{getMillis()} >>> 32))) +
+(\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a7c2a00b583a68416e7d1deb58112296e}{getChronology()}.\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a3083f60a321d2622b18d493845b39091}{hashCode()})
+\end{DoxyPre}
+
+
+\begin{DoxyReturn}{Returns}
+a hash code as defined above 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_instant_a493a1ef62a31c7f30539189c8c6b6734}{org.\-joda.\-time.\-base.\-Abstract\-Instant}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a5e7db384b53eedc37c6a83dd944c359a}{\index{org\-::joda\-::time\-::\-Readable\-Instant@{org\-::joda\-::time\-::\-Readable\-Instant}!is\-After@{is\-After}}
+\index{is\-After@{is\-After}!org::joda::time::ReadableInstant@{org\-::joda\-::time\-::\-Readable\-Instant}}
+\subsubsection[{is\-After}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Instant.\-is\-After (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Instant}}]{instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a5e7db384b53eedc37c6a83dd944c359a}
+Is this instant after the instant passed in comparing solely by millisecond.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & an instant to check against, null means now \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the instant is after the instant passed in 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_instant_ac0150d58cae771a911cad53ad11cf72c}{org.\-joda.\-time.\-base.\-Abstract\-Instant}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a84a5df29e953135cff5d1ae7d0546c4f}{\index{org\-::joda\-::time\-::\-Readable\-Instant@{org\-::joda\-::time\-::\-Readable\-Instant}!is\-Before@{is\-Before}}
+\index{is\-Before@{is\-Before}!org::joda::time::ReadableInstant@{org\-::joda\-::time\-::\-Readable\-Instant}}
+\subsubsection[{is\-Before}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Instant.\-is\-Before (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Instant}}]{instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a84a5df29e953135cff5d1ae7d0546c4f}
+Is this instant before the instant passed in comparing solely by millisecond.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & an instant to check against, null means now \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the instant is before the instant passed in 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_instant_a3a99ebf882a1acefbe8afa6992ceb041}{org.\-joda.\-time.\-base.\-Abstract\-Instant}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant_aab6c281089bd83d9c240b638dbdf7a49}{\index{org\-::joda\-::time\-::\-Readable\-Instant@{org\-::joda\-::time\-::\-Readable\-Instant}!is\-Equal@{is\-Equal}}
+\index{is\-Equal@{is\-Equal}!org::joda::time::ReadableInstant@{org\-::joda\-::time\-::\-Readable\-Instant}}
+\subsubsection[{is\-Equal}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Instant.\-is\-Equal (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Instant}}]{instant}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant_aab6c281089bd83d9c240b638dbdf7a49}
+Compares this object with the specified object for ascending millisecond instant order. This ordering is inconsistent with equals, as it ignores the \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology}. 
+
+All \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} instances are accepted.
+
+
+\begin{DoxyParams}{Parameters}
+{\em readable\-Instant} & a readable instant to check against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+negative value if this is less, 0 if equal, or positive value if greater 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\-Pointer\-Exception} & if the object is null \\
+\hline
+{\em Class\-Cast\-Exception} & if the object type is not supported Is this instant equal to the instant passed in comparing solely by millisecond.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & an instant to check against, null means now \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the instant is equal to the instant passed in 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_instant_ae0402245fade5f3930ed4c41dfd0be13}{org.\-joda.\-time.\-base.\-Abstract\-Instant}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a28ffef1035f4176edf7d1b0c72cf0a63}{\index{org\-::joda\-::time\-::\-Readable\-Instant@{org\-::joda\-::time\-::\-Readable\-Instant}!is\-Supported@{is\-Supported}}
+\index{is\-Supported@{is\-Supported}!org::joda::time::ReadableInstant@{org\-::joda\-::time\-::\-Readable\-Instant}}
+\subsubsection[{is\-Supported}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Instant.\-is\-Supported (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field\-Type}}]{field}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant_a28ffef1035f4176edf7d1b0c72cf0a63}
+Checks whether the field type specified is supported by this implementation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & the field type to check, may be null which returns false \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the field is supported 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_instant_a3053c933633ff8a8c632da1275ca79f4}{org.\-joda.\-time.\-base.\-Abstract\-Instant}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant_acee12fc8f5e991ed56680a6b01bb1624}{\index{org\-::joda\-::time\-::\-Readable\-Instant@{org\-::joda\-::time\-::\-Readable\-Instant}!to\-Instant@{to\-Instant}}
+\index{to\-Instant@{to\-Instant}!org::joda::time::ReadableInstant@{org\-::joda\-::time\-::\-Readable\-Instant}}
+\subsubsection[{to\-Instant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Instant} org.\-joda.\-time.\-Readable\-Instant.\-to\-Instant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant_acee12fc8f5e991ed56680a6b01bb1624}
+Get the value as a simple immutable {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_instant}{Instant}} object. 
+
+This can be useful if you don't trust the implementation of the interface to be well-\/behaved, or to get a guaranteed immutable object.
+
+\begin{DoxyReturn}{Returns}
+the value as an {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_instant}{Instant}} object 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_instant_a236d83cf3c40aebd31ab1da06fa8d93d}{org.\-joda.\-time.\-Instant}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_instant_a07e98b1e62a1043468415bf1e398e76a}{org.\-joda.\-time.\-base.\-Abstract\-Instant}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_instant_aab63d161a1e6b3037aea0811a1cc7499}{\index{org\-::joda\-::time\-::\-Readable\-Instant@{org\-::joda\-::time\-::\-Readable\-Instant}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!org::joda::time::ReadableInstant@{org\-::joda\-::time\-::\-Readable\-Instant}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-Readable\-Instant.\-to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_instant_aab63d161a1e6b3037aea0811a1cc7499}
+Get the value as a String in a recognisable I\-S\-O8601 format. 
+
+The string output is in I\-S\-O8601 format to enable the String constructor to correctly parse it.
+
+\begin{DoxyReturn}{Returns}
+the value as an I\-S\-O8601 string 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_date_time_ae2395d77fcd25bf9e9806662cdab446e}{org.\-joda.\-time.\-Mutable\-Date\-Time}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_instant_a60362649a83168ced4967c446842da99}{org.\-joda.\-time.\-base.\-Abstract\-Instant}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/Readable\-Instant.\-java\end{DoxyCompactItemize}

@@ -1,0 +1,209 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field}{\section{org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field Class Reference}
+\label{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field}\index{org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field@{org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field}}
+}
+Inheritance diagram for org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a6e46951153aad46b2cd726492a90191c}{Precise\-Duration\-Date\-Time\-Field} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} type, \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field}{Duration\-Field} unit)
+\item 
+boolean \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a85b01bffa55139594a93ef570fdceef8}{is\-Lenient} ()
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a63efdad90991a9b49b3bb51b0677f4d8}{set} (long instant, int value)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ad751284833564660913d259c7cfd3e48}{round\-Floor} (long instant)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ab09da9215d47784c96aee26771341fc5}{round\-Ceiling} (long instant)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a8b371a2503ee7e339e6d5adae2362327}{remainder} (long instant)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_duration_field}{Duration\-Field} \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ab2f36f4618fdf74968a4e8ae3cafbcdf}{get\-Duration\-Field} ()
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ab41ba15a6ada18e5c19284cbdb701b9c}{get\-Minimum\-Value} ()
+\item 
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ae53cd1815798b4c285bb206a1e4f39e8}{final long {\bfseries get\-Unit\-Millis} ()}\label{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ae53cd1815798b4c285bb206a1e4f39e8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a4902d3940fa9ab0c3667d0e117088d12}{get\-Maximum\-Value\-For\-Set} (long instant, int value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Precise datetime field, which has a precise unit duration field. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field}{Precise\-Duration\-Date\-Time\-Field} is thread-\/safe and immutable, and its subclasses must be as well.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a6e46951153aad46b2cd726492a90191c}{\index{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}!Precise\-Duration\-Date\-Time\-Field@{Precise\-Duration\-Date\-Time\-Field}}
+\index{Precise\-Duration\-Date\-Time\-Field@{Precise\-Duration\-Date\-Time\-Field}!org::joda::time::field::PreciseDurationDateTimeField@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}}
+\subsubsection[{Precise\-Duration\-Date\-Time\-Field}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field.\-Precise\-Duration\-Date\-Time\-Field (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field\-Type}}]{type, }
+\item[{{\bf Duration\-Field}}]{unit}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a6e46951153aad46b2cd726492a90191c}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the field type \\
+\hline
+{\em unit} & precise unit duration, like \char`\"{}days()\char`\"{}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if duration field is imprecise \\
+\hline
+{\em Illegal\-Argument\-Exception} & if unit milliseconds is less than one \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ab2f36f4618fdf74968a4e8ae3cafbcdf}{\index{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}!get\-Duration\-Field@{get\-Duration\-Field}}
+\index{get\-Duration\-Field@{get\-Duration\-Field}!org::joda::time::field::PreciseDurationDateTimeField@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}}
+\subsubsection[{get\-Duration\-Field}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Duration\-Field} org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field.\-get\-Duration\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ab2f36f4618fdf74968a4e8ae3cafbcdf}
+Returns the duration per unit value of this field. For example, if this field represents \char`\"{}minute of hour\char`\"{}, then the duration field is minutes.
+
+\begin{DoxyReturn}{Returns}
+the duration of this field, or \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field}{Unsupported\-Duration\-Field} if field has no duration 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_aa7354981ac68fbceeef46a348e6797b0}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a4902d3940fa9ab0c3667d0e117088d12}{\index{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}!get\-Maximum\-Value\-For\-Set@{get\-Maximum\-Value\-For\-Set}}
+\index{get\-Maximum\-Value\-For\-Set@{get\-Maximum\-Value\-For\-Set}!org::joda::time::field::PreciseDurationDateTimeField@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}}
+\subsubsection[{get\-Maximum\-Value\-For\-Set}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field.\-get\-Maximum\-Value\-For\-Set (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a4902d3940fa9ab0c3667d0e117088d12}
+Called by the set method to get the maximum allowed value. By default, returns get\-Maximum\-Value(instant). Override to provide a faster implementation. \hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ab41ba15a6ada18e5c19284cbdb701b9c}{\index{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}!get\-Minimum\-Value@{get\-Minimum\-Value}}
+\index{get\-Minimum\-Value@{get\-Minimum\-Value}!org::joda::time::field::PreciseDurationDateTimeField@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}}
+\subsubsection[{get\-Minimum\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field.\-get\-Minimum\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ab41ba15a6ada18e5c19284cbdb701b9c}
+Get the minimum value for the field.
+
+\begin{DoxyReturn}{Returns}
+the minimum value 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a9902f902cd4909aff1ca967dc5e10d72}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a85b01bffa55139594a93ef570fdceef8}{\index{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}!is\-Lenient@{is\-Lenient}}
+\index{is\-Lenient@{is\-Lenient}!org::joda::time::field::PreciseDurationDateTimeField@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}}
+\subsubsection[{is\-Lenient}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field.\-is\-Lenient (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a85b01bffa55139594a93ef570fdceef8}
+Returns false by default. 
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_ae3e7156e3590227cb0df0e9d6d7f0e3c}{org.\-joda.\-time.\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a8b371a2503ee7e339e6d5adae2362327}{\index{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}!remainder@{remainder}}
+\index{remainder@{remainder}!org::joda::time::field::PreciseDurationDateTimeField@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}}
+\subsubsection[{remainder}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field.\-remainder (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a8b371a2503ee7e339e6d5adae2362327}
+This method assumes that this field is properly rounded on 1970-\/01-\/01\-T00\-:00\-:00. If the rounding alignment differs, override this method as follows\-: 
+\begin{DoxyPre}
+return super.remainder(instant + ALIGNMENT\_MILLIS);
+\end{DoxyPre}
+ 
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a30b401edc9f2663feebdc79dc18d7578}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ab09da9215d47784c96aee26771341fc5}{\index{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}!round\-Ceiling@{round\-Ceiling}}
+\index{round\-Ceiling@{round\-Ceiling}!org::joda::time::field::PreciseDurationDateTimeField@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}}
+\subsubsection[{round\-Ceiling}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field.\-round\-Ceiling (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ab09da9215d47784c96aee26771341fc5}
+This method assumes that this field is properly rounded on 1970-\/01-\/01\-T00\-:00\-:00. If the rounding alignment differs, override this method as follows\-: 
+\begin{DoxyPre}
+return super.roundCeiling(instant + ALIGNMENT\_MILLIS) - ALIGNMENT\_MILLIS;
+\end{DoxyPre}
+ 
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a89b976c02eb66612a5be66fa7f3d5844}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ad751284833564660913d259c7cfd3e48}{\index{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}!round\-Floor@{round\-Floor}}
+\index{round\-Floor@{round\-Floor}!org::joda::time::field::PreciseDurationDateTimeField@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}}
+\subsubsection[{round\-Floor}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field.\-round\-Floor (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_ad751284833564660913d259c7cfd3e48}
+This method assumes that this field is properly rounded on 1970-\/01-\/01\-T00\-:00\-:00. If the rounding alignment differs, override this method as follows\-: 
+\begin{DoxyPre}
+return super.roundFloor(instant + ALIGNMENT\_MILLIS) - ALIGNMENT\_MILLIS;
+\end{DoxyPre}
+ 
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a4708ea912777d8dc5e9c6a8eaef33473}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a63efdad90991a9b49b3bb51b0677f4d8}{\index{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}!set@{set}}
+\index{set@{set}!org::joda::time::field::PreciseDurationDateTimeField@{org\-::joda\-::time\-::field\-::\-Precise\-Duration\-Date\-Time\-Field}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Precise\-Duration\-Date\-Time\-Field.\-set (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_precise_duration_date_time_field_a63efdad90991a9b49b3bb51b0677f4d8}
+Set the specified amount of units to the specified time instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to set in \\
+\hline
+{\em value} & value of units to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated time instant. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if value is too large or too small. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_ace20661fb97d7f15a921bcc8999aa1fc}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/field/Precise\-Duration\-Date\-Time\-Field.\-java\end{DoxyCompactItemize}

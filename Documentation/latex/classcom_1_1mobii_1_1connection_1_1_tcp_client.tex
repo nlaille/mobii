@@ -1,0 +1,152 @@
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client}{\section{com.\-mobii.\-connection.\-Tcp\-Client Class Reference}
+\label{classcom_1_1mobii_1_1connection_1_1_tcp_client}\index{com.\-mobii.\-connection.\-Tcp\-Client@{com.\-mobii.\-connection.\-Tcp\-Client}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client_a706da2c3032cc3f07897e586e33041ba}{{\bfseries Tcp\-Client} (\hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client}{Tcp\-Client} c)}\label{classcom_1_1mobii_1_1connection_1_1_tcp_client_a706da2c3032cc3f07897e586e33041ba}
+
+\item 
+void \hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client_a722057d8962863a4e79c57ec52d9dbe2}{run} ()
+\begin{DoxyCompactList}\small\item\em Client launching. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client_af3f5cc1194c8fd7fd110d95b6da87d55}{log} ()
+\begin{DoxyCompactList}\small\item\em Server login. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client_a1b85821f03bf92a9df0eaf6fc2684945}{listen} ()
+\begin{DoxyCompactList}\small\item\em Listening loop. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client_a807b781f95589150d5ec635d63bce730}{stop} ()
+\begin{DoxyCompactList}\small\item\em Client stopping. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client_a41b2d6a594948821d91bec6826ba4f77}{send\-Packet} (String msg)
+\begin{DoxyCompactList}\small\item\em Sending packets. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client_aca4606f66eb752e63de2035f45fd1015}{send\-Packet} (byte\mbox{[}$\,$\mbox{]} message)
+\begin{DoxyCompactList}\small\item\em Sending packets. \end{DoxyCompactList}\item 
+byte\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client_a8835250a0db119098cc5aa2242e6fe41}{recv\-Packet} ()
+\begin{DoxyCompactList}\small\item\em Receiving packets. \end{DoxyCompactList}\item 
+Socket \hyperlink{classcom_1_1mobii_1_1connection_1_1_tcp_client_a8f29b3af7d4b6035b8da85254052db92}{get\-Socket} ()
+\begin{DoxyCompactList}\small\item\em Socket getter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client_ab5033165cb06cad2e67758ddd1dcd74f}{boolean {\bfseries m\-Run} = false}\label{classcom_1_1mobii_1_1connection_1_1_tcp_client_ab5033165cb06cad2e67758ddd1dcd74f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client_aea556683c2e09b19b50cbbcce5eae4e2}{static Shared\-Preferences {\bfseries m\-Shared\-Mobii} = Mobii\-Connection\-Activity.\-get\-Shared\-Preferences()}\label{classcom_1_1mobii_1_1connection_1_1_tcp_client_aea556683c2e09b19b50cbbcce5eae4e2}
+
+\item 
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client_a25f7796ad2ed054c8fe35ef8a80b1781}{static Context {\bfseries m\-Ctx} = Mobii\-Connection\-Activity.\-get\-Context\-Application()}\label{classcom_1_1mobii_1_1connection_1_1_tcp_client_a25f7796ad2ed054c8fe35ef8a80b1781}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client_a8f29b3af7d4b6035b8da85254052db92}{\index{com\-::mobii\-::connection\-::\-Tcp\-Client@{com\-::mobii\-::connection\-::\-Tcp\-Client}!get\-Socket@{get\-Socket}}
+\index{get\-Socket@{get\-Socket}!com::mobii::connection::TcpClient@{com\-::mobii\-::connection\-::\-Tcp\-Client}}
+\subsubsection[{get\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}Socket com.\-mobii.\-connection.\-Tcp\-Client.\-get\-Socket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1connection_1_1_tcp_client_a8f29b3af7d4b6035b8da85254052db92}
+
+
+Socket getter. 
+
+\begin{DoxyReturn}{Returns}
+Returns the created socket. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client_a1b85821f03bf92a9df0eaf6fc2684945}{\index{com\-::mobii\-::connection\-::\-Tcp\-Client@{com\-::mobii\-::connection\-::\-Tcp\-Client}!listen@{listen}}
+\index{listen@{listen}!com::mobii::connection::TcpClient@{com\-::mobii\-::connection\-::\-Tcp\-Client}}
+\subsubsection[{listen}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-mobii.\-connection.\-Tcp\-Client.\-listen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1connection_1_1_tcp_client_a1b85821f03bf92a9df0eaf6fc2684945}
+
+
+Listening loop. 
+
+Listens for incoming connections and packets. \hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client_af3f5cc1194c8fd7fd110d95b6da87d55}{\index{com\-::mobii\-::connection\-::\-Tcp\-Client@{com\-::mobii\-::connection\-::\-Tcp\-Client}!log@{log}}
+\index{log@{log}!com::mobii::connection::TcpClient@{com\-::mobii\-::connection\-::\-Tcp\-Client}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-mobii.\-connection.\-Tcp\-Client.\-log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1connection_1_1_tcp_client_af3f5cc1194c8fd7fd110d95b6da87d55}
+
+
+Server login. 
+
+Logs in to the server. \hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client_a8835250a0db119098cc5aa2242e6fe41}{\index{com\-::mobii\-::connection\-::\-Tcp\-Client@{com\-::mobii\-::connection\-::\-Tcp\-Client}!recv\-Packet@{recv\-Packet}}
+\index{recv\-Packet@{recv\-Packet}!com::mobii::connection::TcpClient@{com\-::mobii\-::connection\-::\-Tcp\-Client}}
+\subsubsection[{recv\-Packet}]{\setlength{\rightskip}{0pt plus 5cm}byte \mbox{[}$\,$\mbox{]} com.\-mobii.\-connection.\-Tcp\-Client.\-recv\-Packet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1connection_1_1_tcp_client_a8835250a0db119098cc5aa2242e6fe41}
+
+
+Receiving packets. 
+
+Receives packets from the server. \begin{DoxyReturn}{Returns}
+Returns a byte array corresponding to the received packet. 
+\end{DoxyReturn}
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client_a722057d8962863a4e79c57ec52d9dbe2}{\index{com\-::mobii\-::connection\-::\-Tcp\-Client@{com\-::mobii\-::connection\-::\-Tcp\-Client}!run@{run}}
+\index{run@{run}!com::mobii::connection::TcpClient@{com\-::mobii\-::connection\-::\-Tcp\-Client}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-mobii.\-connection.\-Tcp\-Client.\-run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1connection_1_1_tcp_client_a722057d8962863a4e79c57ec52d9dbe2}
+
+
+Client launching. 
+
+Creates a S\-S\-L socket and connects the server. \hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client_a41b2d6a594948821d91bec6826ba4f77}{\index{com\-::mobii\-::connection\-::\-Tcp\-Client@{com\-::mobii\-::connection\-::\-Tcp\-Client}!send\-Packet@{send\-Packet}}
+\index{send\-Packet@{send\-Packet}!com::mobii::connection::TcpClient@{com\-::mobii\-::connection\-::\-Tcp\-Client}}
+\subsubsection[{send\-Packet}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-mobii.\-connection.\-Tcp\-Client.\-send\-Packet (
+\begin{DoxyParamCaption}
+\item[{String}]{msg}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1connection_1_1_tcp_client_a41b2d6a594948821d91bec6826ba4f77}
+
+
+Sending packets. 
+
+Sends packets to the server. 
+\begin{DoxyParams}{Parameters}
+{\em msg} & The packet to send. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client_aca4606f66eb752e63de2035f45fd1015}{\index{com\-::mobii\-::connection\-::\-Tcp\-Client@{com\-::mobii\-::connection\-::\-Tcp\-Client}!send\-Packet@{send\-Packet}}
+\index{send\-Packet@{send\-Packet}!com::mobii::connection::TcpClient@{com\-::mobii\-::connection\-::\-Tcp\-Client}}
+\subsubsection[{send\-Packet}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-mobii.\-connection.\-Tcp\-Client.\-send\-Packet (
+\begin{DoxyParamCaption}
+\item[{byte\mbox{[}$\,$\mbox{]}}]{message}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1connection_1_1_tcp_client_aca4606f66eb752e63de2035f45fd1015}
+
+
+Sending packets. 
+
+Sends packets to the server. 
+\begin{DoxyParams}{Parameters}
+{\em msg} & The packet to send. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcom_1_1mobii_1_1connection_1_1_tcp_client_a807b781f95589150d5ec635d63bce730}{\index{com\-::mobii\-::connection\-::\-Tcp\-Client@{com\-::mobii\-::connection\-::\-Tcp\-Client}!stop@{stop}}
+\index{stop@{stop}!com::mobii::connection::TcpClient@{com\-::mobii\-::connection\-::\-Tcp\-Client}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-mobii.\-connection.\-Tcp\-Client.\-stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1mobii_1_1connection_1_1_tcp_client_a807b781f95589150d5ec635d63bce730}
+
+
+Client stopping. 
+
+Stops the client by closing the socket. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/src/com/mobii/connection/\hyperlink{_tcp_client_8java}{Tcp\-Client.\-java}\end{DoxyCompactItemize}

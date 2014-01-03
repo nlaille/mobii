@@ -1,0 +1,263 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder}{\section{org.\-joda.\-time.\-tz.\-Date\-Time\-Zone\-Builder Class Reference}
+\label{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder}\index{org.\-joda.\-time.\-tz.\-Date\-Time\-Zone\-Builder@{org.\-joda.\-time.\-tz.\-Date\-Time\-Zone\-Builder}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder}{Date\-Time\-Zone\-Builder} \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a1a5501053207572a9f03c29eda3fd218}{add\-Cutover} (int year, char mode, int month\-Of\-Year, int day\-Of\-Month, int day\-Of\-Week, boolean advance\-Day\-Of\-Week, int millis\-Of\-Day)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder}{Date\-Time\-Zone\-Builder} \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a51b866319f84d383e8ee68f4f7813da7}{set\-Standard\-Offset} (int standard\-Offset)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder}{Date\-Time\-Zone\-Builder} \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_aa35a19bf3def34d3facdf1f75e79e5cc}{set\-Fixed\-Savings} (String name\-Key, int save\-Millis)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder}{Date\-Time\-Zone\-Builder} \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_adb5b830fc5c1a9ce61e1b8a1ad9c5aa3}{add\-Recurring\-Savings} (String name\-Key, int save\-Millis, int from\-Year, int to\-Year, char mode, int month\-Of\-Year, int day\-Of\-Month, int day\-Of\-Week, boolean advance\-Day\-Of\-Week, int millis\-Of\-Day)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a1639de3f211887a14cdfec675340a979}{to\-Date\-Time\-Zone} (String id, boolean output\-I\-D)
+\item 
+void \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a4f284090a3b70e5d1915fd37d4f4792e}{write\-To} (String zone\-I\-D, Output\-Stream out)  throws I\-O\-Exception 
+\item 
+void \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a52460d4376001c4d2cb59efc54ff6dac}{write\-To} (String zone\-I\-D, Data\-Output out)  throws I\-O\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_af7291f6dafbf0aee17f35c9e78a0228c}{read\-From} (Input\-Stream in, String id)  throws I\-O\-Exception 
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a9c0ba128a11346b0ca102f5cd8cf0505}{read\-From} (Data\-Input in, String id)  throws I\-O\-Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder}{Date\-Time\-Zone\-Builder} allows complex Date\-Time\-Zones to be constructed. Since creating a new \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} this way is a relatively expensive operation, built zones can be written to a file. Reading back the encoded data is a quick operation. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder}{Date\-Time\-Zone\-Builder} itself is mutable and not thread-\/safe, but the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} objects that it builds are thread-\/safe and immutable. 
+
+It is intended that \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler}{Zone\-Info\-Compiler} be used to read time zone data files, indirectly calling \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder}{Date\-Time\-Zone\-Builder}. The following complex example defines the America/\-Los\-\_\-\-Angeles time zone, with all historical transitions\-:
+
+
+\begin{DoxyPre}
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{DateTimeZone} America\_Los\_Angeles = new DateTimeZoneBuilder()
+    .addCutover(-2147483648, 'w', 1, 1, 0, false, 0)
+    .setStandardOffset(-28378000)
+    .setFixedSavings("LMT", 0)
+    .addCutover(1883, 'w', 11, 18, 0, false, 43200000)
+    .setStandardOffset(-28800000)
+    .addRecurringSavings("PDT", 3600000, 1918, 1919, 'w',  3, -1, 7, false, 7200000)
+    .addRecurringSavings("PST",       0, 1918, 1919, 'w', 10, -1, 7, false, 7200000)
+    .addRecurringSavings("PWT", 3600000, 1942, 1942, 'w',  2,  9, 0, false, 7200000)
+    .addRecurringSavings("PPT", 3600000, 1945, 1945, 'u',  8, 14, 0, false, 82800000)
+    .addRecurringSavings("PST",       0, 1945, 1945, 'w',  9, 30, 0, false, 7200000)
+    .addRecurringSavings("PDT", 3600000, 1948, 1948, 'w',  3, 14, 0, false, 7200000)
+    .addRecurringSavings("PST",       0, 1949, 1949, 'w',  1,  1, 0, false, 7200000)
+    .addRecurringSavings("PDT", 3600000, 1950, 1966, 'w',  4, -1, 7, false, 7200000)
+    .addRecurringSavings("PST",       0, 1950, 1961, 'w',  9, -1, 7, false, 7200000)
+    .addRecurringSavings("PST",       0, 1962, 1966, 'w', 10, -1, 7, false, 7200000)
+    .addRecurringSavings("PST",       0, 1967, 2147483647, 'w', 10, -1, 7, false, 7200000)
+    .addRecurringSavings("PDT", 3600000, 1967, 1973, 'w', 4, -1,  7, false, 7200000)
+    .addRecurringSavings("PDT", 3600000, 1974, 1974, 'w', 1,  6,  0, false, 7200000)
+    .addRecurringSavings("PDT", 3600000, 1975, 1975, 'w', 2, 23,  0, false, 7200000)
+    .addRecurringSavings("PDT", 3600000, 1976, 1986, 'w', 4, -1,  7, false, 7200000)
+    .addRecurringSavings("PDT", 3600000, 1987, 2147483647, 'w', 4, 1, 7, true, 7200000)
+    .toDateTimeZone("America/Los\_Angeles", true);
+\end{DoxyPre}
+
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler}{Zone\-Info\-Compiler} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_provider}{Zone\-Info\-Provider} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a1a5501053207572a9f03c29eda3fd218}{\index{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}!add\-Cutover@{add\-Cutover}}
+\index{add\-Cutover@{add\-Cutover}!org::joda::time::tz::DateTimeZoneBuilder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}}
+\subsubsection[{add\-Cutover}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time\-Zone\-Builder} org.\-joda.\-time.\-tz.\-Date\-Time\-Zone\-Builder.\-add\-Cutover (
+\begin{DoxyParamCaption}
+\item[{int}]{year, }
+\item[{char}]{mode, }
+\item[{int}]{month\-Of\-Year, }
+\item[{int}]{day\-Of\-Month, }
+\item[{int}]{day\-Of\-Week, }
+\item[{boolean}]{advance\-Day\-Of\-Week, }
+\item[{int}]{millis\-Of\-Day}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a1a5501053207572a9f03c29eda3fd218}
+Adds a cutover for added rules. The standard offset at the cutover defaults to 0. Call set\-Standard\-Offset afterwards to change it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & the year of cutover \\
+\hline
+{\em mode} & 'u' -\/ cutover is measured against U\-T\-C, 'w' -\/ against wall offset, 's' -\/ against standard offset \\
+\hline
+{\em month\-Of\-Year} & the month from 1 (January) to 12 (December) \\
+\hline
+{\em day\-Of\-Month} & if negative, set to ((last day of month) -\/ $\sim$day\-Of\-Month). For example, if -\/1, set to last day of month \\
+\hline
+{\em day\-Of\-Week} & from 1 (Monday) to 7 (Sunday), if 0 then ignore \\
+\hline
+{\em advance\-Day\-Of\-Week} & if day\-Of\-Month does not fall on day\-Of\-Week, advance to day\-Of\-Week when true, retreat when false. \\
+\hline
+{\em millis\-Of\-Day} & additional precision for specifying time of day of cutover \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_adb5b830fc5c1a9ce61e1b8a1ad9c5aa3}{\index{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}!add\-Recurring\-Savings@{add\-Recurring\-Savings}}
+\index{add\-Recurring\-Savings@{add\-Recurring\-Savings}!org::joda::time::tz::DateTimeZoneBuilder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}}
+\subsubsection[{add\-Recurring\-Savings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time\-Zone\-Builder} org.\-joda.\-time.\-tz.\-Date\-Time\-Zone\-Builder.\-add\-Recurring\-Savings (
+\begin{DoxyParamCaption}
+\item[{String}]{name\-Key, }
+\item[{int}]{save\-Millis, }
+\item[{int}]{from\-Year, }
+\item[{int}]{to\-Year, }
+\item[{char}]{mode, }
+\item[{int}]{month\-Of\-Year, }
+\item[{int}]{day\-Of\-Month, }
+\item[{int}]{day\-Of\-Week, }
+\item[{boolean}]{advance\-Day\-Of\-Week, }
+\item[{int}]{millis\-Of\-Day}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_adb5b830fc5c1a9ce61e1b8a1ad9c5aa3}
+Add a recurring daylight saving time rule.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\-Key} & the name key of new rule \\
+\hline
+{\em save\-Millis} & the milliseconds to add to standard offset \\
+\hline
+{\em from\-Year} & the first year that rule is in effect, M\-I\-N\-\_\-\-V\-A\-L\-U\-E indicates beginning of time \\
+\hline
+{\em to\-Year} & the last year (inclusive) that rule is in effect, M\-A\-X\-\_\-\-V\-A\-L\-U\-E indicates end of time \\
+\hline
+{\em mode} & 'u' -\/ transitions are calculated against U\-T\-C, 'w' -\/ transitions are calculated against wall offset, 's' -\/ transitions are calculated against standard offset \\
+\hline
+{\em month\-Of\-Year} & the month from 1 (January) to 12 (December) \\
+\hline
+{\em day\-Of\-Month} & if negative, set to ((last day of month) -\/ $\sim$day\-Of\-Month). For example, if -\/1, set to last day of month \\
+\hline
+{\em day\-Of\-Week} & from 1 (Monday) to 7 (Sunday), if 0 then ignore \\
+\hline
+{\em advance\-Day\-Of\-Week} & if day\-Of\-Month does not fall on day\-Of\-Week, advance to day\-Of\-Week when true, retreat when false. \\
+\hline
+{\em millis\-Of\-Day} & additional precision for specifying time of day of transitions \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_af7291f6dafbf0aee17f35c9e78a0228c}{\index{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}!read\-From@{read\-From}}
+\index{read\-From@{read\-From}!org::joda::time::tz::DateTimeZoneBuilder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}}
+\subsubsection[{read\-From}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Zone} org.\-joda.\-time.\-tz.\-Date\-Time\-Zone\-Builder.\-read\-From (
+\begin{DoxyParamCaption}
+\item[{Input\-Stream}]{in, }
+\item[{String}]{id}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_af7291f6dafbf0aee17f35c9e78a0228c}
+Decodes a built \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} from the given stream, as encoded by write\-To.
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & input stream to read encoded \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} from. \\
+\hline
+{\em id} & time zone id to assign \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a9c0ba128a11346b0ca102f5cd8cf0505}{\index{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}!read\-From@{read\-From}}
+\index{read\-From@{read\-From}!org::joda::time::tz::DateTimeZoneBuilder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}}
+\subsubsection[{read\-From}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Zone} org.\-joda.\-time.\-tz.\-Date\-Time\-Zone\-Builder.\-read\-From (
+\begin{DoxyParamCaption}
+\item[{Data\-Input}]{in, }
+\item[{String}]{id}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a9c0ba128a11346b0ca102f5cd8cf0505}
+Decodes a built \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} from the given stream, as encoded by write\-To.
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & input stream to read encoded \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} from. \\
+\hline
+{\em id} & time zone id to assign \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_aa35a19bf3def34d3facdf1f75e79e5cc}{\index{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}!set\-Fixed\-Savings@{set\-Fixed\-Savings}}
+\index{set\-Fixed\-Savings@{set\-Fixed\-Savings}!org::joda::time::tz::DateTimeZoneBuilder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}}
+\subsubsection[{set\-Fixed\-Savings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time\-Zone\-Builder} org.\-joda.\-time.\-tz.\-Date\-Time\-Zone\-Builder.\-set\-Fixed\-Savings (
+\begin{DoxyParamCaption}
+\item[{String}]{name\-Key, }
+\item[{int}]{save\-Millis}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_aa35a19bf3def34d3facdf1f75e79e5cc}
+Set a fixed savings rule at the cutover. \hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a51b866319f84d383e8ee68f4f7813da7}{\index{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}!set\-Standard\-Offset@{set\-Standard\-Offset}}
+\index{set\-Standard\-Offset@{set\-Standard\-Offset}!org::joda::time::tz::DateTimeZoneBuilder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}}
+\subsubsection[{set\-Standard\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time\-Zone\-Builder} org.\-joda.\-time.\-tz.\-Date\-Time\-Zone\-Builder.\-set\-Standard\-Offset (
+\begin{DoxyParamCaption}
+\item[{int}]{standard\-Offset}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a51b866319f84d383e8ee68f4f7813da7}
+Sets the standard offset to use for newly added rules until the next cutover is added. 
+\begin{DoxyParams}{Parameters}
+{\em standard\-Offset} & the standard offset in millis \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a1639de3f211887a14cdfec675340a979}{\index{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}!to\-Date\-Time\-Zone@{to\-Date\-Time\-Zone}}
+\index{to\-Date\-Time\-Zone@{to\-Date\-Time\-Zone}!org::joda::time::tz::DateTimeZoneBuilder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}}
+\subsubsection[{to\-Date\-Time\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time\-Zone} org.\-joda.\-time.\-tz.\-Date\-Time\-Zone\-Builder.\-to\-Date\-Time\-Zone (
+\begin{DoxyParamCaption}
+\item[{String}]{id, }
+\item[{boolean}]{output\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a1639de3f211887a14cdfec675340a979}
+Processes all the rules and builds a \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & time zone id to assign \\
+\hline
+{\em output\-I\-D} & true if the zone id should be output \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a4f284090a3b70e5d1915fd37d4f4792e}{\index{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}!write\-To@{write\-To}}
+\index{write\-To@{write\-To}!org::joda::time::tz::DateTimeZoneBuilder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}}
+\subsubsection[{write\-To}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-tz.\-Date\-Time\-Zone\-Builder.\-write\-To (
+\begin{DoxyParamCaption}
+\item[{String}]{zone\-I\-D, }
+\item[{Output\-Stream}]{out}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception }}\label{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a4f284090a3b70e5d1915fd37d4f4792e}
+Encodes a built \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} to the given stream. Call read\-From to decode the data into a \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the output stream to receive the encoded \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\-5 (parameter added) 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a52460d4376001c4d2cb59efc54ff6dac}{\index{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}!write\-To@{write\-To}}
+\index{write\-To@{write\-To}!org::joda::time::tz::DateTimeZoneBuilder@{org\-::joda\-::time\-::tz\-::\-Date\-Time\-Zone\-Builder}}
+\subsubsection[{write\-To}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-tz.\-Date\-Time\-Zone\-Builder.\-write\-To (
+\begin{DoxyParamCaption}
+\item[{String}]{zone\-I\-D, }
+\item[{Data\-Output}]{out}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception }}\label{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder_a52460d4376001c4d2cb59efc54ff6dac}
+Encodes a built \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} to the given stream. Call read\-From to decode the data into a \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the output stream to receive the encoded \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+1.\-5 (parameter added) 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/tz/Date\-Time\-Zone\-Builder.\-java\end{DoxyCompactItemize}

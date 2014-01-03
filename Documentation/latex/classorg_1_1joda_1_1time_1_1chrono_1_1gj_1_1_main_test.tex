@@ -1,0 +1,87 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test}{\section{org.\-joda.\-time.\-chrono.\-gj.\-Main\-Test Class Reference}
+\label{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test}\index{org.\-joda.\-time.\-chrono.\-gj.\-Main\-Test@{org.\-joda.\-time.\-chrono.\-gj.\-Main\-Test}}
+}
+Inheritance diagram for org.\-joda.\-time.\-chrono.\-gj.\-Main\-Test\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_a812b38254d55b865dfa653fdef69cc7c}{Main\-Test} (int iterations, int mode, long seed)
+\item 
+void \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_a2992d87d57dc1e72a45ce9b2cbd4ed89}{test\-Chronology} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_a9ee40d650d57992fc98ac2ab3b4e1c1d}{main} (String\mbox{[}$\,$\mbox{]} args)  throws Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_a1badcf0b7bac78be55535f6ed9d87310}{static final int {\bfseries G\-R\-E\-G\-O\-R\-I\-A\-N\-\_\-\-M\-O\-D\-E} = 0}\label{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_a1badcf0b7bac78be55535f6ed9d87310}
+
+\item 
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_afcccce22a15beb966ebd1694a905f668}{static final int {\bfseries J\-U\-L\-I\-A\-N\-\_\-\-M\-O\-D\-E} = 1}\label{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_afcccce22a15beb966ebd1694a905f668}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tests either the Julian or Gregorian chronology from org.\-joda.\-time.\-chrono.\-gj against the implementations in this package. It tests all the date fields against their principal methods. 
+
+Randomly generated values are fed into the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} methods and the results are compared between the two chronologies. If any result doesn't match, an error report is generated and the program exits. Each time this test program is run, the pseudo random number generator is seeded with the same value. This ensures consistent results between test runs. 
+
+The main method accepts three optional arguments\-: iterations, mode, seed. By default, iterations is set to 1,000,000. The test will take several minutes to run, depending on the computer's performance. Every 5 seconds a progress message is printed. 
+
+The mode can be either 'g' for proleptic gregorian (the default) or 'j' for proleptic julian. To override the default random number generator seed, pass in a third argument which accepts a long signed integer.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_a812b38254d55b865dfa653fdef69cc7c}{\index{org\-::joda\-::time\-::chrono\-::gj\-::\-Main\-Test@{org\-::joda\-::time\-::chrono\-::gj\-::\-Main\-Test}!Main\-Test@{Main\-Test}}
+\index{Main\-Test@{Main\-Test}!org::joda::time::chrono::gj::MainTest@{org\-::joda\-::time\-::chrono\-::gj\-::\-Main\-Test}}
+\subsubsection[{Main\-Test}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-chrono.\-gj.\-Main\-Test.\-Main\-Test (
+\begin{DoxyParamCaption}
+\item[{int}]{iterations, }
+\item[{int}]{mode, }
+\item[{long}]{seed}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_a812b38254d55b865dfa653fdef69cc7c}
+
+\begin{DoxyParams}{Parameters}
+{\em iterations} & number of test iterations to perform \\
+\hline
+{\em mode} & G\-R\-E\-G\-O\-R\-I\-A\-N\-\_\-\-M\-O\-D\-E or J\-U\-L\-I\-A\-N\-\_\-\-M\-O\-D\-E,0=Gregorian, 1=Julian \\
+\hline
+{\em seed} & seed for random number generator \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_a9ee40d650d57992fc98ac2ab3b4e1c1d}{\index{org\-::joda\-::time\-::chrono\-::gj\-::\-Main\-Test@{org\-::joda\-::time\-::chrono\-::gj\-::\-Main\-Test}!main@{main}}
+\index{main@{main}!org::joda::time::chrono::gj::MainTest@{org\-::joda\-::time\-::chrono\-::gj\-::\-Main\-Test}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-chrono.\-gj.\-Main\-Test.\-main (
+\begin{DoxyParamCaption}
+\item[{String\mbox{[}$\,$\mbox{]}}]{args}
+\end{DoxyParamCaption}
+)  throws Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_a9ee40d650d57992fc98ac2ab3b4e1c1d}
+Arguments\-: iterations \mbox{[}mode \mbox{[}seed\mbox{]}\mbox{]} \hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_a2992d87d57dc1e72a45ce9b2cbd4ed89}{\index{org\-::joda\-::time\-::chrono\-::gj\-::\-Main\-Test@{org\-::joda\-::time\-::chrono\-::gj\-::\-Main\-Test}!test\-Chronology@{test\-Chronology}}
+\index{test\-Chronology@{test\-Chronology}!org::joda::time::chrono::gj::MainTest@{org\-::joda\-::time\-::chrono\-::gj\-::\-Main\-Test}}
+\subsubsection[{test\-Chronology}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-chrono.\-gj.\-Main\-Test.\-test\-Chronology (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1gj_1_1_main_test_a2992d87d57dc1e72a45ce9b2cbd4ed89}
+Main junit test 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/test/java/org/joda/time/chrono/gj/Main\-Test.\-java\end{DoxyCompactItemize}

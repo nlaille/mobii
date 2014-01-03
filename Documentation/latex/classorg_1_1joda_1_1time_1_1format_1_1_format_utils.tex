@@ -1,0 +1,216 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_format_utils}{\section{org.\-joda.\-time.\-format.\-Format\-Utils Class Reference}
+\label{classorg_1_1joda_1_1time_1_1format_1_1_format_utils}\index{org.\-joda.\-time.\-format.\-Format\-Utils@{org.\-joda.\-time.\-format.\-Format\-Utils}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_ad10b31a343d5187c4f8e2f0760bd4d1a}{append\-Padded\-Integer} (String\-Buffer buf, int value, int size)
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a4d3dd2b342d7fc1e3d96c5ecf593ebd9}{append\-Padded\-Integer} (String\-Buffer buf, long value, int size)
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a17122f540f3299ec7a02814200a7466a}{write\-Padded\-Integer} (Writer out, int value, int size)  throws I\-O\-Exception     
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_aec3f300576cee53e1669e17b9277b3b5}{write\-Padded\-Integer} (Writer out, long value, int size)  throws I\-O\-Exception     
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_ae552aec31c20d58d5faf298795ffa1aa}{append\-Unpadded\-Integer} (String\-Buffer buf, int value)
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a7d9c3c085b0c260a162fe09a611a02e2}{append\-Unpadded\-Integer} (String\-Buffer buf, long value)
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_afe12e69ade941a851b4af532cff0bb92}{write\-Unpadded\-Integer} (Writer out, int value)  throws I\-O\-Exception     
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a0cfc099172c712db8d6f8a090639d035}{write\-Unpadded\-Integer} (Writer out, long value)  throws I\-O\-Exception     
+\item 
+static int \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a7062f31ca630b94a11680a01fa345e0b}{calculate\-Digit\-Count} (long value)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility methods used by formatters. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_format_utils}{Format\-Utils} is thread-\/safe and immutable.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_ad10b31a343d5187c4f8e2f0760bd4d1a}{\index{org\-::joda\-::time\-::format\-::\-Format\-Utils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}!append\-Padded\-Integer@{append\-Padded\-Integer}}
+\index{append\-Padded\-Integer@{append\-Padded\-Integer}!org::joda::time::format::FormatUtils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}}
+\subsubsection[{append\-Padded\-Integer}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-format.\-Format\-Utils.\-append\-Padded\-Integer (
+\begin{DoxyParamCaption}
+\item[{String\-Buffer}]{buf, }
+\item[{int}]{value, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_ad10b31a343d5187c4f8e2f0760bd4d1a}
+Converts an integer to a string, prepended with a variable amount of '0' pad characters, and appends it to the given buffer.
+
+This method is optimized for converting small values to strings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & receives integer converted to a string \\
+\hline
+{\em value} & value to convert to a string \\
+\hline
+{\em size} & minumum amount of digits to append \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a4d3dd2b342d7fc1e3d96c5ecf593ebd9}{\index{org\-::joda\-::time\-::format\-::\-Format\-Utils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}!append\-Padded\-Integer@{append\-Padded\-Integer}}
+\index{append\-Padded\-Integer@{append\-Padded\-Integer}!org::joda::time::format::FormatUtils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}}
+\subsubsection[{append\-Padded\-Integer}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-format.\-Format\-Utils.\-append\-Padded\-Integer (
+\begin{DoxyParamCaption}
+\item[{String\-Buffer}]{buf, }
+\item[{long}]{value, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a4d3dd2b342d7fc1e3d96c5ecf593ebd9}
+Converts an integer to a string, prepended with a variable amount of '0' pad characters, and appends it to the given buffer.
+
+This method is optimized for converting small values to strings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & receives integer converted to a string \\
+\hline
+{\em value} & value to convert to a string \\
+\hline
+{\em size} & minumum amount of digits to append \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_ae552aec31c20d58d5faf298795ffa1aa}{\index{org\-::joda\-::time\-::format\-::\-Format\-Utils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}!append\-Unpadded\-Integer@{append\-Unpadded\-Integer}}
+\index{append\-Unpadded\-Integer@{append\-Unpadded\-Integer}!org::joda::time::format::FormatUtils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}}
+\subsubsection[{append\-Unpadded\-Integer}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-format.\-Format\-Utils.\-append\-Unpadded\-Integer (
+\begin{DoxyParamCaption}
+\item[{String\-Buffer}]{buf, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_ae552aec31c20d58d5faf298795ffa1aa}
+Converts an integer to a string, and appends it to the given buffer.
+
+This method is optimized for converting small values to strings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & receives integer converted to a string \\
+\hline
+{\em value} & value to convert to a string \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a7d9c3c085b0c260a162fe09a611a02e2}{\index{org\-::joda\-::time\-::format\-::\-Format\-Utils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}!append\-Unpadded\-Integer@{append\-Unpadded\-Integer}}
+\index{append\-Unpadded\-Integer@{append\-Unpadded\-Integer}!org::joda::time::format::FormatUtils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}}
+\subsubsection[{append\-Unpadded\-Integer}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-format.\-Format\-Utils.\-append\-Unpadded\-Integer (
+\begin{DoxyParamCaption}
+\item[{String\-Buffer}]{buf, }
+\item[{long}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a7d9c3c085b0c260a162fe09a611a02e2}
+Converts an integer to a string, and appends it to the given buffer.
+
+This method is optimized for converting small values to strings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & receives integer converted to a string \\
+\hline
+{\em value} & value to convert to a string \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a7062f31ca630b94a11680a01fa345e0b}{\index{org\-::joda\-::time\-::format\-::\-Format\-Utils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}!calculate\-Digit\-Count@{calculate\-Digit\-Count}}
+\index{calculate\-Digit\-Count@{calculate\-Digit\-Count}!org::joda::time::format::FormatUtils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}}
+\subsubsection[{calculate\-Digit\-Count}]{\setlength{\rightskip}{0pt plus 5cm}static int org.\-joda.\-time.\-format.\-Format\-Utils.\-calculate\-Digit\-Count (
+\begin{DoxyParamCaption}
+\item[{long}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a7062f31ca630b94a11680a01fa345e0b}
+Calculates the number of decimal digits for the given value, including the sign. \hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a17122f540f3299ec7a02814200a7466a}{\index{org\-::joda\-::time\-::format\-::\-Format\-Utils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}!write\-Padded\-Integer@{write\-Padded\-Integer}}
+\index{write\-Padded\-Integer@{write\-Padded\-Integer}!org::joda::time::format::FormatUtils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}}
+\subsubsection[{write\-Padded\-Integer}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-format.\-Format\-Utils.\-write\-Padded\-Integer (
+\begin{DoxyParamCaption}
+\item[{Writer}]{out, }
+\item[{int}]{value, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception     \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a17122f540f3299ec7a02814200a7466a}
+Converts an integer to a string, prepended with a variable amount of '0' pad characters, and writes it to the given writer.
+
+This method is optimized for converting small values to strings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & receives integer converted to a string \\
+\hline
+{\em value} & value to convert to a string \\
+\hline
+{\em size} & minumum amount of digits to append \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_aec3f300576cee53e1669e17b9277b3b5}{\index{org\-::joda\-::time\-::format\-::\-Format\-Utils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}!write\-Padded\-Integer@{write\-Padded\-Integer}}
+\index{write\-Padded\-Integer@{write\-Padded\-Integer}!org::joda::time::format::FormatUtils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}}
+\subsubsection[{write\-Padded\-Integer}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-format.\-Format\-Utils.\-write\-Padded\-Integer (
+\begin{DoxyParamCaption}
+\item[{Writer}]{out, }
+\item[{long}]{value, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception     \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_aec3f300576cee53e1669e17b9277b3b5}
+Converts an integer to a string, prepended with a variable amount of '0' pad characters, and writes it to the given writer.
+
+This method is optimized for converting small values to strings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & receives integer converted to a string \\
+\hline
+{\em value} & value to convert to a string \\
+\hline
+{\em size} & minumum amount of digits to append \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_afe12e69ade941a851b4af532cff0bb92}{\index{org\-::joda\-::time\-::format\-::\-Format\-Utils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}!write\-Unpadded\-Integer@{write\-Unpadded\-Integer}}
+\index{write\-Unpadded\-Integer@{write\-Unpadded\-Integer}!org::joda::time::format::FormatUtils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}}
+\subsubsection[{write\-Unpadded\-Integer}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-format.\-Format\-Utils.\-write\-Unpadded\-Integer (
+\begin{DoxyParamCaption}
+\item[{Writer}]{out, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception     \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_afe12e69ade941a851b4af532cff0bb92}
+Converts an integer to a string, and writes it to the given writer.
+
+This method is optimized for converting small values to strings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & receives integer converted to a string \\
+\hline
+{\em value} & value to convert to a string \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a0cfc099172c712db8d6f8a090639d035}{\index{org\-::joda\-::time\-::format\-::\-Format\-Utils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}!write\-Unpadded\-Integer@{write\-Unpadded\-Integer}}
+\index{write\-Unpadded\-Integer@{write\-Unpadded\-Integer}!org::joda::time::format::FormatUtils@{org\-::joda\-::time\-::format\-::\-Format\-Utils}}
+\subsubsection[{write\-Unpadded\-Integer}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-format.\-Format\-Utils.\-write\-Unpadded\-Integer (
+\begin{DoxyParamCaption}
+\item[{Writer}]{out, }
+\item[{long}]{value}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception     \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1format_1_1_format_utils_a0cfc099172c712db8d6f8a090639d035}
+Converts an integer to a string, and writes it to the given writer.
+
+This method is optimized for converting small values to strings.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & receives integer converted to a string \\
+\hline
+{\em value} & value to convert to a string \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/format/Format\-Utils.\-java\end{DoxyCompactItemize}

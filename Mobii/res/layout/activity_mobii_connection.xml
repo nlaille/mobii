@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mobii_interface"
+    android:orientation="vertical"
+    android:screenOrientation="portrait" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="192.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+		<EditText
+			android:id="@+id/et_pwd"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="38.5dp"
+			android:background="@drawable/button_connection"
+			android:ems="10"
+			android:gravity="center"
+			android:hint="@string/et_pwd_hint"
+			android:inputType="textPassword" >
+		</EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutUid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayoutPwd"
+        android:layout_above="@+id/relativeLayoutConnection" >
+
+        <TextView
+            android:id="@+id/text_connection_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="1dp"
+            android:text="@string/tv_connection_code"
+            android:textColor="@color/connection_code_color"
+            android:textSize="12sp"
+            android:textStyle="normal|bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/tv_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tv_uid"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="normal"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="209dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/bt_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button_connection"
+            android:clickable="true"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="@string/bt_connection"
+            android:textColor="@color/text_connect_color"
+            android:textSize="@dimen/size_text_connect"
+            android:textStyle="normal|bold"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+<!--
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MobiiConnectionActivity" />
+-->

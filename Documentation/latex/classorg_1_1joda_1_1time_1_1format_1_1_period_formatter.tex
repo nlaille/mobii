@@ -1,0 +1,342 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{\section{org.\-joda.\-time.\-format.\-Period\-Formatter Class Reference}
+\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}\index{org.\-joda.\-time.\-format.\-Period\-Formatter@{org.\-joda.\-time.\-format.\-Period\-Formatter}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_ae9d08370515856189aace5933b704579}{Period\-Formatter} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer}{Period\-Printer} printer, \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_parser}{Period\-Parser} parser)
+\item 
+boolean \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a6961b2011920ee9388f5cbbfb2bc822c}{is\-Printer} ()
+\item 
+\hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_printer}{Period\-Printer} \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a2c72b3f0d38631c3e4cf2cfed9037ea3}{get\-Printer} ()
+\item 
+boolean \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a70eab0f438011894c9502a4bc0918093}{is\-Parser} ()
+\item 
+\hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_period_parser}{Period\-Parser} \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_aa87dba464f34eaf787645cb6850ff418}{get\-Parser} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter} \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a179579f429bc0ef9e2c1901e384dc851}{with\-Locale} (Locale locale)
+\item 
+Locale \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_adc276bf9a275918d41765e36deb94fe8}{get\-Locale} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter} \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a8b8a05164f7310bdc8f95268e4730cdc}{with\-Parse\-Type} (\hyperlink{classorg_1_1joda_1_1time_1_1_period_type}{Period\-Type} type)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_period_type}{Period\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a35bf4305000472294e4aa801efb54dd1}{get\-Parse\-Type} ()
+\item 
+void \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a775a14cc118fb4573dcf0c48b773c736}{print\-To} (String\-Buffer buf, \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} period)
+\item 
+void \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a8e642b16d93cc5992530bd4135fcba0a}{print\-To} (Writer out, \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} period)  throws I\-O\-Exception 
+\item 
+String \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_ad74eb3eeed48e02651f24c6151ea2239}{print} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} period)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_aa24e43ebb5021aea787bd0472e603bc1}{parse\-Into} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_period}{Read\-Writable\-Period} period, String text, int position)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_period}{Period} \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a198f018c06b4ed565df92f6adc815e09}{parse\-Period} (String text)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_mutable_period}{Mutable\-Period} \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a14bd6f5d008dfb9aea269080c649d442}{parse\-Mutable\-Period} (String text)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Controls the printing and parsing of a time period to and from a string. 
+
+This class is the main A\-P\-I for printing and parsing used by most applications. Instances of this class are created via one of three factory classes\-: 
+\begin{DoxyItemize}
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_format}{Period\-Format} -\/ formats by pattern and style 
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_i_s_o_period_format}{I\-S\-O\-Period\-Format} -\/ I\-S\-O8601 formats 
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_builder}{Period\-Formatter\-Builder} -\/ complex formats created via method calls 
+\end{DoxyItemize}
+
+An instance of this class holds a reference internally to one printer and one parser. It is possible that one of these may be null, in which case the formatter cannot print/parse. This can be checked via the \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a6961b2011920ee9388f5cbbfb2bc822c}{is\-Printer()} and \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a70eab0f438011894c9502a4bc0918093}{is\-Parser()} methods. 
+
+The underlying printer/parser can be altered to behave exactly as required by using a decorator modifier\-: 
+\begin{DoxyItemize}
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a179579f429bc0ef9e2c1901e384dc851}{with\-Locale(\-Locale)} -\/ returns a new formatter that uses the specified locale 
+\end{DoxyItemize}This returns a new formatter (instances of this class are immutable). 
+
+The main methods of the class are the {\ttfamily print\-Xxx} and {\ttfamily parse\-Xxx} methods. These are used as follows\-: 
+\begin{DoxyPre}
+// print using the default locale
+String periodStr = formatter.print(period);
+// print using the French locale
+String periodStr = formatter.withLocale(Locale.FRENCH).print(period);\end{DoxyPre}
+
+
+
+\begin{DoxyPre}// parse using the French locale
+\hyperlink{classorg_1_1joda_1_1time_1_1_period}{Period} date = formatter.withLocale(Locale.FRENCH).parsePeriod(str);
+\end{DoxyPre}
+
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_ae9d08370515856189aace5933b704579}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!Period\-Formatter@{Period\-Formatter}}
+\index{Period\-Formatter@{Period\-Formatter}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{Period\-Formatter}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-format.\-Period\-Formatter.\-Period\-Formatter (
+\begin{DoxyParamCaption}
+\item[{{\bf Period\-Printer}}]{printer, }
+\item[{{\bf Period\-Parser}}]{parser}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_ae9d08370515856189aace5933b704579}
+Creates a new formatter, however you will normally use the factory or the builder.
+
+
+\begin{DoxyParams}{Parameters}
+{\em printer} & the internal printer, null if cannot print \\
+\hline
+{\em parser} & the internal parser, null if cannot parse \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_adc276bf9a275918d41765e36deb94fe8}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!get\-Locale@{get\-Locale}}
+\index{get\-Locale@{get\-Locale}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{get\-Locale}]{\setlength{\rightskip}{0pt plus 5cm}Locale org.\-joda.\-time.\-format.\-Period\-Formatter.\-get\-Locale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_adc276bf9a275918d41765e36deb94fe8}
+Gets the locale that will be used for printing and parsing.
+
+\begin{DoxyReturn}{Returns}
+the locale to use 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_aa87dba464f34eaf787645cb6850ff418}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!get\-Parser@{get\-Parser}}
+\index{get\-Parser@{get\-Parser}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{get\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Period\-Parser} org.\-joda.\-time.\-format.\-Period\-Formatter.\-get\-Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_aa87dba464f34eaf787645cb6850ff418}
+Gets the internal parser object that performs the real parsing work.
+
+\begin{DoxyReturn}{Returns}
+the internal parser 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a35bf4305000472294e4aa801efb54dd1}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!get\-Parse\-Type@{get\-Parse\-Type}}
+\index{get\-Parse\-Type@{get\-Parse\-Type}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{get\-Parse\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Period\-Type} org.\-joda.\-time.\-format.\-Period\-Formatter.\-get\-Parse\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a35bf4305000472294e4aa801efb54dd1}
+Gets the \hyperlink{classorg_1_1joda_1_1time_1_1_period_type}{Period\-Type} that will be used for parsing.
+
+\begin{DoxyReturn}{Returns}
+the parse type to use 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a2c72b3f0d38631c3e4cf2cfed9037ea3}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!get\-Printer@{get\-Printer}}
+\index{get\-Printer@{get\-Printer}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{get\-Printer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Period\-Printer} org.\-joda.\-time.\-format.\-Period\-Formatter.\-get\-Printer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a2c72b3f0d38631c3e4cf2cfed9037ea3}
+Gets the internal printer object that performs the real printing work.
+
+\begin{DoxyReturn}{Returns}
+the internal printer 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a70eab0f438011894c9502a4bc0918093}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!is\-Parser@{is\-Parser}}
+\index{is\-Parser@{is\-Parser}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{is\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-format.\-Period\-Formatter.\-is\-Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a70eab0f438011894c9502a4bc0918093}
+Is this formatter capable of parsing.
+
+\begin{DoxyReturn}{Returns}
+true if this is a parser 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a6961b2011920ee9388f5cbbfb2bc822c}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!is\-Printer@{is\-Printer}}
+\index{is\-Printer@{is\-Printer}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{is\-Printer}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-format.\-Period\-Formatter.\-is\-Printer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a6961b2011920ee9388f5cbbfb2bc822c}
+Is this formatter capable of printing.
+
+\begin{DoxyReturn}{Returns}
+true if this is a printer 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_aa24e43ebb5021aea787bd0472e603bc1}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!parse\-Into@{parse\-Into}}
+\index{parse\-Into@{parse\-Into}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{parse\-Into}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-format.\-Period\-Formatter.\-parse\-Into (
+\begin{DoxyParamCaption}
+\item[{{\bf Read\-Writable\-Period}}]{period, }
+\item[{String}]{text, }
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_aa24e43ebb5021aea787bd0472e603bc1}
+Parses a period from the given text, at the given position, saving the result into the fields of the given \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_period}{Read\-Writable\-Period}. If the parse succeeds, the return value is the new text position. Note that the parse may succeed without fully reading the text. 
+
+The parse type of the formatter is not used by this method. 
+
+If it fails, the return value is negative, but the period may still be modified. To determine the position where the parse failed, apply the one's complement operator ($\sim$) on the return value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & a period that will be modified \\
+\hline
+{\em text} & text to parse \\
+\hline
+{\em position} & position to start parsing from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new position, if negative, parse failed. Apply complement operator ($\sim$) to get position of failure 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if any field is out of range \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a14bd6f5d008dfb9aea269080c649d442}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!parse\-Mutable\-Period@{parse\-Mutable\-Period}}
+\index{parse\-Mutable\-Period@{parse\-Mutable\-Period}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{parse\-Mutable\-Period}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mutable\-Period} org.\-joda.\-time.\-format.\-Period\-Formatter.\-parse\-Mutable\-Period (
+\begin{DoxyParamCaption}
+\item[{String}]{text}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a14bd6f5d008dfb9aea269080c649d442}
+Parses a period from the given text, returning a new \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_period}{Mutable\-Period}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & text to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parsed value in a \hyperlink{classorg_1_1joda_1_1time_1_1_mutable_period}{Mutable\-Period} object 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if any field is out of range \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a198f018c06b4ed565df92f6adc815e09}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!parse\-Period@{parse\-Period}}
+\index{parse\-Period@{parse\-Period}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{parse\-Period}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Period} org.\-joda.\-time.\-format.\-Period\-Formatter.\-parse\-Period (
+\begin{DoxyParamCaption}
+\item[{String}]{text}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a198f018c06b4ed565df92f6adc815e09}
+Parses a period from the given text, returning a new \hyperlink{classorg_1_1joda_1_1time_1_1_period}{Period}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & text to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parsed value in a \hyperlink{classorg_1_1joda_1_1time_1_1_period}{Period} object 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if any field is out of range \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_ad74eb3eeed48e02651f24c6151ea2239}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!print@{print}}
+\index{print@{print}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-format.\-Period\-Formatter.\-print (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Period}}]{period}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_ad74eb3eeed48e02651f24c6151ea2239}
+Prints a \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} to a new String.
+
+
+\begin{DoxyParams}{Parameters}
+{\em period} & the period to format, not null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the printed result 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a775a14cc118fb4573dcf0c48b773c736}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!print\-To@{print\-To}}
+\index{print\-To@{print\-To}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{print\-To}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-format.\-Period\-Formatter.\-print\-To (
+\begin{DoxyParamCaption}
+\item[{String\-Buffer}]{buf, }
+\item[{{\bf Readable\-Period}}]{period}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a775a14cc118fb4573dcf0c48b773c736}
+Prints a \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} to a String\-Buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & the formatted period is appended to this buffer \\
+\hline
+{\em period} & the period to format, not null \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a8e642b16d93cc5992530bd4135fcba0a}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!print\-To@{print\-To}}
+\index{print\-To@{print\-To}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{print\-To}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-format.\-Period\-Formatter.\-print\-To (
+\begin{DoxyParamCaption}
+\item[{Writer}]{out, }
+\item[{{\bf Readable\-Period}}]{period}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception }}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a8e642b16d93cc5992530bd4135fcba0a}
+Prints a \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} to a Writer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the formatted period is written out \\
+\hline
+{\em period} & the period to format, not null \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a179579f429bc0ef9e2c1901e384dc851}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!with\-Locale@{with\-Locale}}
+\index{with\-Locale@{with\-Locale}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{with\-Locale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Period\-Formatter} org.\-joda.\-time.\-format.\-Period\-Formatter.\-with\-Locale (
+\begin{DoxyParamCaption}
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a179579f429bc0ef9e2c1901e384dc851}
+Returns a new formatter with a different locale that will be used for printing and parsing. 
+
+A \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter} is immutable, so a new instance is returned, and the original is unaltered and still usable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em locale} & the locale to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new formatter 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a8b8a05164f7310bdc8f95268e4730cdc}{\index{org\-::joda\-::time\-::format\-::\-Period\-Formatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}!with\-Parse\-Type@{with\-Parse\-Type}}
+\index{with\-Parse\-Type@{with\-Parse\-Type}!org::joda::time::format::PeriodFormatter@{org\-::joda\-::time\-::format\-::\-Period\-Formatter}}
+\subsubsection[{with\-Parse\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Period\-Formatter} org.\-joda.\-time.\-format.\-Period\-Formatter.\-with\-Parse\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Period\-Type}}]{type}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter_a8b8a05164f7310bdc8f95268e4730cdc}
+Returns a new formatter with a different \hyperlink{classorg_1_1joda_1_1time_1_1_period_type}{Period\-Type} for parsing. 
+
+A \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_period_formatter}{Period\-Formatter} is immutable, so a new instance is returned, and the original is unaltered and still usable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the type to use in parsing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new formatter 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/format/Period\-Formatter.\-java\end{DoxyCompactItemize}

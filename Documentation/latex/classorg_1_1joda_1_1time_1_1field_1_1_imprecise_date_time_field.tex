@@ -1,0 +1,333 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field}{\section{org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field Class Reference}
+\label{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field}\index{org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field@{org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field}}
+}
+Inheritance diagram for org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_af69b95674fa550dbef13d0b78bb7c7a6}{Imprecise\-Date\-Time\-Field} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} type, long unit\-Millis)
+\item 
+abstract int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_ab9b45f89dd2abe6df0e28178810d0134}{get} (long instant)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_afbe1ae74dab8eb83f46b9c715742cb82}{set} (long instant, int value)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a298039c9292cddbce5c5acd73eb56164}{add} (long instant, int value)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_aabe3534cc29e991fdb055a7bf19473a2}{add} (long instant, long value)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a8e135d7d290c1ecb0e3c907ef410c260}{get\-Difference} (long minuend\-Instant, long subtrahend\-Instant)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_acd79dbc9bda61722c9612c89fcac2781}{get\-Difference\-As\-Long} (long minuend\-Instant, long subtrahend\-Instant)
+\item 
+final \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field}{Duration\-Field} \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_abcde69fb4106ac0fa7d9a25794877a24}{get\-Duration\-Field} ()
+\item 
+abstract \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field}{Duration\-Field} \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a4fbf563d91df852383407e5cf8beeef6}{get\-Range\-Duration\-Field} ()
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a003f001fe5680f4a5f4cb2c61d4ad6d7}{round\-Floor} (long instant)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a6cbcb8bdd3909d0f2f632b75b2731c28}{final long {\bfseries get\-Duration\-Unit\-Millis} ()}\label{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a6cbcb8bdd3909d0f2f632b75b2731c28}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract datetime field class that defines its own \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field}{Duration\-Field}, which delegates back into this \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field}{Imprecise\-Date\-Time\-Field}. 
+
+This \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} is useful for defining Date\-Time\-Fields that are composed of imprecise durations. If both duration fields are precise, then a \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_date_time_field}{Precise\-Date\-Time\-Field} should be used instead. 
+
+When defining imprecise Date\-Time\-Fields where a matching \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field}{Duration\-Field} is already available, just extend \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field}{Base\-Date\-Time\-Field} directly so as not to create redundant \hyperlink{classorg_1_1joda_1_1time_1_1_duration_field}{Duration\-Field} instances. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field}{Imprecise\-Date\-Time\-Field} is thread-\/safe and immutable, and its subclasses must be as well.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_precise_date_time_field}{Precise\-Date\-Time\-Field} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_af69b95674fa550dbef13d0b78bb7c7a6}{\index{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}!Imprecise\-Date\-Time\-Field@{Imprecise\-Date\-Time\-Field}}
+\index{Imprecise\-Date\-Time\-Field@{Imprecise\-Date\-Time\-Field}!org::joda::time::field::ImpreciseDateTimeField@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}}
+\subsubsection[{Imprecise\-Date\-Time\-Field}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field.\-Imprecise\-Date\-Time\-Field (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field\-Type}}]{type, }
+\item[{long}]{unit\-Millis}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_af69b95674fa550dbef13d0b78bb7c7a6}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the field type \\
+\hline
+{\em unit\-Millis} & the average duration unit milliseconds \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a298039c9292cddbce5c5acd73eb56164}{\index{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}!add@{add}}
+\index{add@{add}!org::joda::time::field::ImpreciseDateTimeField@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field.\-add (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a298039c9292cddbce5c5acd73eb56164}
+Adds a value (which may be negative) to the instant value, overflowing into larger fields if necessary. 
+
+The value will be added to this field. If the value is too large to be added solely to this field, larger fields will increase as required. Smaller fields should be unaffected, except where the result would be an invalid value for a smaller field. In this case the smaller field is adjusted to be in range. 
+
+For example, in the I\-S\-O chronology\-:\par
+ 2000-\/08-\/20 add six months is 2001-\/02-\/20\par
+ 2000-\/08-\/20 add twenty months is 2002-\/04-\/20\par
+ 2000-\/08-\/20 add minus nine months is 1999-\/11-\/20\par
+ 2001-\/01-\/31 add one month is 2001-\/02-\/28\par
+ 2001-\/01-\/31 add two months is 2001-\/03-\/31\par
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to add to \\
+\hline
+{\em value} & the value to add, in the units of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated milliseconds 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a45cd5fea81f2bc65735921f95052069b}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_aabe3534cc29e991fdb055a7bf19473a2}{\index{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}!add@{add}}
+\index{add@{add}!org::joda::time::field::ImpreciseDateTimeField@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field.\-add (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{long}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_aabe3534cc29e991fdb055a7bf19473a2}
+Adds a value (which may be negative) to the instant value, overflowing into larger fields if necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to add to \\
+\hline
+{\em value} & the long value to add, in the units of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated milliseconds 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if value is too large \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a298039c9292cddbce5c5acd73eb56164}{add(long,int)} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a6f45aa2157f580c29f0ec7e5d529c952}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_ab9b45f89dd2abe6df0e28178810d0134}{\index{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}!get@{get}}
+\index{get@{get}!org::joda::time::field::ImpreciseDateTimeField@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}abstract int org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field.\-get (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_ab9b45f89dd2abe6df0e28178810d0134}
+Get the value of this field from the milliseconds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the field, in the units of the field 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_abf5b59083b265cd3031cc5e6fed8419e}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a8e135d7d290c1ecb0e3c907ef410c260}{\index{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}!get\-Difference@{get\-Difference}}
+\index{get\-Difference@{get\-Difference}!org::joda::time::field::ImpreciseDateTimeField@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}}
+\subsubsection[{get\-Difference}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field.\-get\-Difference (
+\begin{DoxyParamCaption}
+\item[{long}]{minuend\-Instant, }
+\item[{long}]{subtrahend\-Instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a8e135d7d290c1ecb0e3c907ef410c260}
+Computes the difference between two instants, as measured in the units of this field. Any fractional units are dropped from the result. Calling get\-Difference reverses the effect of calling add. In the following code\-:
+
+
+\begin{DoxyPre}
+long instant = ...
+int v = ...
+int age = getDifference(add(instant, v), instant);
+\end{DoxyPre}
+
+
+The value 'age' is the same as the value 'v'. 
+
+The default implementation call get\-Difference\-As\-Long and converts the return value to an int.
+
+
+\begin{DoxyParams}{Parameters}
+{\em minuend\-Instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract from \\
+\hline
+{\em subtrahend\-Instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract off the minuend \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the difference in the units of this field 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a2cbaf43580ad7e1a176d28ae3f5e8ca3}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_acd79dbc9bda61722c9612c89fcac2781}{\index{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}!get\-Difference\-As\-Long@{get\-Difference\-As\-Long}}
+\index{get\-Difference\-As\-Long@{get\-Difference\-As\-Long}!org::joda::time::field::ImpreciseDateTimeField@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}}
+\subsubsection[{get\-Difference\-As\-Long}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field.\-get\-Difference\-As\-Long (
+\begin{DoxyParamCaption}
+\item[{long}]{minuend\-Instant, }
+\item[{long}]{subtrahend\-Instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_acd79dbc9bda61722c9612c89fcac2781}
+Computes the difference between two instants, as measured in the units of this field. Any fractional units are dropped from the result. Calling get\-Difference reverses the effect of calling add. In the following code\-:
+
+
+\begin{DoxyPre}
+long instant = ...
+long v = ...
+long age = getDifferenceAsLong(add(instant, v), instant);
+\end{DoxyPre}
+
+
+The value 'age' is the same as the value 'v'. 
+
+The default implementation performs a guess-\/and-\/check algorithm using \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_abcde69fb4106ac0fa7d9a25794877a24}{get\-Duration\-Field()}.get\-Unit\-Millis() and the \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a298039c9292cddbce5c5acd73eb56164}{add()} method. Subclasses are encouraged to provide a more efficient implementation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em minuend\-Instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract from \\
+\hline
+{\em subtrahend\-Instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to subtract off the minuend \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the difference in the units of this field 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a9e94d93aa8379eef0cfc5887fbef05db}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_abcde69fb4106ac0fa7d9a25794877a24}{\index{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}!get\-Duration\-Field@{get\-Duration\-Field}}
+\index{get\-Duration\-Field@{get\-Duration\-Field}!org::joda::time::field::ImpreciseDateTimeField@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}}
+\subsubsection[{get\-Duration\-Field}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Duration\-Field} org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field.\-get\-Duration\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_abcde69fb4106ac0fa7d9a25794877a24}
+Returns the duration per unit value of this field. For example, if this field represents \char`\"{}hour of day\char`\"{}, then the unit duration is an hour.
+
+\begin{DoxyReturn}{Returns}
+the duration of this field, or \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_unsupported_duration_field}{Unsupported\-Duration\-Field} if field has no duration 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_aa7354981ac68fbceeef46a348e6797b0}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a4fbf563d91df852383407e5cf8beeef6}{\index{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}!get\-Range\-Duration\-Field@{get\-Range\-Duration\-Field}}
+\index{get\-Range\-Duration\-Field@{get\-Range\-Duration\-Field}!org::joda::time::field::ImpreciseDateTimeField@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}}
+\subsubsection[{get\-Range\-Duration\-Field}]{\setlength{\rightskip}{0pt plus 5cm}abstract {\bf Duration\-Field} org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field.\-get\-Range\-Duration\-Field (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a4fbf563d91df852383407e5cf8beeef6}
+Returns the range duration of this field. For example, if this field represents \char`\"{}hour of day\char`\"{}, then the range duration is a day.
+
+\begin{DoxyReturn}{Returns}
+the range duration of this field, or null if field has no range 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a915525b6aa6fe15d6cedf91e530bc836}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a003f001fe5680f4a5f4cb2c61d4ad6d7}{\index{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}!round\-Floor@{round\-Floor}}
+\index{round\-Floor@{round\-Floor}!org::joda::time::field::ImpreciseDateTimeField@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}}
+\subsubsection[{round\-Floor}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field.\-round\-Floor (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_a003f001fe5680f4a5f4cb2c61d4ad6d7}
+Round to the lowest whole unit of this field. After rounding, the value of this field and all fields of a higher magnitude are retained. The fractional millis that cannot be expressed in whole increments of this field are set to minimum. 
+
+For example, a datetime of 2002-\/11-\/02\-T23\-:34\-:56.\-789, rounded to the lowest whole hour is 2002-\/11-\/02\-T23\-:00\-:00.\-000.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to round \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+rounded milliseconds 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_a4708ea912777d8dc5e9c6a8eaef33473}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_afbe1ae74dab8eb83f46b9c715742cb82}{\index{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}!set@{set}}
+\index{set@{set}!org::joda::time::field::ImpreciseDateTimeField@{org\-::joda\-::time\-::field\-::\-Imprecise\-Date\-Time\-Field}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-field.\-Imprecise\-Date\-Time\-Field.\-set (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_imprecise_date_time_field_afbe1ae74dab8eb83f46b9c715742cb82}
+Sets a value in the milliseconds supplied. 
+
+The value of this field will be set. If the value is invalid, an exception if thrown. 
+
+If setting this field would make other fields invalid, then those fields may be changed. For example if the current date is the 31st January, and the month is set to February, the day would be invalid. Instead, the day would be changed to the closest value -\/ the 28th/29th February as appropriate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to set in \\
+\hline
+{\em value} & the value to set, in the units of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated milliseconds 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the value is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_base_date_time_field_ace20661fb97d7f15a921bcc8999aa1fc}{org.\-joda.\-time.\-field.\-Base\-Date\-Time\-Field}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/field/Imprecise\-Date\-Time\-Field.\-java\end{DoxyCompactItemize}

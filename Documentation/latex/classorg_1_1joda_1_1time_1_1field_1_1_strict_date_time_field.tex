@@ -1,0 +1,95 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field}{\section{org.\-joda.\-time.\-field.\-Strict\-Date\-Time\-Field Class Reference}
+\label{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field}\index{org.\-joda.\-time.\-field.\-Strict\-Date\-Time\-Field@{org.\-joda.\-time.\-field.\-Strict\-Date\-Time\-Field}}
+}
+Inheritance diagram for org.\-joda.\-time.\-field.\-Strict\-Date\-Time\-Field\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+final boolean \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field_abd59665ef667c1465152eaaa60ccd8d4}{is\-Lenient} ()
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field_aa3b06664937c7804feb504305b9ae0e9}{set} (long instant, int value)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field_ad1ed62681c09ab01f59d4121f3d885bc}{get\-Instance} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} field)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field_a9d504aa9b668ee5ea2af318afab0fc09}{{\bfseries Strict\-Date\-Time\-Field} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} field)}\label{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field_a9d504aa9b668ee5ea2af318afab0fc09}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Converts a lenient \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} into a strict one. By being strict, the set throws an Illegal\-Argument\-Exception if the value is out of bounds. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field}{Strict\-Date\-Time\-Field} is thread-\/safe and immutable.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology}{org.\-joda.\-time.\-chrono.\-Strict\-Chronology} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_lenient_date_time_field}{Lenient\-Date\-Time\-Field} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field_ad1ed62681c09ab01f59d4121f3d885bc}{\index{org\-::joda\-::time\-::field\-::\-Strict\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Strict\-Date\-Time\-Field}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!org::joda::time::field::StrictDateTimeField@{org\-::joda\-::time\-::field\-::\-Strict\-Date\-Time\-Field}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Field} org.\-joda.\-time.\-field.\-Strict\-Date\-Time\-Field.\-get\-Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field}}]{field}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field_ad1ed62681c09ab01f59d4121f3d885bc}
+Returns a strict version of the given field. If it is already strict, then it is returned as-\/is. Otherwise, a new \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field}{Strict\-Date\-Time\-Field} is returned. \hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field_abd59665ef667c1465152eaaa60ccd8d4}{\index{org\-::joda\-::time\-::field\-::\-Strict\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Strict\-Date\-Time\-Field}!is\-Lenient@{is\-Lenient}}
+\index{is\-Lenient@{is\-Lenient}!org::joda::time::field::StrictDateTimeField@{org\-::joda\-::time\-::field\-::\-Strict\-Date\-Time\-Field}}
+\subsubsection[{is\-Lenient}]{\setlength{\rightskip}{0pt plus 5cm}final boolean org.\-joda.\-time.\-field.\-Strict\-Date\-Time\-Field.\-is\-Lenient (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field_abd59665ef667c1465152eaaa60ccd8d4}
+Returns true if the set method is lenient. If so, it accepts values that are out of bounds. For example, a lenient day of month field accepts 32 for January, converting it to February 1.
+
+\begin{DoxyReturn}{Returns}
+true if this field is lenient 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_date_time_field_abaf654f32bd4db1730dfcd4351cb2d4b}{org.\-joda.\-time.\-field.\-Delegated\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field_aa3b06664937c7804feb504305b9ae0e9}{\index{org\-::joda\-::time\-::field\-::\-Strict\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Strict\-Date\-Time\-Field}!set@{set}}
+\index{set@{set}!org::joda::time::field::StrictDateTimeField@{org\-::joda\-::time\-::field\-::\-Strict\-Date\-Time\-Field}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Strict\-Date\-Time\-Field.\-set (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_strict_date_time_field_aa3b06664937c7804feb504305b9ae0e9}
+Does a bounds check before setting the value.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the value is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_date_time_field_ac8c71ae2bf565cc8ebcf71ddd4b4053f}{org.\-joda.\-time.\-field.\-Delegated\-Date\-Time\-Field}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/field/Strict\-Date\-Time\-Field.\-java\end{DoxyCompactItemize}

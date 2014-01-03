@@ -1,0 +1,214 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone}{\section{org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone Class Reference}
+\label{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone}\index{org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone@{org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone}}
+}
+Inheritance diagram for org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_abb19ee1aa9bf4b405337333bba6a2338}{get\-Uncached\-Zone} ()
+\item 
+String \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_ab5c76ee0f8554fb67c865894712091f4}{get\-Name\-Key} (long instant)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a747f6f9f8f5d60d0d638f7c762c33a48}{get\-Offset} (long instant)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_aa04f6b0911bd785681face8b3a0a7d16}{get\-Standard\-Offset} (long instant)
+\item 
+boolean \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a245cefd729431e2ada62e1565048c948}{is\-Fixed} ()
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a615c1933c9395819432703636b5eeeab}{next\-Transition} (long instant)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a799cabf6a90a81a8e7da2f58b98411d3}{previous\-Transition} (long instant)
+\item 
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a416af980dc94ca7cf63dbfa14bf80148}{int {\bfseries hash\-Code} ()}\label{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a416af980dc94ca7cf63dbfa14bf80148}
+
+\item 
+boolean \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a0e61ee966eb500f2f61eeeef32f8b47c}{equals} (Object obj)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone}{Cached\-Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_ae1a2b19b020e51bbb773b2c8107d732e}{for\-Zone} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Improves the performance of requesting time zone offsets and name keys by caching the results. Time zones that have simple rules or are fixed should not be cached, as it is unlikely to improve performance. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone}{Cached\-Date\-Time\-Zone} is thread-\/safe and immutable.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a0e61ee966eb500f2f61eeeef32f8b47c}{\index{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}!equals@{equals}}
+\index{equals@{equals}!org::joda::time::tz::CachedDateTimeZone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone.\-equals (
+\begin{DoxyParamCaption}
+\item[{Object}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a0e61ee966eb500f2f61eeeef32f8b47c}
+Compare this datetime zone with another.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if equal, based on the I\-D and all internal rules 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a6288bd96e3114aa213cc9c5fe63e9925}{org.\-joda.\-time.\-Date\-Time\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_ae1a2b19b020e51bbb773b2c8107d732e}{\index{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}!for\-Zone@{for\-Zone}}
+\index{for\-Zone@{for\-Zone}!org::joda::time::tz::CachedDateTimeZone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}}
+\subsubsection[{for\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Cached\-Date\-Time\-Zone} org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone.\-for\-Zone (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{zone}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_ae1a2b19b020e51bbb773b2c8107d732e}
+Returns a new \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone}{Cached\-Date\-Time\-Zone} unless given zone is already cached. \hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_ab5c76ee0f8554fb67c865894712091f4}{\index{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}!get\-Name\-Key@{get\-Name\-Key}}
+\index{get\-Name\-Key@{get\-Name\-Key}!org::joda::time::tz::CachedDateTimeZone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}}
+\subsubsection[{get\-Name\-Key}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone.\-get\-Name\-Key (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_ab5c76ee0f8554fb67c865894712091f4}
+Returns a non-\/localized name that is unique to this time zone. It can be combined with id to form a unique key for fetching localized names.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to get the name for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+name key or null if id should be used for names 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_ac519976d0eb06b2dc03e5f3ca1a61ea5}{org.\-joda.\-time.\-Date\-Time\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a747f6f9f8f5d60d0d638f7c762c33a48}{\index{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}!get\-Offset@{get\-Offset}}
+\index{get\-Offset@{get\-Offset}!org::joda::time::tz::CachedDateTimeZone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}}
+\subsubsection[{get\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone.\-get\-Offset (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a747f6f9f8f5d60d0d638f7c762c33a48}
+Gets the millisecond offset to add to U\-T\-C to get local time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to get the offset for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the millisecond offset to add to U\-T\-C to get local time 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a830444f420d1dede0e1f1db4c5222a8d}{org.\-joda.\-time.\-Date\-Time\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_aa04f6b0911bd785681face8b3a0a7d16}{\index{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}!get\-Standard\-Offset@{get\-Standard\-Offset}}
+\index{get\-Standard\-Offset@{get\-Standard\-Offset}!org::joda::time::tz::CachedDateTimeZone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}}
+\subsubsection[{get\-Standard\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone.\-get\-Standard\-Offset (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_aa04f6b0911bd785681face8b3a0a7d16}
+Gets the standard millisecond offset to add to U\-T\-C to get local time, when standard time is in effect.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to get the offset for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the millisecond offset to add to U\-T\-C to get local time 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a431df3f6d98a6e5842a30afe738e584b}{org.\-joda.\-time.\-Date\-Time\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_abb19ee1aa9bf4b405337333bba6a2338}{\index{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}!get\-Uncached\-Zone@{get\-Uncached\-Zone}}
+\index{get\-Uncached\-Zone@{get\-Uncached\-Zone}!org::joda::time::tz::CachedDateTimeZone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}}
+\subsubsection[{get\-Uncached\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time\-Zone} org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone.\-get\-Uncached\-Zone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_abb19ee1aa9bf4b405337333bba6a2338}
+Returns the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} being wrapped. \hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a245cefd729431e2ada62e1565048c948}{\index{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}!is\-Fixed@{is\-Fixed}}
+\index{is\-Fixed@{is\-Fixed}!org::joda::time::tz::CachedDateTimeZone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}}
+\subsubsection[{is\-Fixed}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone.\-is\-Fixed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a245cefd729431e2ada62e1565048c948}
+Returns true if this time zone has no transitions.
+
+\begin{DoxyReturn}{Returns}
+true if no transitions 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a35123b8c29580ae7f5053f02e64c991c}{org.\-joda.\-time.\-Date\-Time\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a615c1933c9395819432703636b5eeeab}{\index{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}!next\-Transition@{next\-Transition}}
+\index{next\-Transition@{next\-Transition}!org::joda::time::tz::CachedDateTimeZone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}}
+\subsubsection[{next\-Transition}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone.\-next\-Transition (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a615c1933c9395819432703636b5eeeab}
+Advances the given instant to where the time zone offset or name changes. If the instant returned is exactly the same as passed in, then no changes occur after the given instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_ae251b0063d7a4359f7416d83a1ac39af}{org.\-joda.\-time.\-Date\-Time\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a799cabf6a90a81a8e7da2f58b98411d3}{\index{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}!previous\-Transition@{previous\-Transition}}
+\index{previous\-Transition@{previous\-Transition}!org::joda::time::tz::CachedDateTimeZone@{org\-::joda\-::time\-::tz\-::\-Cached\-Date\-Time\-Zone}}
+\subsubsection[{previous\-Transition}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone.\-previous\-Transition (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a799cabf6a90a81a8e7da2f58b98411d3}
+Retreats the given instant to where the time zone offset or name changes. If the instant returned is exactly the same as passed in, then no changes occur before the given instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_abdb3c6d6191fdd441248a7ea8ca302d0}{org.\-joda.\-time.\-Date\-Time\-Zone}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/tz/Cached\-Date\-Time\-Zone.\-java\end{DoxyCompactItemize}

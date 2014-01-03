@@ -1,0 +1,90 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler}{\section{org.\-joda.\-time.\-tz.\-Zone\-Info\-Compiler Class Reference}
+\label{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler}\index{org.\-joda.\-time.\-tz.\-Zone\-Info\-Compiler@{org.\-joda.\-time.\-tz.\-Zone\-Info\-Compiler}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Date\-Time\-Of\-Year}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Map$<$ String, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} $>$ \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler_aa4328ffdef75e7002382ed8a4629b5e2}{compile} (File output\-Dir, File\mbox{[}$\,$\mbox{]} sources)  throws I\-O\-Exception 
+\item 
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler_a0284478a9fdd239fbe9275be4c432d41}{void {\bfseries parse\-Data\-File} (Buffered\-Reader in)  throws I\-O\-Exception }\label{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler_a0284478a9fdd239fbe9275be4c432d41}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler_a3c3a72aac0953d54be4bf1e948f26178}{verbose} ()
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler_abcf4f4cd16e6365e84c9225f7aa230c2}{main} (String\mbox{[}$\,$\mbox{]} args)  throws Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Compiles Olson Zone\-Info database files into binary files for each time zone in the database. \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_date_time_zone_builder}{Date\-Time\-Zone\-Builder} is used to construct and encode compiled data files. \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_provider}{Zone\-Info\-Provider} loads the encoded files and converts them back into \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} objects. 
+
+Although this tool is similar to zic, the binary formats are not compatible. The latest Olson database files may be obtained \href{http://www.twinsun.com/tz/tz-link.htm}{\tt here}. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler}{Zone\-Info\-Compiler} is mutable and not thread-\/safe, although the main method may be safely invoked by multiple threads.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler_aa4328ffdef75e7002382ed8a4629b5e2}{\index{org\-::joda\-::time\-::tz\-::\-Zone\-Info\-Compiler@{org\-::joda\-::time\-::tz\-::\-Zone\-Info\-Compiler}!compile@{compile}}
+\index{compile@{compile}!org::joda::time::tz::ZoneInfoCompiler@{org\-::joda\-::time\-::tz\-::\-Zone\-Info\-Compiler}}
+\subsubsection[{compile}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, {\bf Date\-Time\-Zone}$>$ org.\-joda.\-time.\-tz.\-Zone\-Info\-Compiler.\-compile (
+\begin{DoxyParamCaption}
+\item[{File}]{output\-Dir, }
+\item[{File\mbox{[}$\,$\mbox{]}}]{sources}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception }}\label{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler_aa4328ffdef75e7002382ed8a4629b5e2}
+Returns a map of ids to Date\-Time\-Zones.
+
+
+\begin{DoxyParams}{Parameters}
+{\em output\-Dir} & optional directory to write compiled data files to \\
+\hline
+{\em sources} & optional list of source files to parse \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler_abcf4f4cd16e6365e84c9225f7aa230c2}{\index{org\-::joda\-::time\-::tz\-::\-Zone\-Info\-Compiler@{org\-::joda\-::time\-::tz\-::\-Zone\-Info\-Compiler}!main@{main}}
+\index{main@{main}!org::joda::time::tz::ZoneInfoCompiler@{org\-::joda\-::time\-::tz\-::\-Zone\-Info\-Compiler}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-tz.\-Zone\-Info\-Compiler.\-main (
+\begin{DoxyParamCaption}
+\item[{String\mbox{[}$\,$\mbox{]}}]{args}
+\end{DoxyParamCaption}
+)  throws Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler_abcf4f4cd16e6365e84c9225f7aa230c2}
+Launches the \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler}{Zone\-Info\-Compiler} tool.
+
+
+\begin{DoxyPre}
+Usage: java \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler}{org.joda.time.tz.ZoneInfoCompiler} <options> <source files>
+where possible options include:
+  -src <directory>    Specify where to read source files
+  -dst <directory>    Specify where to write generated files
+  -verbose            Output verbosely (default false)
+\end{DoxyPre}
+ \hypertarget{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler_a3c3a72aac0953d54be4bf1e948f26178}{\index{org\-::joda\-::time\-::tz\-::\-Zone\-Info\-Compiler@{org\-::joda\-::time\-::tz\-::\-Zone\-Info\-Compiler}!verbose@{verbose}}
+\index{verbose@{verbose}!org::joda::time::tz::ZoneInfoCompiler@{org\-::joda\-::time\-::tz\-::\-Zone\-Info\-Compiler}}
+\subsubsection[{verbose}]{\setlength{\rightskip}{0pt plus 5cm}static boolean org.\-joda.\-time.\-tz.\-Zone\-Info\-Compiler.\-verbose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1tz_1_1_zone_info_compiler_a3c3a72aac0953d54be4bf1e948f26178}
+Gets a flag indicating that verbose logging is required. \begin{DoxyReturn}{Returns}
+true to log verbosely 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/tz/Zone\-Info\-Compiler.\-java\end{DoxyCompactItemize}

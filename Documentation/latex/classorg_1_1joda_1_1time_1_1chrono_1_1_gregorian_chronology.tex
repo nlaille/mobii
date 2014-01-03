@@ -1,0 +1,180 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology}{\section{org.\-joda.\-time.\-chrono.\-Gregorian\-Chronology Class Reference}
+\label{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology}\index{org.\-joda.\-time.\-chrono.\-Gregorian\-Chronology@{org.\-joda.\-time.\-chrono.\-Gregorian\-Chronology}}
+}
+
+
+Inherits org.\-joda.\-time.\-chrono.\-Basic\-G\-J\-Chronology.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a2efd6649353e4b99d85b4c091dcf3915}{with\-U\-T\-C} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a27c4655f880e7ee0076fe3a76500bdf3}{with\-Zone} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology}{Gregorian\-Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a9d9ec388de82889ebd6cabeb99f6ae62}{get\-Instance\-U\-T\-C} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology}{Gregorian\-Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a55a8d443f693480116ee97c51ca93829}{get\-Instance} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology}{Gregorian\-Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a612b71106a75432b61f4661b9d262b57}{get\-Instance} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone)
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology}{Gregorian\-Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a2dd84fcc2762f1201ab606a09400b191}{get\-Instance} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone, int min\-Days\-In\-First\-Week)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a45b1e30863e8424561cff1df40134dd6}{assemble} (Fields fields)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements a pure proleptic Gregorian calendar system, which defines every fourth year as leap, unless the year is divisible by 100 and not by 400. This improves upon the Julian calendar leap year rule. 
+
+Although the Gregorian calendar did not exist before 1582 C\-E, this chronology assumes it did, thus it is proleptic. This implementation also fixes the start of the year at January 1, and defines the year zero. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology}{Gregorian\-Chronology} is thread-\/safe and immutable.
+
+\begin{DoxySeeAlso}{See Also}
+\href{http://en.wikipedia.org/wiki/Gregorian_calendar}{\tt Wikipedia} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_julian_chronology}{Julian\-Chronology} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_g_j_chronology}{G\-J\-Chronology}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Guy Allard 
+
+Stephen Colebourne 
+
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a45b1e30863e8424561cff1df40134dd6}{\index{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}!assemble@{assemble}}
+\index{assemble@{assemble}!org::joda::time::chrono::GregorianChronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}}
+\subsubsection[{assemble}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-chrono.\-Gregorian\-Chronology.\-assemble (
+\begin{DoxyParamCaption}
+\item[{Fields}]{fields}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a45b1e30863e8424561cff1df40134dd6}
+Invoked by the constructor and after deserialization to allow subclasses to define all of its supported fields. All unset fields default to unsupported instances.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fields} & container of fields \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_assembled_chronology_a28011ddeb628fa98ee4ccc61be85094f}{org.\-joda.\-time.\-chrono.\-Assembled\-Chronology}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a55a8d443f693480116ee97c51ca93829}{\index{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!org::joda::time::chrono::GregorianChronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Gregorian\-Chronology} org.\-joda.\-time.\-chrono.\-Gregorian\-Chronology.\-get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a55a8d443f693480116ee97c51ca93829}
+Gets an instance of the \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology}{Gregorian\-Chronology} in the default time zone.
+
+\begin{DoxyReturn}{Returns}
+a chronology in the default time zone 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a612b71106a75432b61f4661b9d262b57}{\index{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!org::joda::time::chrono::GregorianChronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Gregorian\-Chronology} org.\-joda.\-time.\-chrono.\-Gregorian\-Chronology.\-get\-Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{zone}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a612b71106a75432b61f4661b9d262b57}
+Gets an instance of the \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology}{Gregorian\-Chronology} in the given time zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone} & the time zone to get the chronology in, null is default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a chronology in the specified time zone 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a2dd84fcc2762f1201ab606a09400b191}{\index{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!org::joda::time::chrono::GregorianChronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Gregorian\-Chronology} org.\-joda.\-time.\-chrono.\-Gregorian\-Chronology.\-get\-Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{zone, }
+\item[{int}]{min\-Days\-In\-First\-Week}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a2dd84fcc2762f1201ab606a09400b191}
+Gets an instance of the \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology}{Gregorian\-Chronology} in the given time zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone} & the time zone to get the chronology in, null is default \\
+\hline
+{\em min\-Days\-In\-First\-Week} & minimum number of days in first week of the year; default is 4 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a chronology in the specified time zone 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a9d9ec388de82889ebd6cabeb99f6ae62}{\index{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}!get\-Instance\-U\-T\-C@{get\-Instance\-U\-T\-C}}
+\index{get\-Instance\-U\-T\-C@{get\-Instance\-U\-T\-C}!org::joda::time::chrono::GregorianChronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}}
+\subsubsection[{get\-Instance\-U\-T\-C}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Gregorian\-Chronology} org.\-joda.\-time.\-chrono.\-Gregorian\-Chronology.\-get\-Instance\-U\-T\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a9d9ec388de82889ebd6cabeb99f6ae62}
+Gets an instance of the \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology}{Gregorian\-Chronology}. The time zone of the returned instance is U\-T\-C.
+
+\begin{DoxyReturn}{Returns}
+a singleton U\-T\-C instance of the chronology 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a2efd6649353e4b99d85b4c091dcf3915}{\index{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}!with\-U\-T\-C@{with\-U\-T\-C}}
+\index{with\-U\-T\-C@{with\-U\-T\-C}!org::joda::time::chrono::GregorianChronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}}
+\subsubsection[{with\-U\-T\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chronology} org.\-joda.\-time.\-chrono.\-Gregorian\-Chronology.\-with\-U\-T\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a2efd6649353e4b99d85b4c091dcf3915}
+Gets the \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} in the U\-T\-C time zone.
+
+\begin{DoxyReturn}{Returns}
+the chronology in U\-T\-C 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_base_chronology_a839fd4261bb4f4cfcb1eb56dcebbec70}{org.\-joda.\-time.\-chrono.\-Base\-Chronology}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a27c4655f880e7ee0076fe3a76500bdf3}{\index{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}!with\-Zone@{with\-Zone}}
+\index{with\-Zone@{with\-Zone}!org::joda::time::chrono::GregorianChronology@{org\-::joda\-::time\-::chrono\-::\-Gregorian\-Chronology}}
+\subsubsection[{with\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chronology} org.\-joda.\-time.\-chrono.\-Gregorian\-Chronology.\-with\-Zone (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{zone}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_gregorian_chronology_a27c4655f880e7ee0076fe3a76500bdf3}
+Gets the \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} in a specific time zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone} & the zone to get the chronology in, null is default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the chronology 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_base_chronology_a63d48bcfe7b36b349c8afb8289b94b0b}{org.\-joda.\-time.\-chrono.\-Base\-Chronology}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/chrono/Gregorian\-Chronology.\-java\end{DoxyCompactItemize}

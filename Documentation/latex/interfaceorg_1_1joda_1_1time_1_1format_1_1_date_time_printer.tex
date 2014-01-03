@@ -1,0 +1,171 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer}{\section{org.\-joda.\-time.\-format.\-Date\-Time\-Printer Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer}\index{org.\-joda.\-time.\-format.\-Date\-Time\-Printer@{org.\-joda.\-time.\-format.\-Date\-Time\-Printer}}
+}
+
+
+Inherited by org.\-joda.\-time.\-format.\-Date\-Time\-Format.\-Style\-Formatter, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Character\-Literal, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Composite, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Fraction, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Number\-Formatter, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-String\-Literal, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Text\-Field, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Time\-Zone\-Id, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Time\-Zone\-Name, org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Time\-Zone\-Offset, and org.\-joda.\-time.\-format.\-Date\-Time\-Formatter\-Builder.\-Two\-Digit\-Year.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_a624b487d64a49f23967edf978c52c007}{estimate\-Printed\-Length} ()
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_a32d0ed2c6241fb4c8c18b3907a8cc537}{print\-To} (String\-Buffer buf, long instant, \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chrono, int display\-Offset, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} display\-Zone, Locale locale)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_abc26233d437d64fce59ffb065b374d3c}{print\-To} (Writer out, long instant, \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chrono, int display\-Offset, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} display\-Zone, Locale locale)  throws I\-O\-Exception
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_a1ec61fe305eff6cea266e0f22a947d1a}{print\-To} (String\-Buffer buf, \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial}{Readable\-Partial} partial, Locale locale)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_a2d90a20cb033d305f2de5c99466d08a4}{print\-To} (Writer out, \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial}{Readable\-Partial} partial, Locale locale)  throws I\-O\-Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Internal interface for creating textual representations of datetimes. 
+
+Application users will rarely use this class directly. Instead, you will use one of the factory classes to create a \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_formatter}{Date\-Time\-Formatter}. 
+
+The factory classes are\-:\par
+
+\begin{DoxyItemize}
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_formatter_builder}{Date\-Time\-Formatter\-Builder}\par
+
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_format}{Date\-Time\-Format}\par
+
+\item \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_i_s_o_date_time_format}{I\-S\-O\-Date\-Time\-Format}\par
+
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_formatter_builder}{Date\-Time\-Formatter\-Builder} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_format}{Date\-Time\-Format} 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_i_s_o_date_time_format}{I\-S\-O\-Date\-Time\-Format} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_a624b487d64a49f23967edf978c52c007}{\index{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer}!estimate\-Printed\-Length@{estimate\-Printed\-Length}}
+\index{estimate\-Printed\-Length@{estimate\-Printed\-Length}!org::joda::time::format::DateTimePrinter@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer}}
+\subsubsection[{estimate\-Printed\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-format.\-Date\-Time\-Printer.\-estimate\-Printed\-Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_a624b487d64a49f23967edf978c52c007}
+Returns the expected maximum number of characters produced. The actual amount should rarely exceed this estimate.
+
+\begin{DoxyReturn}{Returns}
+the estimated length 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_a32d0ed2c6241fb4c8c18b3907a8cc537}{\index{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer}!print\-To@{print\-To}}
+\index{print\-To@{print\-To}!org::joda::time::format::DateTimePrinter@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer}}
+\subsubsection[{print\-To}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-format.\-Date\-Time\-Printer.\-print\-To (
+\begin{DoxyParamCaption}
+\item[{String\-Buffer}]{buf, }
+\item[{long}]{instant, }
+\item[{{\bf Chronology}}]{chrono, }
+\item[{int}]{display\-Offset, }
+\item[{{\bf Date\-Time\-Zone}}]{display\-Zone, }
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_a32d0ed2c6241fb4c8c18b3907a8cc537}
+Prints an instant from milliseconds since 1970-\/01-\/01\-T00\-:00\-:00\-Z, using the given \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & formatted instant is appended to this buffer, not null \\
+\hline
+{\em instant} & millis since 1970-\/01-\/01\-T00\-:00\-:00\-Z \\
+\hline
+{\em chrono} & the chronology to use, not null \\
+\hline
+{\em display\-Offset} & if a time zone offset is printed, force it to use this millisecond value \\
+\hline
+{\em display\-Zone} & the time zone to use, null means local time \\
+\hline
+{\em locale} & the locale to use, null means default locale \\
+\hline
+\end{DoxyParams}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_abc26233d437d64fce59ffb065b374d3c}{\index{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer}!print\-To@{print\-To}}
+\index{print\-To@{print\-To}!org::joda::time::format::DateTimePrinter@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer}}
+\subsubsection[{print\-To}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-format.\-Date\-Time\-Printer.\-print\-To (
+\begin{DoxyParamCaption}
+\item[{Writer}]{out, }
+\item[{long}]{instant, }
+\item[{{\bf Chronology}}]{chrono, }
+\item[{int}]{display\-Offset, }
+\item[{{\bf Date\-Time\-Zone}}]{display\-Zone, }
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception}}\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_abc26233d437d64fce59ffb065b374d3c}
+Prints an instant from milliseconds since 1970-\/01-\/01\-T00\-:00\-:00\-Z, using the given \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & formatted instant is written out \\
+\hline
+{\em instant} & millis since 1970-\/01-\/01\-T00\-:00\-:00\-Z \\
+\hline
+{\em chrono} & the chronology to use, not null \\
+\hline
+{\em display\-Offset} & if a time zone offset is printed, force it to use this millisecond value \\
+\hline
+{\em display\-Zone} & the time zone to use, null means local time \\
+\hline
+{\em locale} & the locale to use, null means default locale \\
+\hline
+\end{DoxyParams}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_a1ec61fe305eff6cea266e0f22a947d1a}{\index{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer}!print\-To@{print\-To}}
+\index{print\-To@{print\-To}!org::joda::time::format::DateTimePrinter@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer}}
+\subsubsection[{print\-To}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-format.\-Date\-Time\-Printer.\-print\-To (
+\begin{DoxyParamCaption}
+\item[{String\-Buffer}]{buf, }
+\item[{{\bf Readable\-Partial}}]{partial, }
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_a1ec61fe305eff6cea266e0f22a947d1a}
+Prints a \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial}{Readable\-Partial}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buf} & formatted partial is appended to this buffer, not null \\
+\hline
+{\em partial} & partial to format, not null \\
+\hline
+{\em locale} & the locale to use, null means default locale \\
+\hline
+\end{DoxyParams}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_a2d90a20cb033d305f2de5c99466d08a4}{\index{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer}!print\-To@{print\-To}}
+\index{print\-To@{print\-To}!org::joda::time::format::DateTimePrinter@{org\-::joda\-::time\-::format\-::\-Date\-Time\-Printer}}
+\subsubsection[{print\-To}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-format.\-Date\-Time\-Printer.\-print\-To (
+\begin{DoxyParamCaption}
+\item[{Writer}]{out, }
+\item[{{\bf Readable\-Partial}}]{partial, }
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)  throws I\-O\-Exception}}\label{interfaceorg_1_1joda_1_1time_1_1format_1_1_date_time_printer_a2d90a20cb033d305f2de5c99466d08a4}
+Prints a \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial}{Readable\-Partial}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & formatted partial is written out, not null \\
+\hline
+{\em partial} & partial to format, not null \\
+\hline
+{\em locale} & the locale to use, null means default locale \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/format/Date\-Time\-Printer.\-java\end{DoxyCompactItemize}

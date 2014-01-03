@@ -1,0 +1,981 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone}{\section{org.\-joda.\-time.\-Date\-Time\-Zone Class Reference}
+\label{classorg_1_1joda_1_1time_1_1_date_time_zone}\index{org.\-joda.\-time.\-Date\-Time\-Zone@{org.\-joda.\-time.\-Date\-Time\-Zone}}
+}
+Inheritance diagram for org.\-joda.\-time.\-Date\-Time\-Zone\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.372881cm]{classorg_1_1joda_1_1time_1_1_date_time_zone}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+final String \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a05f55d974998b5867c22133306c479e7}{get\-I\-D} ()
+\item 
+abstract String \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_ac519976d0eb06b2dc03e5f3ca1a61ea5}{get\-Name\-Key} (long instant)
+\item 
+final String \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_ab11c3da06857c4e6a6882e00eb55bfad}{get\-Short\-Name} (long instant)
+\item 
+String \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_aa8482b2e9eff673a23c3e223f75527c1}{get\-Short\-Name} (long instant, Locale locale)
+\item 
+final String \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_ab7e69188d0e2860909433769f9aa8b5f}{get\-Name} (long instant)
+\item 
+String \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a9b00e7e5ba366a3127359a5308d182c8}{get\-Name} (long instant, Locale locale)
+\item 
+abstract int \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a830444f420d1dede0e1f1db4c5222a8d}{get\-Offset} (long instant)
+\item 
+final int \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_aeca3aafd4a057e7d67657fea7289d312}{get\-Offset} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} instant)
+\item 
+abstract int \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a431df3f6d98a6e5842a30afe738e584b}{get\-Standard\-Offset} (long instant)
+\item 
+boolean \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a86c6acf723ff21b317fb6dc3ca902818}{is\-Standard\-Offset} (long instant)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a1dfe5b4ed9216350bca38fa93f6a17f2}{get\-Offset\-From\-Local} (long instant\-Local)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a5bd57e8becea83962a40f59fdb04cd25}{convert\-U\-T\-C\-To\-Local} (long instant\-U\-T\-C)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a05612a2f8597919e61af4d20156ff140}{convert\-Local\-To\-U\-T\-C} (long instant\-Local, boolean strict, long original\-Instant\-U\-T\-C)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a022408d4815687e0cff23b8935c790ea}{convert\-Local\-To\-U\-T\-C} (long instant\-Local, boolean strict)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_ae884940a4cd3986cd66ec5b0531a8189}{get\-Millis\-Keep\-Local} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} new\-Zone, long old\-Instant)
+\item 
+boolean \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a69eb38f0d0e8d6803e594b50c5c9bd10}{is\-Local\-Date\-Time\-Gap} (\hyperlink{classorg_1_1joda_1_1time_1_1_local_date_time}{Local\-Date\-Time} local\-Date\-Time)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a6bb58fda5105ababa7f941d969cafd89}{adjust\-Offset} (long instant, boolean earlier\-Or\-Later)
+\item 
+abstract boolean \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a35123b8c29580ae7f5053f02e64c991c}{is\-Fixed} ()
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_ae251b0063d7a4359f7416d83a1ac39af}{next\-Transition} (long instant)
+\item 
+abstract long \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_abdb3c6d6191fdd441248a7ea8ca302d0}{previous\-Transition} (long instant)
+\item 
+java.\-util.\-Time\-Zone \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a18f46617dc51f706feb99dc35c68f069}{to\-Time\-Zone} ()
+\item 
+abstract boolean \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a6288bd96e3114aa213cc9c5fe63e9925}{equals} (Object object)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a8504ae94bffc634c5c5309554fd0cc9e}{hash\-Code} ()
+\item 
+String \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_accedad9b10c657cea86f89e1a9906218}{to\-String} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_ad40e9def47666b63e67414456b2d7e2e}{get\-Default} ()
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a320b4c76e8a4eaf8c399b2dff4cccd38}{set\-Default} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone)  throws Security\-Exception 
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_af5e08f59a41063611e2b4f75013167d1}{for\-I\-D} (String id)
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_ab4137f66d8869cdda3243b0a29697cb6}{for\-Offset\-Hours} (int hours\-Offset)  throws Illegal\-Argument\-Exception 
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a4b964cdac557624de0c1e3584f3217e3}{for\-Offset\-Hours\-Minutes} (int hours\-Offset, int minutes\-Offset)  throws Illegal\-Argument\-Exception 
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a98ca57323fc30a51a3b593ab7f646ae2}{for\-Offset\-Millis} (int millis\-Offset)
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a2177c7585e90eba3c90cae278b1a3cfd}{for\-Time\-Zone} (Time\-Zone zone)
+\item 
+static Set$<$ String $>$ \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a8a05b643eacaa76711e2dee68fe399a1}{get\-Available\-I\-Ds} ()
+\item 
+static \hyperlink{interfaceorg_1_1joda_1_1time_1_1tz_1_1_provider}{Provider} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a2220fa8b43d54c3c8b18461ed4707c94}{get\-Provider} ()
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a310b2d40644519125e034e52449b87cb}{set\-Provider} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1tz_1_1_provider}{Provider} provider)  throws Security\-Exception 
+\item 
+static \hyperlink{interfaceorg_1_1joda_1_1time_1_1tz_1_1_name_provider}{Name\-Provider} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a0cc05939c2e027c57c0be8fc040d4de2}{get\-Name\-Provider} ()
+\item 
+static void \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_ab6f1c22fcbfac14641c23c855cef5e77}{set\-Name\-Provider} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1tz_1_1_name_provider}{Name\-Provider} name\-Provider)  throws Security\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a0354972ef4cfccf4c7d87db7b80f3153}{U\-T\-C} = new \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_fixed_date_time_zone}{Fixed\-Date\-Time\-Zone}(\char`\"{}U\-T\-C\char`\"{}, \char`\"{}U\-T\-C\char`\"{}, 0, 0)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a54626c83ddcd8da023dceec088551919}{Date\-Time\-Zone} (String id)
+\item 
+Object \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a5f8e476a4f68a893c24b3ddd1b803d46}{write\-Replace} ()  throws Object\-Stream\-Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} represents a time zone. 
+
+A time zone is a system of rules to convert time from one geographic location to another. For example, Paris, France is one hour ahead of London, England. Thus when it is 10\-:00 in London, it is 11\-:00 in Paris. 
+
+All time zone rules are expressed, for historical reasons, relative to Greenwich, London. Local time in Greenwich is referred to as Greenwich Mean Time (G\-M\-T). This is similar, but not precisely identical, to Universal Coordinated Time, or U\-T\-C. This library only uses the term U\-T\-C. 
+
+Using this system, America/\-Los\-\_\-\-Angeles is expressed as U\-T\-C-\/08\-:00, or U\-T\-C-\/07\-:00 in the summer. The offset -\/08\-:00 indicates that America/\-Los\-\_\-\-Angeles time is obtained from U\-T\-C by adding -\/08\-:00, that is, by subtracting 8 hours. 
+
+The offset differs in the summer because of daylight saving time, or D\-S\-T. The following definitions of time are generally used\-: 
+\begin{DoxyItemize}
+\item U\-T\-C -\/ The reference time. 
+\item Standard Time -\/ The local time without a daylight saving time offset. For example, in Paris, standard time is U\-T\-C+01\-:00. 
+\item Daylight Saving Time -\/ The local time with a daylight saving time offset. This offset is typically one hour, but not always. It is typically used in most countries away from the equator. In Paris, daylight saving time is U\-T\-C+02\-:00. 
+\item Wall Time -\/ This is what a local clock on the wall reads. This will be either Standard Time or Daylight Saving Time depending on the time of year and whether the location uses Daylight Saving Time. 
+\end{DoxyItemize}
+
+Unlike the Java Time\-Zone class, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} is immutable. It also only supports long format time zone ids. Thus E\-S\-T and E\-C\-T are not accepted. However, the factory that accepts a Time\-Zone will attempt to convert from the old short id to a suitable long id. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} is thread-\/safe and immutable, and all subclasses must be as well.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a54626c83ddcd8da023dceec088551919}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!Date\-Time\-Zone@{Date\-Time\-Zone}}
+\index{Date\-Time\-Zone@{Date\-Time\-Zone}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{Date\-Time\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-Date\-Time\-Zone.\-Date\-Time\-Zone (
+\begin{DoxyParamCaption}
+\item[{String}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a54626c83ddcd8da023dceec088551919}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the id to use \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the id is null \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a6bb58fda5105ababa7f941d969cafd89}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!adjust\-Offset@{adjust\-Offset}}
+\index{adjust\-Offset@{adjust\-Offset}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{adjust\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-Date\-Time\-Zone.\-adjust\-Offset (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{boolean}]{earlier\-Or\-Later}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a6bb58fda5105ababa7f941d969cafd89}
+Adjusts the offset to be the earlier or later one during an overlap.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the instant to adjust \\
+\hline
+{\em earlier\-Or\-Later} & false for earlier, true for later \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the adjusted instant millis 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a05612a2f8597919e61af4d20156ff140}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!convert\-Local\-To\-U\-T\-C@{convert\-Local\-To\-U\-T\-C}}
+\index{convert\-Local\-To\-U\-T\-C@{convert\-Local\-To\-U\-T\-C}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{convert\-Local\-To\-U\-T\-C}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-Date\-Time\-Zone.\-convert\-Local\-To\-U\-T\-C (
+\begin{DoxyParamCaption}
+\item[{long}]{instant\-Local, }
+\item[{boolean}]{strict, }
+\item[{long}]{original\-Instant\-U\-T\-C}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a05612a2f8597919e61af4d20156ff140}
+Converts a local instant to a standard U\-T\-C instant with the same local time attempting to use the same offset as the original. 
+
+This conversion is used after performing a calculation where the calculation was done using a simple local zone. Whenever possible, the same offset as the original offset will be used. This is most significant during a daylight savings overlap.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant\-Local} & the local instant to convert to U\-T\-C \\
+\hline
+{\em strict} & whether the conversion should reject non-\/existent local times \\
+\hline
+{\em original\-Instant\-U\-T\-C} & the original instant that the calculation is based on \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the U\-T\-C instant with the same local time, 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the result overflows a long \\
+\hline
+{\em Illegal\-Argument\-Exception} & if the zone has no equivalent local time \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+2.\-0 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a022408d4815687e0cff23b8935c790ea}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!convert\-Local\-To\-U\-T\-C@{convert\-Local\-To\-U\-T\-C}}
+\index{convert\-Local\-To\-U\-T\-C@{convert\-Local\-To\-U\-T\-C}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{convert\-Local\-To\-U\-T\-C}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-Date\-Time\-Zone.\-convert\-Local\-To\-U\-T\-C (
+\begin{DoxyParamCaption}
+\item[{long}]{instant\-Local, }
+\item[{boolean}]{strict}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a022408d4815687e0cff23b8935c790ea}
+Converts a local instant to a standard U\-T\-C instant with the same local time. This conversion is used after performing a calculation where the calculation was done using a simple local zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant\-Local} & the local instant to convert to U\-T\-C \\
+\hline
+{\em strict} & whether the conversion should reject non-\/existent local times \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the U\-T\-C instant with the same local time, 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the result overflows a long \\
+\hline
+{\em \hyperlink{classorg_1_1joda_1_1time_1_1_illegal_instant_exception}{Illegal\-Instant\-Exception}} & if the zone has no equivalent local time \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+1.\-5 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a5bd57e8becea83962a40f59fdb04cd25}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!convert\-U\-T\-C\-To\-Local@{convert\-U\-T\-C\-To\-Local}}
+\index{convert\-U\-T\-C\-To\-Local@{convert\-U\-T\-C\-To\-Local}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{convert\-U\-T\-C\-To\-Local}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-Date\-Time\-Zone.\-convert\-U\-T\-C\-To\-Local (
+\begin{DoxyParamCaption}
+\item[{long}]{instant\-U\-T\-C}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a5bd57e8becea83962a40f59fdb04cd25}
+Converts a standard U\-T\-C instant to a local instant with the same local time. This conversion is used before performing a calculation so that the calculation can be done using a simple local zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant\-U\-T\-C} & the U\-T\-C instant to convert to local \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the local instant with the same local time 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Arithmetic\-Exception} & if the result overflows a long \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+1.\-5 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a6288bd96e3114aa213cc9c5fe63e9925}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!equals@{equals}}
+\index{equals@{equals}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}abstract boolean org.\-joda.\-time.\-Date\-Time\-Zone.\-equals (
+\begin{DoxyParamCaption}
+\item[{Object}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a6288bd96e3114aa213cc9c5fe63e9925}
+Compare this datetime zone with another.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to compare with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if equal, based on the I\-D and all internal rules 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a0e61ee966eb500f2f61eeeef32f8b47c}{org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone}, \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_fixed_date_time_zone_ac240d0606ad4650b904333afb54148e8}{org.\-joda.\-time.\-tz.\-Fixed\-Date\-Time\-Zone}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_zone_ac54c3388659fb46039c0f4fed91f699b}{org.\-joda.\-time.\-Mock\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_af5e08f59a41063611e2b4f75013167d1}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!for\-I\-D@{for\-I\-D}}
+\index{for\-I\-D@{for\-I\-D}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{for\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Zone} org.\-joda.\-time.\-Date\-Time\-Zone.\-for\-I\-D (
+\begin{DoxyParamCaption}
+\item[{String}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_af5e08f59a41063611e2b4f75013167d1}
+Gets a time zone instance for the specified time zone id. 
+
+The time zone id may be one of those returned by get\-Available\-I\-Ds. Short ids, as accepted by \hyperlink{}{java.\-util.\-Time\-Zone}, are not accepted. All I\-Ds must be specified in the long format. The exception is U\-T\-C, which is an acceptable id. 
+
+Alternatively a locale independent, fixed offset, datetime zone can be specified. The form {\ttfamily \mbox{[}+-\/\mbox{]}hh\-:mm} can be used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & the I\-D of the datetime zone, null means default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} object for the I\-D 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the I\-D is not recognised \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_ab4137f66d8869cdda3243b0a29697cb6}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!for\-Offset\-Hours@{for\-Offset\-Hours}}
+\index{for\-Offset\-Hours@{for\-Offset\-Hours}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{for\-Offset\-Hours}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Zone} org.\-joda.\-time.\-Date\-Time\-Zone.\-for\-Offset\-Hours (
+\begin{DoxyParamCaption}
+\item[{int}]{hours\-Offset}
+\end{DoxyParamCaption}
+)  throws Illegal\-Argument\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_ab4137f66d8869cdda3243b0a29697cb6}
+Gets a time zone instance for the specified offset to U\-T\-C in hours. This method assumes standard length hours. 
+
+This factory is a convenient way of constructing zones with a fixed offset.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hours\-Offset} & the offset in hours from U\-T\-C, from -\/23 to +23 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} object for the offset 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the offset is too large or too small \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a4b964cdac557624de0c1e3584f3217e3}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!for\-Offset\-Hours\-Minutes@{for\-Offset\-Hours\-Minutes}}
+\index{for\-Offset\-Hours\-Minutes@{for\-Offset\-Hours\-Minutes}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{for\-Offset\-Hours\-Minutes}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Zone} org.\-joda.\-time.\-Date\-Time\-Zone.\-for\-Offset\-Hours\-Minutes (
+\begin{DoxyParamCaption}
+\item[{int}]{hours\-Offset, }
+\item[{int}]{minutes\-Offset}
+\end{DoxyParamCaption}
+)  throws Illegal\-Argument\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a4b964cdac557624de0c1e3584f3217e3}
+Gets a time zone instance for the specified offset to U\-T\-C in hours and minutes. This method assumes 60 minutes in an hour, and standard length minutes. 
+
+This factory is a convenient way of constructing zones with a fixed offset. The hours value must be in the range -\/23 to +23. The minutes value must be in the range -\/59 to +59. The following combinations of sign for the hour and minute are possible\-: 
+\begin{DoxyPre}
+ Hour    Minute    Example    Result\end{DoxyPre}
+
+
+
+\begin{DoxyPre} +ve     +ve       (2, 15)    +02:15
+ +ve     zero      (2, 0)     +02:00
+ +ve     -ve       (2, -15)   IllegalArgumentException\end{DoxyPre}
+
+
+
+\begin{DoxyPre} zero    +ve       (0, 15)    +00:15
+ zero    zero      (0, 0)     +00:00
+ zero    -ve       (0, -15)   -00:15\end{DoxyPre}
+
+
+
+\begin{DoxyPre} -ve     +ve       (-2, 15)   -02:15
+ -ve     zero      (-2, 0)    -02:00
+ -ve     -ve       (-2, -15)  -02:15
+\end{DoxyPre}
+ Note that in versions before 2.\-3, the minutes had to be zero or positive.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hours\-Offset} & the offset in hours from U\-T\-C, from -\/23 to +23 \\
+\hline
+{\em minutes\-Offset} & the offset in minutes from U\-T\-C, from -\/59 to +59 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} object for the offset 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if any value is out of range, the minutes are negative when the hours are positive, or the resulting offset exceeds +/-\/ 23\-:59\-:59.\-000 \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a98ca57323fc30a51a3b593ab7f646ae2}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!for\-Offset\-Millis@{for\-Offset\-Millis}}
+\index{for\-Offset\-Millis@{for\-Offset\-Millis}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{for\-Offset\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Zone} org.\-joda.\-time.\-Date\-Time\-Zone.\-for\-Offset\-Millis (
+\begin{DoxyParamCaption}
+\item[{int}]{millis\-Offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a98ca57323fc30a51a3b593ab7f646ae2}
+Gets a time zone instance for the specified offset to U\-T\-C in milliseconds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em millis\-Offset} & the offset in millis from U\-T\-C, from -\/23\-:59\-:59.\-999 to +23\-:59\-:59.\-999 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} object for the offset 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a2177c7585e90eba3c90cae278b1a3cfd}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!for\-Time\-Zone@{for\-Time\-Zone}}
+\index{for\-Time\-Zone@{for\-Time\-Zone}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{for\-Time\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Zone} org.\-joda.\-time.\-Date\-Time\-Zone.\-for\-Time\-Zone (
+\begin{DoxyParamCaption}
+\item[{Time\-Zone}]{zone}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a2177c7585e90eba3c90cae278b1a3cfd}
+Gets a time zone instance for a J\-D\-K Time\-Zone. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} only accepts a subset of the I\-Ds from Time\-Zone. The excluded I\-Ds are the short three letter form (except U\-T\-C). This method will attempt to convert between time zones created using the short I\-Ds and the full version. 
+
+This method is not designed to parse time zones with rules created by applications using {\ttfamily Simple\-Time\-Zone} directly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone} & the zone to convert, null means default \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} object for the zone 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the zone is not recognised \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a8a05b643eacaa76711e2dee68fe399a1}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Available\-I\-Ds@{get\-Available\-I\-Ds}}
+\index{get\-Available\-I\-Ds@{get\-Available\-I\-Ds}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Available\-I\-Ds}]{\setlength{\rightskip}{0pt plus 5cm}static Set$<$String$>$ org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Available\-I\-Ds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a8a05b643eacaa76711e2dee68fe399a1}
+Gets all the available I\-Ds supported.
+
+\begin{DoxyReturn}{Returns}
+an unmodifiable Set of String I\-Ds 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_ad40e9def47666b63e67414456b2d7e2e}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Default@{get\-Default}}
+\index{get\-Default@{get\-Default}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Default}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Zone} org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Default (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_ad40e9def47666b63e67414456b2d7e2e}
+Gets the default time zone. 
+
+The default time zone is derived from the system property
+\begin{DoxyCode}
+user.timezone 
+\end{DoxyCode}
+ . If that is
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ or is not a valid identifier, then the value of the J\-D\-K
+\begin{DoxyCode}
+TimeZone 
+\end{DoxyCode}
+ default is converted. If that fails,
+\begin{DoxyCode}
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a0354972ef4cfccf4c7d87db7b80f3153}{UTC} 
+\end{DoxyCode}
+ is used. 
+
+N\-O\-T\-E\-: If the
+\begin{DoxyCode}
+java.util.TimeZone 
+\end{DoxyCode}
+ default is updated {\itshape after} calling this method, then the change will not be picked up here.
+
+\begin{DoxyReturn}{Returns}
+the default datetime zone object 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a05f55d974998b5867c22133306c479e7}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-I\-D@{get\-I\-D}}
+\index{get\-I\-D@{get\-I\-D}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}final String org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a05f55d974998b5867c22133306c479e7}
+Gets the I\-D of this datetime zone.
+
+\begin{DoxyReturn}{Returns}
+the I\-D of this datetime zone 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_ae884940a4cd3986cd66ec5b0531a8189}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Millis\-Keep\-Local@{get\-Millis\-Keep\-Local}}
+\index{get\-Millis\-Keep\-Local@{get\-Millis\-Keep\-Local}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Millis\-Keep\-Local}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Millis\-Keep\-Local (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{new\-Zone, }
+\item[{long}]{old\-Instant}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_ae884940a4cd3986cd66ec5b0531a8189}
+Gets the millisecond instant in another zone keeping the same local time. 
+
+The conversion is performed by converting the specified U\-T\-C millis to local millis in this zone, then converting back to U\-T\-C millis in the new zone.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\-Zone} & the new zone, null means default \\
+\hline
+{\em old\-Instant} & the U\-T\-C millisecond instant to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the U\-T\-C millisecond instant with the same local time in the new zone 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_ab7e69188d0e2860909433769f9aa8b5f}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}final String org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Name (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_ab7e69188d0e2860909433769f9aa8b5f}
+Gets the long name of this datetime zone suitable for display using the default locale. 
+
+If the name is not available for the locale, then this method returns a string in the format {\ttfamily \mbox{[}+-\/\mbox{]}hh\-:mm}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to get the name for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the human-\/readable long name in the default locale 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a9b00e7e5ba366a3127359a5308d182c8}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Name (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a9b00e7e5ba366a3127359a5308d182c8}
+Gets the long name of this datetime zone suitable for display using the specified locale. 
+
+If the name is not available for the locale, then this method returns a string in the format {\ttfamily \mbox{[}+-\/\mbox{]}hh\-:mm}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to get the name for \\
+\hline
+{\em locale} & the locale to get the name for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the human-\/readable long name in the specified locale 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_ac519976d0eb06b2dc03e5f3ca1a61ea5}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Name\-Key@{get\-Name\-Key}}
+\index{get\-Name\-Key@{get\-Name\-Key}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Name\-Key}]{\setlength{\rightskip}{0pt plus 5cm}abstract String org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Name\-Key (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_ac519976d0eb06b2dc03e5f3ca1a61ea5}
+Returns a non-\/localized name that is unique to this time zone. It can be combined with id to form a unique key for fetching localized names.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to get the name for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+name key or null if id should be used for names 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_ab5c76ee0f8554fb67c865894712091f4}{org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone}, \hyperlink{classorg_1_1joda_1_1time_1_1_mock_zone_ac663c30019c0e5ab53023253b468e191}{org.\-joda.\-time.\-Mock\-Zone}, and \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_fixed_date_time_zone_ad23b09ef741970f4d5e970ab7a35e299}{org.\-joda.\-time.\-tz.\-Fixed\-Date\-Time\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a0cc05939c2e027c57c0be8fc040d4de2}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Name\-Provider@{get\-Name\-Provider}}
+\index{get\-Name\-Provider@{get\-Name\-Provider}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Name\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Name\-Provider} org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Name\-Provider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a0cc05939c2e027c57c0be8fc040d4de2}
+Gets the name provider factory. 
+
+The name provider is a pluggable instance factory that supplies the names of each \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone}.
+
+\begin{DoxyReturn}{Returns}
+the provider 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a830444f420d1dede0e1f1db4c5222a8d}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Offset@{get\-Offset}}
+\index{get\-Offset@{get\-Offset}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}abstract int org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Offset (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a830444f420d1dede0e1f1db4c5222a8d}
+Gets the millisecond offset to add to U\-T\-C to get local time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to get the offset for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the millisecond offset to add to U\-T\-C to get local time 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a747f6f9f8f5d60d0d638f7c762c33a48}{org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone}, \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_fixed_date_time_zone_a71d0ef730532bd686ec4880f1e99c36c}{org.\-joda.\-time.\-tz.\-Fixed\-Date\-Time\-Zone}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_zone_a35e62050755a5d5af7bcf179e8c70952}{org.\-joda.\-time.\-Mock\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_aeca3aafd4a057e7d67657fea7289d312}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Offset@{get\-Offset}}
+\index{get\-Offset@{get\-Offset}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}final int org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Offset (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Instant}}]{instant}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_aeca3aafd4a057e7d67657fea7289d312}
+Gets the millisecond offset to add to U\-T\-C to get local time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & instant to get the offset for, null means now \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the millisecond offset to add to U\-T\-C to get local time 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a1dfe5b4ed9216350bca38fa93f6a17f2}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Offset\-From\-Local@{get\-Offset\-From\-Local}}
+\index{get\-Offset\-From\-Local@{get\-Offset\-From\-Local}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Offset\-From\-Local}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Offset\-From\-Local (
+\begin{DoxyParamCaption}
+\item[{long}]{instant\-Local}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a1dfe5b4ed9216350bca38fa93f6a17f2}
+Gets the millisecond offset to subtract from local time to get U\-T\-C time. This offset can be used to undo adding the offset obtained by get\-Offset.
+
+
+\begin{DoxyPre}
+millisLocal == millisUTC   + getOffset(millisUTC)
+millisUTC   == millisLocal - getOffsetFromLocal(millisLocal)
+\end{DoxyPre}
+
+
+N\-O\-T\-E\-: After calculating millis\-Local, some error may be introduced. At offset transitions (due to D\-S\-T or other historical changes), ranges of local times may map to different U\-T\-C times. 
+
+This method will return an offset suitable for calculating an instant after any D\-S\-T gap. For example, consider a zone with a cutover from 01\-:00 to 01\-:59\-:\par
+ Input\-: 00\-:00 Output\-: 00\-:00\par
+ Input\-: 00\-:30 Output\-: 00\-:30\par
+ Input\-: 01\-:00 Output\-: 02\-:00\par
+ Input\-: 01\-:30 Output\-: 02\-:30\par
+ Input\-: 02\-:00 Output\-: 02\-:00\par
+ Input\-: 02\-:30 Output\-: 02\-:30\par
+ 
+
+During a D\-S\-T overlap (where the local time is ambiguous) this method will return the earlier instant. The combination of these two rules is to always favour daylight (summer) time over standard (winter) time. 
+
+N\-O\-T\-E\-: Prior to v2.\-0, the D\-S\-T overlap behaviour was not defined and varied by hemisphere. Prior to v1.\-5, the D\-S\-T gap behaviour was also not defined.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant\-Local} & the millisecond instant, relative to this time zone, to get the offset for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the millisecond offset to subtract from local time to get U\-T\-C time 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a2220fa8b43d54c3c8b18461ed4707c94}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Provider@{get\-Provider}}
+\index{get\-Provider@{get\-Provider}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Provider} org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Provider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a2220fa8b43d54c3c8b18461ed4707c94}
+Gets the zone provider factory. 
+
+The zone provider is a pluggable instance factory that supplies the actual instances of \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone}.
+
+\begin{DoxyReturn}{Returns}
+the provider 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_ab11c3da06857c4e6a6882e00eb55bfad}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Short\-Name@{get\-Short\-Name}}
+\index{get\-Short\-Name@{get\-Short\-Name}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Short\-Name}]{\setlength{\rightskip}{0pt plus 5cm}final String org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Short\-Name (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_ab11c3da06857c4e6a6882e00eb55bfad}
+Gets the short name of this datetime zone suitable for display using the default locale. 
+
+If the name is not available for the locale, then this method returns a string in the format {\ttfamily \mbox{[}+-\/\mbox{]}hh\-:mm}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to get the name for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the human-\/readable short name in the default locale 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_aa8482b2e9eff673a23c3e223f75527c1}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Short\-Name@{get\-Short\-Name}}
+\index{get\-Short\-Name@{get\-Short\-Name}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Short\-Name}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Short\-Name (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_aa8482b2e9eff673a23c3e223f75527c1}
+Gets the short name of this datetime zone suitable for display using the specified locale. 
+
+If the name is not available for the locale, then this method returns a string in the format {\ttfamily \mbox{[}+-\/\mbox{]}hh\-:mm}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to get the name for \\
+\hline
+{\em locale} & the locale to get the name for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the human-\/readable short name in the specified locale 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a431df3f6d98a6e5842a30afe738e584b}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!get\-Standard\-Offset@{get\-Standard\-Offset}}
+\index{get\-Standard\-Offset@{get\-Standard\-Offset}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{get\-Standard\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}abstract int org.\-joda.\-time.\-Date\-Time\-Zone.\-get\-Standard\-Offset (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a431df3f6d98a6e5842a30afe738e584b}
+Gets the standard millisecond offset to add to U\-T\-C to get local time, when standard time is in effect.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to get the offset for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the millisecond offset to add to U\-T\-C to get local time 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_aa04f6b0911bd785681face8b3a0a7d16}{org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone}, \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_fixed_date_time_zone_a04ff48be8fe761996f2c28fdb48d6709}{org.\-joda.\-time.\-tz.\-Fixed\-Date\-Time\-Zone}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_zone_a8619ba6ef1425f4b29b38a30eb415899}{org.\-joda.\-time.\-Mock\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a8504ae94bffc634c5c5309554fd0cc9e}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!hash\-Code@{hash\-Code}}
+\index{hash\-Code@{hash\-Code}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Date\-Time\-Zone.\-hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a8504ae94bffc634c5c5309554fd0cc9e}
+Gets a hash code compatable with equals.
+
+\begin{DoxyReturn}{Returns}
+suitable hashcode 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a35123b8c29580ae7f5053f02e64c991c}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!is\-Fixed@{is\-Fixed}}
+\index{is\-Fixed@{is\-Fixed}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{is\-Fixed}]{\setlength{\rightskip}{0pt plus 5cm}abstract boolean org.\-joda.\-time.\-Date\-Time\-Zone.\-is\-Fixed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a35123b8c29580ae7f5053f02e64c991c}
+Returns true if this time zone has no transitions.
+
+\begin{DoxyReturn}{Returns}
+true if no transitions 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a245cefd729431e2ada62e1565048c948}{org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone}, \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_fixed_date_time_zone_a7a1217e5b6b53f084d73a0ccbd6b3a04}{org.\-joda.\-time.\-tz.\-Fixed\-Date\-Time\-Zone}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_zone_abcb6e1edabbd5a01b23333e56940bb58}{org.\-joda.\-time.\-Mock\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a69eb38f0d0e8d6803e594b50c5c9bd10}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!is\-Local\-Date\-Time\-Gap@{is\-Local\-Date\-Time\-Gap}}
+\index{is\-Local\-Date\-Time\-Gap@{is\-Local\-Date\-Time\-Gap}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{is\-Local\-Date\-Time\-Gap}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Date\-Time\-Zone.\-is\-Local\-Date\-Time\-Gap (
+\begin{DoxyParamCaption}
+\item[{{\bf Local\-Date\-Time}}]{local\-Date\-Time}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a69eb38f0d0e8d6803e594b50c5c9bd10}
+Checks if the given \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_time}{Local\-Date\-Time} is within an overlap. 
+
+When switching from Daylight Savings Time to standard time there is typically an overlap where the same clock hour occurs twice. This method identifies whether the local datetime refers to such an overlap.
+
+
+\begin{DoxyParams}{Parameters}
+{\em local\-Date\-Time} & the time to check, not null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given datetime refers to an overlap Checks if the given \hyperlink{classorg_1_1joda_1_1time_1_1_local_date_time}{Local\-Date\-Time} is within a gap. 
+\end{DoxyReturn}
+When switching from standard time to Daylight Savings Time there is typically a gap where a clock hour is missing. This method identifies whether the local datetime refers to such a gap.
+
+
+\begin{DoxyParams}{Parameters}
+{\em local\-Date\-Time} & the time to check, not null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given datetime refers to a gap 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\-6 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a86c6acf723ff21b317fb6dc3ca902818}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!is\-Standard\-Offset@{is\-Standard\-Offset}}
+\index{is\-Standard\-Offset@{is\-Standard\-Offset}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{is\-Standard\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Date\-Time\-Zone.\-is\-Standard\-Offset (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a86c6acf723ff21b317fb6dc3ca902818}
+Checks whether, at a particular instant, the offset is standard or not. 
+
+This method can be used to determine whether Summer Time (D\-S\-T) applies. As a general rule, if the offset at the specified instant is standard, then either Winter time applies, or there is no Summer Time. If the instant is not standard, then Summer Time applies. 
+
+The implementation of the method is simply whether \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a830444f420d1dede0e1f1db4c5222a8d}{get\-Offset(long)} equals \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a431df3f6d98a6e5842a30afe738e584b}{get\-Standard\-Offset(long)} at the specified instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to get the offset for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the offset at the given instant is the standard offset 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\-5 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_ae251b0063d7a4359f7416d83a1ac39af}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!next\-Transition@{next\-Transition}}
+\index{next\-Transition@{next\-Transition}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{next\-Transition}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-Date\-Time\-Zone.\-next\-Transition (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_ae251b0063d7a4359f7416d83a1ac39af}
+Advances the given instant to where the time zone offset or name changes. If the instant returned is exactly the same as passed in, then no changes occur after the given instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a615c1933c9395819432703636b5eeeab}{org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone}, \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_fixed_date_time_zone_aabfa96b9f97be46828e7fee6b3bacb6b}{org.\-joda.\-time.\-tz.\-Fixed\-Date\-Time\-Zone}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_zone_a65537274d107fe8af88d0a3214a13841}{org.\-joda.\-time.\-Mock\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_abdb3c6d6191fdd441248a7ea8ca302d0}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!previous\-Transition@{previous\-Transition}}
+\index{previous\-Transition@{previous\-Transition}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{previous\-Transition}]{\setlength{\rightskip}{0pt plus 5cm}abstract long org.\-joda.\-time.\-Date\-Time\-Zone.\-previous\-Transition (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_abdb3c6d6191fdd441248a7ea8ca302d0}
+Retreats the given instant to where the time zone offset or name changes. If the instant returned is exactly the same as passed in, then no changes occur before the given instant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_cached_date_time_zone_a799cabf6a90a81a8e7da2f58b98411d3}{org.\-joda.\-time.\-tz.\-Cached\-Date\-Time\-Zone}, \hyperlink{classorg_1_1joda_1_1time_1_1tz_1_1_fixed_date_time_zone_a847ef81cb34e82ba63d4b37b35575799}{org.\-joda.\-time.\-tz.\-Fixed\-Date\-Time\-Zone}, and \hyperlink{classorg_1_1joda_1_1time_1_1_mock_zone_af27088b69a3b1a9ea12a84dc557b3ce7}{org.\-joda.\-time.\-Mock\-Zone}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a320b4c76e8a4eaf8c399b2dff4cccd38}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!set\-Default@{set\-Default}}
+\index{set\-Default@{set\-Default}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{set\-Default}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-Date\-Time\-Zone.\-set\-Default (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{zone}
+\end{DoxyParamCaption}
+)  throws Security\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a320b4c76e8a4eaf8c399b2dff4cccd38}
+Sets the default time zone. 
+
+N\-O\-T\-E\-: Calling this method does {\itshape not} set the
+\begin{DoxyCode}
+java.util.TimeZone 
+\end{DoxyCode}
+ default.
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone} & the default datetime zone object, must not be null \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the zone is null \\
+\hline
+{\em Security\-Exception} & if the application has insufficient security rights \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_ab6f1c22fcbfac14641c23c855cef5e77}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!set\-Name\-Provider@{set\-Name\-Provider}}
+\index{set\-Name\-Provider@{set\-Name\-Provider}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{set\-Name\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-Date\-Time\-Zone.\-set\-Name\-Provider (
+\begin{DoxyParamCaption}
+\item[{{\bf Name\-Provider}}]{name\-Provider}
+\end{DoxyParamCaption}
+)  throws Security\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_ab6f1c22fcbfac14641c23c855cef5e77}
+Sets the name provider factory. 
+
+The name provider is a pluggable instance factory that supplies the names of each \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\-Provider} & provider to use, or null for default \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Security\-Exception} & if you do not have the permission \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_ab6f1c22fcbfac14641c23c855cef5e77}{Date\-Time\-Zone.\-set\-Name\-Provider} \\
+\hline
+{\em Illegal\-Argument\-Exception} & if the provider is invalid \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a310b2d40644519125e034e52449b87cb}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!set\-Provider@{set\-Provider}}
+\index{set\-Provider@{set\-Provider}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{set\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-joda.\-time.\-Date\-Time\-Zone.\-set\-Provider (
+\begin{DoxyParamCaption}
+\item[{{\bf Provider}}]{provider}
+\end{DoxyParamCaption}
+)  throws Security\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a310b2d40644519125e034e52449b87cb}
+Sets the zone provider factory. 
+
+The zone provider is a pluggable instance factory that supplies the actual instances of \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em provider} & provider to use, or null for default \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Security\-Exception} & if you do not have the permission \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_a310b2d40644519125e034e52449b87cb}{Date\-Time\-Zone.\-set\-Provider} \\
+\hline
+{\em Illegal\-Argument\-Exception} & if the provider is invalid \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_accedad9b10c657cea86f89e1a9906218}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-Date\-Time\-Zone.\-to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_accedad9b10c657cea86f89e1a9906218}
+Gets the datetime zone as a string, which is simply its I\-D. \begin{DoxyReturn}{Returns}
+the id of the zone 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a18f46617dc51f706feb99dc35c68f069}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!to\-Time\-Zone@{to\-Time\-Zone}}
+\index{to\-Time\-Zone@{to\-Time\-Zone}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{to\-Time\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}java.\-util.\-Time\-Zone org.\-joda.\-time.\-Date\-Time\-Zone.\-to\-Time\-Zone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a18f46617dc51f706feb99dc35c68f069}
+Get the datetime zone as a \hyperlink{}{java.\-util.\-Time\-Zone}.
+
+\begin{DoxyReturn}{Returns}
+the closest matching Time\-Zone object 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a5f8e476a4f68a893c24b3ddd1b803d46}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!write\-Replace@{write\-Replace}}
+\index{write\-Replace@{write\-Replace}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{write\-Replace}]{\setlength{\rightskip}{0pt plus 5cm}Object org.\-joda.\-time.\-Date\-Time\-Zone.\-write\-Replace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws Object\-Stream\-Exception \hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a5f8e476a4f68a893c24b3ddd1b803d46}
+By default, when Date\-Time\-Zones are serialized, only a \char`\"{}stub\char`\"{} object referring to the id is written out. When the stub is read in, it replaces itself with a \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} object. \begin{DoxyReturn}{Returns}
+a stub object to go in the stream 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_zone_a0354972ef4cfccf4c7d87db7b80f3153}{\index{org\-::joda\-::time\-::\-Date\-Time\-Zone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}!U\-T\-C@{U\-T\-C}}
+\index{U\-T\-C@{U\-T\-C}!org::joda::time::DateTimeZone@{org\-::joda\-::time\-::\-Date\-Time\-Zone}}
+\subsubsection[{U\-T\-C}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Date\-Time\-Zone} org.\-joda.\-time.\-Date\-Time\-Zone.\-U\-T\-C = new {\bf Fixed\-Date\-Time\-Zone}(\char`\"{}U\-T\-C\char`\"{}, \char`\"{}U\-T\-C\char`\"{}, 0, 0)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_zone_a0354972ef4cfccf4c7d87db7b80f3153}
+The time zone for Universal Coordinated Time 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/Date\-Time\-Zone.\-java\end{DoxyCompactItemize}

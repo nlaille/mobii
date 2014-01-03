@@ -1,0 +1,157 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field}{\section{org.\-joda.\-time.\-field.\-Skip\-Undo\-Date\-Time\-Field Class Reference}
+\label{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field}\index{org.\-joda.\-time.\-field.\-Skip\-Undo\-Date\-Time\-Field@{org.\-joda.\-time.\-field.\-Skip\-Undo\-Date\-Time\-Field}}
+}
+Inheritance diagram for org.\-joda.\-time.\-field.\-Skip\-Undo\-Date\-Time\-Field\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_a4c319e2de4b8354821d867c6397fdebc}{Skip\-Undo\-Date\-Time\-Field} (\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chronology, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} field)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_a538362f383d6c1a608829affeceabc2b}{Skip\-Undo\-Date\-Time\-Field} (\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chronology, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field}{Date\-Time\-Field} field, int skip)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_a90e9ad6ff0be34bd392cf416a5c8166a}{get} (long millis)
+\item 
+long \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_ab349f12255fdf7f7d904066eb3267b7e}{set} (long millis, int value)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_a4231ae80558a992f5f3f6e7a5cc34389}{get\-Minimum\-Value} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wraps another field such that a certain value is added back into the sequence of numbers. 
+
+This reverses the effect of \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_skip_date_time_field}{Skip\-Date\-Time\-Field}. This isn't very elegant. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field}{Skip\-Undo\-Date\-Time\-Field} is thread-\/safe and immutable.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_a4c319e2de4b8354821d867c6397fdebc}{\index{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field}!Skip\-Undo\-Date\-Time\-Field@{Skip\-Undo\-Date\-Time\-Field}}
+\index{Skip\-Undo\-Date\-Time\-Field@{Skip\-Undo\-Date\-Time\-Field}!org::joda::time::field::SkipUndoDateTimeField@{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field}}
+\subsubsection[{Skip\-Undo\-Date\-Time\-Field}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-field.\-Skip\-Undo\-Date\-Time\-Field.\-Skip\-Undo\-Date\-Time\-Field (
+\begin{DoxyParamCaption}
+\item[{{\bf Chronology}}]{chronology, }
+\item[{{\bf Date\-Time\-Field}}]{field}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_a4c319e2de4b8354821d867c6397fdebc}
+Constructor that reinserts zero.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chronology} & the chronoogy to use \\
+\hline
+{\em field} & the field to skip zero on \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_a538362f383d6c1a608829affeceabc2b}{\index{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field}!Skip\-Undo\-Date\-Time\-Field@{Skip\-Undo\-Date\-Time\-Field}}
+\index{Skip\-Undo\-Date\-Time\-Field@{Skip\-Undo\-Date\-Time\-Field}!org::joda::time::field::SkipUndoDateTimeField@{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field}}
+\subsubsection[{Skip\-Undo\-Date\-Time\-Field}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-field.\-Skip\-Undo\-Date\-Time\-Field.\-Skip\-Undo\-Date\-Time\-Field (
+\begin{DoxyParamCaption}
+\item[{{\bf Chronology}}]{chronology, }
+\item[{{\bf Date\-Time\-Field}}]{field, }
+\item[{int}]{skip}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_a538362f383d6c1a608829affeceabc2b}
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chronology} & the chronoogy to use \\
+\hline
+{\em field} & the field to skip zero on \\
+\hline
+{\em skip} & the value to skip \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_a90e9ad6ff0be34bd392cf416a5c8166a}{\index{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field}!get@{get}}
+\index{get@{get}!org::joda::time::field::SkipUndoDateTimeField@{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Skip\-Undo\-Date\-Time\-Field.\-get (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_a90e9ad6ff0be34bd392cf416a5c8166a}
+Get the value of this field from the milliseconds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of the field, in the units of the field 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_date_time_field_ae90a3343fe55e720e8a9677c71c7fd83}{org.\-joda.\-time.\-field.\-Delegated\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_a4231ae80558a992f5f3f6e7a5cc34389}{\index{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field}!get\-Minimum\-Value@{get\-Minimum\-Value}}
+\index{get\-Minimum\-Value@{get\-Minimum\-Value}!org::joda::time::field::SkipUndoDateTimeField@{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field}}
+\subsubsection[{get\-Minimum\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-field.\-Skip\-Undo\-Date\-Time\-Field.\-get\-Minimum\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_a4231ae80558a992f5f3f6e7a5cc34389}
+Get the minimum allowable value for this field.
+
+\begin{DoxyReturn}{Returns}
+the minimum valid value for this field, in the units of the field 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_date_time_field_aeda966db7048e46f1dccb9ae2c9eb7c5}{org.\-joda.\-time.\-field.\-Delegated\-Date\-Time\-Field}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_ab349f12255fdf7f7d904066eb3267b7e}{\index{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field@{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field}!set@{set}}
+\index{set@{set}!org::joda::time::field::SkipUndoDateTimeField@{org\-::joda\-::time\-::field\-::\-Skip\-Undo\-Date\-Time\-Field}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-field.\-Skip\-Undo\-Date\-Time\-Field.\-set (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1field_1_1_skip_undo_date_time_field_ab349f12255fdf7f7d904066eb3267b7e}
+Sets a value in the milliseconds supplied. 
+
+The value of this field will be set. If the value is invalid, an exception if thrown. 
+
+If setting this field would make other fields invalid, then those fields may be changed. For example if the current date is the 31st January, and the month is set to February, the day would be invalid. Instead, the day would be changed to the closest value -\/ the 28th/29th February as appropriate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z to set in \\
+\hline
+{\em value} & the value to set, in the units of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the updated milliseconds 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the value is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \hyperlink{classorg_1_1joda_1_1time_1_1field_1_1_delegated_date_time_field_ac8c71ae2bf565cc8ebcf71ddd4b4053f}{org.\-joda.\-time.\-field.\-Delegated\-Date\-Time\-Field}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/field/Skip\-Undo\-Date\-Time\-Field.\-java\end{DoxyCompactItemize}

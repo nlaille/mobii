@@ -1,0 +1,551 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils}{\section{org.\-joda.\-time.\-Date\-Time\-Utils Class Reference}
+\label{classorg_1_1joda_1_1time_1_1_date_time_utils}\index{org.\-joda.\-time.\-Date\-Time\-Utils@{org.\-joda.\-time.\-Date\-Time\-Utils}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Fixed\-Millis\-Provider}
+\item 
+interface {\bfseries Millis\-Provider}
+\item 
+class {\bfseries Offset\-Millis\-Provider}
+\item 
+class {\bfseries System\-Millis\-Provider}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static final long \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a4016fe4b94ce75b30b870f1b776a9174}{current\-Time\-Millis} ()
+\item 
+static final void \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a167dfe850fd4aaaecf5ad738cb2f90e2}{set\-Current\-Millis\-System} ()  throws Security\-Exception 
+\item 
+static final void \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a7dc81b2c5d94298e0ee7d885a7646ad4}{set\-Current\-Millis\-Fixed} (long fixed\-Millis)  throws Security\-Exception 
+\item 
+static final void \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a5d7bfd3a3392810b4610544917a79e88}{set\-Current\-Millis\-Offset} (long offset\-Millis)  throws Security\-Exception 
+\item 
+static final void \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a17c912e68ae2a5030675b45cabc6c064}{set\-Current\-Millis\-Provider} (Millis\-Provider millis\-Provider)  throws Security\-Exception 
+\item 
+static final long \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a7989fa799cf57cd39983a44e21b0f6db}{get\-Instant\-Millis} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} instant)
+\item 
+static final \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a057238c940eac6e9ccf5148b8c95a223}{get\-Instant\-Chronology} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} instant)
+\item 
+static final \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a998d75818dc66bb49bb88401e0232076}{get\-Interval\-Chronology} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} start, \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} end)
+\item 
+static final \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a7bdd07737d6d615c94485d26772dd8fc}{get\-Interval\-Chronology} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_interval}{Readable\-Interval} interval)
+\item 
+static final \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_interval}{Readable\-Interval} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a202197b3a9b141d44d98b5f4ac4e490c}{get\-Readable\-Interval} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_interval}{Readable\-Interval} interval)
+\item 
+static final \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_af0bbe612cf904df05ac9d3835d3d0dc6}{get\-Chronology} (\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chrono)
+\item 
+static final \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_af40cdfc7d6bf41a48b8cd9bd2a37352e}{get\-Zone} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone)
+\item 
+static final \hyperlink{classorg_1_1joda_1_1time_1_1_period_type}{Period\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a8914cf4df9aff44fd6ee1c926808aef9}{get\-Period\-Type} (\hyperlink{classorg_1_1joda_1_1time_1_1_period_type}{Period\-Type} type)
+\item 
+static final long \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_af1a53e64b8a0c38c7f2f499ed7cc32a5}{get\-Duration\-Millis} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration}{Readable\-Duration} duration)
+\item 
+static final boolean \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_ab0b9c6c44f2dd462d5b5555177dbf481}{is\-Contiguous} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial}{Readable\-Partial} partial)
+\item 
+static final Date\-Format\-Symbols \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a86305d77af04540a319c313b2034036d}{get\-Date\-Format\-Symbols} (Locale locale)
+\item 
+static final Map$<$ String, \\*
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} $>$ \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a1cdc2f8c021593590d224b6401d2b79d}{get\-Default\-Time\-Zone\-Names} ()
+\item 
+static final void \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_aeb3f1deb0016d88d63a9beb0cde893fd}{set\-Default\-Time\-Zone\-Names} (Map$<$ String, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} $>$ names)
+\item 
+static final double \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_ad55cfa724a13432ddef992bc7c4e6633}{to\-Julian\-Day} (long epoch\-Millis)
+\item 
+static final long \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a915eda0316c059708df340b6512ccb98}{to\-Julian\-Day\-Number} (long epoch\-Millis)
+\item 
+static final long \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a5ec70a4ada343a38ac88fcb8342c2ea9}{from\-Julian\-Day} (double julian\-Day)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_ace48fdef93307e5e980ec12c6d7d52c3}{Date\-Time\-Utils} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils}{Date\-Time\-Utils} provide public utility methods for the date-\/time library. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils}{Date\-Time\-Utils} is thread-\/safe although shared static variables are used.
+
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_ace48fdef93307e5e980ec12c6d7d52c3}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!Date\-Time\-Utils@{Date\-Time\-Utils}}
+\index{Date\-Time\-Utils@{Date\-Time\-Utils}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{Date\-Time\-Utils}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-Date\-Time\-Utils.\-Date\-Time\-Utils (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_ace48fdef93307e5e980ec12c6d7d52c3}
+Restrictive constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a4016fe4b94ce75b30b870f1b776a9174}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!current\-Time\-Millis@{current\-Time\-Millis}}
+\index{current\-Time\-Millis@{current\-Time\-Millis}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{current\-Time\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}static final long org.\-joda.\-time.\-Date\-Time\-Utils.\-current\-Time\-Millis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a4016fe4b94ce75b30b870f1b776a9174}
+Gets the current time in milliseconds. 
+
+By default this returns {\ttfamily System.\-current\-Time\-Millis()}. This may be changed using other methods in this class.
+
+\begin{DoxyReturn}{Returns}
+the current time in milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a5ec70a4ada343a38ac88fcb8342c2ea9}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!from\-Julian\-Day@{from\-Julian\-Day}}
+\index{from\-Julian\-Day@{from\-Julian\-Day}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{from\-Julian\-Day}]{\setlength{\rightskip}{0pt plus 5cm}static final long org.\-joda.\-time.\-Date\-Time\-Utils.\-from\-Julian\-Day (
+\begin{DoxyParamCaption}
+\item[{double}]{julian\-Day}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a5ec70a4ada343a38ac88fcb8342c2ea9}
+Creates a date-\/time from a Julian Day. 
+
+Returns the
+\begin{DoxyCode}
+DateTime 
+\end{DoxyCode}
+ object equal to the specified Julian Day.
+
+
+\begin{DoxyParams}{Parameters}
+{\em julian\-Day} & the Julian Day \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the epoch millis from 1970-\/01-\/01\-Z 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\-2 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_af0bbe612cf904df05ac9d3835d3d0dc6}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!get\-Chronology@{get\-Chronology}}
+\index{get\-Chronology@{get\-Chronology}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{get\-Chronology}]{\setlength{\rightskip}{0pt plus 5cm}static final {\bf Chronology} org.\-joda.\-time.\-Date\-Time\-Utils.\-get\-Chronology (
+\begin{DoxyParamCaption}
+\item[{{\bf Chronology}}]{chrono}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_af0bbe612cf904df05ac9d3835d3d0dc6}
+Gets the chronology handling null. 
+
+If the chronology is {\ttfamily null}, \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_i_s_o_chronology_aacb8a1ac8665b9e15c722c1eb7206f70}{I\-S\-O\-Chronology\#get\-Instance()} will be returned. Otherwise, the chronology is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chrono} & the chronology to use, null means I\-S\-O in the default zone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the chronology, never null 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a86305d77af04540a319c313b2034036d}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!get\-Date\-Format\-Symbols@{get\-Date\-Format\-Symbols}}
+\index{get\-Date\-Format\-Symbols@{get\-Date\-Format\-Symbols}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{get\-Date\-Format\-Symbols}]{\setlength{\rightskip}{0pt plus 5cm}static final Date\-Format\-Symbols org.\-joda.\-time.\-Date\-Time\-Utils.\-get\-Date\-Format\-Symbols (
+\begin{DoxyParamCaption}
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a86305d77af04540a319c313b2034036d}
+Gets the \hyperlink{}{Date\-Format\-Symbols} based on the given locale. 
+
+If J\-D\-K 6 or newer is being used, Date\-Format\-Symbols.\-get\-Instance(locale) will be used in order to allow the use of locales defined as extensions. Otherwise, new Date\-Format\-Symbols(locale) will be used. See J\-D\-K 6 \hyperlink{}{Date\-Format\-Symbols} for further information.
+
+
+\begin{DoxyParams}{Parameters}
+{\em locale} & the \hyperlink{}{Locale} used to get the correct \hyperlink{}{Date\-Format\-Symbols} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the symbols 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\-0 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a1cdc2f8c021593590d224b6401d2b79d}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!get\-Default\-Time\-Zone\-Names@{get\-Default\-Time\-Zone\-Names}}
+\index{get\-Default\-Time\-Zone\-Names@{get\-Default\-Time\-Zone\-Names}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{get\-Default\-Time\-Zone\-Names}]{\setlength{\rightskip}{0pt plus 5cm}static final Map$<$String, {\bf Date\-Time\-Zone}$>$ org.\-joda.\-time.\-Date\-Time\-Utils.\-get\-Default\-Time\-Zone\-Names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a1cdc2f8c021593590d224b6401d2b79d}
+Gets the default map of time zone names. 
+
+This can be changed by \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_aeb3f1deb0016d88d63a9beb0cde893fd}{set\-Default\-Time\-Zone\-Names}. 
+
+The default set of short time zone names is as follows\-: 
+\begin{DoxyItemize}
+\item U\-T -\/ U\-T\-C 
+\item U\-T\-C -\/ U\-T\-C 
+\item G\-M\-T -\/ U\-T\-C 
+\item E\-S\-T -\/ America/\-New\-\_\-\-York 
+\item E\-D\-T -\/ America/\-New\-\_\-\-York 
+\item C\-S\-T -\/ America/\-Chicago 
+\item C\-D\-T -\/ America/\-Chicago 
+\item M\-S\-T -\/ America/\-Denver 
+\item M\-D\-T -\/ America/\-Denver 
+\item P\-S\-T -\/ America/\-Los\-\_\-\-Angeles 
+\item P\-D\-T -\/ America/\-Los\-\_\-\-Angeles 
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+the unmodifiable map of abbreviations to zones, not null 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\-2 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_af1a53e64b8a0c38c7f2f499ed7cc32a5}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!get\-Duration\-Millis@{get\-Duration\-Millis}}
+\index{get\-Duration\-Millis@{get\-Duration\-Millis}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{get\-Duration\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}static final long org.\-joda.\-time.\-Date\-Time\-Utils.\-get\-Duration\-Millis (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Duration}}]{duration}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_af1a53e64b8a0c38c7f2f499ed7cc32a5}
+Gets the millisecond duration from the specified duration object handling null. 
+
+If the duration object is {\ttfamily null}, zero will be returned. Otherwise, the millis from the object are returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & the duration to examine, null means zero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the duration in milliseconds 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a057238c940eac6e9ccf5148b8c95a223}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!get\-Instant\-Chronology@{get\-Instant\-Chronology}}
+\index{get\-Instant\-Chronology@{get\-Instant\-Chronology}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{get\-Instant\-Chronology}]{\setlength{\rightskip}{0pt plus 5cm}static final {\bf Chronology} org.\-joda.\-time.\-Date\-Time\-Utils.\-get\-Instant\-Chronology (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Instant}}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a057238c940eac6e9ccf5148b8c95a223}
+Gets the chronology from the specified instant object handling null. 
+
+If the instant object is {\ttfamily null}, or the instant's chronology is {\ttfamily null}, \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_i_s_o_chronology_aacb8a1ac8665b9e15c722c1eb7206f70}{I\-S\-O\-Chronology\#get\-Instance()} will be returned. Otherwise, the chronology from the object is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the instant to examine, null means I\-S\-O in the default zone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the chronology, never null 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a7989fa799cf57cd39983a44e21b0f6db}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!get\-Instant\-Millis@{get\-Instant\-Millis}}
+\index{get\-Instant\-Millis@{get\-Instant\-Millis}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{get\-Instant\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}static final long org.\-joda.\-time.\-Date\-Time\-Utils.\-get\-Instant\-Millis (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Instant}}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a7989fa799cf57cd39983a44e21b0f6db}
+Gets the millisecond instant from the specified instant object handling null. 
+
+If the instant object is {\ttfamily null}, the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a4016fe4b94ce75b30b870f1b776a9174}{current\-Time\-Millis()} will be returned. Otherwise, the millis from the object are returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the instant to examine, null means now \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the time in milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a998d75818dc66bb49bb88401e0232076}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!get\-Interval\-Chronology@{get\-Interval\-Chronology}}
+\index{get\-Interval\-Chronology@{get\-Interval\-Chronology}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{get\-Interval\-Chronology}]{\setlength{\rightskip}{0pt plus 5cm}static final {\bf Chronology} org.\-joda.\-time.\-Date\-Time\-Utils.\-get\-Interval\-Chronology (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Instant}}]{start, }
+\item[{{\bf Readable\-Instant}}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a998d75818dc66bb49bb88401e0232076}
+Gets the chronology from the specified instant based interval handling null. 
+
+The chronology is obtained from the start if that is not null, or from the end if the start is null. The result is additionally checked, and if still null then \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_i_s_o_chronology_aacb8a1ac8665b9e15c722c1eb7206f70}{I\-S\-O\-Chronology\#get\-Instance()} will be returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & the instant to examine and use as the primary source of the chronology \\
+\hline
+{\em end} & the instant to examine and use as the secondary source of the chronology \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the chronology, never null 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a7bdd07737d6d615c94485d26772dd8fc}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!get\-Interval\-Chronology@{get\-Interval\-Chronology}}
+\index{get\-Interval\-Chronology@{get\-Interval\-Chronology}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{get\-Interval\-Chronology}]{\setlength{\rightskip}{0pt plus 5cm}static final {\bf Chronology} org.\-joda.\-time.\-Date\-Time\-Utils.\-get\-Interval\-Chronology (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Interval}}]{interval}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a7bdd07737d6d615c94485d26772dd8fc}
+Gets the chronology from the specified interval object handling null. 
+
+If the interval object is {\ttfamily null}, or the interval's chronology is {\ttfamily null}, \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_i_s_o_chronology_aacb8a1ac8665b9e15c722c1eb7206f70}{I\-S\-O\-Chronology\#get\-Instance()} will be returned. Otherwise, the chronology from the object is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em interval} & the interval to examine, null means I\-S\-O in the default zone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the chronology, never null 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a8914cf4df9aff44fd6ee1c926808aef9}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!get\-Period\-Type@{get\-Period\-Type}}
+\index{get\-Period\-Type@{get\-Period\-Type}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{get\-Period\-Type}]{\setlength{\rightskip}{0pt plus 5cm}static final {\bf Period\-Type} org.\-joda.\-time.\-Date\-Time\-Utils.\-get\-Period\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Period\-Type}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a8914cf4df9aff44fd6ee1c926808aef9}
+Gets the period type handling null. 
+
+If the zone is {\ttfamily null}, \hyperlink{classorg_1_1joda_1_1time_1_1_period_type_af1a01c240964b6637015cb364ec71a35}{Period\-Type\#standard()} will be returned. Otherwise, the type specified is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the time zone to use, null means the standard type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the type to use, never null 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a202197b3a9b141d44d98b5f4ac4e490c}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!get\-Readable\-Interval@{get\-Readable\-Interval}}
+\index{get\-Readable\-Interval@{get\-Readable\-Interval}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{get\-Readable\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}static final {\bf Readable\-Interval} org.\-joda.\-time.\-Date\-Time\-Utils.\-get\-Readable\-Interval (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Interval}}]{interval}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a202197b3a9b141d44d98b5f4ac4e490c}
+Gets the interval handling null. 
+
+If the interval is {\ttfamily null}, an interval representing now to now in the \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_i_s_o_chronology_aacb8a1ac8665b9e15c722c1eb7206f70}{I\-S\-O\-Chronology} will be returned. Otherwise, the interval specified is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em interval} & the interval to use, null means now to now \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the interval, never null 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\-1 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_af40cdfc7d6bf41a48b8cd9bd2a37352e}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!get\-Zone@{get\-Zone}}
+\index{get\-Zone@{get\-Zone}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{get\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}static final {\bf Date\-Time\-Zone} org.\-joda.\-time.\-Date\-Time\-Utils.\-get\-Zone (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{zone}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_af40cdfc7d6bf41a48b8cd9bd2a37352e}
+Gets the zone handling null. 
+
+If the zone is {\ttfamily null}, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone_ad40e9def47666b63e67414456b2d7e2e}{Date\-Time\-Zone\#get\-Default()} will be returned. Otherwise, the zone specified is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone} & the time zone to use, null means the default zone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the time zone, never null 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_ab0b9c6c44f2dd462d5b5555177dbf481}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!is\-Contiguous@{is\-Contiguous}}
+\index{is\-Contiguous@{is\-Contiguous}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{is\-Contiguous}]{\setlength{\rightskip}{0pt plus 5cm}static final boolean org.\-joda.\-time.\-Date\-Time\-Utils.\-is\-Contiguous (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Partial}}]{partial}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_ab0b9c6c44f2dd462d5b5555177dbf481}
+Checks whether the partial is contiguous. 
+
+A partial is contiguous if one field starts where another ends. 
+
+For example {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_local_date}{Local\-Date}} is contiguous because Day\-Of\-Month has the same range (Month) as the unit of the next field (Month\-Of\-Year), and Month\-Of\-Year has the same range (Year) as the unit of the next field (Year). 
+
+Similarly, {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_local_time}{Local\-Time}} is contiguous, as it consists of Millis\-Of\-Second, Second\-Of\-Minute, Minute\-Of\-Hour and Hour\-Of\-Day (note how the names of each field 'join up'). 
+
+However, a Year/\-Hour\-Of\-Day partial is not contiguous because the range field Day is not equal to the next field Year. Similarly, a Day\-Of\-Week/\-Day\-Of\-Month partial is not contiguous because the range Month is not equal to the next field Day.
+
+
+\begin{DoxyParams}{Parameters}
+{\em partial} & the partial to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the partial is contiguous 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the partial is null \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+1.\-1 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a7dc81b2c5d94298e0ee7d885a7646ad4}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!set\-Current\-Millis\-Fixed@{set\-Current\-Millis\-Fixed}}
+\index{set\-Current\-Millis\-Fixed@{set\-Current\-Millis\-Fixed}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{set\-Current\-Millis\-Fixed}]{\setlength{\rightskip}{0pt plus 5cm}static final void org.\-joda.\-time.\-Date\-Time\-Utils.\-set\-Current\-Millis\-Fixed (
+\begin{DoxyParamCaption}
+\item[{long}]{fixed\-Millis}
+\end{DoxyParamCaption}
+)  throws Security\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a7dc81b2c5d94298e0ee7d885a7646ad4}
+Sets the current time to return a fixed millisecond time. 
+
+This method changes the behaviour of \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a4016fe4b94ce75b30b870f1b776a9174}{current\-Time\-Millis()}. Whenever the current time is queried, the same millisecond time will be returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fixed\-Millis} & the fixed millisecond time to use \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Security\-Exception} & if the application does not have sufficient security rights \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a5d7bfd3a3392810b4610544917a79e88}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!set\-Current\-Millis\-Offset@{set\-Current\-Millis\-Offset}}
+\index{set\-Current\-Millis\-Offset@{set\-Current\-Millis\-Offset}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{set\-Current\-Millis\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}static final void org.\-joda.\-time.\-Date\-Time\-Utils.\-set\-Current\-Millis\-Offset (
+\begin{DoxyParamCaption}
+\item[{long}]{offset\-Millis}
+\end{DoxyParamCaption}
+)  throws Security\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a5d7bfd3a3392810b4610544917a79e88}
+Sets the current time to return the system time plus an offset. 
+
+This method changes the behaviour of \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a4016fe4b94ce75b30b870f1b776a9174}{current\-Time\-Millis()}. Whenever the current time is queried, \hyperlink{}{System\#current\-Time\-Millis()} is used and then offset by adding the millisecond value specified here.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset\-Millis} & the fixed millisecond time to use \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Security\-Exception} & if the application does not have sufficient security rights \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a17c912e68ae2a5030675b45cabc6c064}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!set\-Current\-Millis\-Provider@{set\-Current\-Millis\-Provider}}
+\index{set\-Current\-Millis\-Provider@{set\-Current\-Millis\-Provider}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{set\-Current\-Millis\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}static final void org.\-joda.\-time.\-Date\-Time\-Utils.\-set\-Current\-Millis\-Provider (
+\begin{DoxyParamCaption}
+\item[{Millis\-Provider}]{millis\-Provider}
+\end{DoxyParamCaption}
+)  throws Security\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a17c912e68ae2a5030675b45cabc6c064}
+Sets the provider of the current time to class specified. 
+
+This method changes the behaviour of \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a4016fe4b94ce75b30b870f1b776a9174}{current\-Time\-Millis()}. Whenever the current time is queried, the specified class will be called.
+
+
+\begin{DoxyParams}{Parameters}
+{\em millis\-Provider} & the provider of the current time to use, not null \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Security\-Exception} & if the application does not have sufficient security rights \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+2.\-0 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a167dfe850fd4aaaecf5ad738cb2f90e2}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!set\-Current\-Millis\-System@{set\-Current\-Millis\-System}}
+\index{set\-Current\-Millis\-System@{set\-Current\-Millis\-System}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{set\-Current\-Millis\-System}]{\setlength{\rightskip}{0pt plus 5cm}static final void org.\-joda.\-time.\-Date\-Time\-Utils.\-set\-Current\-Millis\-System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws Security\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a167dfe850fd4aaaecf5ad738cb2f90e2}
+Resets the current time to return the system time. 
+
+This method changes the behaviour of \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_a4016fe4b94ce75b30b870f1b776a9174}{current\-Time\-Millis()}. Whenever the current time is queried, \hyperlink{}{System\#current\-Time\-Millis()} is used.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Security\-Exception} & if the application does not have sufficient security rights \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_aeb3f1deb0016d88d63a9beb0cde893fd}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!set\-Default\-Time\-Zone\-Names@{set\-Default\-Time\-Zone\-Names}}
+\index{set\-Default\-Time\-Zone\-Names@{set\-Default\-Time\-Zone\-Names}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{set\-Default\-Time\-Zone\-Names}]{\setlength{\rightskip}{0pt plus 5cm}static final void org.\-joda.\-time.\-Date\-Time\-Utils.\-set\-Default\-Time\-Zone\-Names (
+\begin{DoxyParamCaption}
+\item[{Map$<$ String, {\bf Date\-Time\-Zone} $>$}]{names}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_aeb3f1deb0016d88d63a9beb0cde893fd}
+Sets the default map of time zone names. 
+
+The map is copied before storage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em names} & the map of abbreviations to zones, not null \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+2.\-2 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_ad55cfa724a13432ddef992bc7c4e6633}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!to\-Julian\-Day@{to\-Julian\-Day}}
+\index{to\-Julian\-Day@{to\-Julian\-Day}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{to\-Julian\-Day}]{\setlength{\rightskip}{0pt plus 5cm}static final double org.\-joda.\-time.\-Date\-Time\-Utils.\-to\-Julian\-Day (
+\begin{DoxyParamCaption}
+\item[{long}]{epoch\-Millis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_ad55cfa724a13432ddef992bc7c4e6633}
+Calculates the astronomical Julian Day for an instant. 
+
+The \href{http://en.wikipedia.org/wiki/Julian_day}{\tt Julian day} is a well-\/known system of time measurement for scientific use by the astronomy community. It expresses the interval of time in days and fractions of a day since January 1, 4713 B\-C (Julian) Greenwich noon. 
+
+Each day starts at midday (not midnight) and time is expressed as a fraction. Thus the fraction 0.\-25 is 18\-:00. equal to one quarter of the day from midday to midday. 
+
+Note that this method has nothing to do with the day-\/of-\/year.
+
+
+\begin{DoxyParams}{Parameters}
+{\em epoch\-Millis} & the epoch millis from 1970-\/01-\/01\-Z \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the astronomical Julian Day represented by the specified instant 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\-2 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_utils_a915eda0316c059708df340b6512ccb98}{\index{org\-::joda\-::time\-::\-Date\-Time\-Utils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}!to\-Julian\-Day\-Number@{to\-Julian\-Day\-Number}}
+\index{to\-Julian\-Day\-Number@{to\-Julian\-Day\-Number}!org::joda::time::DateTimeUtils@{org\-::joda\-::time\-::\-Date\-Time\-Utils}}
+\subsubsection[{to\-Julian\-Day\-Number}]{\setlength{\rightskip}{0pt plus 5cm}static final long org.\-joda.\-time.\-Date\-Time\-Utils.\-to\-Julian\-Day\-Number (
+\begin{DoxyParamCaption}
+\item[{long}]{epoch\-Millis}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_utils_a915eda0316c059708df340b6512ccb98}
+Calculates the astronomical Julian Day Number for an instant. 
+
+The \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_utils_ad55cfa724a13432ddef992bc7c4e6633}{to\-Julian\-Day(long)} method calculates the astronomical Julian Day with a fraction based on days starting at midday. This method calculates the variant where days start at midnight. J\-D\-N 0 is used for the date equivalent to Monday January 1, 4713 B\-C (Julian). Thus these days start 12 hours before those of the fractional Julian Day. 
+
+Note that this method has nothing to do with the day-\/of-\/year.
+
+
+\begin{DoxyParams}{Parameters}
+{\em epoch\-Millis} & the epoch millis from 1970-\/01-\/01\-Z \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the astronomical Julian Day represented by the specified instant 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+2.\-2 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/Date\-Time\-Utils.\-java\end{DoxyCompactItemize}

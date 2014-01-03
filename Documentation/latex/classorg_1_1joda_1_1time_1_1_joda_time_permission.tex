@@ -1,0 +1,71 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1_joda_time_permission}{\section{org.\-joda.\-time.\-Joda\-Time\-Permission Class Reference}
+\label{classorg_1_1joda_1_1time_1_1_joda_time_permission}\index{org.\-joda.\-time.\-Joda\-Time\-Permission@{org.\-joda.\-time.\-Joda\-Time\-Permission}}
+}
+Inheritance diagram for org.\-joda.\-time.\-Joda\-Time\-Permission\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1joda_1_1time_1_1_joda_time_permission}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_joda_time_permission_aee0f4ce565c7ca254079dd627074ab61}{Joda\-Time\-Permission} (String name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classorg_1_1joda_1_1time_1_1_joda_time_permission}{Joda\-Time\-Permission} is used for securing global method calls in the Joda-\/\-Time library. Since this class extends Basic\-Permission, asterisks may be used to denote wildcard permissions. The following permissions are supported\-:
+
+
+\begin{DoxyPre}
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{DateTimeZone}
+  .setDefault                 Allows a default \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{DateTimeZone} to be set
+  .setProvider                Allows the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{DateTimeZone} instance provider to be set
+  .setNameProvider            Allows the \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{DateTimeZone} name provider to be set\end{DoxyPre}
+
+
+
+\begin{DoxyPre}ConverterManager
+  .alterInstantConverters     Allows an instant converter to be added or removed
+  .alterPartialConverters     Allows a partial converter to be added or removed
+  .alterDurationConverters    Allows a duration converter to be added or removed
+  .alterPeriodConverters      Allows a period converter to be added or removed
+  .alterIntervalConverters    Allows an interval converter to be added or removed\end{DoxyPre}
+
+
+
+\begin{DoxyPre}CurrentTime.setProvider       Allows the current time provider to be set
+\end{DoxyPre}
+ 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1_joda_time_permission}{Joda\-Time\-Permission} is thread-\/safe and immutable.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1_joda_time_permission_aee0f4ce565c7ca254079dd627074ab61}{\index{org\-::joda\-::time\-::\-Joda\-Time\-Permission@{org\-::joda\-::time\-::\-Joda\-Time\-Permission}!Joda\-Time\-Permission@{Joda\-Time\-Permission}}
+\index{Joda\-Time\-Permission@{Joda\-Time\-Permission}!org::joda::time::JodaTimePermission@{org\-::joda\-::time\-::\-Joda\-Time\-Permission}}
+\subsubsection[{Joda\-Time\-Permission}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-Joda\-Time\-Permission.\-Joda\-Time\-Permission (
+\begin{DoxyParamCaption}
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_joda_time_permission_aee0f4ce565c7ca254079dd627074ab61}
+Constructs a new permission object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the permission name \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/Joda\-Time\-Permission.\-java\end{DoxyCompactItemize}

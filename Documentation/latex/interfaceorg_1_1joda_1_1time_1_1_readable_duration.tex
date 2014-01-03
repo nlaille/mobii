@@ -1,0 +1,270 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_duration}{\section{org.\-joda.\-time.\-Readable\-Duration Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1_readable_duration}\index{org.\-joda.\-time.\-Readable\-Duration@{org.\-joda.\-time.\-Readable\-Duration}}
+}
+Inheritance diagram for org.\-joda.\-time.\-Readable\-Duration\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.185351cm]{interfaceorg_1_1joda_1_1time_1_1_readable_duration}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a44d83457d428ca176e47a5ac583e36ef}{get\-Millis} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_duration}{Duration} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a1ff142535ab33814293f70ce43966811}{to\-Duration} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_period}{Period} \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a6469ee7602c2ff2de3eb572b123f4795}{to\-Period} ()
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a0c8d26d5ca9eddedd3f5f5dc4b62dc0f}{is\-Equal} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration}{Readable\-Duration} duration)
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a692f8f0bfbd274e00b5deefc0611c230}{is\-Longer\-Than} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration}{Readable\-Duration} duration)
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a567ea3d429b0e9b1eb40205c5eafd869}{is\-Shorter\-Than} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration}{Readable\-Duration} duration)
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration_aa52f93180da256d9438481047495003d}{equals} (Object readable\-Duration)
+\item 
+int \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration_aaebeac4290e0798278b11df6645cd6da}{hash\-Code} ()
+\item 
+String \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration_aa4cfa2f458a763ad29ac570956c72697}{to\-String} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines an exact duration of time in milliseconds. 
+
+The implementation of this interface may be mutable or immutable. This interface only gives access to retrieve data, never to change it. 
+
+Methods that are passed a duration as a parameter will treat {\ttfamily null} as a zero length duration. 
+
+The
+\begin{DoxyCode}
+compareTo 
+\end{DoxyCode}
+ method is no longer defined in this class in version 2.\-0. Instead, the definition is simply inherited from the
+\begin{DoxyCode}
+Comparable 
+\end{DoxyCode}
+ interface. This approach is necessary to preserve binary compatibility. The definition of the comparison is ascending order by millisecond duration. Implementors are recommended to extend
+\begin{DoxyCode}
+AbstractInstant 
+\end{DoxyCode}
+ instead of this interface.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_interval}{Readable\-Interval} 
+
+\hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_period}{Readable\-Period} 
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_duration_aa52f93180da256d9438481047495003d}{\index{org\-::joda\-::time\-::\-Readable\-Duration@{org\-::joda\-::time\-::\-Readable\-Duration}!equals@{equals}}
+\index{equals@{equals}!org::joda::time::ReadableDuration@{org\-::joda\-::time\-::\-Readable\-Duration}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Duration.\-equals (
+\begin{DoxyParamCaption}
+\item[{Object}]{readable\-Duration}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_duration_aa52f93180da256d9438481047495003d}
+Compares this object with the specified object for equality based on the millisecond length. All \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration}{Readable\-Duration} instances are accepted.
+
+
+\begin{DoxyParams}{Parameters}
+{\em readable\-Duration} & a readable duration to check against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the length of the duration is equal 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_duration_a98a282d59cdf77010e7dce5cea3edaed}{org.\-joda.\-time.\-base.\-Abstract\-Duration}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a44d83457d428ca176e47a5ac583e36ef}{\index{org\-::joda\-::time\-::\-Readable\-Duration@{org\-::joda\-::time\-::\-Readable\-Duration}!get\-Millis@{get\-Millis}}
+\index{get\-Millis@{get\-Millis}!org::joda::time::ReadableDuration@{org\-::joda\-::time\-::\-Readable\-Duration}}
+\subsubsection[{get\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-Readable\-Duration.\-get\-Millis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a44d83457d428ca176e47a5ac583e36ef}
+Gets the total length of this duration in milliseconds.
+
+\begin{DoxyReturn}{Returns}
+the total length of the time duration in milliseconds. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_duration_a173b6c5b77abdd0da0c0b6ca4a9ac390}{org.\-joda.\-time.\-base.\-Base\-Duration}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_duration_aaebeac4290e0798278b11df6645cd6da}{\index{org\-::joda\-::time\-::\-Readable\-Duration@{org\-::joda\-::time\-::\-Readable\-Duration}!hash\-Code@{hash\-Code}}
+\index{hash\-Code@{hash\-Code}!org::joda::time::ReadableDuration@{org\-::joda\-::time\-::\-Readable\-Duration}}
+\subsubsection[{hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Readable\-Duration.\-hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_duration_aaebeac4290e0798278b11df6645cd6da}
+Gets a hash code for the duration that is compatable with the equals method. The following formula must be used\-: 
+\begin{DoxyPre}
+ long len = \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a44d83457d428ca176e47a5ac583e36ef}{getMillis()};
+ return (int) (len ^ (len >>> 32));
+\end{DoxyPre}
+
+
+\begin{DoxyReturn}{Returns}
+a hash code 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_duration_ac2cca04ed3ee1a15de31f38e9894a774}{org.\-joda.\-time.\-base.\-Abstract\-Duration}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a0c8d26d5ca9eddedd3f5f5dc4b62dc0f}{\index{org\-::joda\-::time\-::\-Readable\-Duration@{org\-::joda\-::time\-::\-Readable\-Duration}!is\-Equal@{is\-Equal}}
+\index{is\-Equal@{is\-Equal}!org::joda::time::ReadableDuration@{org\-::joda\-::time\-::\-Readable\-Duration}}
+\subsubsection[{is\-Equal}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Duration.\-is\-Equal (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Duration}}]{duration}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a0c8d26d5ca9eddedd3f5f5dc4b62dc0f}
+Compares this duration with the specified duration based on length.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & a duration to check against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+negative value if this is less, 0 if equal, or positive value if greater 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\-Pointer\-Exception} & if the object is null \\
+\hline
+{\em Class\-Cast\-Exception} & if the given object is not supported Is the length of this duration equal to the duration passed in.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & another duration to compare to, null means zero milliseconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this duration is equal to than the duration passed in 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_duration_ab0dcedee5c2bafdb0347767c81040e5f}{org.\-joda.\-time.\-base.\-Abstract\-Duration}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a692f8f0bfbd274e00b5deefc0611c230}{\index{org\-::joda\-::time\-::\-Readable\-Duration@{org\-::joda\-::time\-::\-Readable\-Duration}!is\-Longer\-Than@{is\-Longer\-Than}}
+\index{is\-Longer\-Than@{is\-Longer\-Than}!org::joda::time::ReadableDuration@{org\-::joda\-::time\-::\-Readable\-Duration}}
+\subsubsection[{is\-Longer\-Than}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Duration.\-is\-Longer\-Than (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Duration}}]{duration}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a692f8f0bfbd274e00b5deefc0611c230}
+Is the length of this duration longer than the duration passed in.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & another duration to compare to, null means zero milliseconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this duration is equal to than the duration passed in 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_duration_a175ccb790453567b37ee6fcb9b94a3e4}{org.\-joda.\-time.\-base.\-Abstract\-Duration}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a567ea3d429b0e9b1eb40205c5eafd869}{\index{org\-::joda\-::time\-::\-Readable\-Duration@{org\-::joda\-::time\-::\-Readable\-Duration}!is\-Shorter\-Than@{is\-Shorter\-Than}}
+\index{is\-Shorter\-Than@{is\-Shorter\-Than}!org::joda::time::ReadableDuration@{org\-::joda\-::time\-::\-Readable\-Duration}}
+\subsubsection[{is\-Shorter\-Than}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Readable\-Duration.\-is\-Shorter\-Than (
+\begin{DoxyParamCaption}
+\item[{{\bf Readable\-Duration}}]{duration}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a567ea3d429b0e9b1eb40205c5eafd869}
+Is the length of this duration shorter than the duration passed in.
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & another duration to compare to, null means zero milliseconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this duration is equal to than the duration passed in 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_duration_a9c99846153aeee1a3ff75d5ab0b1b36e}{org.\-joda.\-time.\-base.\-Abstract\-Duration}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a1ff142535ab33814293f70ce43966811}{\index{org\-::joda\-::time\-::\-Readable\-Duration@{org\-::joda\-::time\-::\-Readable\-Duration}!to\-Duration@{to\-Duration}}
+\index{to\-Duration@{to\-Duration}!org::joda::time::ReadableDuration@{org\-::joda\-::time\-::\-Readable\-Duration}}
+\subsubsection[{to\-Duration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Duration} org.\-joda.\-time.\-Readable\-Duration.\-to\-Duration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a1ff142535ab33814293f70ce43966811}
+Get this duration as an immutable {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_duration}{Duration}} object. 
+
+This will either typecast this instance, or create a new {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_duration}{Duration}}.
+
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classorg_1_1joda_1_1time_1_1_duration}{Duration} created using the millisecond duration from this instance 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1_duration_ab2ffb36a697a390946b0cf3657e762a6}{org.\-joda.\-time.\-Duration}, and \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_duration_ab859c557bfca58343f5385152e9b121d}{org.\-joda.\-time.\-base.\-Abstract\-Duration}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a6469ee7602c2ff2de3eb572b123f4795}{\index{org\-::joda\-::time\-::\-Readable\-Duration@{org\-::joda\-::time\-::\-Readable\-Duration}!to\-Period@{to\-Period}}
+\index{to\-Period@{to\-Period}!org::joda::time::ReadableDuration@{org\-::joda\-::time\-::\-Readable\-Duration}}
+\subsubsection[{to\-Period}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Period} org.\-joda.\-time.\-Readable\-Duration.\-to\-Period (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_duration_a6469ee7602c2ff2de3eb572b123f4795}
+Converts this duration to a \hyperlink{classorg_1_1joda_1_1time_1_1_period}{Period} instance using the standard period type and the I\-S\-O chronology. 
+
+Only precise fields in the period type will be used. Thus, only the hour, minute, second and millisecond fields on the period will be used. The year, month, week and day fields will not be populated. 
+
+If the duration is small, less than one day, then this method will perform as you might expect and split the fields evenly. If the duration is larger than one day then all the remaining duration will be stored in the largest available field, hours in this case. 
+
+For example, a duration effectively equal to (365 + 60 + 5) days will be converted to ((365 + 60 + 5) $\ast$ 24) hours by this constructor. 
+
+For more control over the conversion process, you must pair the duration with an instant, see \hyperlink{classorg_1_1joda_1_1time_1_1_period_ad5453618f3627435523b38382dad0ac1}{Period\#\-Period(\-Readable\-Instant,\-Readable\-Duration)}.
+
+\begin{DoxyReturn}{Returns}
+a \hyperlink{classorg_1_1joda_1_1time_1_1_period}{Period} created using the millisecond duration from this instance 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_duration_a00b8d18be67e5ab6ee1b7c4e09c18a0b}{org.\-joda.\-time.\-base.\-Abstract\-Duration}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1_readable_duration_aa4cfa2f458a763ad29ac570956c72697}{\index{org\-::joda\-::time\-::\-Readable\-Duration@{org\-::joda\-::time\-::\-Readable\-Duration}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!org::joda::time::ReadableDuration@{org\-::joda\-::time\-::\-Readable\-Duration}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-Readable\-Duration.\-to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1_readable_duration_aa4cfa2f458a763ad29ac570956c72697}
+Gets the value as a String in the I\-S\-O8601 duration format using hours, minutes and seconds (including fractional milliseconds). 
+
+For example, \char`\"{}\-P\-T6\-H3\-M7\-S\char`\"{} represents 6 hours, 3 minutes, 7 seconds.
+
+\begin{DoxyReturn}{Returns}
+the value as an I\-S\-O8601 string 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_duration_ad07cd3a237d62216c1b2196ae79c4d1b}{org.\-joda.\-time.\-base.\-Abstract\-Duration}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/Readable\-Duration.\-java\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1convert_1_1_interval_converter}{\section{org.\-joda.\-time.\-convert.\-Interval\-Converter Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1convert_1_1_interval_converter}\index{org.\-joda.\-time.\-convert.\-Interval\-Converter@{org.\-joda.\-time.\-convert.\-Interval\-Converter}}
+}
+Inheritance diagram for org.\-joda.\-time.\-convert.\-Interval\-Converter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1joda_1_1time_1_1convert_1_1_interval_converter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{interfaceorg_1_1joda_1_1time_1_1convert_1_1_interval_converter_a8371390bc17d5a8c711b8341c9019ad0}{is\-Readable\-Interval} (Object object, \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chrono)
+\item 
+void \hyperlink{interfaceorg_1_1joda_1_1time_1_1convert_1_1_interval_converter_a6c7ad7f9d67a354e387dcb7d2662c3b1}{set\-Into} (\hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval}{Read\-Writable\-Interval} writable\-Interval, Object object, \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chrono)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interfaceorg_1_1joda_1_1time_1_1convert_1_1_interval_converter}{Interval\-Converter} defines how an object is converted to an interval.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1convert_1_1_interval_converter_a8371390bc17d5a8c711b8341c9019ad0}{\index{org\-::joda\-::time\-::convert\-::\-Interval\-Converter@{org\-::joda\-::time\-::convert\-::\-Interval\-Converter}!is\-Readable\-Interval@{is\-Readable\-Interval}}
+\index{is\-Readable\-Interval@{is\-Readable\-Interval}!org::joda::time::convert::IntervalConverter@{org\-::joda\-::time\-::convert\-::\-Interval\-Converter}}
+\subsubsection[{is\-Readable\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-convert.\-Interval\-Converter.\-is\-Readable\-Interval (
+\begin{DoxyParamCaption}
+\item[{Object}]{object, }
+\item[{{\bf Chronology}}]{chrono}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1convert_1_1_interval_converter_a8371390bc17d5a8c711b8341c9019ad0}
+Checks if the input is a \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_interval}{Readable\-Interval}. 
+
+If it is, then the calling code should cast and copy the fields directly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to convert, must not be null \\
+\hline
+{\em chrono} & the chronology to use, may be null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the input is a \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_interval}{Readable\-Interval} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Class\-Cast\-Exception} & if the object is invalid \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1convert_1_1_interval_converter_a6c7ad7f9d67a354e387dcb7d2662c3b1}{\index{org\-::joda\-::time\-::convert\-::\-Interval\-Converter@{org\-::joda\-::time\-::convert\-::\-Interval\-Converter}!set\-Into@{set\-Into}}
+\index{set\-Into@{set\-Into}!org::joda::time::convert::IntervalConverter@{org\-::joda\-::time\-::convert\-::\-Interval\-Converter}}
+\subsubsection[{set\-Into}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-convert.\-Interval\-Converter.\-set\-Into (
+\begin{DoxyParamCaption}
+\item[{{\bf Read\-Writable\-Interval}}]{writable\-Interval, }
+\item[{Object}]{object, }
+\item[{{\bf Chronology}}]{chrono}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1convert_1_1_interval_converter_a6c7ad7f9d67a354e387dcb7d2662c3b1}
+Extracts interval endpoint values from an object of this converter's type, and sets them into the given \hyperlink{interfaceorg_1_1joda_1_1time_1_1_read_writable_interval}{Read\-Writable\-Interval}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em writable\-Interval} & interval to get modified, not null \\
+\hline
+{\em object} & the object to convert, must not be null \\
+\hline
+{\em chrono} & the chronology to use, may be null \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Class\-Cast\-Exception} & if the object is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/convert/Interval\-Converter.\-java\end{DoxyCompactItemize}

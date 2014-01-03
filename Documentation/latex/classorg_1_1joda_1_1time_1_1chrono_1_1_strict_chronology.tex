@@ -1,0 +1,186 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology}{\section{org.\-joda.\-time.\-chrono.\-Strict\-Chronology Class Reference}
+\label{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology}\index{org.\-joda.\-time.\-chrono.\-Strict\-Chronology@{org.\-joda.\-time.\-chrono.\-Strict\-Chronology}}
+}
+Inheritance diagram for org.\-joda.\-time.\-chrono.\-Strict\-Chronology\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a9d34bea65c16f0dc53c82a0e3e582a3b}{with\-U\-T\-C} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a793db42513ea32a4e856735e6a39da61}{with\-Zone} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone)
+\item 
+boolean \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a614e78290cba9d3a87c78b43ed575a74}{equals} (Object obj)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a91851a66ea27468fe61f6eb383f56147}{hash\-Code} ()
+\item 
+String \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_aa91c71548e289938cbc87e6437be6a86}{to\-String} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology}{Strict\-Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_ad4fe016e748166b85406f8067a12191d}{get\-Instance} (\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} base)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a02833a52e87738eec3bf515d83bddab3}{assemble} (Fields fields)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Wraps another \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology}, ensuring all the fields are strict. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology}{Strict\-Chronology} is thread-\/safe and immutable.
+
+\begin{DoxyAuthor}{Author}
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+\begin{DoxySeeAlso}{See Also}
+Strict\-Date\-Time\-Field 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_lenient_chronology}{Lenient\-Chronology} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a02833a52e87738eec3bf515d83bddab3}{\index{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}!assemble@{assemble}}
+\index{assemble@{assemble}!org::joda::time::chrono::StrictChronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}}
+\subsubsection[{assemble}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-chrono.\-Strict\-Chronology.\-assemble (
+\begin{DoxyParamCaption}
+\item[{Fields}]{fields}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a02833a52e87738eec3bf515d83bddab3}
+Invoked by the constructor and after deserialization to allow subclasses to define all of its supported fields. All unset fields default to unsupported instances.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fields} & container of fields \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_assembled_chronology_a28011ddeb628fa98ee4ccc61be85094f}{org.\-joda.\-time.\-chrono.\-Assembled\-Chronology}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a614e78290cba9d3a87c78b43ed575a74}{\index{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}!equals@{equals}}
+\index{equals@{equals}!org::joda::time::chrono::StrictChronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-chrono.\-Strict\-Chronology.\-equals (
+\begin{DoxyParamCaption}
+\item[{Object}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a614e78290cba9d3a87c78b43ed575a74}
+A strict chronology is only equal to a strict chronology with the same base chronology.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the object to compare to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if equal 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\-4 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_ad4fe016e748166b85406f8067a12191d}{\index{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!org::joda::time::chrono::StrictChronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Strict\-Chronology} org.\-joda.\-time.\-chrono.\-Strict\-Chronology.\-get\-Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf Chronology}}]{base}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_ad4fe016e748166b85406f8067a12191d}
+Create a \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology}{Strict\-Chronology} for any chronology.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & the chronology to wrap \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if chronology is null \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a91851a66ea27468fe61f6eb383f56147}{\index{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}!hash\-Code@{hash\-Code}}
+\index{hash\-Code@{hash\-Code}!org::joda::time::chrono::StrictChronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}}
+\subsubsection[{hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-chrono.\-Strict\-Chronology.\-hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a91851a66ea27468fe61f6eb383f56147}
+A suitable hashcode for the chronology.
+
+\begin{DoxyReturn}{Returns}
+the hashcode 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+1.\-4 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_aa91c71548e289938cbc87e6437be6a86}{\index{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!org::joda::time::chrono::StrictChronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-chrono.\-Strict\-Chronology.\-to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_aa91c71548e289938cbc87e6437be6a86}
+A debugging string for the chronology.
+
+\begin{DoxyReturn}{Returns}
+the debugging string 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_base_chronology_a5b463f34fcc8d0093995564dafb81230}{org.\-joda.\-time.\-chrono.\-Base\-Chronology}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a9d34bea65c16f0dc53c82a0e3e582a3b}{\index{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}!with\-U\-T\-C@{with\-U\-T\-C}}
+\index{with\-U\-T\-C@{with\-U\-T\-C}!org::joda::time::chrono::StrictChronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}}
+\subsubsection[{with\-U\-T\-C}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chronology} org.\-joda.\-time.\-chrono.\-Strict\-Chronology.\-with\-U\-T\-C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a9d34bea65c16f0dc53c82a0e3e582a3b}
+Returns an instance of this \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} that operates in the U\-T\-C time zone. Chronologies that do not operate in a time zone or are already U\-T\-C must return themself.
+
+\begin{DoxyReturn}{Returns}
+a version of this chronology that ignores time zones 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_base_chronology_a839fd4261bb4f4cfcb1eb56dcebbec70}{org.\-joda.\-time.\-chrono.\-Base\-Chronology}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a793db42513ea32a4e856735e6a39da61}{\index{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}!with\-Zone@{with\-Zone}}
+\index{with\-Zone@{with\-Zone}!org::joda::time::chrono::StrictChronology@{org\-::joda\-::time\-::chrono\-::\-Strict\-Chronology}}
+\subsubsection[{with\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chronology} org.\-joda.\-time.\-chrono.\-Strict\-Chronology.\-with\-Zone (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Zone}}]{zone}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classorg_1_1joda_1_1time_1_1chrono_1_1_strict_chronology_a793db42513ea32a4e856735e6a39da61}
+Returns an instance of this \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} that operates in any time zone.
+
+\begin{DoxyReturn}{Returns}
+a version of this chronology with a specific time zone 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em zone} & to use, or default if null \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_zoned_chronology}{org.\-joda.\-time.\-chrono.\-Zoned\-Chronology} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classorg_1_1joda_1_1time_1_1chrono_1_1_base_chronology_a63d48bcfe7b36b349c8afb8289b94b0b}{org.\-joda.\-time.\-chrono.\-Base\-Chronology}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/chrono/Strict\-Chronology.\-java\end{DoxyCompactItemize}

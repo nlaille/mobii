@@ -1,0 +1,262 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator}{\section{org.\-joda.\-time.\-Date\-Time\-Comparator Class Reference}
+\label{classorg_1_1joda_1_1time_1_1_date_time_comparator}\index{org.\-joda.\-time.\-Date\-Time\-Comparator@{org.\-joda.\-time.\-Date\-Time\-Comparator}}
+}
+Inheritance diagram for org.\-joda.\-time.\-Date\-Time\-Comparator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1joda_1_1time_1_1_date_time_comparator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator_aaa7558ddfb781759e30ef81768508413}{get\-Lower\-Limit} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator_a416d0ba16847e6c6fb53b64e4fbe87a3}{get\-Upper\-Limit} ()
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator_a03ddd41c345429c5b77da153698fa1d4}{compare} (Object lhs\-Obj, Object rhs\-Obj)
+\item 
+boolean \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator_ab3da27b333fe7a8868bc1056affcd1c4}{equals} (Object object)
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator_a5691864cb95015ff398b5674eea51c22}{hash\-Code} ()
+\item 
+String \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator_a05e966c59d1c977533775f444b63a0bb}{to\-String} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator}{Date\-Time\-Comparator} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator_a686891aa19da602e11cb25ec40d4d38f}{get\-Instance} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator}{Date\-Time\-Comparator} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator_a45609fc04134e17cb9e283542f5ef835}{get\-Instance} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} lower\-Limit)
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator}{Date\-Time\-Comparator} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator_a638a62a139627fe44cd58e4955c053a0}{get\-Instance} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} lower\-Limit, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} upper\-Limit)
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator}{Date\-Time\-Comparator} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator_ad471649bf835575f12c3499d26caa759}{get\-Date\-Only\-Instance} ()
+\item 
+static \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator}{Date\-Time\-Comparator} \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator_aebb4d8d77e3609128cdc209cad883dcf}{get\-Time\-Only\-Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator_ac59f2d1a0f13a62f98bfe84a290798a6}{Date\-Time\-Comparator} (\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} lower\-Limit, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_field_type}{Date\-Time\-Field\-Type} upper\-Limit)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator}{Date\-Time\-Comparator} provides comparators to compare one date with another. 
+
+Dates may be specified using any object recognised by the \hyperlink{classorg_1_1joda_1_1time_1_1convert_1_1_converter_manager}{Converter\-Manager} class. 
+
+The default objects recognised by the comparator are\-: 
+\begin{DoxyItemize}
+\item \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant} 
+\item String 
+\item Calendar 
+\item Date 
+\item Long (milliseconds) 
+\item null (now) 
+\end{DoxyItemize}
+
+\hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator}{Date\-Time\-Comparator} is thread-\/safe and immutable.
+
+\begin{DoxyAuthor}{Author}
+Guy Allard 
+
+Stephen Colebourne 
+
+Brian S O'Neill 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator_ac59f2d1a0f13a62f98bfe84a290798a6}{\index{org\-::joda\-::time\-::\-Date\-Time\-Comparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}!Date\-Time\-Comparator@{Date\-Time\-Comparator}}
+\index{Date\-Time\-Comparator@{Date\-Time\-Comparator}!org::joda::time::DateTimeComparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}}
+\subsubsection[{Date\-Time\-Comparator}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-Date\-Time\-Comparator.\-Date\-Time\-Comparator (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field\-Type}}]{lower\-Limit, }
+\item[{{\bf Date\-Time\-Field\-Type}}]{upper\-Limit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_comparator_ac59f2d1a0f13a62f98bfe84a290798a6}
+Restricted constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower\-Limit} & the lower field limit, null means no limit \\
+\hline
+{\em upper\-Limit} & the upper field limit, null means no limit \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator_a03ddd41c345429c5b77da153698fa1d4}{\index{org\-::joda\-::time\-::\-Date\-Time\-Comparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}!compare@{compare}}
+\index{compare@{compare}!org::joda::time::DateTimeComparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Date\-Time\-Comparator.\-compare (
+\begin{DoxyParamCaption}
+\item[{Object}]{lhs\-Obj, }
+\item[{Object}]{rhs\-Obj}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_comparator_a03ddd41c345429c5b77da153698fa1d4}
+Compare two objects against only the range of date time fields as specified in the constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs\-Obj} & the first object, logically on the left of a $<$ comparison, null means now \\
+\hline
+{\em rhs\-Obj} & the second object, logically on the right of a $<$ comparison, null means now \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zero if order does not matter, negative value if lhs\-Obj $<$ rhs\-Obj, positive value otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if either argument is not supported \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator_ab3da27b333fe7a8868bc1056affcd1c4}{\index{org\-::joda\-::time\-::\-Date\-Time\-Comparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}!equals@{equals}}
+\index{equals@{equals}!org::joda::time::DateTimeComparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-joda.\-time.\-Date\-Time\-Comparator.\-equals (
+\begin{DoxyParamCaption}
+\item[{Object}]{object}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_comparator_ab3da27b333fe7a8868bc1056affcd1c4}
+Compares this comparator to another.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to compare to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if equal 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator_ad471649bf835575f12c3499d26caa759}{\index{org\-::joda\-::time\-::\-Date\-Time\-Comparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}!get\-Date\-Only\-Instance@{get\-Date\-Only\-Instance}}
+\index{get\-Date\-Only\-Instance@{get\-Date\-Only\-Instance}!org::joda::time::DateTimeComparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}}
+\subsubsection[{get\-Date\-Only\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Comparator} org.\-joda.\-time.\-Date\-Time\-Comparator.\-get\-Date\-Only\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_comparator_ad471649bf835575f12c3499d26caa759}
+Returns a comparator that only considers date fields. Time of day is ignored.
+
+\begin{DoxyReturn}{Returns}
+a comparator over all date fields 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator_a686891aa19da602e11cb25ec40d4d38f}{\index{org\-::joda\-::time\-::\-Date\-Time\-Comparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!org::joda::time::DateTimeComparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Comparator} org.\-joda.\-time.\-Date\-Time\-Comparator.\-get\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_comparator_a686891aa19da602e11cb25ec40d4d38f}
+Returns a \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator}{Date\-Time\-Comparator} the compares the entire date time value.
+
+\begin{DoxyReturn}{Returns}
+a comparator over all fields 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator_a45609fc04134e17cb9e283542f5ef835}{\index{org\-::joda\-::time\-::\-Date\-Time\-Comparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!org::joda::time::DateTimeComparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Comparator} org.\-joda.\-time.\-Date\-Time\-Comparator.\-get\-Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field\-Type}}]{lower\-Limit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_comparator_a45609fc04134e17cb9e283542f5ef835}
+Returns a \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator}{Date\-Time\-Comparator} with a lower limit only. Fields of a magnitude less than the lower limit are excluded from comparisons.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower\-Limit} & inclusive lower limit for fields to be compared, null means no limit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a comparator over all fields above the lower limit 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator_a638a62a139627fe44cd58e4955c053a0}{\index{org\-::joda\-::time\-::\-Date\-Time\-Comparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!org::joda::time::DateTimeComparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Comparator} org.\-joda.\-time.\-Date\-Time\-Comparator.\-get\-Instance (
+\begin{DoxyParamCaption}
+\item[{{\bf Date\-Time\-Field\-Type}}]{lower\-Limit, }
+\item[{{\bf Date\-Time\-Field\-Type}}]{upper\-Limit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_comparator_a638a62a139627fe44cd58e4955c053a0}
+Returns a \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_comparator}{Date\-Time\-Comparator} with a lower and upper limit. Fields of a magnitude less than the lower limit are excluded from comparisons. Fields of a magnitude greater than or equal to the upper limit are also excluded from comparisons. Either limit may be specified as null, which indicates an unbounded limit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower\-Limit} & inclusive lower limit for fields to be compared, null means no limit \\
+\hline
+{\em upper\-Limit} & exclusive upper limit for fields to be compared, null means no limit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a comparator over all fields between the limits 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator_aaa7558ddfb781759e30ef81768508413}{\index{org\-::joda\-::time\-::\-Date\-Time\-Comparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}!get\-Lower\-Limit@{get\-Lower\-Limit}}
+\index{get\-Lower\-Limit@{get\-Lower\-Limit}!org::joda::time::DateTimeComparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}}
+\subsubsection[{get\-Lower\-Limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time\-Field\-Type} org.\-joda.\-time.\-Date\-Time\-Comparator.\-get\-Lower\-Limit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_comparator_aaa7558ddfb781759e30ef81768508413}
+Gets the field type that represents the lower limit of comparison.
+
+\begin{DoxyReturn}{Returns}
+the field type, null if no upper limit 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator_aebb4d8d77e3609128cdc209cad883dcf}{\index{org\-::joda\-::time\-::\-Date\-Time\-Comparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}!get\-Time\-Only\-Instance@{get\-Time\-Only\-Instance}}
+\index{get\-Time\-Only\-Instance@{get\-Time\-Only\-Instance}!org::joda::time::DateTimeComparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}}
+\subsubsection[{get\-Time\-Only\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Date\-Time\-Comparator} org.\-joda.\-time.\-Date\-Time\-Comparator.\-get\-Time\-Only\-Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1joda_1_1time_1_1_date_time_comparator_aebb4d8d77e3609128cdc209cad883dcf}
+Returns a comparator that only considers time fields. Date is ignored.
+
+\begin{DoxyReturn}{Returns}
+a comparator over all time fields 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator_a416d0ba16847e6c6fb53b64e4fbe87a3}{\index{org\-::joda\-::time\-::\-Date\-Time\-Comparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}!get\-Upper\-Limit@{get\-Upper\-Limit}}
+\index{get\-Upper\-Limit@{get\-Upper\-Limit}!org::joda::time::DateTimeComparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}}
+\subsubsection[{get\-Upper\-Limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\-Time\-Field\-Type} org.\-joda.\-time.\-Date\-Time\-Comparator.\-get\-Upper\-Limit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_comparator_a416d0ba16847e6c6fb53b64e4fbe87a3}
+Gets the field type that represents the upper limit of comparison.
+
+\begin{DoxyReturn}{Returns}
+the field type, null if no upper limit 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator_a5691864cb95015ff398b5674eea51c22}{\index{org\-::joda\-::time\-::\-Date\-Time\-Comparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}!hash\-Code@{hash\-Code}}
+\index{hash\-Code@{hash\-Code}!org::joda::time::DateTimeComparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}}
+\subsubsection[{hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-Date\-Time\-Comparator.\-hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_comparator_a5691864cb95015ff398b5674eea51c22}
+Gets a suitable hashcode.
+
+\begin{DoxyReturn}{Returns}
+the hashcode 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1_date_time_comparator_a05e966c59d1c977533775f444b63a0bb}{\index{org\-::joda\-::time\-::\-Date\-Time\-Comparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!org::joda::time::DateTimeComparator@{org\-::joda\-::time\-::\-Date\-Time\-Comparator}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-Date\-Time\-Comparator.\-to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1_date_time_comparator_a05e966c59d1c977533775f444b63a0bb}
+Gets a debugging string.
+
+\begin{DoxyReturn}{Returns}
+a debugging string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/Date\-Time\-Comparator.\-java\end{DoxyCompactItemize}

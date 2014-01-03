@@ -1,0 +1,132 @@
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter}{\section{org.\-joda.\-time.\-convert.\-Instant\-Converter Interface Reference}
+\label{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter}\index{org.\-joda.\-time.\-convert.\-Instant\-Converter@{org.\-joda.\-time.\-convert.\-Instant\-Converter}}
+}
+Inheritance diagram for org.\-joda.\-time.\-convert.\-Instant\-Converter\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter_a4070f222767465465d18e7b8dc7ffb58}{get\-Chronology} (Object object, \hyperlink{classorg_1_1joda_1_1time_1_1_date_time_zone}{Date\-Time\-Zone} zone)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter_a3866f391bac594795d4836d7f2577e87}{get\-Chronology} (Object object, \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chrono)
+\item 
+long \hyperlink{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter_ad110f18c0d261a5c3bc6801e214db09e}{get\-Instant\-Millis} (Object object, \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chrono)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter}{Instant\-Converter} defines how an object is converted to milliseconds/chronology. 
+
+The two methods in this interface must be called in order, as the {\ttfamily get\-Instant\-Millis} method relies on the result of the {\ttfamily get\-Chronology} method being passed in.
+
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter_a4070f222767465465d18e7b8dc7ffb58}{\index{org\-::joda\-::time\-::convert\-::\-Instant\-Converter@{org\-::joda\-::time\-::convert\-::\-Instant\-Converter}!get\-Chronology@{get\-Chronology}}
+\index{get\-Chronology@{get\-Chronology}!org::joda::time::convert::InstantConverter@{org\-::joda\-::time\-::convert\-::\-Instant\-Converter}}
+\subsubsection[{get\-Chronology}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chronology} org.\-joda.\-time.\-convert.\-Instant\-Converter.\-get\-Chronology (
+\begin{DoxyParamCaption}
+\item[{Object}]{object, }
+\item[{{\bf Date\-Time\-Zone}}]{zone}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter_a4070f222767465465d18e7b8dc7ffb58}
+Extracts the chronology from an object of this converter's type where the time zone is specified.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to convert \\
+\hline
+{\em zone} & the specified zone to use, null means default zone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the chronology, never null 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Class\-Cast\-Exception} & if the object is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1convert_1_1_mock_zero_null_integer_converter_af72a2c4d096e35af400ceaf0acf8cf22}{org.\-joda.\-time.\-convert.\-Mock\-Zero\-Null\-Integer\-Converter}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter_a3866f391bac594795d4836d7f2577e87}{\index{org\-::joda\-::time\-::convert\-::\-Instant\-Converter@{org\-::joda\-::time\-::convert\-::\-Instant\-Converter}!get\-Chronology@{get\-Chronology}}
+\index{get\-Chronology@{get\-Chronology}!org::joda::time::convert::InstantConverter@{org\-::joda\-::time\-::convert\-::\-Instant\-Converter}}
+\subsubsection[{get\-Chronology}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chronology} org.\-joda.\-time.\-convert.\-Instant\-Converter.\-get\-Chronology (
+\begin{DoxyParamCaption}
+\item[{Object}]{object, }
+\item[{{\bf Chronology}}]{chrono}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter_a3866f391bac594795d4836d7f2577e87}
+Extracts the chronology from an object of this converter's type where the chronology may be specified. 
+
+If the chronology is non-\/null it should be used. If it is null, then the object should be queried, and if it has no chronology then I\-S\-O default is used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to convert \\
+\hline
+{\em chrono} & the chronology to use, null means use object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the chronology, never null 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Class\-Cast\-Exception} & if the object is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1convert_1_1_mock_zero_null_integer_converter_a963888d116a9087f89e11d124a466a2e}{org.\-joda.\-time.\-convert.\-Mock\-Zero\-Null\-Integer\-Converter}.
+
+\hypertarget{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter_ad110f18c0d261a5c3bc6801e214db09e}{\index{org\-::joda\-::time\-::convert\-::\-Instant\-Converter@{org\-::joda\-::time\-::convert\-::\-Instant\-Converter}!get\-Instant\-Millis@{get\-Instant\-Millis}}
+\index{get\-Instant\-Millis@{get\-Instant\-Millis}!org::joda::time::convert::InstantConverter@{org\-::joda\-::time\-::convert\-::\-Instant\-Converter}}
+\subsubsection[{get\-Instant\-Millis}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-joda.\-time.\-convert.\-Instant\-Converter.\-get\-Instant\-Millis (
+\begin{DoxyParamCaption}
+\item[{Object}]{object, }
+\item[{{\bf Chronology}}]{chrono}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter_ad110f18c0d261a5c3bc6801e214db09e}
+Extracts the millis from an object of this converter's type. 
+
+The chronology passed in is the result of the call to {\ttfamily get\-Chronology}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to convert \\
+\hline
+{\em chrono} & the chronology to use, which is the non-\/null result of \hyperlink{interfaceorg_1_1joda_1_1time_1_1convert_1_1_instant_converter_a4070f222767465465d18e7b8dc7ffb58}{get\-Chronology()} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the millisecond instant 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Class\-Cast\-Exception} & if the object is invalid \\
+\hline
+{\em Illegal\-Argument\-Exception} & if object conversion fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1joda_1_1time_1_1convert_1_1_mock_zero_null_integer_converter_a29968f84717b1204d922e22e0ab4f590}{org.\-joda.\-time.\-convert.\-Mock\-Zero\-Null\-Integer\-Converter}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/convert/Instant\-Converter.\-java\end{DoxyCompactItemize}

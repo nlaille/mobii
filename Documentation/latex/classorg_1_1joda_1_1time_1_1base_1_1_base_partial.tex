@@ -1,0 +1,390 @@
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial}{\section{org.\-joda.\-time.\-base.\-Base\-Partial Class Reference}
+\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial}\index{org.\-joda.\-time.\-base.\-Base\-Partial@{org.\-joda.\-time.\-base.\-Base\-Partial}}
+}
+Inheritance diagram for org.\-joda.\-time.\-base.\-Base\-Partial\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.654028cm]{classorg_1_1joda_1_1time_1_1base_1_1_base_partial}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_aa04eacdf3f53eec94fe0a89d694d73aa}{get\-Value} (int index)
+\item 
+int\mbox{[}$\,$\mbox{]} \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a0c43d4011587d32b8e5e043512c1bb7a}{get\-Values} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_af9c9a7e407cb3c976853f14d4050ee7c}{get\-Chronology} ()
+\item 
+String \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a0059a1c3caa173f7bfb042847f8e4258}{to\-String} (String pattern)
+\item 
+String \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a161d908042a7710e9236b2efa5f58a81}{to\-String} (String pattern, Locale locale)  throws Illegal\-Argument\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a3cff29e9c6137e900793681e9128be3e}{Base\-Partial} ()
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a8f343f800a444450fa650ed3e2e415c7}{Base\-Partial} (\hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chronology)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_ab39a61f2e37443d0600c4c90b36c41ed}{Base\-Partial} (long instant)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a3ee1e7003a3c645bcca7c08162dfca81}{Base\-Partial} (long instant, \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chronology)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a1fcc50f2f451393c7663242be200f75e}{Base\-Partial} (Object instant, \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chronology)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_af1d226db029fb949056af24b1e77c1ce}{Base\-Partial} (Object instant, \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chronology, \hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_formatter}{Date\-Time\-Formatter} parser)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a5bd3af030a11236d5187eb6e2f10ffd4}{Base\-Partial} (int\mbox{[}$\,$\mbox{]} values, \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chronology)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_aef20a828af568b7553cc43cd706e8296}{Base\-Partial} (\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial}{Base\-Partial} base, int\mbox{[}$\,$\mbox{]} values)
+\item 
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a35a21d7a4a1de2452e7e37ef66077040}{Base\-Partial} (\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial}{Base\-Partial} base, \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} chrono)
+\item 
+void \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a4e88a07a0560e71f2d8e2c96adf2ec31}{set\-Value} (int index, int value)
+\item 
+void \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a3eb2adde97f6ee1df812696379abba67}{set\-Values} (int\mbox{[}$\,$\mbox{]} values)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial}{Base\-Partial} is an abstract implementation of \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial}{Readable\-Partial} that stores data in array and {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology}} fields. 
+
+This class should generally not be used directly by A\-P\-I users. The \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial}{org.\-joda.\-time.\-Readable\-Partial} interface should be used when different kinds of partial objects are to be referenced. 
+
+\hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_base_partial}{Base\-Partial} subclasses may be mutable and not thread-\/safe.
+
+\begin{DoxyAuthor}{Author}
+Stephen Colebourne 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+1.\-0 
+\end{DoxySince}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a3cff29e9c6137e900793681e9128be3e}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!Base\-Partial@{Base\-Partial}}
+\index{Base\-Partial@{Base\-Partial}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{Base\-Partial}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-base.\-Base\-Partial.\-Base\-Partial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a3cff29e9c6137e900793681e9128be3e}
+Constructs a partial with the current time, using I\-S\-O\-Chronology in the default zone to extract the fields. 
+
+The constructor uses the default time zone, resulting in the local time being initialised. Once the constructor is complete, all further calculations are performed without reference to a timezone (by switching to U\-T\-C). \hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a8f343f800a444450fa650ed3e2e415c7}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!Base\-Partial@{Base\-Partial}}
+\index{Base\-Partial@{Base\-Partial}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{Base\-Partial}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-base.\-Base\-Partial.\-Base\-Partial (
+\begin{DoxyParamCaption}
+\item[{{\bf Chronology}}]{chronology}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a8f343f800a444450fa650ed3e2e415c7}
+Constructs a partial with the current time, using the specified chronology and zone to extract the fields. 
+
+The constructor uses the time zone of the chronology specified. Once the constructor is complete, all further calculations are performed without reference to a timezone (by switching to U\-T\-C).
+
+
+\begin{DoxyParams}{Parameters}
+{\em chronology} & the chronology, null means I\-S\-O\-Chronology in the default zone \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_ab39a61f2e37443d0600c4c90b36c41ed}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!Base\-Partial@{Base\-Partial}}
+\index{Base\-Partial@{Base\-Partial}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{Base\-Partial}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-base.\-Base\-Partial.\-Base\-Partial (
+\begin{DoxyParamCaption}
+\item[{long}]{instant}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_ab39a61f2e37443d0600c4c90b36c41ed}
+Constructs a partial extracting the partial fields from the specified milliseconds using the I\-S\-O\-Chronology in the default zone. 
+
+The constructor uses the default time zone, resulting in the local time being initialised. Once the constructor is complete, all further calculations are performed without reference to a timezone (by switching to U\-T\-C).
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a3ee1e7003a3c645bcca7c08162dfca81}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!Base\-Partial@{Base\-Partial}}
+\index{Base\-Partial@{Base\-Partial}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{Base\-Partial}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-base.\-Base\-Partial.\-Base\-Partial (
+\begin{DoxyParamCaption}
+\item[{long}]{instant, }
+\item[{{\bf Chronology}}]{chronology}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a3ee1e7003a3c645bcca7c08162dfca81}
+Constructs a partial extracting the partial fields from the specified milliseconds using the chronology provided. 
+
+The constructor uses the time zone of the chronology specified. Once the constructor is complete, all further calculations are performed without reference to a timezone (by switching to U\-T\-C).
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the milliseconds from 1970-\/01-\/01\-T00\-:00\-:00\-Z \\
+\hline
+{\em chronology} & the chronology, null means I\-S\-O\-Chronology in the default zone \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a1fcc50f2f451393c7663242be200f75e}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!Base\-Partial@{Base\-Partial}}
+\index{Base\-Partial@{Base\-Partial}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{Base\-Partial}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-base.\-Base\-Partial.\-Base\-Partial (
+\begin{DoxyParamCaption}
+\item[{Object}]{instant, }
+\item[{{\bf Chronology}}]{chronology}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a1fcc50f2f451393c7663242be200f75e}
+Constructs a partial from an Object that represents a time, using the specified chronology. 
+
+The recognised object types are defined in \hyperlink{classorg_1_1joda_1_1time_1_1convert_1_1_converter_manager}{Converter\-Manager} and include \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant}, String, Calendar and Date. 
+
+The constructor uses the time zone of the chronology specified. Once the constructor is complete, all further calculations are performed without reference to a timezone (by switching to U\-T\-C).
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the datetime object \\
+\hline
+{\em chronology} & the chronology, null means use converter \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the date is invalid \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_af1d226db029fb949056af24b1e77c1ce}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!Base\-Partial@{Base\-Partial}}
+\index{Base\-Partial@{Base\-Partial}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{Base\-Partial}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-base.\-Base\-Partial.\-Base\-Partial (
+\begin{DoxyParamCaption}
+\item[{Object}]{instant, }
+\item[{{\bf Chronology}}]{chronology, }
+\item[{{\bf Date\-Time\-Formatter}}]{parser}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_af1d226db029fb949056af24b1e77c1ce}
+Constructs a partial from an Object that represents a time, using the specified chronology. 
+
+The recognised object types are defined in \hyperlink{classorg_1_1joda_1_1time_1_1convert_1_1_converter_manager}{Converter\-Manager} and include \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_instant}{Readable\-Instant}, String, Calendar and Date. 
+
+The constructor uses the time zone of the chronology specified. Once the constructor is complete, all further calculations are performed without reference to a timezone (by switching to U\-T\-C).
+
+
+\begin{DoxyParams}{Parameters}
+{\em instant} & the datetime object \\
+\hline
+{\em chronology} & the chronology, null means use converter \\
+\hline
+{\em parser} & if converting from a String, the given parser is preferred \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the date is invalid \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+1.\-3 
+\end{DoxySince}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a5bd3af030a11236d5187eb6e2f10ffd4}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!Base\-Partial@{Base\-Partial}}
+\index{Base\-Partial@{Base\-Partial}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{Base\-Partial}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-base.\-Base\-Partial.\-Base\-Partial (
+\begin{DoxyParamCaption}
+\item[{int\mbox{[}$\,$\mbox{]}}]{values, }
+\item[{{\bf Chronology}}]{chronology}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a5bd3af030a11236d5187eb6e2f10ffd4}
+Constructs a partial with specified time field values and chronology. 
+
+The constructor uses the time zone of the chronology specified. Once the constructor is complete, all further calculations are performed without reference to a timezone (by switching to U\-T\-C). 
+
+The array of values is assigned (not cloned) to the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & the new set of values \\
+\hline
+{\em chronology} & the chronology, null means I\-S\-O\-Chronology in the default zone \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\-Argument\-Exception} & if the values are invalid \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_aef20a828af568b7553cc43cd706e8296}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!Base\-Partial@{Base\-Partial}}
+\index{Base\-Partial@{Base\-Partial}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{Base\-Partial}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-base.\-Base\-Partial.\-Base\-Partial (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-Partial}}]{base, }
+\item[{int\mbox{[}$\,$\mbox{]}}]{values}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_aef20a828af568b7553cc43cd706e8296}
+Private constructor to be used by subclasses only which performs no validation. 
+
+Data is assigned (not cloned) to the new instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & the base partial \\
+\hline
+{\em values} & the new set of values, not cloned, null means use base \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a35a21d7a4a1de2452e7e37ef66077040}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!Base\-Partial@{Base\-Partial}}
+\index{Base\-Partial@{Base\-Partial}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{Base\-Partial}]{\setlength{\rightskip}{0pt plus 5cm}org.\-joda.\-time.\-base.\-Base\-Partial.\-Base\-Partial (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\-Partial}}]{base, }
+\item[{{\bf Chronology}}]{chrono}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a35a21d7a4a1de2452e7e37ef66077040}
+Private constructor to be used by subclasses only which performs no validation. 
+
+Data is assigned (not cloned) to the new instance. This should not be used by mutable subclasses.
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & the base partial \\
+\hline
+{\em chrono} & the chronology to use, null means use base \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_af9c9a7e407cb3c976853f14d4050ee7c}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!get\-Chronology@{get\-Chronology}}
+\index{get\-Chronology@{get\-Chronology}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{get\-Chronology}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chronology} org.\-joda.\-time.\-base.\-Base\-Partial.\-get\-Chronology (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_af9c9a7e407cb3c976853f14d4050ee7c}
+Gets the chronology of the partial which is never null. 
+
+The \hyperlink{classorg_1_1joda_1_1time_1_1_chronology}{Chronology} is the calculation engine behind the partial and provides conversion and validation of the fields in a particular calendar system.
+
+\begin{DoxyReturn}{Returns}
+the chronology, never null 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_a1068597bc2697f6daddb744be48188e9}{org.\-joda.\-time.\-Readable\-Partial}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_aa04eacdf3f53eec94fe0a89d694d73aa}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-joda.\-time.\-base.\-Base\-Partial.\-get\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_aa04eacdf3f53eec94fe0a89d694d73aa}
+Gets the value of the field at the specifed index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\-Out\-Of\-Bounds\-Exception} & if the index is invalid \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceorg_1_1joda_1_1time_1_1_readable_partial_aabea09e9a9f08ae0e594b0be9a7ee145}{org.\-joda.\-time.\-Readable\-Partial}.
+
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a0c43d4011587d32b8e5e043512c1bb7a}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!get\-Values@{get\-Values}}
+\index{get\-Values@{get\-Values}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{get\-Values}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]} org.\-joda.\-time.\-base.\-Base\-Partial.\-get\-Values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a0c43d4011587d32b8e5e043512c1bb7a}
+Gets an array of the value of each of the fields that this partial supports. 
+
+The fields are returned largest to smallest, for example Hour, Minute, Second. Each value corresponds to the same array index as {\ttfamily \hyperlink{classorg_1_1joda_1_1time_1_1base_1_1_abstract_partial_aefd7ae2ed465ae50bb88c2a8963b41e8}{get\-Fields()}}
+
+\begin{DoxyReturn}{Returns}
+the current values of each field (cloned), largest to smallest 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a4e88a07a0560e71f2d8e2c96adf2ec31}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-base.\-Base\-Partial.\-set\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a4e88a07a0560e71f2d8e2c96adf2ec31}
+Sets the value of the field at the specified index. 
+
+In version 2.\-0 and later, this method copies the array into the original. This is because the instance variable has been changed to be final to satisfy the Java Memory Model. This only impacts subclasses that are mutable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the index \\
+\hline
+{\em value} & the value to set \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\-Out\-Of\-Bounds\-Exception} & if the index is invalid \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a3eb2adde97f6ee1df812696379abba67}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!set\-Values@{set\-Values}}
+\index{set\-Values@{set\-Values}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{set\-Values}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-joda.\-time.\-base.\-Base\-Partial.\-set\-Values (
+\begin{DoxyParamCaption}
+\item[{int\mbox{[}$\,$\mbox{]}}]{values}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a3eb2adde97f6ee1df812696379abba67}
+Sets the values of all fields. 
+
+In version 2.\-0 and later, this method copies the array into the original. This is because the instance variable has been changed to be final to satisfy the Java Memory Model. This only impacts subclasses that are mutable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & the array of values \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a0059a1c3caa173f7bfb042847f8e4258}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-base.\-Base\-Partial.\-to\-String (
+\begin{DoxyParamCaption}
+\item[{String}]{pattern}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a0059a1c3caa173f7bfb042847f8e4258}
+Output the date using the specified format pattern.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & the pattern specification, null means use {\ttfamily to\-String} \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_format}{org.\-joda.\-time.\-format.\-Date\-Time\-Format} 
+\end{DoxySeeAlso}
+\hypertarget{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a161d908042a7710e9236b2efa5f58a81}{\index{org\-::joda\-::time\-::base\-::\-Base\-Partial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!org::joda::time::base::BasePartial@{org\-::joda\-::time\-::base\-::\-Base\-Partial}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-joda.\-time.\-base.\-Base\-Partial.\-to\-String (
+\begin{DoxyParamCaption}
+\item[{String}]{pattern, }
+\item[{Locale}]{locale}
+\end{DoxyParamCaption}
+)  throws Illegal\-Argument\-Exception }}\label{classorg_1_1joda_1_1time_1_1base_1_1_base_partial_a161d908042a7710e9236b2efa5f58a81}
+Output the date using the specified format pattern.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & the pattern specification, null means use {\ttfamily to\-String} \\
+\hline
+{\em locale} & Locale to use, null means default \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classorg_1_1joda_1_1time_1_1format_1_1_date_time_format}{org.\-joda.\-time.\-format.\-Date\-Time\-Format} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/libs/joda-\/time-\/2.\-3/src/main/java/org/joda/time/base/Base\-Partial.\-java\end{DoxyCompactItemize}

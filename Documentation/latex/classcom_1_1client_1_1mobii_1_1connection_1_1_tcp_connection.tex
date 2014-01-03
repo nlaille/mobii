@@ -1,0 +1,64 @@
+\hypertarget{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection}{\section{com.\-client.\-mobii.\-connection.\-Tcp\-Connection Class Reference}
+\label{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection}\index{com.\-client.\-mobii.\-connection.\-Tcp\-Connection@{com.\-client.\-mobii.\-connection.\-Tcp\-Connection}}
+}
+Inheritance diagram for com.\-client.\-mobii.\-connection.\-Tcp\-Connection\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_ac5ed9c533f795045038564be5f31d6cb}{{\bfseries Tcp\-Connection} (Context ctx, boolean ssl)}\label{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_ac5ed9c533f795045038564be5f31d6cb}
+
+\item 
+\hypertarget{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a531b1273d81689406cb270de0948c5df}{{\bfseries Tcp\-Connection} (\hyperlink{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection}{Tcp\-Connection} c)}\label{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a531b1273d81689406cb270de0948c5df}
+
+\item 
+\hypertarget{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a495bf5adb3431e3370a005809164a5eb}{int \hyperlink{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a495bf5adb3431e3370a005809164a5eb}{connect} ()}\label{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a495bf5adb3431e3370a005809164a5eb}
+
+\begin{DoxyCompactList}\small\item\em Starts a connection by creating a socket. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a416660e3ebed6c2d95ea8d0d360647d2}{run\-Client} ()
+\begin{DoxyCompactList}\small\item\em Runs the client. \end{DoxyCompactList}\item 
+\hypertarget{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a50dc16b4cef4e4c4c1795b5b77656514}{void \hyperlink{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a50dc16b4cef4e4c4c1795b5b77656514}{stop\-Client} ()}\label{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a50dc16b4cef4e4c4c1795b5b77656514}
+
+\begin{DoxyCompactList}\small\item\em Close the connection by stopping the socket and the streams. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a30e63150d63eaacadf4eb4105547a8e4}{Socket {\bfseries socket\-\_\-}}\label{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a30e63150d63eaacadf4eb4105547a8e4}
+
+\item 
+\hypertarget{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_ac46172d4587bcff9eb21136cef6c5cf1}{String {\bfseries server\-Ip\-\_\-}}\label{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_ac46172d4587bcff9eb21136cef6c5cf1}
+
+\item 
+\hypertarget{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a31fe18052a2a86b8b5d217d6d7d22e18}{int {\bfseries server\-Port\-\_\-}}\label{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a31fe18052a2a86b8b5d217d6d7d22e18}
+
+\item 
+\hypertarget{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_aabdf2d5bd61ac92a571f4a9a397fe8cc}{boolean {\bfseries is\-Run\-\_\-}}\label{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_aabdf2d5bd61ac92a571f4a9a397fe8cc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a416660e3ebed6c2d95ea8d0d360647d2}{\index{com\-::client\-::mobii\-::connection\-::\-Tcp\-Connection@{com\-::client\-::mobii\-::connection\-::\-Tcp\-Connection}!run\-Client@{run\-Client}}
+\index{run\-Client@{run\-Client}!com::client::mobii::connection::TcpConnection@{com\-::client\-::mobii\-::connection\-::\-Tcp\-Connection}}
+\subsubsection[{run\-Client}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-client.\-mobii.\-connection.\-Tcp\-Connection.\-run\-Client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classcom_1_1client_1_1mobii_1_1connection_1_1_tcp_connection_a416660e3ebed6c2d95ea8d0d360647d2}
+
+
+Runs the client. 
+
+Sends and receives packets from and to the server. 
+
+Implements \hyperlink{interfacecom_1_1client_1_1mobii_1_1connection_1_1_i_connection}{com.\-client.\-mobii.\-connection.\-I\-Connection}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Seb/workspace/\-Mobii/src/com/client/mobii/connection/\hyperlink{_tcp_connection_8java}{Tcp\-Connection.\-java}\end{DoxyCompactItemize}
